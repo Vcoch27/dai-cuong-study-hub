@@ -43,6 +43,13 @@ def audit(data):
     assert len(questions) == len(by_id) == 249
     assert len({q["question"] for q in questions}) == len(questions)
     slides = {(s["file"], s["slide"]): s["text"] for s in data["slidePages"]}
+    slide_pages = {(s["file"], s["slide"]): s for s in data["slidePages"]}
+    assert len(slide_pages) == 125
+    for page in slide_pages.values():
+        assert page["image"].startswith(f"/slides/chapter-{page['chapter']}/")
+        assert page["image"].endswith(f"page-{page['slide']:03}.webp")
+        assert (ROOT / "dist" / page["image"].lstrip("/")).is_file()
+        assert page["imageWidth"] > 1000 and page["imageHeight"] > 500
     for q in questions:
         assert q["chapter"] in (1, 2, 3, 4), q["id"]
         assert len(q["choices"]) == len(set(q["choices"])) == 4, q["id"]
@@ -54,6 +61,8 @@ def audit(data):
         else:
             assert source["kind"] == "slide", q["id"]
             assert source["evidence"] == slides[(source["file"], source["page"])], q["id"]
+            page = slide_pages[(source["file"], source["page"])]
+            assert source["image"] == page["image"] and page["chapter"] == q["chapter"], q["id"]
     assert len(forms) == 8
     used = []
     for form in forms:
@@ -89,7 +98,7 @@ if __name__ == "__main__":
         assert set(original) == {q["id"] for q in current["questions"]}
         assert before["examForms"] == current["examForms"], "Existing forms must remain stable"
         for q in current["questions"]:
-            assert original[q["id"]]["source"] == q["source"]
+            assert all(q["source"].get(key) == value for key,value in original[q["id"]]["source"].items())
             assert original[q["id"]]["answer"] == q["answer"]
         result["before"] = metrics(before["questions"])
         result["edited_question_or_choices"] = sum(

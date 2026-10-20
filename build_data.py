@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import hashlib
 import random
 import re
 from exam_questions import EXAM_FORMS
@@ -10,6 +11,15 @@ ROOT = Path(__file__).parent
 DOC_URL = "https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit"
 doc_lines = (ROOT / "sources" / "ghi-chu-google-docs.txt").read_text(encoding="utf-8-sig").splitlines()
 slides = json.loads((ROOT / "sources" / "slides.json").read_text(encoding="utf-8"))
+slide_images = json.loads((ROOT / "sources" / "slide-images.json").read_text(encoding="utf-8"))
+image_lookup = {(p["file"], p["slide"]): p for p in slide_images["pages"]}
+for name, expected_hash in slide_images["decks"].items():
+    assert hashlib.sha256((ROOT / "slidegk" / name).read_bytes()).hexdigest() == expected_hash, f"Cần xuất lại ảnh slide: {name}"
+assert set(image_lookup) == {(p["file"], p["slide"]) for p in slides}
+for page in slides:
+    image = image_lookup[(page["file"], page["slide"])]
+    assert (ROOT / "dist" / image["image"].lstrip("/")).is_file(), image["image"]
+    page.update(image=image["image"], imageWidth=image["width"], imageHeight=image["height"], chapter=image["chapter"])
 slide_lookup = {(int(re.search(r"\d+", s["file"]).group()), s["slide"]): s for s in slides}
 
 # chapter | question | answer | distractor 1 | distractor 2 | distractor 3 | source line/page
@@ -291,6 +301,9 @@ for q in questions:
     choices = wrongs.copy()
     choices.insert(q["answer"], correct)
     q.update(question=prompt, choices=choices, explanation=rationale)
+    if q["source"]["kind"] == "slide":
+        image = image_lookup[(q["source"]["file"], q["source"]["page"])]
+        q["source"].update(image=image["image"], imageWidth=image["width"], imageHeight=image["height"])
 
 # Keep all angles of the same source statement together in practice mode.
 questions.sort(key=lambda q: (

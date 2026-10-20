@@ -12,6 +12,7 @@ Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội k
 - Tám đề giữa kỳ cố định: ba đề chuyên biệt và năm đề tổng hợp từ cả ghi chú lẫn slide, đủ bốn chương. Mỗi đề 30 câu trong 15 phút; 240 câu không lặp giữa các đề. Bài tự nộp khi hết giờ; đáp án và nguồn chỉ hiện sau khi nộp. Có thể làm lại và xem điểm gần nhất, điểm cao nhất.
 - Mỗi câu có bốn lựa chọn, đáp án hiện ngay khi chọn và đoạn nguồn đối chiếu bên cạnh.
 - Chế độ đọc giữ đầy đủ văn bản trích xuất từ tài liệu ghi chú và 125 trang slide.
+- Với câu lấy từ slide, cột đối chiếu hiện ảnh đúng trang PowerPoint gốc sau khi trả lời. Có thể phóng to, xem trang trước/sau và mở ảnh gốc; phần văn bản nằm trong mục thu gọn. Khi làm lại hoặc chưa nộp đề, ảnh nguồn được ẩn. Chế độ đọc có ảnh đủ 125 trang.
 - Tìm kiếm, lọc chương, xem câu sai, lưu câu và ghi nhớ tiến độ bằng localStorage.
 - Có thể làm lại từng câu, luyện lại câu sai hoặc làm lại nhóm đang lọc. Tiến độ “đã làm” được giữ riêng với câu trả lời của lượt luyện; kết quả gần nhất cập nhật danh sách câu sai. Khi luyện lại, đáp án, giải thích và đoạn nguồn đều được ẩn. Nhóm câu sai giữ nguyên trong lượt ôn để đọc được phản hồi sau khi sửa đúng; chọn lại bộ lọc “Làm sai” để lấy danh sách mới nhất.
 - Chọn đáp án giữ nguyên vị trí cuộn; chuyển câu bằng nút, danh sách số hoặc phím mũi tên đưa đầu khung câu hỏi vào màn hình. Các cột giữ vị trí riêng; trong đề thi, thanh đồng hồ bám theo vùng làm bài.
@@ -27,6 +28,16 @@ python -m http.server 4173 -d dist
 
 Mở `http://localhost:4173`. Để tạo lại dữ liệu sau khi chỉnh câu hỏi, chạy `python build_data.py`.
 
+Ảnh trong `dist/slides/` được xuất trực tiếp từ PowerPoint gốc rồi mã hóa WebP, không dựng lại bố cục. Nếu thay bộ slide, chạy trên Windows có PowerPoint và Python Pillow:
+
+```powershell
+powershell -NoProfile -File render_slides.ps1
+python pack_slide_images.py
+python build_data.py
+```
+
+Trình dựng kiểm tra dấu vân tay của bộ slide, số trang và từng ảnh để tránh gắn nhầm ảnh sau khi đổi tài liệu. Thư mục ảnh PNG trung gian `.slide-renders/` không đưa lên Git.
+
 Kiểm tra sau khi sửa ngân hàng hoặc cách lưu tiến độ:
 
 ```powershell
@@ -41,4 +52,4 @@ node --experimental-vm-modules tests/progress-smoke.mjs
 
 Tài liệu gốc nằm trong `sources/` và `slidegk/`. Trường `source` của mỗi câu trong `dist/data.json` giữ nhãn nguồn, dòng hoặc trang slide và đoạn văn trích xuất. Bộ câu hỏi phản ánh nội dung tài liệu lớp học; các phát biểu mang tính học thuật trong tài liệu không phải ý kiến độc lập của ứng dụng.
 
-Lưu ý: nội dung trong slide có trang chỉ gồm hình, sơ đồ hoặc yêu cầu thảo luận. Chế độ đọc chứa văn bản có thể trích xuất được; xem file PowerPoint gốc để đối chiếu hình ảnh.
+Lưu ý: văn bản trích xuất có thể thiếu phần chữ trong ảnh hoặc sơ đồ. Ảnh trang slide gốc được hiển thị trong phần đối chiếu và chế độ đọc để xem đầy đủ bố cục, hình ảnh.

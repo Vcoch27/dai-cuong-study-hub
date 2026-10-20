@@ -6,6 +6,9 @@ const raw = await fetch('/data.json').then(r => { if(!r.ok) throw Error('Không 
 const all = raw.questions;
 const byId = Object.fromEntries(all.map(q => [q.id, q]));
 const examForms = raw.examForms || [];
+const slideKey=(file,page)=>`${file}::${page}`;
+const slidesByKey=Object.fromEntries(raw.slidePages.map(page=>[slideKey(page.file,page.slide),page]));
+let slideViewer=null,slideZoom=1;
 const storageKey = `dai-cuong-cnxh-${raw.questionRevision || 'v1'}`;
 let stored = {}, previous = {};
 try { stored = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
@@ -95,9 +98,10 @@ function render({position='preserve',resetEvidence=false}={}){
   </main>
   <aside class="evidence" id="evidence"><div class="evidence-head"><h2>Đối chiếu học liệu</h2><span class="muted" style="font-size:11px">${state.mode==='exam'&&attempt&&!attempt.submittedAt?'Sau khi nộp bài':q&&state.mode==='quiz'?'Nguồn gốc':''}</span></div>
    ${state.mode==='exam'?eq&&attempt?.submittedAt?renderEvidence(eq,true):'<div class="evidence-placeholder">Trong lúc làm đề, nội dung nguồn được ẩn. Nộp bài để xem đáp án và đối chiếu từng câu.</div>':state.mode==='quiz'&&q?renderEvidence(q):'<div class="evidence-placeholder">Chọn một câu hỏi để xem đoạn kiến thức tương ứng tại đây.</div>'}
-  </aside></div>`;
+  </aside></div>${renderSlideViewer()}`;
  bind();
  restoreScroll(view,position,resetEvidence);
+ if(slideViewer){const dialog=$('#slide-viewer');dialog.showModal();dialog.oncancel=event=>{event.preventDefault();closeSlideViewer();};dialog.onclick=event=>{if(event.target===dialog)closeSlideViewer();};}
  save();
 }
 function renderQuiz(q,qs){
@@ -112,13 +116,22 @@ function renderQuiz(q,qs){
 }
 function renderEvidence(q,examReview=false){
  const answered=examReview||state.practiceAnswers[q.id]!==undefined;
- return `<span class="evidence-label">${escapeHtml(q.source.label)}</span>${answered?`<div class="evidence-card focused" tabindex="-1" id="evidence-content">${escapeHtml(evidenceText(q))}</div>`:'<div class="evidence-placeholder">Chọn đáp án để mở đoạn kiến thức tương ứng. Đáp án và nguồn sẽ hiện cùng lúc.</div>'}
- ${q.source.kind==='doc'? `<a class="source-link" href="${escapeHtml(q.source.url)}" target="_blank" rel="noopener noreferrer">Mở Google Docs ↗</a>` : `<div class="source-caption">Tệp gốc: ${escapeHtml(q.source.file)}, trang ${q.source.page}. Toàn bộ văn bản slide nằm trong mục Đọc học liệu.</div>`}
+ const page=q.source.kind==='slide'?slidesByKey[slideKey(q.source.file,q.source.page)]:null;
+ return `<span class="evidence-label">${escapeHtml(q.source.label)}</span>${answered?page?`${renderSlidePreview(page)}<details class="source-transcript"><summary>Xem văn bản trích xuất</summary><div class="evidence-card" id="evidence-content">${escapeHtml(evidenceText(q))}</div></details>`:`<div class="evidence-card focused" tabindex="-1" id="evidence-content">${escapeHtml(evidenceText(q))}</div>`:'<div class="evidence-placeholder">Chọn đáp án để mở đoạn kiến thức tương ứng. Đáp án và nguồn sẽ hiện cùng lúc.</div>'}
+ ${q.source.kind==='doc'? `<a class="source-link" href="${escapeHtml(q.source.url)}" target="_blank" rel="noopener noreferrer">Mở Google Docs ↗</a>` : `<div class="source-caption">Tệp gốc: ${escapeHtml(q.source.file)}, trang ${q.source.page}.${answered?' Bấm vào ảnh để phóng to slide.':''}</div>`}
  ${answered?'<p class="source-caption">Phần này được trích từ tài liệu bạn cung cấp để kiểm tra lại cách diễn đạt của câu hỏi.</p>':''}`;
 }
+function renderSlidePreview(page){return `<button class="slide-preview" data-slide-open="${escapeHtml(slideKey(page.file,page.slide))}" aria-label="Phóng to slide chương ${page.chapter}, trang ${page.slide}"><img data-slide-image src="${escapeHtml(page.image)}" width="${page.imageWidth}" height="${page.imageHeight}" loading="lazy" decoding="async" alt="Slide gốc chương ${page.chapter}, trang ${page.slide}"><span>Phóng to slide ↗</span></button>`;}
+function renderSlideViewer(){
+ const page=slidesByKey[slideViewer];if(!page)return '';
+ const pages=raw.slidePages.filter(item=>item.file===page.file),index=pages.indexOf(page);
+ return `<dialog id="slide-viewer" class="slide-dialog" aria-labelledby="slide-viewer-title"><div class="slide-dialog-inner"><header class="slide-dialog-header"><strong id="slide-viewer-title">Slide chương ${page.chapter} · Trang ${page.slide}/${pages.length}</strong><button class="outline-button" data-slide-close autofocus>Đóng ×</button></header><div class="slide-viewport"><img class="slide-full-image" src="${escapeHtml(page.image)}" width="${page.imageWidth}" height="${page.imageHeight}" style="${slideZoom===1?'width:auto;max-width:100%;max-height:100%':`width:${slideZoom*100}%;max-height:none`}" alt="Slide gốc chương ${page.chapter}, trang ${page.slide}"></div><footer class="slide-dialog-footer"><div><button class="outline-button" data-slide-step="-1" ${index===0?'disabled':''}>← Trang trước</button><button class="outline-button" data-slide-step="1" ${index===pages.length-1?'disabled':''}>Trang sau →</button></div><div><button class="outline-button" data-slide-zoom>${slideZoom===1?'Phóng to +':'Vừa màn hình'}</button><a class="source-link" href="${escapeHtml(page.image)}" target="_blank" rel="noopener noreferrer">Mở ảnh gốc ↗</a></div></footer></div></dialog>`;
+}
+function closeSlideViewer(){const opener=slideViewer;slideViewer=null;render();[...document.querySelectorAll('[data-slide-open]')].find(button=>button.dataset.slideOpen===opener)?.focus?.({preventScroll:true});}
+function changeSlide(step){const page=slidesByKey[slideViewer];if(!page)return;const pages=raw.slidePages.filter(item=>item.file===page.file),next=pages[pages.indexOf(page)+step];if(next){slideViewer=slideKey(next.file,next.slide);slideZoom=1;render();}}
 function renderReader(){
- const items=state.source==='doc'?raw.docLines.map((text,i)=>({label:`Dòng ${i+1}`,text})).filter(x=>x.text.trim()):raw.slidePages.map(s=>({label:`${s.file} · trang ${s.slide}`,text:s.text})).filter(x=>x.text.trim());
- return `<div class="reader-list">${items.map(item=>`<details class="reader-item"><summary><small>${escapeHtml(item.label)}</small>${escapeHtml(item.text.replace(/^VỞ\s*│\s*|^SLIDE\s*│\s*/,'').slice(0,100).replace(/\n/g,' · '))}</summary><p>${escapeHtml(item.text)}</p></details>`).join('')}</div>`;
+ const items=state.source==='doc'?raw.docLines.map((text,i)=>({label:`Dòng ${i+1}`,text})).filter(x=>x.text.trim()):raw.slidePages.map(page=>({label:`${page.file} · trang ${page.slide}`,text:page.text,page}));
+ return `<div class="reader-list">${items.map(item=>`<details class="reader-item"><summary><small>${escapeHtml(item.label)}</small>${escapeHtml(item.text.replace(/^VỞ\s*│\s*|^SLIDE\s*│\s*/,'').slice(0,100).replace(/\n/g,' · '))}</summary>${item.page?renderSlidePreview(item.page):''}<p>${escapeHtml(item.text)}</p></details>`).join('')}</div>`;
 }
 function renderExam(){
  const form=activeForm(),attempt=activeAttempt();
@@ -145,6 +158,10 @@ function renderExam(){
  ${submitted?'':state.confirmSubmit?`<div class="submit-confirm"><strong>Nộp bài ngay?</strong><span>${30-answeredCount} câu chưa chọn sẽ tính là sai. Sau khi nộp, bạn có thể xem lại hoặc làm đề mới.</span><div><button class="outline-button" data-exam-cancel>Tiếp tục làm</button><button class="nav-button primary" data-exam-confirm>Xác nhận nộp</button></div></div>`:`<div class="submit-row"><button class="nav-button primary" data-exam-submit>Nộp bài và xem kết quả</button></div>`}`;
 }
 function bind(){
+ document.querySelectorAll('[data-slide-open]').forEach(el=>el.onclick=()=>{slideViewer=el.dataset.slideOpen;slideZoom=1;render();});
+ document.querySelectorAll('[data-slide-close]').forEach(el=>el.onclick=closeSlideViewer);
+ document.querySelectorAll('[data-slide-step]').forEach(el=>el.onclick=()=>changeSlide(Number(el.dataset.slideStep)));
+ document.querySelectorAll('[data-slide-zoom]').forEach(el=>el.onclick=()=>{slideZoom=slideZoom===1?1.6:1;render();});
  document.querySelectorAll('[data-review-notice-close]').forEach(el=>el.onclick=()=>{state.reviewNotice=false;render({position:'question'});});
  document.querySelectorAll('[data-source]').forEach(el=>el.onclick=()=>{state.source=el.dataset.source;state.mode='quiz';state.chapter=0;state.index=0;state.search='';state.review='all';render({position:'question',resetEvidence:true});});
  document.querySelectorAll('[data-chapter]').forEach(el=>el.onclick=()=>{state.mode='quiz';state.chapter=Number(el.dataset.chapter);state.index=0;render({position:'question',resetEvidence:true});});
@@ -167,6 +184,7 @@ function bind(){
  document.querySelectorAll('[data-exam-confirm]').forEach(el=>el.onclick=()=>submitExam());
 }
 document.addEventListener('keydown',e=>{
+ if(slideViewer){if(e.key==='ArrowRight'){e.preventDefault();changeSlide(1);}if(e.key==='ArrowLeft'){e.preventDefault();changeSlide(-1);}return;}
  if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;
  if(state.mode==='quiz'){
   if(e.key==='ArrowRight'&&state.index<visibleQuestions().length-1){e.preventDefault();navigatePractice(state.index+1);}

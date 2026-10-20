@@ -1,0 +1,8 @@
+.git/
+.slide-renders/
+__pycache__/
+slidegk/
+sources/
+tests/
+*.py
+*.ps1

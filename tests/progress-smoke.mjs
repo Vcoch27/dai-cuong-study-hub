@@ -14,7 +14,7 @@ async function boot(initial={}, {mobile=false}={}){
  let html='',buttons=[],panels={};
  const events={};
  const window={scrollX:0,scrollY:0,scrollTo({left=0,top=0}){this.scrollX=left;this.scrollY=Math.max(0,top);}};
- const inert={scrollIntoView(){},focus(){}};
+ const inert={scrollIntoView(){},focus(){},showModal(){}};
  const root={get innerHTML(){return html;},set innerHTML(value){
   html=value;buttons=[];
   panels=Object.fromEntries(['.main','.sidebar','.evidence','.number-grid'].map(selector=>[selector,{scrollTop:0,scrollLeft:0,scrollHeight:2000,clientHeight:mobile?2000:700,
@@ -111,7 +111,7 @@ assert(!reloaded.html.includes('Bộ câu hỏi đã được biên tập lại'
 reloaded.click('[data-exam-submit]');reloaded.click('[data-exam-confirm]');
 assert(reloaded.html.includes('1/30 câu đúng'));
 assert(reloaded.html.includes(byId[qid].explanation));
-assert(reloaded.html.includes('evidence-card focused'));
+assert(reloaded.html.includes(byId[qid].source.kind==='slide'?'data-slide-open':'evidence-card focused'));
 assert.equal(reloaded.memory.get(oldKey),legacyJSON);
 const fresh=await boot();
 assert.equal(fresh.api.state.reviewNotice,false);
@@ -158,4 +158,25 @@ assert.equal(retryReload.api.state.practiceAnswers['doc-003'],undefined,'Correct
 assert.equal(retryReload.api.state.practiceAnswers['slide-001'],byId['slide-001'].answer,'Other source is unaffected');
 assert.deepEqual([...retryReload.api.state.bookmarks],['doc-001']);
 assert.equal(retryReload.api.state.examHistory['midterm-1'][0].score,23);
-console.log('PASS: progress, exams, scrolling, individual/group retries, hidden feedback, retry reload and stable wrong-question sessions');
+const slidePractice=await boot();
+slidePractice.click('[data-source]','slide');
+const slideQuestion=slidePractice.api.current(),pageKey=`${slideQuestion.source.file}::${slideQuestion.source.page}`;
+assert(!slidePractice.html.includes('data-slide-open'),'Unanswered question does not expose slide image');
+slidePractice.click('[data-answer]',String(slideQuestion.answer));
+assert(slidePractice.html.includes(`src="${slideQuestion.source.image}"`),'Evidence image matches the referenced page');
+assert(slidePractice.html.includes('Xem văn bản trích xuất'));
+slidePractice.click('[data-slide-open]',pageKey);
+assert(slidePractice.html.includes('id="slide-viewer"'));
+assert(slidePractice.html.includes(`Trang ${slideQuestion.source.page}/`));
+assert(slidePractice.key('ArrowRight'));
+assert.equal(slidePractice.api.current().id,slideQuestion.id,'Viewer arrows change slides, not quiz questions');
+assert(slidePractice.html.includes(`Trang ${slideQuestion.source.page+1}/`));
+slidePractice.click('[data-slide-zoom]');
+assert(slidePractice.html.includes('width:160%'));
+slidePractice.click('[data-slide-close]');
+assert(!slidePractice.html.includes('id="slide-viewer"'));
+slidePractice.click('[data-practice-retry]','question');
+assert(!slidePractice.html.includes('data-slide-open'),'Retry hides source images again');
+slidePractice.click('[data-mode]','reader');
+assert.equal(slidePractice.document.querySelectorAll('[data-slide-open]').length,125,'Reader includes every original slide');
+console.log('PASS: progress, exams, scrolling, retries, image visibility, source mapping, viewer navigation/zoom and all 125 reader slides');
