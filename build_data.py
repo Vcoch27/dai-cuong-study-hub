@@ -4,6 +4,7 @@ import random
 import re
 from exam_questions import EXAM_FORMS
 from exam_sets import MORE_EXAM_IDS
+from reviewed_questions import REVIEWED_QUESTIONS
 
 ROOT = Path(__file__).parent
 DOC_URL = "https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit"
@@ -275,6 +276,22 @@ for form_index, raw_ids in enumerate(MORE_EXAM_IDS, 4):
         "questionIds": ids,
     })
 
+# Apply the complete editorial review while retaining IDs, source references and
+# correct-answer slots. Reject incomplete reviews instead of mixing old drafts in.
+reviewed = {}
+for row in REVIEWED_QUESTIONS.splitlines():
+    parts = [part.strip() for part in row.split("|")]
+    assert len(parts) == 7 and all(parts), f"Dòng biên tập không hợp lệ: {row}"
+    qid, prompt, correct, w1, w2, w3, rationale = parts
+    assert qid not in reviewed, f"ID biên tập bị lặp: {qid}"
+    reviewed[qid] = (prompt, correct, [w1, w2, w3], rationale)
+assert set(reviewed) == {q["id"] for q in questions}, "Lượt biên tập phải bao phủ toàn bộ ngân hàng"
+for q in questions:
+    prompt, correct, wrongs, rationale = reviewed[q["id"]]
+    choices = wrongs.copy()
+    choices.insert(q["answer"], correct)
+    q.update(question=prompt, choices=choices, explanation=rationale)
+
 # Keep all angles of the same source statement together in practice mode.
 questions.sort(key=lambda q: (
     0 if q["source"]["kind"] == "doc" else 1,
@@ -292,6 +309,7 @@ assert len(all_exam_ids) == len(set(all_exam_ids)), "Các đề không được 
 public = ROOT / "dist"
 public.mkdir(exist_ok=True)
 (public / "data.json").write_text(json.dumps({
+    "questionRevision": "review-2026-10-20",
     "questions": questions,
     "examForms": exam_forms,
     "docLines": doc_lines,

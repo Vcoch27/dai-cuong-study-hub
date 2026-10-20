@@ -6,11 +6,18 @@ const raw = await fetch('/data.json').then(r => { if(!r.ok) throw Error('Không 
 const all = raw.questions;
 const byId = Object.fromEntries(all.map(q => [q.id, q]));
 const examForms = raw.examForms || [];
-const storageKey = 'dai-cuong-cnxh-v1';
-let stored = {};
+const storageKey = `dai-cuong-cnxh-${raw.questionRevision || 'v1'}`;
+let stored = {}, previous = {};
 try { stored = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
-const state = {source:stored.source || 'doc',chapter:stored.chapter || 0,mode:stored.mode==='exam'?'exam':'quiz',search:'',index:stored.index || 0,answers:stored.answers || {},bookmarks:stored.bookmarks || [],review:'all',examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false};
-function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,answers:state.answers,bookmarks:state.bookmarks,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory}));}
+try { previous = JSON.parse(localStorage.getItem('dai-cuong-cnxh-v1')) || {}; } catch {}
+const previousExamScores = Object.fromEntries(examForms.map(form=>{
+ const attempt=previous.examAttempts?.[form.id],scores=(previous.examHistory?.[form.id]||[]).map(item=>item.score);
+ if(attempt?.submittedAt)scores.push(form.questionIds.reduce((n,id)=>n+(attempt.answers?.[id]===byId[id].answer),0));
+ return [form.id,scores.length?Math.max(...scores):null];
+}));
+const hasPreviousWork=Object.keys(previous.answers||{}).length>0||Object.keys(previous.examAttempts||{}).length>0||Object.keys(previous.examHistory||{}).length>0;
+const state = {source:stored.source || previous.source || 'doc',chapter:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'?'exam':'quiz',search:'',index:stored.index || 0,answers:stored.answers || {},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:'all',examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed};
+function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,answers:state.answers,bookmarks:state.bookmarks,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice}));}
 function sourceQuestions(){return all.filter(q => q.source.kind === state.source);}
 function visibleQuestions(){return sourceQuestions().filter(q => (!state.chapter || q.chapter===state.chapter) && (!state.search || (q.question+' '+q.choices.join(' ')).toLocaleLowerCase('vi').includes(state.search.toLocaleLowerCase('vi'))) && (state.review==='all' || state.review==='wrong' && state.answers[q.id]!==undefined && state.answers[q.id]!==q.answer || state.review==='saved' && state.bookmarks.includes(q.id)));}
 function current(){const qs=visibleQuestions();state.index=Math.max(0,Math.min(state.index,qs.length-1));return qs[state.index];}
@@ -42,6 +49,7 @@ function render(){
   </aside>
   <main class="main"><div class="eyebrow">Ôn thi giữa kỳ · Trắc nghiệm</div><h1 class="page-title">${state.mode==='exam'?'Đề giữa kỳ':sourceName}</h1><p class="intro">${state.mode==='exam'?'Tám đề 30 câu, 15 phút mỗi đề. Đáp án và nguồn chỉ hiện sau khi nộp bài.':state.source==='doc'?'Ưu tiên toàn bộ nội dung tài liệu ghi chú. Mỗi đáp án đều có đoạn nguồn đối chiếu.':'Các ý chính từ bốn bộ slide, gồm cả những nội dung đã gặp trong ghi chú để luyện thêm một lượt.'}</p>
    <div class="toolbar"><button class="tab ${state.mode==='quiz'?'active':''}" data-mode="quiz">Làm câu hỏi</button><button class="tab ${state.mode==='reader'?'active':''}" data-mode="reader">Đọc học liệu</button><button class="tab ${state.mode==='exam'?'active':''}" data-mode="exam">Đề 30 câu · 15 phút</button>${state.mode==='quiz'?'<span class="toolbar-spacer"></span><button class="outline-button" data-review="all">Tất cả</button><button class="outline-button" data-review="wrong">Làm sai</button><button class="outline-button" data-review="saved">Đã lưu</button>':''}</div>
+   ${state.reviewNotice?'<div class="review-notice" role="status"><div><strong>Bộ câu hỏi đã được biên tập lại</strong><p>Bạn bắt đầu lượt luyện mới với các phương án đã sửa. Câu đã lưu và điểm đề trước biên tập vẫn được giữ riêng trên thiết bị này.</p></div><button class="outline-button" data-review-notice-close>Đã hiểu</button></div>':''}
    ${state.mode==='quiz'?renderQuiz(q,qs):state.mode==='reader'?renderReader():renderExam()}
   </main>
   <aside class="evidence" id="evidence"><div class="evidence-head"><h2>Đối chiếu học liệu</h2><span class="muted" style="font-size:11px">${state.mode==='exam'&&attempt&&!attempt.submittedAt?'Sau khi nộp bài':q&&state.mode==='quiz'?'Nguồn gốc':''}</span></div>
@@ -75,7 +83,8 @@ function renderExam(){
    const previous=state.examAttempts[item.id],completed=previous?.submittedAt;
    const score=completed?item.questionIds.reduce((n,id)=>n+(previous.answers[id]===byId[id].answer),0):null;
    const historical=state.examHistory[item.id]||[],best=Math.max(score??0,...historical.map(a=>a.score));
-   return `<article class="exam-card"><div class="exam-num">Đề ${String(i+1).padStart(2,'0')} · 30 câu · 15 phút</div><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.focus)}</p><div class="exam-card-footer"><span>${completed?`Lần gần nhất: ${score}/30 · Cao nhất: ${best}/30`:previous?`${Object.keys(previous.answers).length}/30 đã chọn`:'Chưa làm'}</span><div>${previous?`<button class="outline-button" data-exam-open="${item.id}">${completed?'Xem lại':'Tiếp tục'}</button>`:''}<button class="nav-button primary" data-exam-start="${item.id}">${previous?'Làm lại':'Bắt đầu'}</button></div></div></article>`;
+   const oldScore=previousExamScores[item.id];
+   return `<article class="exam-card"><div class="exam-num">Đề ${String(i+1).padStart(2,'0')} · 30 câu · 15 phút</div><h2>${escapeHtml(item.title)}</h2><p>${escapeHtml(item.focus)}</p><div class="exam-card-footer"><span>${completed?`Lần gần nhất: ${score}/30 · Cao nhất: ${best}/30`:previous?`${Object.keys(previous.answers).length}/30 đã chọn`:'Chưa làm'}${oldScore!==null?`<small class="legacy-score">Trước biên tập · Cao nhất: ${oldScore}/30</small>`:''}</span><div>${previous?`<button class="outline-button" data-exam-open="${item.id}">${completed?'Xem lại':'Tiếp tục'}</button>`:''}<button class="nav-button primary" data-exam-start="${item.id}">${previous?'Làm lại':'Bắt đầu'}</button></div></div></article>`;
  }).join('')}</div>`;
  const q=examCurrent(),submitted=!!attempt.submittedAt,selected=attempt.answers[q.id];
  const answered=selected!==undefined,position=attempt.current,answeredCount=Object.keys(attempt.answers).length;
@@ -93,6 +102,7 @@ function renderExam(){
  ${submitted?'':state.confirmSubmit?`<div class="submit-confirm"><strong>Nộp bài ngay?</strong><span>${30-answeredCount} câu chưa chọn sẽ tính là sai. Sau khi nộp, bạn có thể xem lại hoặc làm đề mới.</span><div><button class="outline-button" data-exam-cancel>Tiếp tục làm</button><button class="nav-button primary" data-exam-confirm>Xác nhận nộp</button></div></div>`:`<div class="submit-row"><button class="nav-button primary" data-exam-submit>Nộp bài và xem kết quả</button></div>`}`;
 }
 function bind(){
+ document.querySelectorAll('[data-review-notice-close]').forEach(el=>el.onclick=()=>{state.reviewNotice=false;render();});
  document.querySelectorAll('[data-source]').forEach(el=>el.onclick=()=>{state.source=el.dataset.source;state.mode='quiz';state.chapter=0;state.index=0;state.search='';state.review='all';render();});
  document.querySelectorAll('[data-chapter]').forEach(el=>el.onclick=()=>{state.mode='quiz';state.chapter=Number(el.dataset.chapter);state.index=0;render();});
  document.querySelectorAll('[data-mode]').forEach(el=>el.onclick=()=>{state.mode=el.dataset.mode;state.confirmSubmit=false;render();});
