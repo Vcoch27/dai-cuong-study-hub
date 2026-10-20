@@ -51,6 +51,7 @@ def audit(data):
         assert (ROOT / "dist" / page["image"].lstrip("/")).is_file()
         assert page["imageWidth"] > 1000 and page["imageHeight"] > 500
     for q in questions:
+        assert not re.search(r"ghi chú|\bslide\b|tài liệu|sơ đồ|danh sách|trong bài|công thức", q["question"], re.I), q["id"]
         assert q["chapter"] in (1, 2, 3, 4), q["id"]
         assert len(q["choices"]) == len(set(q["choices"])) == 4, q["id"]
         assert 0 <= q["answer"] < 4 and q["explanation"].strip(), q["id"]
