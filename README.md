@@ -8,7 +8,7 @@ Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội k
 - 67 câu từ bốn bộ slide chương 1–4, ôn sau phần ghi chú.
 - 90 câu mới hỏi theo nhiều hướng từ cùng một ý: hỏi ngược, phân biệt mốc/khái niệm, ngoại lệ và chọn đáp án đúng nhất. Tổng ngân hàng hiện có **249 câu**.
 - Trong chế độ luyện tập, các câu cùng đoạn ghi chú hoặc cùng trang slide được xếp cạnh nhau để luyện một ý theo nhiều góc nhìn.
-- Ba đề giữa kỳ cố định: ghi chú trọng tâm, slide chuyên sâu, tổng hợp phân biệt. Mỗi đề 30 câu trong 15 phút. Bài tự nộp khi hết giờ; đáp án và nguồn chỉ hiện sau khi nộp. Có thể làm lại và xem điểm gần nhất, điểm cao nhất.
+- Tám đề giữa kỳ cố định: ba đề chuyên biệt và năm đề tổng hợp từ cả ghi chú lẫn slide, đủ bốn chương. Mỗi đề 30 câu trong 15 phút; 240 câu không lặp giữa các đề. Bài tự nộp khi hết giờ; đáp án và nguồn chỉ hiện sau khi nộp. Có thể làm lại và xem điểm gần nhất, điểm cao nhất.
 - Mỗi câu có bốn lựa chọn, đáp án hiện ngay khi chọn và đoạn nguồn đối chiếu bên cạnh.
 - Chế độ đọc giữ đầy đủ văn bản trích xuất từ tài liệu ghi chú và 125 trang slide.
 - Tìm kiếm, lọc chương, xem câu sai, lưu câu và ghi nhớ tiến độ bằng localStorage.

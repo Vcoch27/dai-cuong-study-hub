@@ -1,7 +1,9 @@
 from pathlib import Path
 import json
+import random
 import re
 from exam_questions import EXAM_FORMS
+from exam_sets import MORE_EXAM_IDS
 
 ROOT = Path(__file__).parent
 DOC_URL = "https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit"
@@ -255,6 +257,24 @@ for form_index, form in enumerate(EXAM_FORMS, 1):
         "focus": focus, "durationSeconds": 15 * 60, "questionIds": ids
     })
 
+# The next five forms use the original sourced bank. Pin IDs to keep saved
+# attempts valid when data.json is regenerated, then mix chapters in each form.
+base_by_id = {q["id"]: q for q in questions if not q["id"].startswith("extra-")}
+for form_index, raw_ids in enumerate(MORE_EXAM_IDS, 4):
+    ids = raw_ids.split()
+    assert len(ids) == len(set(ids)) == 30, f"Đề {form_index} phải có 30 câu riêng"
+    assert all(qid in base_by_id for qid in ids), f"Đề {form_index} có ID lạ"
+    assert {base_by_id[qid]["chapter"] for qid in ids} == {1, 2, 3, 4}
+    assert {base_by_id[qid]["source"]["kind"] for qid in ids} == {"doc", "slide"}
+    random.Random(20261020 + form_index).shuffle(ids)
+    exam_forms.append({
+        "id": f"midterm-{form_index}",
+        "title": f"Đề {form_index} · Tổng hợp bốn chương",
+        "focus": "Trộn ghi chú và slide; kiểm tra đủ bốn chương bằng nhiều kiểu câu hỏi.",
+        "durationSeconds": 15 * 60,
+        "questionIds": ids,
+    })
+
 # Keep all angles of the same source statement together in practice mode.
 questions.sort(key=lambda q: (
     0 if q["source"]["kind"] == "doc" else 1,
@@ -266,7 +286,9 @@ questions.sort(key=lambda q: (
 
 assert len({q["id"] for q in questions}) == len(questions)
 assert all(len(q["choices"]) == 4 and len(set(q["choices"])) == 4 for q in questions)
-assert len(exam_forms) == 3 and all(len(f["questionIds"]) == 30 for f in exam_forms)
+assert len(exam_forms) == 8 and all(len(f["questionIds"]) == 30 for f in exam_forms)
+all_exam_ids = [qid for form in exam_forms for qid in form["questionIds"]]
+assert len(all_exam_ids) == len(set(all_exam_ids)), "Các đề không được lặp câu hỏi"
 public = ROOT / "dist"
 public.mkdir(exist_ok=True)
 (public / "data.json").write_text(json.dumps({
