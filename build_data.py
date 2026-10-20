@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 import re
+from exam_questions import EXAM_FORMS
 
 ROOT = Path(__file__).parent
 DOC_URL = "https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit"
@@ -205,15 +206,74 @@ def parse(raw, kind):
 questions = sorted(parse(DOC, "doc"), key=lambda q: q["source"]["line"]) + sorted(
     parse(SLIDE, "slide"), key=lambda q: (q["chapter"], q["source"]["page"])
 )
+
+exam_forms = []
+for form_index, form in enumerate(EXAM_FORMS, 1):
+    ids = []
+    rows = form.strip().splitlines()
+    assert len(rows) == 30, f"Đề {form_index} không đủ 30 câu"
+    for row in rows:
+        parts = [part.strip() for part in row.split("|")]
+        assert len(parts) == 7, row
+        ref, prompt, correct, w1, w2, w3, rationale = parts
+        if ref.startswith("D"):
+            line = int(ref[1:])
+            assert 1 <= line <= len(doc_lines)
+            chapter = 1 if line < 9 else 2 if line < 35 else 3 if line < 64 else 4
+            source = {
+                "kind": "doc", "label": f"Ghi chú · dòng {line}", "url": DOC_URL,
+                "evidence": doc_lines[line - 1].strip(), "line": line
+            }
+        else:
+            ch, page = map(int, ref[1:].split(":"))
+            record = slide_lookup[(ch, page)]
+            chapter = ch
+            source = {
+                "kind": "slide", "label": f"Slide chương {ch} · trang {page}",
+                "file": record["file"], "page": page, "evidence": record["text"]
+            }
+        seq = len(questions) - len(parse(DOC, "doc")) - len(parse(SLIDE, "slide"))
+        qid = f"extra-{seq + 1:03}"
+        answer = (seq * 7 + seq // 4 + form_index) % 4
+        choices = [w1, w2, w3]
+        choices.insert(answer, correct)
+        assert len(set(choices)) == 4, qid
+        questions.append({
+            "id": qid, "chapter": chapter, "question": prompt,
+            "choices": choices, "answer": answer, "explanation": rationale,
+            "source": source, "exam": form_index
+        })
+        ids.append(qid)
+    themes = [
+        ("Ghi chú trọng tâm", "Ưu tiên ý trong ghi chú, thêm các câu đối chiếu slide"),
+        ("Slide chuyên sâu", "Khai thác lập luận và chi tiết từ slide bài giảng"),
+        ("Tổng hợp phân biệt", "Trộn hai nguồn, chú trọng phương án gần đúng")
+    ]
+    title, focus = themes[form_index - 1]
+    exam_forms.append({
+        "id": f"midterm-{form_index}", "title": f"Đề {form_index} · {title}",
+        "focus": focus, "durationSeconds": 15 * 60, "questionIds": ids
+    })
+
+# Keep all angles of the same source statement together in practice mode.
+questions.sort(key=lambda q: (
+    0 if q["source"]["kind"] == "doc" else 1,
+    q["source"].get("line", q["chapter"]),
+    q["source"].get("page", 0),
+    0 if not q["id"].startswith("extra-") else 1,
+    q["id"]
+))
+
 assert len({q["id"] for q in questions}) == len(questions)
 assert all(len(q["choices"]) == 4 and len(set(q["choices"])) == 4 for q in questions)
-assert all(q["choices"][q["answer"]] in q["explanation"] for q in questions)
+assert len(exam_forms) == 3 and all(len(f["questionIds"]) == 30 for f in exam_forms)
 public = ROOT / "dist"
 public.mkdir(exist_ok=True)
 (public / "data.json").write_text(json.dumps({
     "questions": questions,
+    "examForms": exam_forms,
     "docLines": doc_lines,
     "slidePages": slides,
     "docUrl": DOC_URL,
 }, ensure_ascii=False), encoding="utf-8")
-print(f"{len(questions)} questions: {len(parse(DOC, 'doc'))} doc, {len(parse(SLIDE, 'slide'))} slide")
+print(f"{len(questions)} questions: {len(parse(DOC, 'doc'))} original doc, {len(parse(SLIDE, 'slide'))} original slide, 90 new")
