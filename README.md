@@ -13,6 +13,7 @@ Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội k
 - Mỗi câu có bốn lựa chọn, đáp án hiện ngay khi chọn và đoạn nguồn đối chiếu bên cạnh.
 - Chế độ đọc giữ đầy đủ văn bản trích xuất từ tài liệu ghi chú và 125 trang slide.
 - Tìm kiếm, lọc chương, xem câu sai, lưu câu và ghi nhớ tiến độ bằng localStorage.
+- Có thể làm lại từng câu, luyện lại câu sai hoặc làm lại nhóm đang lọc. Tiến độ “đã làm” được giữ riêng với câu trả lời của lượt luyện; kết quả gần nhất cập nhật danh sách câu sai. Khi luyện lại, đáp án, giải thích và đoạn nguồn đều được ẩn. Nhóm câu sai giữ nguyên trong lượt ôn để đọc được phản hồi sau khi sửa đúng; chọn lại bộ lọc “Làm sai” để lấy danh sách mới nhất.
 - Chọn đáp án giữ nguyên vị trí cuộn; chuyển câu bằng nút, danh sách số hoặc phím mũi tên đưa đầu khung câu hỏi vào màn hình. Các cột giữ vị trí riêng; trong đề thi, thanh đồng hồ bám theo vùng làm bài.
 - Lượt luyện với câu hỏi đã biên tập được lưu riêng. Câu đánh dấu được chuyển sang bản mới; dữ liệu bản cũ giữ nguyên trên thiết bị. Điểm cao nhất của đề cũ có nhãn “Trước biên tập”, không gộp với điểm bản mới.
 

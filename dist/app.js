@@ -16,10 +16,11 @@ const previousExamScores = Object.fromEntries(examForms.map(form=>{
  return [form.id,scores.length?Math.max(...scores):null];
 }));
 const hasPreviousWork=Object.keys(previous.answers||{}).length>0||Object.keys(previous.examAttempts||{}).length>0||Object.keys(previous.examHistory||{}).length>0;
-const state = {source:stored.source || previous.source || 'doc',chapter:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'?'exam':'quiz',search:'',index:stored.index || 0,answers:stored.answers || {},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:'all',examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed};
-function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,answers:state.answers,bookmarks:state.bookmarks,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice}));}
+const state = {source:stored.source || previous.source || 'doc',chapter:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'?'exam':'quiz',search:stored.search||'',index:stored.index || 0,answers:stored.answers || {},practiceAnswers:{...(stored.practiceAnswers ?? stored.answers ?? {})},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:['all','wrong','saved'].includes(stored.review)?stored.review:'all',reviewIds:Array.isArray(stored.reviewIds)?stored.reviewIds.filter(id=>byId[id]):null,examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed};
+function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,search:state.search,answers:state.answers,practiceAnswers:state.practiceAnswers,bookmarks:state.bookmarks,review:state.review,reviewIds:state.reviewIds,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice}));}
 function sourceQuestions(){return all.filter(q => q.source.kind === state.source);}
-function visibleQuestions(){return sourceQuestions().filter(q => (!state.chapter || q.chapter===state.chapter) && (!state.search || (q.question+' '+q.choices.join(' ')).toLocaleLowerCase('vi').includes(state.search.toLocaleLowerCase('vi'))) && (state.review==='all' || state.review==='wrong' && state.answers[q.id]!==undefined && state.answers[q.id]!==q.answer || state.review==='saved' && state.bookmarks.includes(q.id)));}
+function isWrong(q){return state.answers[q.id]!==undefined&&state.answers[q.id]!==q.answer;}
+function visibleQuestions(){return sourceQuestions().filter(q => (!state.chapter || q.chapter===state.chapter) && (!state.search || (q.question+' '+q.choices.join(' ')).toLocaleLowerCase('vi').includes(state.search.toLocaleLowerCase('vi'))) && (state.review==='all' || state.review==='wrong' && (state.reviewIds?state.reviewIds.includes(q.id):isWrong(q)) || state.review==='saved' && state.bookmarks.includes(q.id)));}
 function current(){const qs=visibleQuestions();state.index=Math.max(0,Math.min(state.index,qs.length-1));return qs[state.index];}
 function totals(kind){const qs=all.filter(q=>q.source.kind===kind);return {all:qs.length,answered:qs.filter(q=>state.answers[q.id]!==undefined).length};}
 function overall(){return Object.keys(state.answers).length;}
@@ -56,7 +57,17 @@ function restoreScroll(view,position,resetEvidence){
  }
  if(resetEvidence&&$('.evidence'))$('.evidence').scrollTop=0;
 }
-function answerPractice(choice){const q=current();if(!q||state.answers[q.id]!==undefined)return;state.answers[q.id]=choice;render({resetEvidence:true});}
+function answerPractice(choice){const q=current();if(!q||state.practiceAnswers[q.id]!==undefined)return;state.practiceAnswers[q.id]=choice;state.answers[q.id]=choice;render({resetEvidence:true});}
+function retryPractice(ids,{wrongOnly=false}={}){
+ if(!ids.length)return;
+ // Completion/latest result stays intact; only feedback for this practice pass
+ // is cleared. A fixed wrong-question set prevents a corrected item disappearing
+ // before its feedback can be read.
+ if(state.review==='wrong'&&!state.reviewIds)state.reviewIds=visibleQuestions().map(q=>q.id);
+ for(const id of ids)delete state.practiceAnswers[id];
+ if(wrongOnly){state.review='wrong';state.reviewIds=ids.slice();state.index=0;}
+ render({position:'question',resetEvidence:true});
+}
 function navigatePractice(index){state.index=index;render({position:'question',resetEvidence:true});}
 function navigateExam(index){const attempt=activeAttempt();if(!attempt)return;attempt.current=index;render({position:'question',resetEvidence:true});}
 function answerExam(choice){const q=examCurrent(),attempt=activeAttempt();if(!q||!attempt||attempt.submittedAt)return;if(timeLeft(activeForm(),attempt)===0){submitExam('time');return;}attempt.answers[q.id]=choice;render();}
@@ -91,15 +102,16 @@ function render({position='preserve',resetEvidence=false}={}){
 }
 function renderQuiz(q,qs){
  if(!q)return '<div class="empty">Không có câu hỏi phù hợp. Hãy đổi từ khóa hoặc bộ lọc.</div>';
- const selected=state.answers[q.id],answered=selected!==undefined;
- return `<article class="question-card"><div class="question-meta"><div class="meta-left"><span class="badge">Câu ${state.index+1} / ${qs.length}</span><span class="badge neutral">Chương ${q.chapter}</span><span class="badge neutral">${q.source.kind==='doc'?'Ghi chú':'Slide'}</span></div><button class="outline-button ${state.bookmarks.includes(q.id)?'saved':''}" data-bookmark="${q.id}" aria-label="${state.bookmarks.includes(q.id)?'Bỏ lưu':'Lưu'} câu hỏi">${state.bookmarks.includes(q.id)?'★ Đã lưu':'☆ Lưu câu'}</button></div>
+ const selected=state.practiceAnswers[q.id],answered=selected!==undefined,wrongCount=qs.filter(isWrong).length;
+ return `<article class="question-card"><div class="practice-tools"><span>${state.review==='wrong'?`Ôn câu sai · ${qs.filter(item=>state.answers[item.id]===item.answer).length}/${qs.length} đã sửa đúng`:'Lượt luyện tập'}</span><div><button class="outline-button" data-practice-retry="wrong" ${wrongCount?'':'disabled'}>Luyện lại câu sai (${wrongCount})</button><button class="outline-button" data-practice-retry="visible">Làm lại nhóm này</button></div></div>
+ <div class="question-meta"><div class="meta-left"><span class="badge">Câu ${state.index+1} / ${qs.length}</span><span class="badge neutral">Chương ${q.chapter}</span><span class="badge neutral">${q.source.kind==='doc'?'Ghi chú':'Slide'}</span></div><button class="outline-button ${state.bookmarks.includes(q.id)?'saved':''}" data-bookmark="${q.id}" aria-label="${state.bookmarks.includes(q.id)?'Bỏ lưu':'Lưu'} câu hỏi">${state.bookmarks.includes(q.id)?'★ Đã lưu':'☆ Lưu câu'}</button></div>
   <h2 class="question-title">${escapeHtml(q.question)}</h2><div class="options">${q.choices.map((choice,i)=>`<button class="option ${answered?(i===q.answer?'correct':i===selected?'wrong':'dim'):''}" data-answer="${i}" ${answered?'disabled':''}><span class="option-letter">${letters[i]}</span><span>${escapeHtml(choice)}</span></button>`).join('')}</div>
-  ${answered?`<div class="answer-box ${selected===q.answer?'':'error'}"><strong>${selected===q.answer?'Chính xác':'Chưa đúng'} · Đáp án ${letters[q.answer]}</strong>${escapeHtml(q.explanation)}</div>`:''}
-  <div class="question-footer"><button class="nav-button" data-nav="-1" ${state.index===0?'disabled':''}>← Câu trước</button><div class="progress-copy">${answered?'Đã trả lời':'Chọn một đáp án để mở phần đối chiếu'}<br>Dùng phím ← → để chuyển câu</div><button class="nav-button primary" data-nav="1" ${state.index===qs.length-1?'disabled':''}>Câu tiếp theo →</button></div>
- </article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.filter(x=>state.answers[x.id]!==undefined).length} / ${qs.length} đã làm</span></div><div class="number-grid">${qs.map((item,i)=>`<button data-index="${i}" class="${i===state.index?'current':''} ${state.answers[item.id]===undefined?'':state.answers[item.id]===item.answer?'done':'failed'}" aria-label="Câu ${i+1}">${i+1}</button>`).join('')}</div></section>`;
+  ${answered?`<div class="answer-box ${selected===q.answer?'':'error'}"><div class="answer-heading"><strong>${selected===q.answer?'Chính xác':'Chưa đúng'} · Đáp án ${letters[q.answer]}</strong><button class="outline-button" data-practice-retry="question">Làm lại câu này</button></div>${escapeHtml(q.explanation)}</div>`:''}
+  <div class="question-footer"><button class="nav-button" data-nav="-1" ${state.index===0?'disabled':''}>← Câu trước</button><div class="progress-copy">${answered?'Đã trả lời · Có thể làm lại':state.answers[q.id]!==undefined?'Đang làm lại · Tiến độ đã làm vẫn được giữ':'Chọn một đáp án để mở phần đối chiếu'}<br>Dùng phím ← → để chuyển câu</div><button class="nav-button primary" data-nav="1" ${state.index===qs.length-1?'disabled':''}>Câu tiếp theo →</button></div>
+ </article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.filter(x=>state.answers[x.id]!==undefined).length} / ${qs.length} đã làm · Lượt này ${qs.filter(x=>state.practiceAnswers[x.id]!==undefined).length}/${qs.length}</span></div><div class="number-grid">${qs.map((item,i)=>`<button data-index="${i}" class="${i===state.index?'current':''} ${state.answers[item.id]===undefined?'':state.answers[item.id]===item.answer?'done':'failed'}" aria-label="Câu ${i+1}">${i+1}</button>`).join('')}</div></section>`;
 }
 function renderEvidence(q,examReview=false){
- const answered=examReview||state.answers[q.id]!==undefined;
+ const answered=examReview||state.practiceAnswers[q.id]!==undefined;
  return `<span class="evidence-label">${escapeHtml(q.source.label)}</span>${answered?`<div class="evidence-card focused" tabindex="-1" id="evidence-content">${escapeHtml(evidenceText(q))}</div>`:'<div class="evidence-placeholder">Chọn đáp án để mở đoạn kiến thức tương ứng. Đáp án và nguồn sẽ hiện cùng lúc.</div>'}
  ${q.source.kind==='doc'? `<a class="source-link" href="${escapeHtml(q.source.url)}" target="_blank" rel="noopener noreferrer">Mở Google Docs ↗</a>` : `<div class="source-caption">Tệp gốc: ${escapeHtml(q.source.file)}, trang ${q.source.page}. Toàn bộ văn bản slide nằm trong mục Đọc học liệu.</div>`}
  ${answered?'<p class="source-caption">Phần này được trích từ tài liệu bạn cung cấp để kiểm tra lại cách diễn đạt của câu hỏi.</p>':''}`;
@@ -137,9 +149,10 @@ function bind(){
  document.querySelectorAll('[data-source]').forEach(el=>el.onclick=()=>{state.source=el.dataset.source;state.mode='quiz';state.chapter=0;state.index=0;state.search='';state.review='all';render({position:'question',resetEvidence:true});});
  document.querySelectorAll('[data-chapter]').forEach(el=>el.onclick=()=>{state.mode='quiz';state.chapter=Number(el.dataset.chapter);state.index=0;render({position:'question',resetEvidence:true});});
  document.querySelectorAll('[data-mode]').forEach(el=>el.onclick=()=>{state.mode=el.dataset.mode;state.confirmSubmit=false;render({position:state.mode==='quiz'?'question':'top',resetEvidence:true});});
- document.querySelectorAll('[data-review]').forEach(el=>el.onclick=()=>{state.review=el.dataset.review;state.index=0;render({position:'question',resetEvidence:true});});
+ document.querySelectorAll('[data-review]').forEach(el=>el.onclick=()=>{state.review=el.dataset.review;state.reviewIds=state.review==='wrong'?all.filter(isWrong).map(q=>q.id):null;state.index=0;render({position:'question',resetEvidence:true});});
  const search=$('.search'); if(search)search.oninput=e=>{const pos=e.target.selectionStart;state.mode='quiz';state.search=e.target.value;state.index=0;render({position:'question',resetEvidence:true});const fresh=$('.search');fresh.focus({preventScroll:true});fresh.setSelectionRange(pos,pos);};
  document.querySelectorAll('[data-answer]').forEach(el=>el.onclick=()=>answerPractice(Number(el.dataset.answer)));
+ document.querySelectorAll('[data-practice-retry]').forEach(el=>el.onclick=()=>{const kind=el.dataset.practiceRetry,qs=visibleQuestions();if(kind==='question'){const q=current();if(q)retryPractice([q.id]);}else if(kind==='wrong')retryPractice(qs.filter(isWrong).map(q=>q.id),{wrongOnly:true});else{state.index=0;retryPractice(qs.map(q=>q.id));}});
  document.querySelectorAll('[data-nav]').forEach(el=>el.onclick=()=>navigatePractice(state.index+Number(el.dataset.nav)));
  document.querySelectorAll('[data-index]').forEach(el=>el.onclick=()=>navigatePractice(Number(el.dataset.index)));
  document.querySelectorAll('[data-bookmark]').forEach(el=>el.onclick=()=>{const id=el.dataset.bookmark;state.bookmarks=state.bookmarks.includes(id)?state.bookmarks.filter(x=>x!==id):[...state.bookmarks,id];render();});

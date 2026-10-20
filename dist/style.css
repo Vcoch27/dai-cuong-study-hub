@@ -20,3 +20,4 @@
 .main{overflow-anchor:none}
 .exam-top{position:sticky;top:0;z-index:2;background:#f5f6f8;padding:10px 0}
 @media(max-width:860px){.main{overflow:visible}}
+.practice-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;font-size:11px;color:#708095}.practice-tools>div{display:flex;gap:8px;flex-wrap:wrap}.outline-button:disabled{opacity:.45;cursor:default}.answer-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}.answer-heading strong{margin:0}.answer-heading button{flex-shrink:0}@media(max-width:720px){.answer-heading{align-items:flex-start;flex-wrap:wrap}.grid-heading{flex-wrap:wrap;gap:6px}}
