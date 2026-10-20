@@ -17,3 +17,6 @@
 .review-notice p{margin:6px 0 0;font-size:13px;line-height:1.6;color:#5b6571}
 .review-notice button{flex-shrink:0}
 .legacy-score{display:block;margin-top:6px;font-size:11px;color:#687681}
+.main{overflow-anchor:none}
+.exam-top{position:sticky;top:0;z-index:2;background:#f5f6f8;padding:10px 0}
+@media(max-width:860px){.main{overflow:visible}}
