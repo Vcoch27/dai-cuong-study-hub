@@ -57,4 +57,25 @@ Một phần tử của `examForms` gồm `id` (bắt đầu `hcm-`), `title`, `
 `durationSeconds: 900` và `questionIds` (30 ID không trùng nhau).
 
 Môn HCM dùng khóa lưu riêng `dai-cuong-hcm-v1`; CNXHKH giữ nguyên khóa cũ.
-Hiện hai danh sách nguồn/câu hỏi đều trống theo yêu cầu chờ văn bản mới.
+## Nội dung đã xuất bản
+
+- Nguồn: `source.md`, bản văn bản người học cung cấp ngày 22/10/2026.
+- `content.json`: đủ 62 trang văn bản (8 trang chương 1, 54 trang chương 2).
+- `authored_questions.txt`: 120 câu biên soạn, 30 câu chương 1 và 90 câu chương 2.
+- `questions.json`: lựa chọn đã trộn, ID và bốn đề cố định, mỗi đề 30 câu/900 giây.
+- 120 câu không lặp ID giữa bốn đề. Câu cùng trang có thể kiểm tra các góc kiến thức khác nhau.
+- Phần đọc giữ cả các trang minh họa. Các chi tiết cần tránh và phạm vi kiểm tra nằm trong `editorial-notes.md`.
+
+Sau khi sửa nội dung biên soạn, chạy:
+
+```powershell
+python compile_hcm_bank.py
+python build_hcm_data.py
+python audit_hcm_data.py
+node --experimental-vm-modules tests/progress-smoke.mjs
+```
+
+Trình biên dịch giữ thứ tự lựa chọn của câu có cùng ID và cùng tập lựa chọn,
+đồng thời giữ đề đã tồn tại. Không chèn/đảo dòng cũ trong tệp biên soạn:
+ID hiện được cấp theo thứ tự trong từng chương. Khi mở rộng đợt sau, cần cấp ID
+mới rõ ràng và thêm đề riêng, tránh thay đổi các đề đang có người làm.

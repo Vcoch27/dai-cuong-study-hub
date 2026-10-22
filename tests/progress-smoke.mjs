@@ -182,9 +182,10 @@ assert.equal(slidePractice.document.querySelectorAll('[data-slide-open]').length
 console.log('PASS: progress, exams, scrolling, retries, image visibility, source mapping, viewer navigation/zoom and all 125 reader slides');
 
 const hcm=JSON.parse(await fs.readFile(new URL('../dist/hcm-data.json',import.meta.url),'utf8'));
+const emptyHcm={...hcm,questions:[],examForms:[],studySections:[]};
 const existingKey=`dai-cuong-cnxh-${raw.questionRevision}`;
 const existingWork=JSON.stringify({answers:{'doc-001':0},bookmarks:['doc-001']});
-const hcmPage=await boot({[oldKey]:legacyJSON,[existingKey]:existingWork},{course:'hcm',data:hcm});
+const hcmPage=await boot({[oldKey]:legacyJSON,[existingKey]:existingWork},{course:'hcm',data:emptyHcm});
 assert.equal(hcmPage.api.storageKey,'dai-cuong-hcm-v1');
 assert.equal(hcmPage.memory.get(existingKey),existingWork,'Opening HCM preserves current CNXH progress');
 assert.equal(hcmPage.memory.get(oldKey),legacyJSON,'HCM cannot migrate legacy CNXH state');
@@ -202,7 +203,7 @@ assert(!hcmPage.html.includes('data-exam-start'));
 
 // Synthetic fixture, never published: the same interface must accept text-only
 // questions and source sections when the user supplies the actual material.
-const future=structuredClone(hcm);
+const future=structuredClone(emptyHcm);
 future.studySections=[{id:'fixture-section',chapter:1,title:'Mục kiểm thử',text:'Nội dung gốc <fixture> & đối chiếu.'}];
 future.questions=[{id:'hcm-fixture',chapter:1,question:'Câu hỏi kiểm thử?',choices:['A','B','C','D'],answer:2,explanation:'Giải thích kiểm thử.',source:{kind:'text',sectionId:'fixture-section',label:'Chương 1 · Mục kiểm thử',evidence:future.studySections[0].text}}];
 const futurePage=await boot({[existingKey]:existingWork},{course:'hcm',data:future});
@@ -217,3 +218,40 @@ futurePage.click('[data-mode]','reader');
 assert(futurePage.html.includes('Nội dung gốc &lt;fixture&gt; &amp; đối chiếu.'));
 assert.equal(futurePage.memory.get(existingKey),existingWork);
 console.log('PASS: HCM empty states, chapters, course routes, isolated progress and future text-only questions/reader/retries');
+
+const liveHcm=await boot({[existingKey]:existingWork},{course:'hcm',data:hcm});
+assert.equal(liveHcm.api.visibleQuestions().length,120);
+assert.equal(liveHcm.api.current().chapter,1);
+assert(!liveHcm.html.includes('Chờ nội dung'));
+liveHcm.click('[data-chapter]','2');
+assert.equal(liveHcm.api.visibleQuestions().length,90);
+const target=liveHcm.api.current();
+assert(!liveHcm.html.includes('evidence-card focused'));
+liveHcm.click('[data-answer]',String((target.answer+1)%4));
+assert(liveHcm.html.includes(target.explanation.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')));
+liveHcm.click('[data-review]','wrong');
+liveHcm.click('[data-practice-retry]','wrong');
+assert.equal(liveHcm.api.current().id,target.id);
+assert(!liveHcm.html.includes('evidence-card focused'));
+liveHcm.click('[data-answer]',String(target.answer));
+assert.equal(liveHcm.api.state.answers[target.id],target.answer);
+liveHcm.click('[data-mode]','reader');
+assert.equal([...liveHcm.html.matchAll(/class="reader-item"/g)].length,54,'Chapter 2 reader includes all supplied pages');
+liveHcm.click('[data-chapter]','0');
+liveHcm.click('[data-mode]','reader');
+assert.equal([...liveHcm.html.matchAll(/class="reader-item"/g)].length,62,'Reader preserves all supplied text pages');
+liveHcm.click('[data-mode]','exam');
+assert.equal(liveHcm.document.querySelectorAll('[data-exam-start]').length,4);
+const hcmForm=hcm.examForms[0];
+liveHcm.click('[data-exam-start]',hcmForm.id);
+assert(!liveHcm.html.includes('evidence-card focused'),'Unsubmitted HCM exam keeps source hidden');
+const hcmById=Object.fromEntries(hcm.questions.map(q=>[q.id,q]));
+for(let index=0;index<30;index++){
+ liveHcm.click('[data-exam-index]',String(index));
+ liveHcm.click('[data-exam-choice]',String(hcmById[hcmForm.questionIds[index]].answer));
+}
+liveHcm.click('[data-exam-submit]');liveHcm.click('[data-exam-confirm]');
+assert(liveHcm.html.includes('30/30 câu đúng'));
+assert(liveHcm.html.includes('evidence-card focused'),'Submitted HCM exam reveals its text source');
+assert.equal(liveHcm.memory.get(existingKey),existingWork,'Practice and exams do not alter CNXH progress');
+console.log('PASS: actual HCM bank, chapter filtering, source reveal, wrong-answer retry, all 62 source pages and 30-question grading');

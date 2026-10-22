@@ -28,7 +28,7 @@ def build():
         label = f"Chương {section['chapter']} · {section['title']}"
         if section.get('page'):
             label += f" · Trang {section['page']}"
-        questions.append({key: item[key] for key in ('id', 'question', 'choices', 'answer', 'explanation')} | {
+        questions.append({key: item[key] for key in ('id', 'question', 'choices', 'answer', 'explanation', 'type', 'difficulty') if key in item} | {
             'chapter': section['chapter'],
             'source': {'kind': 'text', 'sectionId': section['id'], 'label': label, 'evidence': section['text']},
         })

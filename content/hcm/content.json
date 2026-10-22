@@ -1,8 +1,463 @@
 {
-  "course": {"id": "hcm", "name": "Tư tưởng Hồ Chí Minh"},
+  "course": {
+    "id": "hcm",
+    "name": "Tư tưởng Hồ Chí Minh"
+  },
   "chapters": [
-    {"id": 1, "title": "Khái niệm, đối tượng, phương pháp nghiên cứu và ý nghĩa học tập", "topics": ["Khái niệm tư tưởng Hồ Chí Minh", "Đối tượng nghiên cứu", "Phương pháp nghiên cứu", "Ý nghĩa học tập"]},
-    {"id": 2, "title": "Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh", "topics": ["Cơ sở hình thành", "Quá trình hình thành và phát triển", "Giá trị tư tưởng Hồ Chí Minh"]}
+    {
+      "id": 1,
+      "title": "Khái niệm, đối tượng, phương pháp nghiên cứu và ý nghĩa học tập",
+      "topics": [
+        "Khái niệm tư tưởng Hồ Chí Minh",
+        "Đối tượng nghiên cứu",
+        "Phương pháp nghiên cứu",
+        "Ý nghĩa học tập"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh",
+      "topics": [
+        "Cơ sở hình thành",
+        "Quá trình hình thành và phát triển",
+        "Giá trị tư tưởng Hồ Chí Minh"
+      ]
+    }
   ],
-  "sections": []
+  "sections": [
+    {
+      "id": "hcm-c1-p01",
+      "chapter": 1,
+      "page": 1,
+      "title": "CHƯƠNG 1. KHÁI NIỆM, ĐỐI TƯỢNG, PHƯƠNG PHÁP NGHIÊN CỨU VÀ Ý NGHĨA HỌC TẬP MÔN TƯ TƯỞNG HỒ CHÍ MINH",
+      "text": "CHƯƠNG 1. KHÁI NIỆM, ĐỐI TƯỢNG, PHƯƠNG PHÁP NGHIÊN CỨU VÀ Ý NGHĨA HỌC TẬP MÔN TƯ TƯỞNG HỒ CHÍ MINH\n\nSlide mở đầu của Chương 1 – Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng."
+    },
+    {
+      "id": "hcm-c1-p02",
+      "chapter": 1,
+      "page": 2,
+      "title": "1.1. Khái niệm Tư tưởng Hồ Chí Minh",
+      "text": "1.1. Khái niệm Tư tưởng Hồ Chí Minh\n\n“Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam, từ cách mạng dân tộc dân chủ nhân dân đến cách mạng xã hội chủ nghĩa; là kết quả của sự vận dụng sáng tạo và phát triển chủ nghĩa Mác – Lênin vào điều kiện cụ thể nước ta, đồng thời là sự kết tinh tinh hoa dân tộc và trí tuệ thời đại nhằm giải phóng dân tộc, giải phóng giai cấp, giải phóng con người”.\n\nMinh họa: Hồ Chí Minh viết tài liệu; hình “Lời Bác dặn trước lúc đi xa”."
+    },
+    {
+      "id": "hcm-c1-p03",
+      "chapter": 1,
+      "page": 3,
+      "title": "1.2. Đối tượng nghiên cứu môn học Tư tưởng Hồ Chí Minh",
+      "text": "1.2. Đối tượng nghiên cứu môn học Tư tưởng Hồ Chí Minh\n\nĐối tượng nghiên cứu:\n\n- Toàn bộ quan điểm, lý luận trong di sản Hồ Chí Minh.\n- Quá trình vận động, hiện thực hóa các quan điểm, lý luận đó trong cách mạng Việt Nam (CMVN).\n\nCác nội dung nghiên cứu được liệt kê trên slide:\n\n1. Cơ sở, quá trình hình thành và phát triển Tư tưởng Hồ Chí Minh.\n2. Tư tưởng Hồ Chí Minh về độc lập dân tộc và chủ nghĩa xã hội.\n3. Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam và nhà nước của nhân dân, do nhân dân, vì nhân dân.\n4. Tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc và đoàn kết quốc tế.\n5. Tư tưởng Hồ Chí Minh về văn hoá, con người và đạo đức.\n\nMinh họa: hình kỷ niệm 130 năm ngày sinh Hồ Chí Minh (19/5/1890–19/5/2020)."
+    },
+    {
+      "id": "hcm-c1-p04",
+      "chapter": 1,
+      "page": 4,
+      "title": "1.3. Phương pháp nghiên cứu",
+      "text": "1.3. Phương pháp nghiên cứu\n\n1.3.1. Phương pháp luận của việc nghiên cứu Tư tưởng Hồ Chí Minh\n\nSơ đồ “Phương pháp luận” gồm năm yêu cầu:\n\n1. Thống nhất tính đảng và tính khoa học.\n2. Thống nhất giữa lý luận và thực tiễn.\n3. Quan điểm lịch sử cụ thể.\n4. Quan điểm toàn diện và hệ thống.\n5. Quan điểm kế thừa và phát triển."
+    },
+    {
+      "id": "hcm-c1-p05",
+      "chapter": 1,
+      "page": 5,
+      "title": "1.3.1. Một số phương pháp cụ thể",
+      "text": "1.3.1. Một số phương pháp cụ thể\n\n1. Phương pháp logic, phương pháp lịch sử và sự kết hợp hai phương pháp này.\n2. Phương pháp phân tích văn bản, kết hợp với nghiên cứu hoạt động thực tiễn của Hồ Chí Minh (HCM).\n3. Phương pháp chuyên ngành, liên ngành.\n\nLưu ý đối chiếu: slide gốc tiếp tục đánh số tiểu mục là “1.3.1”, trùng với slide trước; nội dung và cách đánh số được giữ theo nguồn."
+    },
+    {
+      "id": "hcm-c1-p06",
+      "chapter": 1,
+      "page": 6,
+      "title": "1.4. Ý nghĩa của việc học tập môn Tư tưởng Hồ Chí Minh",
+      "text": "1.4. Ý nghĩa của việc học tập môn Tư tưởng Hồ Chí Minh\n\n1.4.1. Góp phần nâng cao năng lực tư duy lý luận\n\n- Bồi dưỡng, củng cố lập trường, quan điểm cách mạng.\n- Kiên định mục tiêu độc lập dân tộc gắn liền chủ nghĩa xã hội (CNXH).\n- Tích cực, chủ động đấu tranh phê phán những quan điểm sai lệch.\n- Vận dụng Tư tưởng Hồ Chí Minh giải quyết những vấn đề đặt ra trong cuộc sống.\n\nMinh họa: hoạt động của thanh niên, sinh viên, các sự kiện học tập và rèn luyện."
+    },
+    {
+      "id": "hcm-c1-p07",
+      "chapter": 1,
+      "page": 7,
+      "title": "1.4.2. Giáo dục và thực hành đạo đức cách mạng, củng cố niềm tin khoa học, gắn liền với trau dồi tình cảm cách mạng, bồi dưỡng lòng yêu nước",
+      "text": "1.4.2. Giáo dục và thực hành đạo đức cách mạng, củng cố niềm tin khoa học, gắn liền với trau dồi tình cảm cách mạng, bồi dưỡng lòng yêu nước\n\n- Yêu cái tốt, cái thiện, ghét cái xấu, cái ác.\n- Nâng cao lòng tự hào về Bác Hồ, về Đảng Cộng sản (ĐCS), về Tổ quốc Việt Nam.\n- Tự nguyện “Sống, chiến đấu, lao động và học tập theo gương Bác Hồ vĩ đại”.\n- Vận dụng vào cuộc sống, tu dưỡng, rèn luyện bản thân, hoàn thành tốt chức trách của mình, đóng góp thiết thực cho sự nghiệp cách mạng."
+    },
+    {
+      "id": "hcm-c1-p08",
+      "chapter": 1,
+      "page": 8,
+      "title": "1.4.2. Xây dựng, rèn luyện, phương pháp, phong cách công tác",
+      "text": "1.4.2. Xây dựng, rèn luyện, phương pháp, phong cách công tác\n\nSơ đồ trên slide liệt kê năm phương diện phong cách:\n\n1. Phong cách tư duy.\n2. Phong cách diễn đạt.\n3. Phong cách làm việc.\n4. Phong cách ứng xử.\n5. Phong cách sinh hoạt.\n\nCác phương diện này được liên hệ với phương châm:\n\nDĩ bất biến, ứng vạn biến.\n\nLưu ý đối chiếu: slide gốc đánh số “1.4.2” lần thứ hai."
+    },
+    {
+      "id": "hcm-c2-p01",
+      "chapter": 2,
+      "page": 1,
+      "title": "CHƯƠNG 2. CƠ SỞ, QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN TƯ TƯỞNG HỒ CHÍ MINH",
+      "text": "CHƯƠNG 2. CƠ SỞ, QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN TƯ TƯỞNG HỒ CHÍ MINH\n\nSlide mở đầu Chương 2 – VKU. Hình minh họa Hồ Chí Minh làm việc và bộ sách/tài liệu về tư tưởng Hồ Chí Minh."
+    },
+    {
+      "id": "hcm-c2-p02",
+      "chapter": 2,
+      "page": 2,
+      "title": "2.1. Cơ sở hình thành tư tưởng Hồ Chí Minh",
+      "text": "2.1. Cơ sở hình thành tư tưởng Hồ Chí Minh\n\n2.1.1. Cơ sở thực tiễn\n\na. Thực tiễn Việt Nam cuối thế kỷ XIX, đầu thế kỷ XX\n\n- Chính quyền triều Nguyễn đã khuất phục thực dân Pháp, thừa nhận nền bảo hộ.\n- Phong trào “Cần Vương” thất bại. Hệ tư tưởng phong kiến lỗi thời trước nhiệm vụ lịch sử.\n- Cuộc khai thác của thực dân Pháp làm cho xã hội Việt Nam có sự phân hóa, xuất hiện giai cấp công nhân, tiểu tư sản, tư sản, tạo tiền đề cho phong trào yêu nước đầu thế kỷ XX.\n- Phong trào yêu nước theo xu hướng dân chủ tư sản.\n\nMinh họa: tình cảnh Việt Nam dưới chế độ thực dân, các hình ảnh người lao động."
+    },
+    {
+      "id": "hcm-c2-p03",
+      "chapter": 2,
+      "page": 3,
+      "title": "Dẫn chứng lịch sử bằng hình ảnh",
+      "text": "Dẫn chứng lịch sử bằng hình ảnh:\n\n- Nhà Nguyễn ký với Pháp Hiệp ước Patơ-nốt năm 1884.\n- Việt Nam trở thành thuộc địa của Pháp (sơ đồ/bản đồ minh họa).\n- Quân Pháp tấn công vào Thuận An – Huế, năm 1883.\n- Quân Pháp tấn công vào Đà Nẵng, năm 1885 (ghi theo chú thích trên slide gốc).\n\nCó ảnh tư liệu hiệp ước, bản đồ lãnh thổ và các trận tấn công."
+    },
+    {
+      "id": "hcm-c2-p04",
+      "chapter": 2,
+      "page": 4,
+      "title": "Xã hội Việt Nam cuối thế kỷ XIX, đầu thế kỷ XX – sơ đồ nội dung",
+      "text": "Xã hội Việt Nam cuối thế kỷ XIX, đầu thế kỷ XX – sơ đồ nội dung:\n\n- Xã hội: thuộc địa nửa phong kiến.\n- Mâu thuẫn dân tộc: toàn thể dân tộc Việt Nam ↔ thực dân Pháp xâm lược.\n- Mâu thuẫn giai cấp: nông dân Việt Nam ↔ địa chủ phong kiến.\n- Những mâu thuẫn trên dẫn tới các phong trào yêu nước.\n- Các phong trào yêu nước lâm vào khủng hoảng đường lối cứu nước.\n- Trong bối cảnh đó, Hồ Chí Minh ra đi tìm đường cứu nước.\n\nMinh họa: nhà tù Hỏa Lò – nơi giam giữ nhiều người Việt Nam yêu nước; những hình ảnh đời sống dưới chế độ thuộc địa."
+    },
+    {
+      "id": "hcm-c2-p05",
+      "chapter": 2,
+      "page": 5,
+      "title": "b. Thực tiễn thế giới cuối thế kỷ XIX, đầu thế kỷ XX",
+      "text": "b. Thực tiễn thế giới cuối thế kỷ XIX, đầu thế kỷ XX\n\n- Chủ nghĩa tư bản bước sang giai đoạn độc quyền.\n- Chủ nghĩa đế quốc trở thành kẻ thù chung của các dân tộc thuộc địa.\n- Các nước thuộc địa châu Á, châu Phi, khu vực Mỹ Latinh tồn tại cả hai: sự xâm lược, thống trị của thực dân và sự bóc lột phong kiến.\n- Cao trào Cách mạng tháng Mười Nga lật đổ nhà nước tư sản, thiết lập chính quyền Xô viết, “thức tỉnh các dân tộc châu Á”, mở ra trước mắt họ thời đại cách mạng chống đế quốc, thời đại giải phóng dân tộc (GPDT).\n\nMinh họa: Cách mạng tháng Mười Nga – 1917."
+    },
+    {
+      "id": "hcm-c2-p06",
+      "chapter": 2,
+      "page": 6,
+      "title": "Nguyễn Ái Quốc và yếu tố thời đại",
+      "text": "Nguyễn Ái Quốc và yếu tố thời đại:\n\nNguyễn Ái Quốc ra đi tìm đường cứu nước, cứu dân vào lúc chủ nghĩa tư bản chuyển sang giai đoạn đế quốc chủ nghĩa, chúng đã xác lập được sự thống trị trên toàn thế giới. Vấn đề dân tộc đã trở thành vấn đề quốc tế lớn. Cách mạng giải phóng dân tộc đã trở thành một bộ phận của cách mạng vô sản thế giới.\n\nSơ đồ yếu tố thời đại → Tư tưởng Hồ Chí Minh:\n\n- Chủ nghĩa đế quốc → vấn đề dân tộc trở thành vấn đề quốc tế lớn.\n- Cách mạng giải phóng dân tộc → gắn với cách mạng vô sản thế giới.\n- Cách mạng tháng Mười Nga thắng lợi → thời đại quá độ lên chủ nghĩa xã hội (CNXH).\n- Các nhân tố thời đại trên có tác động đến sự hình thành Tư tưởng Hồ Chí Minh.\n\nHình tư liệu: chiến tranh và chiến hạm/tàu chiến."
+    },
+    {
+      "id": "hcm-c2-p07",
+      "chapter": 2,
+      "page": 7,
+      "title": "Ảnh hưởng của thắng lợi Cách mạng tháng Mười Nga",
+      "text": "Ảnh hưởng của thắng lợi Cách mạng tháng Mười Nga:\n\nThắng lợi của Cách mạng tháng Mười Nga năm 1917 đã giúp Nguyễn Ái Quốc – Hồ Chí Minh nhận ra chân lý của thời đại: Chỉ có chủ nghĩa xã hội, chủ nghĩa cộng sản mới giải phóng được cho các dân tộc bị áp bức và những người lao động trên thế giới khỏi ách nô lệ.\n\nMinh họa: Lênin, Nguyễn Ái Quốc và một số thành viên Quốc tế Cộng sản (QTCS)."
+    },
+    {
+      "id": "hcm-c2-p08",
+      "chapter": 2,
+      "page": 8,
+      "title": "2.1.2. Cơ sở lý luận",
+      "text": "2.1.2. Cơ sở lý luận\n\na. Giá trị truyền thống tốt đẹp của dân tộc\n\nLịch sử dựng nước và giữ nước lâu đời hình thành các truyền thống: yêu nước, kiên cường, bất khuất, tương ái, nhân nghĩa, thủy chung.\n\nTruyền thống yêu nước – bài “Nam quốc sơn hà” (Sông núi nước Nam):\n\nNguyên bản tiếng Hán in trên slide:\n\n南國山河  \n南國山河南帝居  \n截然定分在天書  \n如何逆虜來侵犯  \n汝等行看取敗虛\n\nPhiên âm Hán – Việt:\n\nNam quốc sơn hà  \nNam quốc sơn hà Nam đế cư,  \nTiệt nhiên định phận tại Thiên thư.  \nNhư hà nghịch lỗ lai xâm phạm,  \nNhữ đẳng hành khan thủ bại hư.\n\nBản dịch thơ trên slide:\n\nSông núi nước Nam  \nSông núi nước Nam, vua Nam ở,  \nRành rành định phận tại sách Trời.  \nCớ sao lũ giặc sang xâm phạm,  \nChúng bay sẽ bị đánh tơi bời.\n\n“Đem đại nghĩa để thắng hung tàn,  \nLấy chí nhân để thay cường bạo.”\n— Bình Ngô đại cáo – Nguyễn Trãi\n\nNội dung nhấn mạnh: CHỦ NGHĨA YÊU NƯỚC TRUYỀN THỐNG."
+    },
+    {
+      "id": "hcm-c2-p09",
+      "chapter": 2,
+      "page": 9,
+      "title": "Tinh thần đoàn kết, tương thân, tương ái, sống nhân nghĩa",
+      "text": "Tinh thần đoàn kết, tương thân, tương ái, sống nhân nghĩa\n\n“Nhiễu điều phủ lấy giá gương  \nNgười trong một nước phải thương nhau cùng.”\n\nHình minh họa: tinh thần đoàn kết trong lịch sử và Hồ Chí Minh với nhân dân."
+    },
+    {
+      "id": "hcm-c2-p10",
+      "chapter": 2,
+      "page": 10,
+      "title": "Những giá trị truyền thống trong gia đình Việt Nam",
+      "text": "Những giá trị truyền thống trong gia đình Việt Nam\n\nSlide minh họa bằng tranh/ảnh về chữ “Mẹ”, tình mẹ con, phong tục thờ cúng tổ tiên, lễ Tết và cảnh gia đình sum họp. Không có các gạch đầu dòng bổ sung trên slide."
+    },
+    {
+      "id": "hcm-c2-p11",
+      "chapter": 2,
+      "page": 11,
+      "title": "Nếp sống đạo lý trong truyền thống dân tộc",
+      "text": "Nếp sống đạo lý trong truyền thống dân tộc:\n\nSống có tình, có nghĩa, có thủy chung, có nhân, có đức, có trước, có sau, biết trung, biết hiếu…\n\nHình minh họa: tình cảm gia đình; sinh hoạt, lao động của nông dân; tranh dân gian."
+    },
+    {
+      "id": "hcm-c2-p12",
+      "chapter": 2,
+      "page": 12,
+      "title": "Giá trị về trí tuệ và văn hóa",
+      "text": "Giá trị về trí tuệ và văn hóa:\n\nTrí tuệ sáng tạo, quý trọng hiền tài, khiêm tốn, tiếp thu tinh hoa văn hóa nhân loại…\n\nHình minh họa: nền giáo dục truyền thống, thi cử, Văn Miếu/Khuê Văn Các và trường học."
+    },
+    {
+      "id": "hcm-c2-p13",
+      "chapter": 2,
+      "page": 13,
+      "title": "b. Tinh hoa văn hóa nhân loại",
+      "text": "b. Tinh hoa văn hóa nhân loại\n\n- Tinh hoa văn hóa phương Đông: tư tưởng triết học Nho giáo, Phật giáo.\n- Tư tưởng văn hóa phương Tây: tư tưởng dân chủ.\n- Chủ nghĩa Mác – Lênin.\n\nTrích dẫn trong slide:\n\n“Học thuyết của Khổng Tử có ưu điểm là sự tu dưỡng đạo đức cá nhân. Tôn giáo của Jêsu có ưu điểm của nó là lòng nhân ái cao cả. Chủ nghĩa Mác có ưu điểm là phương pháp làm việc biện chứng. Chủ nghĩa Tôn Dật Tiên có ưu điểm là chính sách của nó thích hợp với điều kiện nước ta. Khổng Tử, Jêsu, Mác, Tôn Dật Tiên chẳng có ưu điểm chung đó sao?\nHọ đều mưu cầu hạnh phúc cho loài người, mưu cầu hạnh phúc cho xã hội. Nếu hôm nay họ còn sống trên đời này, tôi tin rằng họ nhất định sống chung với nhau rất hoàn mỹ như những người bạn thân thiết. Tôi cố gắng làm một người học trò nhỏ của các vị ấy”.\n\nMinh họa: Hồ Chí Minh đọc/làm việc."
+    },
+    {
+      "id": "hcm-c2-p14",
+      "chapter": 2,
+      "page": 14,
+      "title": "Đạo Phật – những ý được nêu trong slide",
+      "text": "Đạo Phật – những ý được nêu trong slide:\n\n- Phật dạy: “Trên thế gian này điều duy nhất không thay đổi chính là sự thay đổi…”\n- Phật dạy: phải yêu thương nhau; mọi thù hận, khác biệt sẽ được yêu thương tràn đầy xóa đi tất cả.\n- Thế giới đại đồng.\n\nMinh họa: Đức Phật, tháp Phật giáo và hoa sen."
+    },
+    {
+      "id": "hcm-c2-p15",
+      "chapter": 2,
+      "page": 15,
+      "title": "Nho gia – Đức Khổng Tử (孔子)",
+      "text": "Nho gia – Đức Khổng Tử (孔子):\n\n- “Nhân chi sơ, tính bản thiện.”\n- Tranh thư pháp mang nhan đề “Bảy cách biết người”, với bảy dòng viết tay (ảnh chữ nhỏ/không đủ rõ để phiên chép tin cậy; giữ nguyên hình trong bộ ảnh slide đi kèm).\n\nHình minh họa: tranh thư pháp và phần chữ viết tay."
+    },
+    {
+      "id": "hcm-c2-p16",
+      "chapter": 2,
+      "page": 16,
+      "title": "Khổng Tử, đạo đức và luân lý",
+      "text": "Khổng Tử, đạo đức và luân lý:\n\n- Nói đến Khổng Tử trước hết là nói đến nhà đạo đức, nhà luân lý.\n- Hạt nhân cơ bản của đạo đức Khổng Tử là chữ Nhân và chữ Lễ.\n- Chữ nhân phương Đông nghiêng về trách nhiệm con người: NHÂN – LỄ – NGƯỜI QUÂN TỬ.\n- Đối với mình và đối với người: đối với mình phải trong sạch, không nghĩ và không làm điều xấu, điều ác, phải giữ đúng lễ.\n- Lễ là hình thức của nội dung nhân.\n\nCác câu trong Tam Tự Kinh được ghi trên slide:\n\n| Phiên âm | Chữ Hán | Giải thích ghi trên slide |\n|---|---|---|\n| Nhân chi sơ | 人之初 | Con người lúc nhỏ |\n| Tính bản thiện | 性本善 | Bản tính vốn thiện |\n| Tính tương cận | 性相近 | Tính gần giống nhau |\n| Tập tương viễn | 習相遠 | Do học tập nên khác nhau |\n| Cầu bất giáo | 苟不教 | Nếu không được dạy |\n| Tính nãi thiên | 性乃遷 | Tính sẽ thay đổi |\n| Giáo chi đạo | 教之道 | Đường lối giáo dục |\n| Quí dĩ chuyên | 貴以專 | Quí ở chỗ chuyên tâm |\n\nKết luận trên slide: “KẺ CÓ NHÂN CHÍNH LÀ NGƯỜI VẬY”."
+    },
+    {
+      "id": "hcm-c2-p17",
+      "chapter": 2,
+      "page": 17,
+      "title": "Quân tử (君子) – Nhân, Lễ, Nghĩa, Trí, Tín",
+      "text": "Quân tử (君子) – Nhân, Lễ, Nghĩa, Trí, Tín:\n\n- Nhân: Người với người đối xử với nhau trên cơ sở tình thương yêu.\n- Lễ: Việc thờ cúng, lễ bái và cả những quy định có tính chất pháp luật, những phong tục, tập quán và kỷ luật tinh thần của cá nhân.\n- Nghĩa: Chỉ làm và nên làm những việc nhằm duy trì đạo lý, lẽ phải.\n- Trí: Tri thức để suy xét, hành động. Một trong những điểm quan trọng của Trí là phải nắm được mệnh trời.\n- Tín: Việc làm nhất quán với lời nói, giữ lời.\n\nHình minh họa: các nhân vật lịch sử, võ tướng."
+    },
+    {
+      "id": "hcm-c2-p18",
+      "chapter": 2,
+      "page": 18,
+      "title": "9 tiêu chuẩn của người quân tử (THUYẾT CHÍNH DANH)",
+      "text": "9 tiêu chuẩn của người quân tử (THUYẾT CHÍNH DANH):\n\n1. Con mắt tinh anh để nhìn rõ vạn vật.\n2. Thính giác tinh tường để nghe rõ vạn vật.\n3. Sắc mặt luôn ôn hòa.\n4. Tướng mạo luôn được giữ cho khiêm cung (cẩn trọng, cung kính với người trên; thân ái, hòa đồng với người dưới).\n5. Lời nói luôn giữ bề trung thực.\n6. Hành động phải luôn cẩn trọng.\n7. Có điều nghi hoặc phải luôn hỏi han để làm cho rõ.\n8. Kiềm chế: khi nóng giận phải nghĩ đến hoạn nạn có thể xảy ra, không giận quá mất khôn.\n9. Thấy lợi phải luôn nghĩ đến nghĩa, không vì lợi mà quên nghĩa; có quyền lợi chính đáng phải biết nghĩ đến người khác (lộc bất tận hưởng).\n\nTư tưởng được nhấn mạnh: TU THÂN – TỀ GIA – TRỊ QUỐC – BÌNH THIÊN HẠ."
+    },
+    {
+      "id": "hcm-c2-p19",
+      "chapter": 2,
+      "page": 19,
+      "title": "Tinh hoa văn hóa, tư tưởng phương Tây (slide hình ảnh)",
+      "text": "Tinh hoa văn hóa, tư tưởng phương Tây (slide hình ảnh):\n\n- Chữ tiêu đề nổi bật: THOMAS MORE.\n- Hình minh họa các nhà tư tưởng phương Tây, sách triết học, cách mạng Pháp (tranh chiếm ngục Bastille), hình Chúa Giêsu và các tác phẩm tư tưởng.\n- Đây là slide chủ yếu bằng hình ảnh; hình đầy đủ được giữ trong bản slide đi kèm."
+    },
+    {
+      "id": "hcm-c2-p20",
+      "chapter": 2,
+      "page": 20,
+      "title": "c. Chủ nghĩa Mác – Lênin",
+      "text": "c. Chủ nghĩa Mác – Lênin\n\nTrích thơ “Người đi tìm hình của nước” – Chế Lan Viên:\n\nLuận cương đến Bác Hồ và người đã khóc  \nLệ Bác Hồ rơi trên chữ Lênin  \nBốn bức tường im nghe Bác lật từng trang sách gấp  \nTưởng bên ngoài đất nước đợi mong tin  \nBác reo lên một mình như nói cùng đất nước  \n“Cơm áo là đấy, hạnh phúc đây rồi”  \nHình của Đảng lồng trong hình của nước  \nPhút khóc đầu tiên là phút Bác Hồ cười.\n\nMinh họa: C. Mác, Ph. Ăngghen, V. I. Lênin và Hồ Chí Minh đọc tài liệu."
+    },
+    {
+      "id": "hcm-c2-p21",
+      "chapter": 2,
+      "page": 21,
+      "title": "Từ chủ nghĩa yêu nước đến chủ nghĩa Mác – Lênin",
+      "text": "Từ chủ nghĩa yêu nước đến chủ nghĩa Mác – Lênin:\n\n“Lúc bấy giờ, tôi ủng hộ CM T10 chỉ là theo cảm tính tự nhiên… Tôi kính yêu Lênin vì Lênin là một người yêu nước vĩ đại đã giải phóng đồng bào mình… Tôi tham gia Đảng Xã hội Pháp chẳng qua vì các ‘ông bà’ ấy đã tỏ đồng tình với tôi, với cuộc đấu tranh của các dân tộc bị áp bức. Còn như Đảng là gì, chủ nghĩa xã hội và chủ nghĩa cộng sản là gì, thì tôi chưa hiểu…”\n\nSơ đồ chủ nghĩa Mác – Lênin:\n\n- Hệ tư tưởng Mác – Lênin → Tính khoa học sâu sắc → Tính cách mạng triệt để.\n- Thể hiện ở thế giới quan khoa học – nhân sinh quan cách mạng và phương pháp luận: phép biện chứng duy vật.\n- Khái quát: CHỦ NGHĨA MÁC – LÊNIN."
+    },
+    {
+      "id": "hcm-c2-p22",
+      "chapter": 2,
+      "page": 22,
+      "title": "Hai trích dẫn về chủ nghĩa Mác – Lênin",
+      "text": "Hai trích dẫn về chủ nghĩa Mác – Lênin:\n\n“Chủ nghĩa Mác-Lênin đối với chúng ta, những người cách mạng và nhân dân Việt Nam không những là cái cẩm nang thần kỳ, không những là cái kim chỉ nam mà còn là mặt trời soi sáng cho chúng ta đi tới thắng lợi cuối cùng, đi tới chủ nghĩa xã hội và chủ nghĩa cộng sản”.\n— Hồ Chí Minh toàn tập, tập 10, tr. 128 (theo chú thích slide)\n\n“Hiểu chủ nghĩa Mác - Lênin là phải sống với nhau có tình có nghĩa. Nếu thuộc bao nhiêu sách mà sống không có tình có nghĩa thì sao gọi là hiểu chủ nghĩa Mác - Lênin được”.\n— Hồ Chí Minh toàn tập, tập 12, tr. 554 (theo chú thích slide)"
+    },
+    {
+      "id": "hcm-c2-p23",
+      "chapter": 2,
+      "page": 23,
+      "title": "2.1.3. Nhân tố chủ quan",
+      "text": "2.1.3. Nhân tố chủ quan\n\na. Phẩm chất Hồ Chí Minh\n\nBốn phẩm chất nêu trong sơ đồ:\n\n1. Sống có hoài bão, có lý tưởng.\n2. Tư duy độc lập, sáng tạo, nhạy bén.\n3. Tinh thần kiên cường, bất khuất.\n4. Trái tim nhân ái."
+    },
+    {
+      "id": "hcm-c2-p24",
+      "chapter": 2,
+      "page": 24,
+      "title": "Tinh thần vượt khó và lý tưởng của Hồ Chí Minh",
+      "text": "Tinh thần vượt khó và lý tưởng của Hồ Chí Minh:\n\nHình: bìa cuốn “Ngục trung nhật ký”.\n\nGạo đem vào giã bao đau đớn  \nGạo giã xong rồi trắng tựa bông  \nSống ở trên đời người cũng vậy  \nGian nan rèn luyện mới thành công.\n\nLời nói trên ảnh minh họa (được in trong slide):\n\n“Tôi chỉ có một sự ham muốn, ham muốn tột bậc, là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành.”\n— (Trả lời các nhà báo nước ngoài, 1-1946), chú thích trong ảnh của slide."
+    },
+    {
+      "id": "hcm-c2-p25",
+      "chapter": 2,
+      "page": 25,
+      "title": "Lòng nhân ái của Hồ Chí Minh",
+      "text": "Lòng nhân ái của Hồ Chí Minh:\n\n- Nhân hậu, hiền hòa, yêu thương từng cỏ cây, con vật và từ em thơ đến các cụ già…\n\n“Bác ơi tim Bác mênh mông thế.  \nÔm cả non sông mọi kiếp người!”\n— Tố Hữu\n\n“Ở đời và làm người là phải biết thương nước, thương dân, thương nhân loại bị khổ đau áp bức”.\n— Hồ Chí Minh"
+    },
+    {
+      "id": "hcm-c2-p26",
+      "chapter": 2,
+      "page": 26,
+      "title": "Phong cách bình dị của Hồ Chí Minh",
+      "text": "Phong cách bình dị của Hồ Chí Minh:\n\nBình dị, đời thường, dân dã, mộc mạc trong từng lời nói, cử chỉ, hành động… mà ai ai đã được gặp, được làm việc với Người không thể nào quên…\n\nHình minh họa: Hồ Chí Minh trong đời sống, làm việc và giao tiếp với nhân dân, thiếu nhi."
+    },
+    {
+      "id": "hcm-c2-p27",
+      "chapter": 2,
+      "page": 27,
+      "title": "a. Tài năng hoạt động, tổng kết thực tiễn, phát triển lý luận",
+      "text": "a. Tài năng hoạt động, tổng kết thực tiễn, phát triển lý luận\n\nQuá trình hoạt động:\n\n- 60 năm làm cách mạng.\n- 30 năm hoạt động ở nước ngoài.\n- Đã đến gần 30 quốc gia và vùng lãnh thổ.\n- Biết rất nhiều thứ tiếng nước ngoài.\n- Làm nhiều nghề…\n\nNhững đóng góp/hoạt động được nêu:\n\n- Tham gia sáng lập Đảng Cộng sản Pháp.\n- Thành lập Đảng Cộng sản Việt Nam.\n- Sáng lập Mặt trận dân tộc thống nhất.\n- Sáng lập Quân đội nhân dân Việt Nam.\n- Khai sinh nhà nước nhân dân kiểu mới ở Việt Nam…\n\nLưu ý: nguồn ghi tiếp tiểu mục là “a”; giữ theo slide gốc."
+    },
+    {
+      "id": "hcm-c2-p28",
+      "chapter": 2,
+      "page": 28,
+      "title": "2.2. Quá trình hình thành và phát triển Tư tưởng Hồ Chí Minh",
+      "text": "2.2. Quá trình hình thành và phát triển Tư tưởng Hồ Chí Minh\n\nSơ đồ tiến trình tư tưởng, lý luận theo thời gian:\n\n| Mốc thời gian trên slide | Giai đoạn hình thành/phát triển |\n|---|---|\n| Trước 5/6/1911 | Hình thành tư tưởng yêu nước và chí hướng cứu nước. |\n| 6/6/1911 – 30/12/1920 | Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản (CMVS). |\n| 31/12/1920 – 3/2/1930 | Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam. |\n| 4/2/1930 – 28/1/1941 | Vượt qua sóng gió, thử thách; kiên trì giữ vững đường lối, phương pháp cách mạng Việt Nam đúng đắn, sáng tạo. |\n| 29/1/1941 – 2/9/1969 | Tư tưởng Hồ Chí Minh tiếp tục phát triển, hoàn thiện, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta. |\n\nTrên đồ thị, tiến trình phát triển được biểu diễn bằng đường chéo tăng dần theo thời gian. Các mốc được chép theo sơ đồ/tiêu đề slide."
+    },
+    {
+      "id": "hcm-c2-p29",
+      "chapter": 2,
+      "page": 29,
+      "title": "2.2.1. Thời kỳ trước ngày 5-6-1911: Hình thành tư tưởng yêu nước và có chí hướng tìm con đường cứu nước mới",
+      "text": "2.2.1. Thời kỳ trước ngày 5-6-1911: Hình thành tư tưởng yêu nước và có chí hướng tìm con đường cứu nước mới\n\n- Đây là thời kỳ đầu tiên, ngắn nhưng quan trọng.\n- Những hành vi đầu tiên: tham gia chống thuế ở Huế năm 1908, dạy học ở trường Dục Thanh (Phan Thiết)…\n- Bước đầu phê phán con đường cứu nước không thành của Phan Bội Châu, Phan Chu Trinh, Hoàng Hoa Thám.\n\nCác yêu cầu đặt ra được nêu trên slide:\n\n- Phải tìm hiểu cho rõ bản chất của những từ Tự do, Bình đẳng, Bác ái của Cộng hòa Pháp.\n- Phải ra đi nước ngoài, xem nước Pháp và các nước khác.\n- Xem xét họ làm thế nào và trở về giúp đồng bào mình.\n\nMinh họa: Nguyễn Tất Thành thời trẻ."
+    },
+    {
+      "id": "hcm-c2-p30",
+      "chapter": 2,
+      "page": 30,
+      "title": "2.2.2. Thời kỳ từ giữa năm 6-6-1911 đến 30-12-1920: Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+      "text": "2.2.2. Thời kỳ từ giữa năm 6-6-1911 đến 30-12-1920: Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản\n\n- Xuất dương sang Pháp tìm con đường cứu nước.\n- Thay đổi hành trình, đến nhiều nước (những nước tư bản lớn Mỹ, Anh).\n- Đồng cảm với các dân tộc cùng cảnh ngộ, hình thành tình cảm quốc tế.\n- Tìm thấy con đường cứu nước đúng đắn qua “Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa” của Lênin…\n\nHình minh họa: con tàu “Latuso Torevin” (theo chú thích phiên âm trên slide)."
+    },
+    {
+      "id": "hcm-c2-p31",
+      "chapter": 2,
+      "page": 31,
+      "title": "Những sự kiện, bước ngoặt năm 1919–1920",
+      "text": "Những sự kiện, bước ngoặt năm 1919–1920:\n\n- 1919: Nguyễn Ái Quốc gửi bản yêu sách của nhân dân An Nam tới Hội nghị Vécxây, đòi Chính phủ Pháp thừa nhận các quyền tự do, dân chủ và bình đẳng của nhân dân Việt Nam.\n- 16–17/7/1920: “Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa” của Lênin đăng trên báo L’Humanité; đã giúp Nguyễn Ái Quốc giải đáp về con đường giành độc lập cho dân tộc, tự do cho đồng bào.\n- 12/1920: Tán thành Quốc tế III, tham gia thành lập Đảng Cộng sản Pháp.\n\nChuyển biến trong tư tưởng: từ chủ nghĩa yêu nước đến chủ nghĩa Lênin, từ giác ngộ dân tộc đến giác ngộ giai cấp, từ người yêu nước thành người cộng sản.\n\nMinh họa: Nguyễn Ái Quốc, một số thành viên Quốc tế Cộng sản."
+    },
+    {
+      "id": "hcm-c2-p32",
+      "chapter": 2,
+      "page": 32,
+      "title": "2.2.3. Thời kỳ từ 31-12-1920 đến 3-2-1930: Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam",
+      "text": "2.2.3. Thời kỳ từ 31-12-1920 đến 3-2-1930: Hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam\n\nCác chặng hoạt động:\n\n- 1921–1923: Pháp.\n- 1923–1924: Liên Xô.\n- 1924–1927: Trung Quốc.\n- 1928–1929: Thái Lan.\n\nCác tác phẩm được nêu:\n\n- Bản án chế độ thực dân Pháp (1925).\n- Đường cách mệnh (1927).\n\nMinh họa: báo, tài liệu về chủ nghĩa Lênin, hoạt động cách mạng."
+    },
+    {
+      "id": "hcm-c2-p33",
+      "chapter": 2,
+      "page": 33,
+      "title": "Thành lập Đảng Cộng sản Việt Nam",
+      "text": "Thành lập Đảng Cộng sản Việt Nam:\n\nHồ Chí Minh thành lập Đảng Cộng sản Việt Nam với Cương lĩnh chính trị đúng đắn và sáng tạo đã chấm dứt cuộc khủng hoảng về đường lối và tổ chức lãnh đạo cách mạng Việt Nam kéo dài suốt từ cuối thế kỷ XIX đến đầu thế kỷ XX.\n\nMinh họa: tranh hội nghị thành lập Đảng, tranh cổ động mừng ngày thành lập Đảng 3/2."
+    },
+    {
+      "id": "hcm-c2-p34",
+      "chapter": 2,
+      "page": 34,
+      "title": "Tư tưởng về cách mạng Việt Nam trong giai đoạn này",
+      "text": "Tư tưởng về cách mạng Việt Nam trong giai đoạn này:\n\n1. Bản chất của chủ nghĩa thực dân: là kẻ thù chung của các dân tộc thuộc địa, của giai cấp công nhân và nhân dân lao động toàn thế giới.\n2. Cách mạng dân tộc phải đi theo con đường cách mạng vô sản.\n3. Cách mạng giải phóng dân tộc ở thuộc địa cần kết hợp với cách mạng vô sản ở chính quốc.\n4. Cách mạng giải phóng dân tộc trước hết là một cuộc “dân tộc cách mệnh”, đánh đuổi bọn ngoại xâm, giành độc lập, tự do.\n5. Cách mạng giải phóng dân tộc phải lôi kéo được nông dân, liên minh công nông, thu hút, tập hợp rộng rãi các giai cấp xã hội khác.\n6. Cách mạng muốn thành công phải có Đảng lãnh đạo, theo chủ nghĩa Mác – Lênin, sẵn sàng chiến đấu hy sinh vì lý tưởng của Đảng, vì sự tồn vong dân tộc.\n7. Tập hợp, giác ngộ, tổ chức quần chúng.\n\nMinh họa: Lênin diễn thuyết."
+    },
+    {
+      "id": "hcm-c2-p35",
+      "chapter": 2,
+      "page": 35,
+      "title": "2.2.4. Thời kỳ từ 4-2-1930 đến 28-1-1941: Vượt qua sóng gió, thử thách, kiên trì giữ vững đường lối, phương pháp cách mạng Việt Nam đúng đắn, sáng tạo",
+      "text": "2.2.4. Thời kỳ từ 4-2-1930 đến 28-1-1941: Vượt qua sóng gió, thử thách, kiên trì giữ vững đường lối, phương pháp cách mạng Việt Nam đúng đắn, sáng tạo\n\n- Xác định chính xác con đường phải đi của cách mạng Việt Nam, Nguyễn Ái Quốc đã kiên trì bảo vệ quan điểm của mình về vấn đề dân tộc, vấn đề giai cấp, cách mạng giải phóng dân tộc thuộc địa và cách mạng vô sản.\n- 1936–1939: Đảng ta thành lập Mặt trận nhân dân phản đế Đông Dương; tháng 3/1938 đổi thành Mặt trận dân chủ Đông Dương; và từ năm 1939 đặt vấn đề giải phóng dân tộc lên hàng đầu.\n- 28/1/1941: Nguyễn Ái Quốc trở về Tổ quốc. Ban Chấp hành Trung ương Đảng Cộng sản Đông Dương dưới sự chỉ đạo của Nguyễn Ái Quốc đã hoàn chỉnh việc chuyển hướng chiến lược của cách mạng Việt Nam.\n\nMinh họa: Hồ Chí Minh trở về nước, làm việc tại chiến khu."
+    },
+    {
+      "id": "hcm-c2-p36",
+      "chapter": 2,
+      "page": 36,
+      "title": "2.2.5. Thời kỳ từ 29-1-1941 đến 2-9-1969: Tư tưởng Hồ Chí Minh tiếp tục phát triển, hoàn thiện, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta",
+      "text": "2.2.5. Thời kỳ từ 29-1-1941 đến 2-9-1969: Tư tưởng Hồ Chí Minh tiếp tục phát triển, hoàn thiện, soi đường cho sự nghiệp cách mạng của Đảng và nhân dân ta\n\n- Cách mạng tháng Tám năm 1945 thành công.\n- 2/9/1945: Hồ Chí Minh đã đọc bản Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.\n\nHình minh họa: bản Tuyên ngôn Độc lập, Hồ Chí Minh đọc tuyên ngôn trước nhân dân."
+    },
+    {
+      "id": "hcm-c2-p37",
+      "chapter": 2,
+      "page": 37,
+      "title": "Vừa kháng chiến, vừa kiến quốc",
+      "text": "Vừa kháng chiến, vừa kiến quốc – thực hiện kháng chiến toàn dân, toàn diện, trường kỳ, tự lực cánh sinh.\n\n- Kháng chiến chống Pháp (1945–1954).\n- Chiến thắng Điện Biên Phủ.\n- Hiệp định Giơnevơ.\n- Từ 1954–1969: cách mạng xã hội chủ nghĩa và giải phóng miền Nam, thống nhất đất nước.\n\nHình minh họa: Hồ Chí Minh cùng chiến sĩ, nhân dân trong kháng chiến."
+    },
+    {
+      "id": "hcm-c2-p38",
+      "chapter": 2,
+      "page": 38,
+      "title": "Những ngày cuối cùng của Bác Hồ",
+      "text": "Những ngày cuối cùng của Bác Hồ\n\n9 giờ ngày 2/9/1969, Bác bị một cơn đau tim nặng. Theo dõi trên máy điện tim thì đến 9 giờ 15 tim Bác ngừng đập hẳn. Các bác sĩ thay nhau dùng sức ấn lên ngực Bác, mong sao tim Người đập trở lại.\nCho đến 9 giờ 47 phút, Thủ tướng Phạm Văn Đồng trào nước mắt: “Thôi các đồng chí ạ, Bác của chúng ta không qua khỏi nữa rồi”.\n\nHình tư liệu: các y bác sĩ và lãnh đạo bên Hồ Chí Minh."
+    },
+    {
+      "id": "hcm-c2-p39",
+      "chapter": 2,
+      "page": 39,
+      "title": "Ngày Hồ Chí Minh qua đời",
+      "text": "Ngày Hồ Chí Minh qua đời:\n\n9 giờ 47 phút ngày 2/9/1969 (tức ngày 21 tháng 7 âm lịch) từ nơi đây truyền đến cho nhân loại nỗi đau Bác Hồ ra đi mãi mãi để cho “đời tuôn nước mắt trời tuôn mưa”.\n\nMinh họa: hình tư liệu những giây phút cuối và thiếu nhi khóc thương Bác."
+    },
+    {
+      "id": "hcm-c2-p40",
+      "chapter": 2,
+      "page": 40,
+      "title": "Sự trùng hợp của hai ngày 2/9",
+      "text": "Sự trùng hợp của hai ngày 2/9:\n\nLịch sử đã có sự trùng hợp thiêng liêng và kỳ diệu. Ngày 2/9/1945 Bác Hồ mang lại độc lập tự do cho mọi người dân, nhưng ngày đó Bác lại ra đi.\n\nMinh họa: lễ Tuyên ngôn Độc lập, hình tại lăng Chủ tịch Hồ Chí Minh và tư liệu Bác trong những ngày cuối đời."
+    },
+    {
+      "id": "hcm-c2-p41",
+      "chapter": 2,
+      "page": 41,
+      "title": "Bên Lăng Bác Hồ",
+      "text": "Bên Lăng Bác Hồ\n\nĐã ngừng đập một trái tim  \nĐã ngừng đập một cánh chim đại bàng.\n\nBác nằm trong lăng giấc ngủ bình yên  \nGiữa một vầng trăng sáng dịu hiền.\n\nMinh họa: hình lăng Chủ tịch Hồ Chí Minh, dòng người vào viếng và ảnh Bác trong lăng."
+    },
+    {
+      "id": "hcm-c2-p42",
+      "chapter": 2,
+      "page": 42,
+      "title": "Sự tiếc thương của thế giới đối với Hồ Chí Minh",
+      "text": "Sự tiếc thương của thế giới đối với Hồ Chí Minh:\n\n- Có hơn 22.000 bức điện chia buồn từ 121 nước trên khắp thế giới.\n\nThế giới nghiêng mình,  \nLoài người tiếc thương  \nĐây người chiến sĩ đấu tranh cho tự do.\n\n“Đồng chí Hồ Chí Minh thuộc về một lớp người đặc biệt mà cái chết lại gieo mầm cho sự sống đời đời bất diệt”.\n\n- Câu nhấn mạnh ở cuối slide: “Đồng chí Hồ Chí Minh là một con người đặc biệt mà cái chết đã gieo mầm cho sự sống đời đời bất diệt”.\n\nMinh họa: quốc tế tưởng niệm Hồ Chí Minh."
+    },
+    {
+      "id": "hcm-c2-p43",
+      "chapter": 2,
+      "page": 43,
+      "title": "Thơ tiễn biệt Hồ Chí Minh",
+      "text": "Thơ tiễn biệt Hồ Chí Minh:\n\nSuốt mấy hôm rày đau tiễn đưa  \nĐời tuôn nước mắt, trời tuôn mưa...  \nChiều nay con chạy về thăm Bác  \nƯớt lạnh vườn cau, mấy gốc dừa!  \nCon lại lần theo lối sỏi quen  \nĐến bên thang gác, đứng nhìn lên  \nChuông ôi chuông nhỏ còn reo nữa?  \nPhòng lặng, rèm buông, tắt ánh đèn!  \nBác đã đi rồi sao, Bác ơi!\n\nLời tưởng niệm trên slide:\n\nĐất nước nghiêng mình  \nĐời đời nhớ ơn  \nTên Người sống mãi với non sông Việt Nam.\n\nHình minh họa: quốc tang và người dân khóc thương Bác."
+    },
+    {
+      "id": "hcm-c2-p44",
+      "chapter": 2,
+      "page": 44,
+      "title": "Lễ quốc tang Chủ tịch Hồ Chí Minh",
+      "text": "Lễ quốc tang Chủ tịch Hồ Chí Minh\n\nTang lễ được tổ chức vào ngày 9 tháng 9 tại Quảng trường Ba Đình với hơn 100.000 người đến dự.\n\nHình tư liệu: lễ tang, linh cữu và đông đảo nhân dân dự lễ."
+    },
+    {
+      "id": "hcm-c2-p45",
+      "chapter": 2,
+      "page": 45,
+      "title": "Niềm tiếc thương khi Bác đi xa",
+      "text": "Niềm tiếc thương khi Bác đi xa:\n\n“Suốt mấy hôm rày đau tiễn đưa – Đời tuôn nước mắt, trời tuôn mưa” – hai câu thơ trên là tiếng lòng của nhà thơ Tố Hữu cũng là của toàn thể dân tộc khi Bác đi xa.\n\nHình tư liệu: các lãnh đạo và nhân dân trong lễ tang."
+    },
+    {
+      "id": "hcm-c2-p46",
+      "chapter": 2,
+      "page": 46,
+      "title": "Bí thư thứ nhất Lê Duẩn đọc điếu văn đầy xúc động trong lễ tang Bác Hồ",
+      "text": "Bí thư thứ nhất Lê Duẩn đọc điếu văn đầy xúc động trong lễ tang Bác Hồ\n\n“Hồ Chủ tịch kính yêu của chúng ta không còn nữa. Tổn thất này vô cùng lớn lao. Đau thương này thật là vô hạn! Dân tộc ta, nhân dân ta, non sông đất nước ta đã sinh ra Hồ Chủ tịch – Người anh hùng dân tộc vĩ đại. Và chính Người đã làm rạng rỡ dân tộc ta, nhân dân ta và non sông đất nước ta”…\n\nHình tư liệu: Lê Duẩn đọc điếu văn, toàn cảnh lễ quốc tang."
+    },
+    {
+      "id": "hcm-c2-p47",
+      "chapter": 2,
+      "page": 47,
+      "title": "Các cháu thiếu nhi Hà Nội vào viếng Bác Hồ",
+      "text": "Các cháu thiếu nhi Hà Nội vào viếng Bác Hồ\n\n- Đại tướng Võ Nguyên Giáp an ủi người dân trong ngày Quốc tang của dân tộc.\n- Bác sĩ Trần Duy Hưng an ủi một cháu bé trong lễ tang Bác Hồ.\n\nHình tư liệu: thiếu nhi và nhân dân xúc động trong lễ tang."
+    },
+    {
+      "id": "hcm-c2-p48",
+      "chapter": 2,
+      "page": 48,
+      "title": "Nhà 67 – địa điểm lưu giữ thi hài Chủ tịch Hồ Chí Minh",
+      "text": "Nhà 67 – địa điểm lưu giữ thi hài Chủ tịch Hồ Chí Minh\n\n- Tiêu đề slide: “Nhà 67”.\n- Nội dung trên tấm biển trong ảnh: “Nơi đây đã giữ gìn thi hài Chủ tịch Hồ Chí Minh từ năm 1969 đến năm 1975.”\n\nMinh họa: Nhà 67, nơi tưởng niệm, lễ diễu hành trước Lăng Bác."
+    },
+    {
+      "id": "hcm-c2-p49",
+      "chapter": 2,
+      "page": 49,
+      "title": "Xúc động lễ chào cờ ở Quảng trường Ba Đình trong ngày sinh nhật Bác",
+      "text": "Xúc động lễ chào cờ ở Quảng trường Ba Đình trong ngày sinh nhật Bác\n\nSlide gồm hình ảnh Quảng trường Ba Đình, đội tiêu binh và nghi lễ chào cờ trước Lăng Chủ tịch Hồ Chí Minh."
+    },
+    {
+      "id": "hcm-c2-p50",
+      "chapter": 2,
+      "page": 50,
+      "title": "Hình ảnh lễ chào cờ tại Quảng trường Ba Đình",
+      "text": "Hình ảnh lễ chào cờ tại Quảng trường Ba Đình\n\nSlide ảnh tiếp nối slide 49: đội tiêu binh, cờ đỏ sao vàng, dòng chữ “Hồ Chí Minh vĩ đại sống mãi trong sự nghiệp của chúng ta”, và người dân tới Quảng trường Ba Đình. Slide không có đoạn chữ nội dung riêng ngoài chữ nằm trong ảnh."
+    },
+    {
+      "id": "hcm-c2-p51",
+      "chapter": 2,
+      "page": 51,
+      "title": "“Bác nằm trong lăng, giấc ngủ bình yên”",
+      "text": "“Bác nằm trong lăng, giấc ngủ bình yên”\n\nẢnh: đội danh dự đứng trước Lăng Chủ tịch Hồ Chí Minh trong nghi lễ tại Quảng trường Ba Đình."
+    },
+    {
+      "id": "hcm-c2-p52",
+      "chapter": 2,
+      "page": 52,
+      "title": "Hồ Chí Minh trong sự ghi nhận của thế giới",
+      "text": "Hồ Chí Minh trong sự ghi nhận của thế giới:\n\nỞ Paris có bức tường “Những người làm nên thế kỷ 20” (Ils ont fait le XX Siecle) có nụ cười Bác Hồ ở đây, giữa những trí tuệ, những tâm hồn lớn ở thời đại chúng ta, đã có một cuộc đời Hồ Chí Minh, một con người Hồ Chí Minh.\n\nMinh họa: chân dung Chủ tịch Hồ Chí Minh và các lá cờ."
+    },
+    {
+      "id": "hcm-c2-p53",
+      "chapter": 2,
+      "page": 53,
+      "title": "2.3. Giá trị Tư tưởng Hồ Chí Minh",
+      "text": "2.3. Giá trị Tư tưởng Hồ Chí Minh\n\n2.3.1. Đối với cách mạng Việt Nam\n\na. Tư tưởng Hồ Chí Minh đưa cách mạng giải phóng dân tộc Việt Nam đến thắng lợi và bắt đầu xây dựng một xã hội mới trên đất nước ta\n\nCon đường giải phóng dân tộc và định hướng cho sự phát triển của dân tộc bảo đảm cho sự thắng lợi của cách mạng Việt Nam, bảo đảm cho tương lai, tiền đồ vẻ vang của dân tộc Việt Nam.\n\nb. Tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động của cách mạng Việt Nam\n\nLịch sử đã đi qua, trong bối cảnh thời đại hôm nay, Tư tưởng Hồ Chí Minh giúp chúng ta nhận thức đúng những vấn đề lớn có liên quan đến việc bảo vệ nền độc lập dân tộc, phát triển xã hội và bảo đảm quyền con người. Đó là nền tảng vững chắc soi đường cho toàn Đảng, toàn dân đi tới thắng lợi.\n\nHình minh họa: Hồ Chí Minh; ảnh có trích dẫn về mục tiêu độc lập, tự do, hạnh phúc (xem slide 24)."
+    },
+    {
+      "id": "hcm-c2-p54",
+      "chapter": 2,
+      "page": 54,
+      "title": "2.3.2. Đối với sự phát triển tiến bộ của nhân loại",
+      "text": "2.3.2. Đối với sự phát triển tiến bộ của nhân loại\n\na. Tư tưởng Hồ Chí Minh góp phần mở ra cho các dân tộc thuộc địa con đường giải phóng dân tộc gắn liền với tiến bộ xã hội\n\nChủ nghĩa xã hội và xây dựng chủ nghĩa xã hội; xây dựng nền hòa bình, hợp tác, hữu nghị giữa các dân tộc; xây dựng một thế giới đại đồng.\n\nb. Tư tưởng Hồ Chí Minh góp phần tích cực vào cuộc đấu tranh vì độc lập dân tộc, dân chủ, hòa bình, hợp tác và phát triển trên thế giới\n\n- Tìm ra con đường cứu nước đúng đắn, thức tỉnh hàng trăm triệu người bị áp bức trong các nước thuộc địa lạc hậu.\n- Chủ nghĩa đế quốc là kẻ thù lớn nhất của các dân tộc bị áp bức; để chiến thắng phải thực hiện “đại đoàn kết”, “đại hòa hợp”.\n\nHình minh họa: V. I. Lênin và quần chúng cách mạng."
+    }
+  ]
 }
