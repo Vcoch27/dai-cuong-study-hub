@@ -25,7 +25,20 @@ const previousExamScores = Object.fromEntries(examForms.map(form=>{
 }));
 const hasPreviousWork=Object.keys(previous.answers||{}).length>0||Object.keys(previous.examAttempts||{}).length>0||Object.keys(previous.examHistory||{}).length>0;
 const state = {source:isBank?'bank':isHcm?'text':stored.source || previous.source || 'doc',chapter:isBank?0:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'&&!isBank?'exam':'quiz',search:stored.search||'',index:stored.index || 0,answers:stored.answers || {},practiceAnswers:{...(stored.practiceAnswers ?? stored.answers ?? {})},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:['all','wrong','saved'].includes(stored.review)?stored.review:'all',reviewIds:Array.isArray(stored.reviewIds)?stored.reviewIds.filter(id=>byId[id]):null,examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed,bankResults:stored.bankResults||{},bankScope:stored.bankScope||'all',bankKind:['all','mcq','pending','essay'].includes(stored.bankKind)?stored.bankKind:'all',bankRevealed:Array.isArray(stored.bankRevealed)?stored.bankRevealed.filter(id=>byId[id]):[]};
-function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,search:state.search,answers:state.answers,practiceAnswers:state.practiceAnswers,bookmarks:state.bookmarks,review:state.review,reviewIds:state.reviewIds,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice,bankResults:state.bankResults,bankScope:state.bankScope,bankKind:state.bankKind,bankRevealed:state.bankRevealed}));}
+state.practiceOrders=stored.practiceOrders||{};
+function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,search:state.search,answers:state.answers,practiceAnswers:state.practiceAnswers,practiceOrders:state.practiceOrders,bookmarks:state.bookmarks,review:state.review,reviewIds:state.reviewIds,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice,bankResults:state.bankResults,bankScope:state.bankScope,bankKind:state.bankKind,bankRevealed:state.bankRevealed}));}
+function practiceOrder(q){
+ const order=state.practiceOrders[q.id];
+ return Array.isArray(order)&&order.length===q.choices.length&&new Set(order).size===order.length&&order.every(i=>Number.isInteger(i)&&i>=0&&i<q.choices.length)?order:q.choices.map((_,i)=>i);
+}
+function shufflePractice(q){
+ if(!q||!Number.isInteger(q.answer)||q.choices.length<2)return;
+ const previous=practiceOrder(q),oldPosition=previous.indexOf(q.answer),order=previous.slice();
+ for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}
+ // Move the correct answer on every retry, even if the random shuffle kept it.
+ if(order.indexOf(q.answer)===oldPosition){const j=(oldPosition+1+Math.floor(Math.random()*(order.length-1)))%order.length;[order[oldPosition],order[j]]=[order[j],order[oldPosition]];}
+ state.practiceOrders[q.id]=order;
+}
 function bankScopedItems(){return all.filter(q=>state.bankScope==='past-exam-1'?q.pastExam:!q.duplicateOf&&inBankScope(q));}
 function sourceQuestions(){return isBank?bankScopedItems():all.filter(q => q.source.kind === state.source);}
 function canonicalId(q){return q.duplicateOf||q.id;}
@@ -89,7 +102,7 @@ function retryPractice(ids,{wrongOnly=false}={}){
  // is cleared. A fixed wrong-question set prevents a corrected item disappearing
  // before its feedback can be read.
  if(state.review==='wrong'&&!state.reviewIds)state.reviewIds=visibleQuestions().map(q=>q.id);
- for(const id of ids)delete state.practiceAnswers[id];
+ for(const id of ids){delete state.practiceAnswers[id];shufflePractice(byId[id]);}
  if(isBank)state.bankRevealed=state.bankRevealed.filter(id=>!ids.includes(id));
  if(wrongOnly){state.review='wrong';state.reviewIds=ids.slice();state.index=0;}
  render({position:'question',resetEvidence:true});
@@ -170,8 +183,8 @@ function renderQuiz(q,qs){
  const selected=state.practiceAnswers[q.id],answered=selected!==undefined,wrongCount=qs.filter(isWrong).length;
  return `<article class="question-card"><div class="practice-tools"><span>${state.review==='wrong'?`Ôn câu sai · ${qs.filter(item=>latestAnswer(item)===item.answer).length}/${qs.length} đã sửa đúng`:'Lượt luyện tập'}</span><div><button class="outline-button" data-practice-retry="wrong" ${wrongCount?'':'disabled'}>Luyện lại câu sai (${wrongCount})</button><button class="outline-button" data-practice-retry="visible">Làm lại nhóm này</button></div></div>
  <div class="question-meta"><div class="meta-left"><span class="badge">Câu ${state.index+1} / ${qs.length}</span><span class="badge neutral">${isBank?`${q.setIds.length} tập có câu này`:`Chương ${q.chapter}`}</span><span class="badge neutral">${sourceLabel(q)}</span></div><button class="outline-button ${isBookmarked(q)?'saved':''}" data-bookmark="${q.id}" aria-label="${isBookmarked(q)?'Bỏ lưu':'Lưu'} câu hỏi">${isBookmarked(q)?'★ Đã lưu':'☆ Lưu câu'}</button></div>
-  <h2 class="question-title">${escapeHtml(q.question)}</h2><div class="options">${q.choices.map((choice,i)=>`<button class="option ${answered?(i===q.answer?'correct':i===selected?'wrong':'dim'):''}" data-answer="${i}" ${answered?'disabled':''}><span class="option-letter">${letters[i]}</span><span>${escapeHtml(choice)}</span></button>`).join('')}</div>
-  ${answered?`<div class="answer-box ${selected===q.answer?'':'error'}"><div class="answer-heading"><strong>${selected===q.answer?'Chính xác':'Chưa đúng'} · Đáp án ${letters[q.answer]}</strong><button class="outline-button" data-practice-retry="question">Làm lại câu này</button></div>${escapeHtml(q.explanation)}${renderExplanationSlideLinks(q)}</div>`:''}
+  <h2 class="question-title">${escapeHtml(q.question)}</h2><div class="options">${practiceOrder(q).map((i,position)=>`<button class="option ${answered?(i===q.answer?'correct':i===selected?'wrong':'dim'):''}" data-answer="${i}" ${answered?'disabled':''}><span class="option-letter">${letters[position]}</span><span>${escapeHtml(q.choices[i])}</span></button>`).join('')}</div>
+  ${answered?`<div class="answer-box ${selected===q.answer?'':'error'}"><div class="answer-heading"><strong>${selected===q.answer?'Chính xác':'Chưa đúng'} · Đáp án ${letters[practiceOrder(q).indexOf(q.answer)]}</strong><button class="outline-button" data-practice-retry="question">Làm lại câu này</button></div>${escapeHtml(q.explanation)}${renderExplanationSlideLinks(q)}</div>`:''}
   <div class="question-footer"><button class="nav-button" data-nav="-1" ${state.index===0?'disabled':''}>← Câu trước</button><div class="progress-copy">${answered?'Đã trả lời · Có thể làm lại':latestAnswer(q)!==undefined?'Đang làm lại · Tiến độ đã làm vẫn được giữ':'Chọn một đáp án để mở phần đối chiếu'}<br>Dùng phím ← → để chuyển câu</div><button class="nav-button primary" data-nav="1" ${state.index===qs.length-1?'disabled':''}>Câu tiếp theo →</button></div>
  </article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.filter(x=>latestAnswer(x)!==undefined).length} / ${isBank?qs.filter(x=>Number.isInteger(x.answer)).length:qs.length} ${isBank?"trắc nghiệm đã làm":"đã làm"} · Lượt này ${qs.filter(x=>state.practiceAnswers[x.id]!==undefined).length}/${isBank?qs.filter(x=>Number.isInteger(x.answer)).length:qs.length}</span></div><div class="number-grid">${qs.map((item,i)=>`<button data-index="${i}" class="${i===state.index?'current':''} ${latestAnswer(item)===undefined?'':latestAnswer(item)===item.answer?'done':'failed'}" aria-label="Câu ${i+1}">${i+1}</button>`).join('')}</div></section>`;
 }
@@ -274,7 +287,7 @@ document.addEventListener('keydown',e=>{
  if(state.mode==='quiz'){
   if(e.key==='ArrowRight'&&state.index<visibleQuestions().length-1){e.preventDefault();navigatePractice(state.index+1);}
   if(e.key==='ArrowLeft'&&state.index>0){e.preventDefault();navigatePractice(state.index-1);}
-  if(['1','2','3','4'].includes(e.key)){e.preventDefault();answerPractice(Number(e.key)-1);}
+  if(['1','2','3','4'].includes(e.key)){e.preventDefault();const q=current();if(q)answerPractice(practiceOrder(q)[Number(e.key)-1]);}
  }
  if(state.mode==='exam'&&activeAttempt()&&!activeAttempt().submittedAt){
   if(e.key==='ArrowRight'&&activeAttempt().current<29){e.preventDefault();navigateExam(activeAttempt().current+1);}

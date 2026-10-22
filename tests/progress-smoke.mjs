@@ -404,3 +404,25 @@ assert(!hcmImages.html.includes('data-slide-image'));
 hcmImages.click('[data-mode]','reader');
 assert.equal(hcmImages.document.querySelectorAll('[data-slide-open]').length,131,'HCM reader shows all original chapter 1–3 images');
 console.log('PASS: 30 preserved exam positions, 147 deduplicated items, variant-aware progress/bookmarks, direct/context/absent evidence, image privacy, modal navigation and original PDF reader');
+
+for(const [course,data] of [['cnxh',raw],['hcm',hcm],['bank',bank]]){
+ const retry=await boot({}, {course,data});
+ const q=retry.api.current(),key=retry.api.storageKey;
+ retry.click('[data-answer]',String((q.answer+1)%4));
+ let oldPosition=q.answer;
+ for(let round=0;round<8;round++){
+  retry.click('[data-practice-retry]',round===0?'wrong':round===1?'visible':'question');
+  const order=[...retry.api.state.practiceOrders[q.id]],position=order.indexOf(q.answer);
+  assert.deepEqual(order.slice().sort(),[0,1,2,3]);
+  assert.notEqual(position,oldPosition,'Correct answer must move on every retry');
+  assert(!retry.html.includes('answer-box error'));
+  assert.equal(retry.api.overall(),1,'Retry preserves completion');
+  const restored=await boot({[key]:retry.memory.get(key)},{course,data});
+  assert.deepEqual([...restored.api.state.practiceOrders[q.id]],order,'Reload preserves displayed option order');
+  retry.key(String(position+1));
+  assert.equal(retry.api.state.answers[q.id],q.answer,'Keyboard maps visible letter to original answer');
+  assert(retry.html.includes(`Chính xác · Đáp án ${'ABCD'[position]}`));
+  oldPosition=position;
+ }
+}
+console.log('PASS: retry shuffles all three tracks, moves correct position, preserves progress/reload and grades visible keyboard choices correctly');
