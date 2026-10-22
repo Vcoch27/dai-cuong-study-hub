@@ -1,6 +1,6 @@
 # Tư tưởng Hồ Chí Minh — nhận nội dung văn bản
 
-Phạm vi hiện tại: chương 1 và 2. Giao diện nằm tại `/?course=hcm`.
+Phạm vi hiện tại: chương 1, 2 và 3. Giao diện nằm tại `/?course=hcm`.
 Người học gửi nội dung đã trích xuất trong chat hoặc dưới dạng tệp văn bản;
 không cần đúng khuôn JSON. Giữ tiêu đề chương, mục và số trang nếu có.
 Không cần phân tích lại PDF/PowerPoint.
@@ -59,6 +59,22 @@ Một phần tử của `examForms` gồm `id` (bắt đầu `hcm-`), `title`, `
 Môn HCM dùng khóa lưu riêng `dai-cuong-hcm-v1`; CNXHKH giữ nguyên khóa cũ.
 ## Nội dung đã xuất bản
 
+### Bổ sung chương 3
+
+- Nguồn đợt mới: `source-chapters-3-4.md` giữ nguyên tệp nhận từ người học;
+  trình nhập `import_hcm_chapter3.py` chỉ lấy chương 3, bỏ chương 4 khỏi dữ liệu học.
+- Giữ đủ 69 trang chương 3 trong phần đọc, kể cả trang minh họa hoặc có chữ mờ.
+- `authored_chapter3.txt`: 120 câu, có nguồn đối chiếu từ 53 trang lý thuyết;
+  14 cơ bản, 90 phân biệt, 16 vận dụng. Những trang minh họa hoặc nội dung lặp
+  vẫn đọc được nhưng không ép thành câu hỏi ghi nhớ hình ảnh.
+- Bốn đề chương 3, 30 câu/900 giây; đủ 120 câu không trùng ID giữa bốn đề.
+  Phân bổ xen kẽ các chủ đề, không chia mỗi đề thành một phần đầu/cuối chương.
+- Tổng hiện tại: 240 câu, 131 trang đọc, tám đề. Chương 1–2, bốn đề cũ,
+  ID, thứ tự lựa chọn, phiên bản dữ liệu và khóa tiến trình giữ nguyên.
+- Không thay đổi ngân hàng HCM từ sáu tập; đó là tuyến học riêng.
+
+### Đợt chương 1–2 (giữ nguyên)
+
 - Nguồn: `source.md`, bản văn bản người học cung cấp ngày 22/10/2026.
 - `content.json`: đủ 62 trang văn bản (8 trang chương 1, 54 trang chương 2).
 - `authored_questions.txt`: 120 câu biên soạn, 30 câu chương 1 và 90 câu chương 2.
@@ -79,3 +95,6 @@ Trình biên dịch giữ thứ tự lựa chọn của câu có cùng ID và c�
 đồng thời giữ đề đã tồn tại. Không chèn/đảo dòng cũ trong tệp biên soạn:
 ID hiện được cấp theo thứ tự trong từng chương. Khi mở rộng đợt sau, cần cấp ID
 mới rõ ràng và thêm đề riêng, tránh thay đổi các đề đang có người làm.
+
+Để nhập lại văn bản chương 3, chạy `python import_hcm_chapter3.py` trước các
+lệnh trên. Không đổi thứ tự các dòng đã xuất bản trong `authored_chapter3.txt`.

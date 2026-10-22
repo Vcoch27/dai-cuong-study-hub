@@ -1,5 +1,44 @@
 # Ghi nhận biên tập đợt chương 1–2
 
+## Bổ sung chương 3
+
+Người học giới hạn học đến hết chương 3. Tệp nhận có cả chương 4 nhưng không
+đưa nội dung, câu hỏi hay đề chương 4 vào ứng dụng. Giữ nguyên tệp nhận trong
+`source-chapters-3-4.md`; nhập văn bản của đủ 69 trang chương 3 qua trình riêng.
+Các liên kết ảnh tương đối trong tệp không được đưa thành ảnh hỏng trên website;
+đợt này người học gửi văn bản, không có gói ảnh gốc.
+
+120 câu chương 3 bám 53 trang có thể kiểm tra. Phạm vi gồm bốn nội dung về độc lập,
+năm luận điểm giải phóng dân tộc, quan niệm/đặc trưng/mục tiêu/động lực/trở lực CNXH,
+quá độ, quan hệ độc lập–CNXH, điều kiện bảo đảm và các nội dung vận dụng.
+Các trang lặp ý và minh họa được giữ để đọc; không tạo câu hỏi đếm ảnh.
+
+Những chi tiết giữ trong văn bản nguồn nhưng không dùng để xác định đáp án:
+
+- Trang 3: không đặt câu hỏi về mốc của Tuyên ngôn Nhân quyền và Dân quyền
+  Pháp vì cách gắn văn kiện và năm 1791 cần phân biệt với tuyên ngôn năm 1789.
+- Trang 7: không gắn khẩu hiệu “Không có gì quý hơn độc lập, tự do” với ngày
+  19/12/1946 chỉ vì được trình bày cùng tư liệu kháng chiến trên trang.
+- Trang 13: không ra câu hỏi về việc ai sáng lập Đảng Công nhân Xã hội Dân chủ Nga.
+- Trang 18–19: chú thích địa điểm Ma Cao, nhân vật dự hội nghị thành lập Đảng
+  có dấu hiệu không nhất quán; không dùng làm câu kiểm tra địa danh/nhân vật.
+- Trang 26, 44, 50, 53: không khôi phục hoặc dùng nguyên văn chữ lỗi phông để chấm.
+- Trang 30, 45–47, 57–58: không kiểm tra chú thích nhân vật, sự kiện ảnh hoặc chữ
+  không chắc chắn; các ý về lao động và khoán chỉ hỏi phần văn bản rõ nghĩa.
+- Trang 60: phân biệt đường hướng vận dụng với trích dẫn nguyên văn của Hồ Chí Minh;
+  không gán toàn bộ thuật ngữ chính sách của đoạn này thành lời Người.
+- Trang 69: giữ nguyên từ ngữ chưa nhất quán trong nguồn; không hỏi nhận diện
+  cách viết “tự chuyển biến/tự diễn biến” như một mẹo chọn đáp án.
+
+Chương 3 có 14 câu cơ bản, 90 câu phân biệt và 16 câu vận dụng ngắn.
+Đây là nhãn biên soạn, không phải mức khó đã hiệu chuẩn bằng dữ liệu thi.
+Bốn đề đều trộn câu từ đầu đến cuối chương; 120 ID xuất hiện đúng một lần.
+Đáp án A/B/C/D mỗi vị trí 30 câu. Kiểm tra mẹo chọn dài nhất đạt 27,01%,
+ngắn nhất 28,82%; không phát hiện từ tuyệt đối trong nhiễu theo bộ dò.
+Những thống kê này chỉ rà tín hiệu hình thức, không thay đánh giá chuyên môn.
+
+---
+
 ## Phạm vi
 
 Nguồn duy nhất để biên soạn là văn bản người học gửi trong `source.md`.

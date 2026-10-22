@@ -1799,6 +1799,1806 @@
       "explanation": "Yêu cầu được nhấn mạnh là đại đoàn kết và đại hòa hợp. Ba phương án khác chuyển sang liên minh quân sự, cơ chế kinh tế–chính trị hoặc thương lượng ngoại giao.",
       "type": "đoàn kết",
       "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q001",
+      "sectionId": "hcm-c3-p02",
+      "question": "Hồ Chí Minh mở rộng lập luận từ quyền con người sang quyền dân tộc theo hướng nào?",
+      "choices": [
+        "Từ chủ quyền quốc gia đến đặc quyền của dân tộc lớn",
+        "Từ bình đẳng của con người đến đồng nhất các quốc gia",
+        "Từ bình đẳng của con người đến bình đẳng của các dân tộc",
+        "Từ tự do của cá nhân đến quyền mở rộng thuộc địa"
+      ],
+      "answer": 2,
+      "explanation": "Quyền sống, sung sướng và tự do được mở rộng thành quyền của các dân tộc. Bình đẳng không đồng nghĩa đồng nhất quốc gia; mở rộng thuộc địa và đặc quyền dân tộc đi ngược nội dung này.",
+      "type": "cơ sở quyền",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q002",
+      "sectionId": "hcm-c3-p02",
+      "question": "Độc lập, tự do được Hồ Chí Minh xác định có địa vị như thế nào đối với các dân tộc?",
+      "choices": [
+        "Quyền thiêng liêng, bất khả xâm phạm",
+        "Thành quả gắn với ưu thế về lãnh thổ",
+        "Lợi ích có được qua thỏa thuận bảo hộ",
+        "Quy chế được nước lớn công nhận trước"
+      ],
+      "answer": 0,
+      "explanation": "Độc lập, tự do là quyền thiêng liêng bất khả xâm phạm của các dân tộc. Ba phương án khác biến quyền vốn có thành lợi ích phụ thuộc bảo hộ, công nhận của nước lớn hoặc ưu thế lãnh thổ.",
+      "type": "bản chất",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q003",
+      "sectionId": "hcm-c3-p03",
+      "question": "Tuyên ngôn độc lập của Mỹ được gắn với mốc năm nào?",
+      "choices": [
+        "Năm 1848",
+        "Năm 1791",
+        "Năm 1789",
+        "Năm 1776"
+      ],
+      "answer": 3,
+      "explanation": "Mốc của Tuyên ngôn độc lập Mỹ là 1776. Các năm còn lại không phải mốc ban hành văn kiện này; không nhầm với các sự kiện cách mạng và văn kiện ở châu Âu.",
+      "type": "thời điểm",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q004",
+      "sectionId": "hcm-c3-p04",
+      "question": "Yêu sách gửi Hội nghị Vécxây năm 1919 thể hiện yêu cầu nào đối với nhân dân Việt Nam?",
+      "choices": [
+        "Quyền tham gia bộ máy bảo hộ",
+        "Các quyền tự do, dân chủ",
+        "Quyền thiết lập liên bang thuộc địa",
+        "Các ưu đãi kinh tế cho giới chủ"
+      ],
+      "answer": 1,
+      "explanation": "Nội dung được nhấn mạnh là đòi các quyền tự do, dân chủ cho nhân dân Việt Nam. Ba lựa chọn còn lại thay mục tiêu quyền của nhân dân bằng bộ máy bảo hộ, liên bang thuộc địa hoặc lợi ích giới chủ.",
+      "type": "văn kiện",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q005",
+      "sectionId": "hcm-c3-p05",
+      "question": "Tuyên ngôn khai sinh nước Việt Nam Dân chủ Cộng hòa được công bố vào ngày nào?",
+      "choices": [
+        "Ngày 3/2/1930",
+        "Ngày 2/9/1945",
+        "Ngày 19/8/1945",
+        "Ngày 19/12/1946"
+      ],
+      "answer": 1,
+      "explanation": "Ngày 2/9/1945 là ngày công bố Tuyên ngôn Độc lập. Không nhầm ngày tuyên bố lập quốc với mốc khởi nghĩa ở Hà Nội, thành lập Đảng hoặc toàn quốc kháng chiến.",
+      "type": "thời điểm",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q006",
+      "sectionId": "hcm-c3-p05",
+      "question": "Cặp ý nào thể hiện cả cơ sở pháp lý và thực tế của độc lập Việt Nam trong Tuyên ngôn năm 1945?",
+      "choices": [
+        "Mong muốn được độc lập và chờ các nước trao độc lập",
+        "Có truyền thống độc lập và đề nghị thiết lập bảo hộ",
+        "Được hứa trao độc lập và chuẩn bị tổ chức chính quyền",
+        "Có quyền hưởng độc lập và đã trở thành nước độc lập"
+      ],
+      "answer": 3,
+      "explanation": "Tuyên ngôn đồng thời khẳng định quyền hưởng độc lập và thực tế đã là nước độc lập. Các phương án khác thay thành quả hiện thực bằng sự chờ đợi, lời hứa hoặc bảo hộ.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q007",
+      "sectionId": "hcm-c3-p05",
+      "question": "Chủ thể cam kết huy động tinh thần, lực lượng, tính mạng và của cải để giữ vững độc lập năm 1945 là ai?",
+      "choices": [
+        "Toàn thể dân tộc Việt Nam",
+        "Quân đội cách mạng",
+        "Công nhân ở đô thị",
+        "Đại biểu dự lễ tuyên ngôn"
+      ],
+      "answer": 0,
+      "explanation": "Tuyên ngôn đặt quyết tâm bảo vệ độc lập ở toàn thể dân tộc Việt Nam. Đại biểu, lực lượng vũ trang và tổ chức công nhân đều là các bộ phận, không bao quát chủ thể được khẳng định.",
+      "type": "chủ thể",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q008",
+      "sectionId": "hcm-c3-p06",
+      "question": "Mong muốn hòa bình được Hồ Chí Minh gắn với thái độ nào trước nguy cơ xâm phạm đất nước?",
+      "choices": [
+        "Trông đợi hòa giải trước khi xây dựng lực lượng",
+        "Ưu tiên hòa hoãn để duy trì chế độ bảo hộ",
+        "Chấp thuận phân chia để đổi lấy cam kết hòa bình",
+        "Kiên quyết bảo vệ độc lập và toàn vẹn lãnh thổ"
+      ],
+      "answer": 3,
+      "explanation": "Mong muốn hòa bình đi cùng quyết tâm chiến đấu bảo vệ độc lập, toàn vẹn lãnh thổ. Ba lựa chọn kia đánh đổi chủ quyền hoặc đặt việc bảo vệ đất nước vào sự trông đợi bên ngoài.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q009",
+      "sectionId": "hcm-c3-p08",
+      "question": "Tiêu chí nào làm cho độc lập dân tộc có ý nghĩa thiết thực đối với nhân dân?",
+      "choices": [
+        "Nhà nước có biểu tượng chủ quyền",
+        "Nhân dân được tự do, hạnh phúc",
+        "Chính quyền được tuyên bố thành lập",
+        "Quốc gia có nghi thức ngoại giao"
+      ],
+      "answer": 1,
+      "explanation": "Độc lập phải gắn với tự do, hạnh phúc của nhân dân. Nghi thức ngoại giao, biểu tượng chủ quyền và tuyên bố lập chính quyền không tự bảo đảm điều kiện sống của nhân dân.",
+      "type": "tiêu chí",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q010",
+      "sectionId": "hcm-c3-p08",
+      "question": "Nhóm mục tiêu nào thể hiện khát vọng của Hồ Chí Minh về độc lập và đời sống nhân dân?",
+      "choices": [
+        "Nước độc lập, kinh tế mạnh, duy trì thứ bậc thuộc địa",
+        "Dân có cơm áo, được học hành, tiếp tục chế độ bảo hộ",
+        "Nước độc lập, dân tự do, mở rộng phạm vi lãnh thổ",
+        "Nước độc lập, dân tự do, có cơm áo và học hành"
+      ],
+      "answer": 3,
+      "explanation": "Khát vọng gắn độc lập quốc gia với tự do của dân và đời sống cơm áo, học hành. Các phương án còn lại thêm mục tiêu mở rộng lãnh thổ hoặc giữ quan hệ thuộc địa, bảo hộ.",
+      "type": "tổng hợp",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q011",
+      "sectionId": "hcm-c3-p08",
+      "question": "Một nhà nước tuyên bố độc lập nhưng người dân chưa được hưởng tự do và hạnh phúc còn thiếu điều kiện nào?",
+      "choices": [
+        "Căn cứ xác định tên gọi chính thức của quốc gia",
+        "Hệ thống nghi lễ trong quan hệ ngoại giao quốc tế",
+        "Ý nghĩa thực chất của độc lập đối với nhân dân",
+        "Sự phân định giữa lãnh thổ và đơn vị hành chính"
+      ],
+      "answer": 2,
+      "explanation": "Vấn đề là khoảng cách giữa độc lập quốc gia và quyền lợi thực tế của nhân dân. Tên gọi, nghi lễ hay phân chia hành chính không giải quyết tiêu chí tự do, hạnh phúc đang thiếu.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q012",
+      "sectionId": "hcm-c3-p09",
+      "question": "Nền độc lập hoàn toàn, triệt để đòi hỏi điều gì trong các lĩnh vực ngoại giao, quân đội, tài chính?",
+      "choices": [
+        "Giao quyền quyết định cho nước bảo trợ",
+        "Có quyền tự quyết trên các lĩnh vực đó",
+        "Dựa vào chính quyền bảo hộ về tài chính",
+        "Tập trung tự chủ vào lĩnh vực ngoại giao"
+      ],
+      "answer": 1,
+      "explanation": "Độc lập thực sự phải bao quát các lĩnh vực của đời sống quốc gia. Trao quyền cho nước bảo trợ hoặc thu hẹp tự chủ vào một lĩnh vực không đáp ứng yêu cầu này.",
+      "type": "phạm vi",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q013",
+      "sectionId": "hcm-c3-p09",
+      "question": "Đã có quốc hiệu nhưng ngoại giao và quân đội vẫn do nước ngoài quyết định phản ánh hạn chế nào?",
+      "choices": [
+        "Chưa có chính sách phúc lợi phổ quát",
+        "Nền độc lập chưa thực sự triệt để",
+        "Chưa bảo đảm thống nhất địa giới tỉnh",
+        "Chưa hoàn thành việc phát triển văn hóa"
+      ],
+      "answer": 1,
+      "explanation": "Tiêu chí đang xét là quyền tự quyết quốc gia đối với ngoại giao và quân đội. Phúc lợi, văn hóa và địa giới tỉnh thuộc các vấn đề khác, không chỉ ra trực tiếp hạn chế về chủ quyền trong tình huống.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q014",
+      "sectionId": "hcm-c3-p10",
+      "question": "Khẳng định “Miền Nam là máu của máu Việt Nam, là thịt của thịt Việt Nam” thể hiện nội dung nào?",
+      "choices": [
+        "Độc lập gắn với đổi mới cơ chế phân phối",
+        "Độc lập gắn với phát triển công nghiệp hiện đại",
+        "Độc lập gắn với mở rộng quan hệ thương mại",
+        "Độc lập gắn với thống nhất, toàn vẹn lãnh thổ"
+      ],
+      "answer": 3,
+      "explanation": "Câu nói khẳng định miền Nam là bộ phận không thể chia cắt của Việt Nam. Phát triển công nghiệp, phân phối và thương mại không phải nội dung trực tiếp của khẳng định này.",
+      "type": "nội dung",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q015",
+      "sectionId": "hcm-c3-p10",
+      "question": "Nội dung “thống nhất và toàn vẹn lãnh thổ” khác “độc lập triệt để” ở trọng tâm nào?",
+      "choices": [
+        "Đời sống văn hóa thay vì trình độ phát triển sản xuất",
+        "Quyền tự do cá nhân thay vì quyền tham gia quản lý",
+        "Hợp tác quốc tế thay vì tổ chức bộ máy chính quyền",
+        "Sự không chia cắt đất nước thay vì phạm vi quyền tự quyết"
+      ],
+      "answer": 3,
+      "explanation": "Thống nhất, toàn vẹn lãnh thổ nhấn mạnh sự không chia cắt đất nước; độc lập triệt để nhấn mạnh quyền tự quyết trên các lĩnh vực. Các cặp còn lại chuyển sang những tiêu chí khác.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q016",
+      "sectionId": "hcm-c3-p11",
+      "question": "Sự thất bại của các con đường cứu nước trước Hồ Chí Minh đặt ra yêu cầu gì?",
+      "choices": [
+        "Củng cố vai trò của chính quyền bảo hộ",
+        "Khôi phục nguyên vẹn đường lối Cần Vương",
+        "Chuyển mục tiêu sang cải cách thuộc địa",
+        "Tìm đường lối cứu nước mới phù hợp"
+      ],
+      "answer": 3,
+      "explanation": "Sự thất bại gắn với khủng hoảng đường lối cứu nước, đòi hỏi tìm con đường mới. Khôi phục đường lối cũ hoặc chấp nhận bảo hộ, cải cách thuộc địa không giải quyết yêu cầu giải phóng dân tộc.",
+      "type": "nguyên nhân",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q017",
+      "sectionId": "hcm-c3-p11",
+      "question": "Nhận xét “Đưa hổ cửa trước, rước beo cửa sau” được dùng để đánh giá con đường cứu nước của ai?",
+      "choices": [
+        "Nguyễn Thái Học",
+        "Phan Bội Châu",
+        "Phan Châu Trinh",
+        "Hoàng Hoa Thám"
+      ],
+      "answer": 1,
+      "explanation": "Nhận xét gắn với Phan Bội Châu. Phan Chu Trinh được nhận xét qua việc cầu xin sự cải lương; Hoàng Hoa Thám qua cốt cách phong kiến. Tôn Thất Thuyết không phải nhân vật của nhận xét được hỏi.",
+      "type": "quy thuộc",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q018",
+      "sectionId": "hcm-c3-p11",
+      "question": "Cặp nhân vật – nhận xét nào được ghép đúng trong đánh giá các con đường cứu nước?",
+      "choices": [
+        "Phan Chu Trinh – “cốt cách phong kiến”",
+        "Hoàng Hoa Thám – “rước beo cửa sau”",
+        "Phan Chu Trinh – “xin giặc rủ lòng thương”",
+        "Phan Bội Châu – “cốt cách phong kiến”"
+      ],
+      "answer": 2,
+      "explanation": "Nhận xét về Phan Chu Trinh là “chẳng khác gì xin giặc rủ lòng thương”. Hai nhận xét còn lại lần lượt gắn với Hoàng Hoa Thám và Phan Bội Châu, không hoán đổi cho nhau.",
+      "type": "quy thuộc",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q019",
+      "sectionId": "hcm-c3-p12",
+      "question": "Hồ Chí Minh đánh giá cách mạng tư sản là “không đến nơi” chủ yếu vì hạn chế nào?",
+      "choices": [
+        "Không tạo được thay đổi nào về thể chế chính trị",
+        "Chưa hình thành chế độ cộng hòa sau cách mạng",
+        "Chưa có tuyên ngôn về quyền tự do của con người",
+        "Vẫn bóc lột công nông và áp bức thuộc địa"
+      ],
+      "answer": 3,
+      "explanation": "Phê phán hướng vào việc công nông và dân thuộc địa vẫn bị áp bức, bóc lột. Không thể đồng nhất sự chưa triệt để với việc chưa có cộng hòa, tuyên ngôn quyền hoặc thay đổi thể chế.",
+      "type": "nguyên nhân",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q020",
+      "sectionId": "hcm-c3-p13",
+      "question": "Tiêu chí nào được Hồ Chí Minh nhấn mạnh khi đánh giá Cách mạng Tháng Mười là thành công “đến nơi”?",
+      "choices": [
+        "Nước Nga mở rộng phạm vi ảnh hưởng lãnh thổ",
+        "Dân chúng hưởng tự do, bình đẳng thực sự",
+        "Thể chế quân chủ đổi thành cộng hòa tư sản",
+        "Một bản tuyên ngôn về dân quyền được công bố"
+      ],
+      "answer": 1,
+      "explanation": "Tiêu chí là quyền lợi thực tế của dân chúng về tự do, bình đẳng. Ảnh hưởng lãnh thổ, việc có tuyên ngôn hoặc chuyển sang cộng hòa tư sản không thay thế tiêu chí này.",
+      "type": "tiêu chí",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q021",
+      "sectionId": "hcm-c3-p13",
+      "question": "Nguyên tắc tổ chức nào được nêu đối với đảng Mác-xít cách mạng kiểu mới?",
+      "choices": [
+        "Tập trung dân chủ",
+        "Tự quản công đoàn",
+        "Phân quyền quản lý",
+        "Dân chủ trực tiếp"
+      ],
+      "answer": 0,
+      "explanation": "Tập trung dân chủ là nguyên tắc được nêu. Phân quyền liên bang, tự quản nghiệp đoàn và hiệp thương giữa đảng phái là những cách tổ chức khác, không phải nguyên tắc này.",
+      "type": "nguyên tắc",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q022",
+      "sectionId": "hcm-c3-p14",
+      "question": "Ý nghĩa quốc tế của Cách mạng Tháng Mười được khái quát như thế nào?",
+      "choices": [
+        "Sự hoàn thành cách mạng tư sản ở các nước châu Âu",
+        "Thỏa thuận hòa bình giữa các đế quốc đương thời",
+        "Sự xác lập ưu thế thuộc địa của nước Nga mới",
+        "Thắng lợi chung của công nhân và nhân dân tiến bộ"
+      ],
+      "answer": 3,
+      "explanation": "Cách mạng Tháng Mười có ý nghĩa vượt phạm vi nước Nga, đối với công nhân và nhân dân tiến bộ trên thế giới. Không thể quy ý nghĩa này về ưu thế thuộc địa, hoàn thành cách mạng tư sản hoặc thỏa thuận giữa đế quốc.",
+      "type": "ý nghĩa",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q023",
+      "sectionId": "hcm-c3-p16",
+      "question": "Con đường nào được Hồ Chí Minh lựa chọn để cứu nước, giải phóng dân tộc?",
+      "choices": [
+        "Cải lương thuộc địa",
+        "Con đường cách mạng vô sản",
+        "Khôi phục quân chủ",
+        "Cách mạng tư sản"
+      ],
+      "answer": 1,
+      "explanation": "Lựa chọn là con đường cách mạng vô sản. Cải lương thuộc địa, khôi phục quân chủ và cách mạng tư sản là các hướng khác, không phải kết luận về con đường giải phóng dân tộc của Người.",
+      "type": "con đường",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q024",
+      "sectionId": "hcm-c3-p16",
+      "question": "Văn kiện nào gắn trực tiếp với việc Nguyễn Ái Quốc tìm thấy con đường giải phóng dân tộc qua tư tưởng của Lênin?",
+      "choices": [
+        "Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa",
+        "Làm gì? Những vấn đề cấp bách trong phong trào của chúng ta",
+        "Chủ nghĩa đế quốc, giai đoạn tột cùng của chủ nghĩa tư bản",
+        "Nhà nước và cách mạng: học thuyết về nhà nước và nhiệm vụ cách mạng"
+      ],
+      "answer": 0,
+      "explanation": "Văn kiện cần xác định là Sơ thảo luận cương về vấn đề dân tộc và thuộc địa. Các tác phẩm khác cùng trường lý luận cách mạng nhưng không phải văn kiện gắn với sự kiện tìm thấy con đường cứu nước được hỏi.",
+      "type": "văn kiện",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q025",
+      "sectionId": "hcm-c3-p17",
+      "question": "Vai trò của Đảng cách mệnh được ví với người lái đò nhằm nhấn mạnh điều gì?",
+      "choices": [
+        "Sự thay thế hoạt động quần chúng bằng công tác cán bộ",
+        "Việc ưu tiên liên lạc bên ngoài hơn vận động trong nước",
+        "Sự vững vàng của lãnh đạo đối với thành công cách mạng",
+        "Việc chuyển nhiệm vụ tổ chức dân chúng cho đoàn thể"
+      ],
+      "answer": 2,
+      "explanation": "Hình ảnh người lái đò nhấn mạnh Đảng phải vững thì cách mạng mới thành công. Không hàm ý thay thế quần chúng, hạ thấp vận động trong nước hay chuyển trách nhiệm tổ chức dân chúng cho chủ thể khác.",
+      "type": "vai trò",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q026",
+      "sectionId": "hcm-c3-p17",
+      "question": "Cặp nhiệm vụ nào thể hiện vai trò trong nước và quốc tế của Đảng cách mệnh?",
+      "choices": [
+        "Phát triển giáo dục; mở rộng quan hệ du lịch và thương mại",
+        "Tổ chức dân chúng; liên lạc các lực lượng bị áp bức",
+        "Tổ chức nghiệp đoàn; đàm phán quyền bảo hộ với nước lớn",
+        "Quản lý doanh nghiệp; điều hòa thị trường lao động quốc tế"
+      ],
+      "answer": 1,
+      "explanation": "Đảng vận động, tổ chức dân chúng trong nước và liên lạc với dân tộc bị áp bức, giai cấp vô sản ở ngoài nước. Ba cặp khác chuyển nội dung lãnh đạo cách mạng sang quản lý kinh tế hoặc quan hệ bảo hộ.",
+      "type": "chức năng",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q027",
+      "sectionId": "hcm-c3-p20",
+      "question": "Tình trạng thiếu tổ chức và người lãnh đạo giúp giải thích hạn chế nào của nông dân thuộc địa?",
+      "choices": [
+        "Phong trào nổi dậy khó đi tới thắng lợi",
+        "Mâu thuẫn thuộc địa đã được giải quyết",
+        "Nông dân có lợi ích gắn với chế độ thực dân",
+        "Nhu cầu giải phóng dân tộc chưa xuất hiện"
+      ],
+      "answer": 0,
+      "explanation": "Thiếu tổ chức và lãnh đạo làm phong trào yếu, dễ bị đàn áp. Không suy ra nông dân chưa có nhu cầu giải phóng, có lợi ích chung với thực dân hay mâu thuẫn thuộc địa đã hết.",
+      "type": "nguyên nhân",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q028",
+      "sectionId": "hcm-c3-p21",
+      "question": "Đảng Cộng sản Việt Nam được xác định gắn với những chủ thể nào?",
+      "choices": [
+        "Trí thức, nghiệp đoàn quốc tế và nhà nước thuộc địa",
+        "Giai cấp công nhân, nhân dân lao động và dân tộc",
+        "Nông dân, địa chủ phong kiến và các tổ chức tôn giáo",
+        "Giai cấp công nhân, giới chủ tư sản và bộ máy bảo hộ"
+      ],
+      "answer": 1,
+      "explanation": "Đảng gắn với giai cấp công nhân, nhân dân lao động và dân tộc Việt Nam. Các tổ hợp khác ghép thêm lực lượng hoặc bộ máy không phù hợp với nội dung xác định bản chất và vai trò đại diện này.",
+      "type": "bản chất",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q029",
+      "sectionId": "hcm-c3-p22",
+      "question": "Quan hệ giữa lực lượng toàn dân tộc và liên minh công – nông trong giải phóng dân tộc là gì?",
+      "choices": [
+        "Trí thức là lực lượng, công – nông là đồng minh",
+        "Công – nông là lực lượng, giới chủ là nền tảng",
+        "Toàn dân tộc là lực lượng, công – nông là nền tảng",
+        "Toàn dân tộc là nền tảng, công – nông là lãnh đạo"
+      ],
+      "answer": 2,
+      "explanation": "Cần phân biệt phạm vi tập hợp là toàn dân tộc với nền tảng là liên minh công – nông. Các phương án khác đổi vai trò lực lượng, nền tảng, đồng minh và lãnh đạo.",
+      "type": "lực lượng",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q030",
+      "sectionId": "hcm-c3-p22",
+      "question": "Cụm từ “Công nông là gốc cách mệnh” nhấn mạnh vai trò nào?",
+      "choices": [
+        "Nền tảng, động lực của cách mạng",
+        "Lực lượng hỗ trợ từ bên ngoài",
+        "Lãnh đạo chính trị của dân tộc",
+        "Đồng minh của phong trào dân tộc"
+      ],
+      "answer": 0,
+      "explanation": "Công nhân và nông dân là gốc, là động lực và nền tảng trong lực lượng dân tộc. Vai trò này khác với công tác đối ngoại, tổ chức lãnh đạo của Đảng hoặc đồng minh bên ngoài.",
+      "type": "vai trò",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q031",
+      "sectionId": "hcm-c3-p23",
+      "question": "Quan niệm “Cách mạng là việc chung cả dân chúng” xác định điều gì?",
+      "choices": [
+        "Quần chúng là chủ thể của cách mạng",
+        "Quân đội thay dân giành độc lập",
+        "Đảng làm thay việc quần chúng",
+        "Cán bộ thay dân làm cách mạng"
+      ],
+      "answer": 0,
+      "explanation": "Cách mạng là sự nghiệp của quần chúng nhân dân. Cán bộ, nghiệp đoàn và viện trợ quốc tế không thay thế chủ thể ấy; cũng không thể đồng nhất nghiệp đoàn với tổ chức lãnh đạo toàn dân tộc.",
+      "type": "chủ thể",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q032",
+      "sectionId": "hcm-c3-p24",
+      "question": "Khả năng thắng lợi của cách mạng giải phóng dân tộc ở thuộc địa được Hồ Chí Minh xác định thế nào?",
+      "choices": [
+        "Phụ thuộc vào việc chính quốc trao quyền tự trị",
+        "Phải chờ cách mạng vô sản ở chính quốc hoàn thành",
+        "Có thể thắng trước cách mạng vô sản ở chính quốc",
+        "Cần diễn ra đồng thời với cách mạng ở chính quốc"
+      ],
+      "answer": 2,
+      "explanation": "Điểm sáng tạo là cách mạng thuộc địa có thể chủ động giành thắng lợi trước cách mạng vô sản ở chính quốc. Không biến quan hệ gắn bó thành sự chờ đợi, bắt buộc đồng thời hay trông chờ trao quyền.",
+      "type": "tính chủ động",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q033",
+      "sectionId": "hcm-c3-p24",
+      "question": "Tự lực cánh sinh gắn với sự giúp đỡ quốc tế theo quan hệ nào?",
+      "choices": [
+        "Dựa vào viện trợ, dùng nội lực để bổ sung khi thiếu",
+        "Giảm hợp tác quốc tế để bảo đảm khả năng tự chủ",
+        "Đợi điều kiện bên ngoài rồi xây dựng nội lực trong nước",
+        "Dựa vào sức mình, coi trọng sự giúp đỡ của bạn bè"
+      ],
+      "answer": 3,
+      "explanation": "Tự lực cánh sinh lấy sức mình làm cơ sở đồng thời coi trọng giúp đỡ quốc tế. Dựa chủ yếu vào viện trợ, chờ bên ngoài hoặc giảm hợp tác đều làm sai quan hệ giữa hai nguồn sức mạnh.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q034",
+      "sectionId": "hcm-c3-p24",
+      "question": "Đề nghị trì hoãn giải phóng thuộc địa để chờ cách mạng ở chính quốc thắng lợi sai ở điểm nào?",
+      "choices": [
+        "Hạ thấp tính chủ động của cách mạng thuộc địa",
+        "Gắn cách mạng thuộc địa với cuộc đấu tranh quốc tế",
+        "Đánh giá quá cao vai trò tổ chức của quần chúng",
+        "Đặt nhiệm vụ dân tộc cao hơn nhiệm vụ dân chủ"
+      ],
+      "answer": 0,
+      "explanation": "Sai lầm là phủ nhận khả năng chủ động và thắng lợi trước của cách mạng thuộc địa. Gắn với đấu tranh quốc tế không đồng nghĩa phải chờ; vai trò tổ chức quần chúng và ưu tiên nhiệm vụ dân tộc không phải điểm sai trong đề nghị.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q035",
+      "sectionId": "hcm-c3-p25",
+      "question": "Hình tượng chủ nghĩa đế quốc như “con đỉa hai vòi” làm rõ quan hệ nào?",
+      "choices": [
+        "Mâu thuẫn giữa nông dân và công nhân ở chính quốc",
+        "Bóc lột ở chính quốc và thuộc địa gắn bó với nhau",
+        "Cạnh tranh thương mại giữa hai nước đế quốc lớn",
+        "Sự đối lập giữa công nghiệp và nông nghiệp thuộc địa"
+      ],
+      "answer": 1,
+      "explanation": "Hai vòi bám vào các lực lượng bị bóc lột ở chính quốc và thuộc địa, cho thấy mối liên hệ trong hệ thống đế quốc. Không phải hình tượng cho mâu thuẫn công – nông, cơ cấu ngành hay cạnh tranh giữa hai đế quốc.",
+      "type": "hình tượng",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q036",
+      "sectionId": "hcm-c3-p27",
+      "question": "Cách mạng thuộc địa và cách mạng vô sản chính quốc có quan hệ nào?",
+      "choices": [
+        "Phụ thuộc thứ bậc theo trình độ công nghiệp",
+        "Tách rời nhau theo địa giới của quốc gia",
+        "Thay thế nhau theo từng giai đoạn lịch sử",
+        "Mật thiết, tác động qua lại chống đế quốc"
+      ],
+      "answer": 3,
+      "explanation": "Hai cuộc cách mạng liên hệ mật thiết và tác động qua lại trong đấu tranh chống kẻ thù chung. Không nên chuyển quan hệ hỗ trợ thành phụ thuộc thứ bậc, thay thế hoặc tách rời.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q037",
+      "sectionId": "hcm-c3-p28",
+      "question": "Cơ sở trực tiếp của yêu cầu dùng bạo lực cách mạng chống bạo lực phản cách mạng là gì?",
+      "choices": [
+        "Bản chất bạo lực của chế độ thực dân",
+        "Nhu cầu mở rộng thị trường của thuộc địa",
+        "Sự xuất hiện quan hệ hàng hóa trong nước",
+        "Sự khác biệt trình độ phát triển văn hóa"
+      ],
+      "answer": 0,
+      "explanation": "Cơ sở được nêu là chế độ thực dân tự nó là hành động bạo lực của kẻ mạnh với kẻ yếu. Chênh lệch văn hóa, thị trường và quan hệ hàng hóa không phải căn cứ trực tiếp của lập luận này.",
+      "type": "nguyên nhân",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q038",
+      "sectionId": "hcm-c3-p28",
+      "question": "Bạo lực cách mạng bao gồm cặp hình thức đấu tranh nào?",
+      "choices": [
+        "Đấu tranh kinh tế và vận động thương mại",
+        "Đấu tranh nghị trường và cải cách hành chính",
+        "Đấu tranh chính trị và đấu tranh vũ trang",
+        "Đấu tranh ngoại giao và cải tổ thuộc địa"
+      ],
+      "answer": 2,
+      "explanation": "Hai hình thức là đấu tranh chính trị và đấu tranh vũ trang, được kết hợp phù hợp. Những cặp khác không thể thay cho cấu thành của bạo lực cách mạng đang được hỏi.",
+      "type": "hình thức",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q039",
+      "sectionId": "hcm-c3-p28",
+      "question": "Sự phát triển của đoàn thể và đấu tranh chính trị quần chúng có vai trò gì đối với lực lượng vũ trang?",
+      "choices": [
+        "Làm giảm nhu cầu tổ chức lực lượng chiến đấu",
+        "Tách hoạt động chiến đấu khỏi cơ sở quần chúng",
+        "Tạo cơ sở vững chắc để tổ chức và đấu tranh",
+        "Chuyển vai trò lãnh đạo sang bộ máy quân sự"
+      ],
+      "answer": 2,
+      "explanation": "Đoàn thể và phong trào chính trị mạnh tạo nền tảng cho tổ chức, đấu tranh vũ trang. Không kéo theo giảm nhu cầu lực lượng, thay chủ thể lãnh đạo hoặc tách khỏi quần chúng.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q040",
+      "sectionId": "hcm-c3-p31",
+      "question": "Căn cứ nào quyết định cách kết hợp đấu tranh chính trị với đấu tranh vũ trang?",
+      "choices": [
+        "Tình hình cụ thể của cuộc đấu tranh",
+        "Tỷ lệ cân bằng cố định giữa hai hình thức",
+        "Trình tự do phong trào chính quốc áp dụng",
+        "Mô hình tổ chức quân đội của nước bạn"
+      ],
+      "answer": 0,
+      "explanation": "Cần căn cứ tình hình cụ thể để lựa chọn và khéo kết hợp hai hình thức. Tỷ lệ cố định, mô hình quân đội nước bạn hay trình tự ở chính quốc không thay cho sự phân tích thực tiễn.",
+      "type": "phương pháp",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q041",
+      "sectionId": "hcm-c3-p31",
+      "question": "Bạo lực cách mạng của quần chúng được hiểu theo cách nào?",
+      "choices": [
+        "Quân đội nước ngoài đảm nhiệm việc giải phóng",
+        "Một nhóm quân sự hành động thay cho nhân dân",
+        "Một bộ phận cán bộ làm thay hoạt động đấu tranh",
+        "Toàn dân vùng dậy đánh đuổi quân xâm lược"
+      ],
+      "answer": 3,
+      "explanation": "Trọng tâm là toàn dân đứng lên, phù hợp quan điểm cách mạng là sự nghiệp quần chúng. Ba phương án còn lại thay thế chủ thể nhân dân bằng một nhóm hoặc lực lượng bên ngoài.",
+      "type": "chủ thể",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q042",
+      "sectionId": "hcm-c3-p32",
+      "question": "Xã hội xã hội chủ nghĩa nằm ở giai đoạn nào của xã hội cộng sản chủ nghĩa?",
+      "choices": [
+        "Thời kỳ sau giai đoạn cộng sản phát triển cao",
+        "Thời kỳ trước cách mạng dân tộc dân chủ",
+        "Giai đoạn đầu của xã hội cộng sản chủ nghĩa",
+        "Giai đoạn cuối của xã hội tư bản chủ nghĩa"
+      ],
+      "answer": 2,
+      "explanation": "Xã hội xã hội chủ nghĩa được xác định là giai đoạn đầu của xã hội cộng sản chủ nghĩa. Không xếp nó vào cuối chủ nghĩa tư bản, trước cách mạng dân tộc dân chủ hoặc sau giai đoạn phát triển cao của cộng sản chủ nghĩa.",
+      "type": "khái niệm",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q043",
+      "sectionId": "hcm-c3-p32",
+      "question": "Quan hệ giữa quyền lợi cá nhân và tập thể trong xã hội xã hội chủ nghĩa được xác định thế nào?",
+      "choices": [
+        "Đối lập như hai lợi ích không dung hòa",
+        "Đồng nhất bằng cách xóa lợi ích cá nhân",
+        "Tách rời theo từng lĩnh vực hoạt động",
+        "Thống nhất và gắn bó chặt chẽ"
+      ],
+      "answer": 3,
+      "explanation": "Quyền lợi cá nhân và tập thể thống nhất, gắn bó. Thống nhất không có nghĩa xóa lợi ích cá nhân; cũng không phải tách rời hoặc đối lập không thể dung hòa.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q044",
+      "sectionId": "hcm-c3-p33",
+      "question": "Tiến lên chủ nghĩa xã hội được Hồ Chí Minh xác định có tính chất nào?",
+      "choices": [
+        "Một tất yếu khách quan của sự phát triển",
+        "Một lựa chọn phụ thuộc ngẫu nhiên thời cuộc",
+        "Một thỏa hiệp tạm thời giữa các đảng phái",
+        "Một giải pháp tình thế trong quan hệ đối ngoại"
+      ],
+      "answer": 0,
+      "explanation": "Nội dung xác định tiến lên CNXH là tất yếu khách quan, gắn mục tiêu giải phóng và hạnh phúc con người. Các phương án khác biến đường hướng ấy thành ngẫu nhiên, giải pháp đối ngoại hay thỏa hiệp tạm thời.",
+      "type": "tính tất yếu",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q045",
+      "sectionId": "hcm-c3-p34",
+      "question": "Đặc trưng chính trị của xã hội xã hội chủ nghĩa là gì?",
+      "choices": [
+        "Xã hội có công nghiệp phát triển",
+        "Xã hội có phân phối theo lao động",
+        "Xã hội có văn hóa phát triển cao",
+        "Xã hội có chế độ dân chủ"
+      ],
+      "answer": 3,
+      "explanation": "Chế độ dân chủ là đặc trưng về chính trị. Công nghiệp và phân phối thuộc bình diện kinh tế, còn văn hóa phát triển cao thuộc bình diện văn hóa, đạo đức và quan hệ xã hội.",
+      "type": "đặc trưng",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q046",
+      "sectionId": "hcm-c3-p34",
+      "question": "Cặp yếu tố nào thể hiện đặc trưng kinh tế của chủ nghĩa xã hội?",
+      "choices": [
+        "Kinh tế viện trợ phát triển, phân phối theo địa vị xã hội",
+        "Kinh tế phát triển cao, tư hữu giữ vị trí thống trị",
+        "Kinh tế phát triển cao, công hữu về tư liệu sản xuất",
+        "Công hữu về tư liệu sản xuất, sản xuất tự cấp tự túc"
+      ],
+      "answer": 2,
+      "explanation": "Đặc trưng kết hợp trình độ phát triển kinh tế cao với công hữu về tư liệu sản xuất. Các lựa chọn khác thay chế độ sở hữu hoặc hạ thấp trình độ sản xuất, đổi nguyên tắc phân phối.",
+      "type": "đặc trưng",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q047",
+      "sectionId": "hcm-c3-p34",
+      "question": "“Công trình tập thể của nhân dân, do Đảng Cộng sản Việt Nam lãnh đạo” làm rõ đặc trưng nào?",
+      "choices": [
+        "Chủ thể xây dựng chủ nghĩa xã hội",
+        "Trình độ phát triển khoa học kỹ thuật",
+        "Nguyên tắc phân phối sản phẩm xã hội",
+        "Cơ cấu sở hữu trong nền kinh tế mới"
+      ],
+      "answer": 0,
+      "explanation": "Câu nêu ai xây dựng và ai lãnh đạo, nên thuộc đặc trưng về chủ thể xây dựng CNXH. Không phải mô tả trực tiếp sở hữu, trình độ kỹ thuật hay phân phối.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q048",
+      "sectionId": "hcm-c3-p34",
+      "question": "Đặc điểm nào KHÔNG phù hợp với các đặc trưng cơ bản của chủ nghĩa xã hội?",
+      "choices": [
+        "Văn hóa, đạo đức phát triển và có công bằng",
+        "Phân phối lợi ích theo địa vị và đặc quyền",
+        "Nhân dân xây dựng dưới sự lãnh đạo của Đảng",
+        "Nhân dân có vai trò làm chủ về chính trị"
+      ],
+      "answer": 1,
+      "explanation": "Phân phối theo địa vị và đặc quyền trái với yêu cầu công bằng. Ba phương án còn lại tương ứng đặc trưng chính trị, văn hóa – xã hội và chủ thể xây dựng.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q049",
+      "sectionId": "hcm-c3-p35",
+      "question": "Cách hiểu nào phản ánh mục tiêu cải thiện đời sống trong xây dựng chủ nghĩa xã hội?",
+      "choices": [
+        "Phúc lợi tăng, không gắn với phát triển sản xuất",
+        "Công nghiệp tăng, thu hẹp nhu cầu học tập văn hóa",
+        "Vật chất tăng, tinh thần tốt, đời sống dân tiến bộ",
+        "Sản lượng tăng, giữ nếp sống và quan hệ xã hội cũ"
+      ],
+      "answer": 2,
+      "explanation": "Đời sống tiến bộ bao gồm cả vật chất, tinh thần, giáo dục, chăm sóc khi ốm đau và tuổi già. Ba phương án khác tách rời tăng trưởng với tiến bộ xã hội hoặc tách phúc lợi khỏi cơ sở sản xuất.",
+      "type": "mục tiêu",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q050",
+      "sectionId": "hcm-c3-p36",
+      "question": "Kinh tế xã hội chủ nghĩa phát triển và đời sống được cải thiện tạo điều kiện cho mục tiêu chính trị nào?",
+      "choices": [
+        "Nhân dân thực sự tham gia quản lý nhà nước",
+        "Cơ quan chuyên môn thay dân quyết định công việc",
+        "Quyền tham gia quản lý chuyển sang tổ chức nước ngoài",
+        "Nhóm sở hữu lớn quyết định việc quản lý xã hội"
+      ],
+      "answer": 0,
+      "explanation": "Phát triển kinh tế, cải thiện đời sống tạo điều kiện để dân thực hiện dân chủ, tham gia quản lý nhà nước. Những phương án khác chuyển quyền làm chủ từ nhân dân sang chủ thể khác.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q051",
+      "sectionId": "hcm-c3-p37",
+      "question": "Mục tiêu chính trị trong xây dựng chủ nghĩa xã hội ở Việt Nam được thể hiện ở nội dung nào?",
+      "choices": [
+        "Nhân dân làm chủ; nhà nước của dân, do dân, vì dân",
+        "Công nghiệp làm nền; nhà nước quản lý theo lợi nhuận",
+        "Chuyên gia làm chủ; nhà nước điều hành thay dân chúng",
+        "Doanh nghiệp làm nền; nhà nước đại diện giới sở hữu"
+      ],
+      "answer": 0,
+      "explanation": "Mục tiêu chính trị là nhân dân lao động làm chủ và xây dựng nhà nước của dân, do dân, vì dân. Các lựa chọn khác thay chủ thể hoặc tiêu chí tổ chức nhà nước bằng lợi nhuận, chuyên gia hay giới sở hữu.",
+      "type": "mục tiêu",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q052",
+      "sectionId": "hcm-c3-p38",
+      "question": "Mục tiêu kinh tế phát triển cao được đặt trong quan hệ nào với mục tiêu chính trị?",
+      "choices": [
+        "Hoàn thành trước khi xác định mục tiêu chính trị",
+        "Tách thành lĩnh vực độc lập với chính trị",
+        "Được thay thế bằng mở rộng bộ máy chính trị",
+        "Gắn bó mật thiết với mục tiêu chính trị"
+      ],
+      "answer": 3,
+      "explanation": "Mục tiêu kinh tế và chính trị gắn bó mật thiết. Không xem chúng là hai lĩnh vực tách rời, không trì hoãn xác định mục tiêu chính trị và không lấy mở rộng bộ máy thay cho phát triển kinh tế.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q053",
+      "sectionId": "hcm-c3-p41",
+      "question": "Bộ ba tính chất nào được nhấn mạnh đối với nền văn hóa cần xây dựng?",
+      "choices": [
+        "Mang tính khoa học, kỹ thuật, thương mại",
+        "Mang tính dân tộc, khoa học, đại chúng",
+        "Mang tính đại chúng, hội nhập, đẳng cấp",
+        "Mang tính dân tộc, dân chủ, đặc quyền"
+      ],
+      "answer": 1,
+      "explanation": "Nền văn hóa được xác định có tính dân tộc, khoa học, đại chúng, đồng thời tiếp thu tinh hoa nhân loại. Các tổ hợp còn lại thay một hoặc nhiều tính chất bằng đặc quyền, đẳng cấp hay thương mại.",
+      "type": "tổng hợp",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q054",
+      "sectionId": "hcm-c3-p41",
+      "question": "Quan hệ giữa tính dân tộc của văn hóa và tinh hoa văn hóa nhân loại được thể hiện thế nào?",
+      "choices": [
+        "Tiếp thu văn hóa nhân loại để thay thế bản sắc văn hóa dân tộc",
+        "Giữ văn hóa dân tộc bằng cách thu hẹp giao lưu văn hóa quốc tế",
+        "Phát triển văn hóa dân tộc sau khi đồng nhất mô hình nước ngoài",
+        "Xây dựng văn hóa dân tộc đồng thời tiếp thu tinh hoa nhân loại"
+      ],
+      "answer": 3,
+      "explanation": "Tính dân tộc gắn với tiếp thu tinh hoa văn hóa nhân loại. Thu hẹp giao lưu, thay thế bản sắc hay đồng nhất mô hình nước ngoài đều làm sai mối quan hệ này.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q055",
+      "sectionId": "hcm-c3-p41",
+      "question": "Nhóm nhiệm vụ nào thuộc mục tiêu phát triển văn hóa và giáo dục?",
+      "choices": [
+        "Xóa mù chữ, nâng cao dân trí, thực hiện nếp sống mới",
+        "Mở rộng lãnh thổ, cải tổ quân đội, điều tiết ngoại thương",
+        "Đổi cơ cấu sở hữu, định mức giá cả, phân phối thu nhập",
+        "Tăng dự trữ ngoại tệ, quy hoạch cảng biển, phát triển tín dụng"
+      ],
+      "answer": 0,
+      "explanation": "Xóa mù chữ, nâng cao dân trí và nếp sống mới trực tiếp thuộc văn hóa, giáo dục. Các nhóm còn lại thuộc chủ quyền, quốc phòng hoặc tổ chức, quản lý kinh tế.",
+      "type": "nhiệm vụ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q056",
+      "sectionId": "hcm-c3-p41",
+      "question": "Con người giữ vị trí nào trong công cuộc xây dựng chủ nghĩa xã hội?",
+      "choices": [
+        "Đối tượng quản lý và công cụ thay cho kỹ thuật",
+        "Mục tiêu cao nhất và động lực quyết định nhất",
+        "Nguồn lực bổ trợ và kết quả phụ của tăng trưởng",
+        "Yếu tố tiêu dùng và chi phí của quá trình sản xuất"
+      ],
+      "answer": 1,
+      "explanation": "Con người vừa là mục tiêu cao nhất vừa là động lực quyết định nhất. Các phương án kia thu hẹp con người thành nguồn lực phụ, công cụ quản lý hoặc chi phí tiêu dùng.",
+      "type": "vai trò",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q057",
+      "sectionId": "hcm-c3-p42",
+      "question": "Mục tiêu về quan hệ xã hội được khái quát bằng nhóm giá trị nào?",
+      "choices": [
+        "Dân chủ, tăng trưởng, lợi nhuận",
+        "Dân chủ, công bằng, văn minh",
+        "Văn minh, bảo hộ, đặc quyền",
+        "Công bằng, trật tự, phân tầng"
+      ],
+      "answer": 1,
+      "explanation": "Quan hệ xã hội phải bảo đảm dân chủ, công bằng, văn minh. Tăng trưởng và lợi nhuận thuộc tiêu chí kinh tế khác; phân tầng hoặc đặc quyền không thay thế được yêu cầu công bằng.",
+      "type": "mục tiêu",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q058",
+      "sectionId": "hcm-c3-p43",
+      "question": "Động lực phát triển kinh tế – xã hội được hiểu như thế nào?",
+      "choices": [
+        "Mục tiêu dự kiến trong chương trình phát triển quốc gia",
+        "Khó khăn phát sinh khi thay đổi quan hệ sản xuất",
+        "Kết quả cuối cùng của quá trình phân phối thu nhập",
+        "Nhân tố thúc đẩy phát triển qua hoạt động con người"
+      ],
+      "answer": 3,
+      "explanation": "Động lực là nhân tố thúc đẩy phát triển thông qua hoạt động con người. Cần phân biệt nhân tố thúc đẩy với kết quả, mục tiêu dự kiến và trở ngại của quá trình phát triển.",
+      "type": "khái niệm",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q059",
+      "sectionId": "hcm-c3-p46",
+      "question": "Khi xác định tiền lương, nguyên tắc phân phối nào được nhấn mạnh?",
+      "choices": [
+        "Phân phối căn cứ vào lao động",
+        "Phân phối theo mức góp vốn",
+        "Phân phối theo nhu cầu",
+        "Phân phối bình quân thu nhập"
+      ],
+      "answer": 0,
+      "explanation": "Nguyên tắc được nêu là phân phối theo lao động, gắn tiền lương với đóng góp và bảo đảm đời sống. Không nhầm với phân phối theo nhu cầu, theo góp vốn hoặc chia bình quân.",
+      "type": "nguyên tắc",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q060",
+      "sectionId": "hcm-c3-p46",
+      "question": "Khoán sản phẩm được nêu như biện pháp khuyến khích điều gì?",
+      "choices": [
+        "Cơ quan quản lý tách tiền lương khỏi kết quả",
+        "Cơ sở sản xuất phân phối theo quan hệ thân quen",
+        "Người lao động hoàn thành tốt hơn nhiệm vụ",
+        "Người lao động nhận thu nhập bằng nhau"
+      ],
+      "answer": 2,
+      "explanation": "Khoán sản phẩm khuyến khích hoàn thành tốt nhiệm vụ, gắn kết quả lao động với phân phối. Bình quân, thân quen hay tách lương khỏi kết quả không thể hiện tác dụng đó.",
+      "type": "vai trò",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q061",
+      "sectionId": "hcm-c3-p47",
+      "question": "Nhóm nào thuộc động lực vật chất trong phát triển chủ nghĩa xã hội?",
+      "choices": [
+        "Quyền làm chủ, ý thức công dân, tinh thần đoàn kết",
+        "Đạo đức, niềm tin, ý thức trách nhiệm cộng đồng",
+        "Quan hệ ngoại giao, hợp tác quốc tế, giao lưu văn hóa",
+        "Điện năng, cơ giới hóa, cơ sở hạ tầng"
+      ],
+      "answer": 3,
+      "explanation": "Điện năng, cơ giới hóa và hạ tầng thuộc điều kiện vật chất thúc đẩy sản xuất. Các nhóm khác nghiêng về chính trị – tinh thần hoặc yếu tố quốc tế.",
+      "type": "phân loại",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q062",
+      "sectionId": "hcm-c3-p48",
+      "question": "Phát huy quyền làm chủ của người lao động trực tiếp thuộc nhóm động lực nào?",
+      "choices": [
+        "Động lực thuộc lĩnh vực chính trị, tinh thần",
+        "Động lực cơ sở vật chất kỹ thuật",
+        "Động lực do trữ lượng tài nguyên",
+        "Động lực từ nguồn viện trợ quốc tế"
+      ],
+      "answer": 0,
+      "explanation": "Quyền làm chủ thuộc bình diện chính trị, tinh thần. Nó khác cơ sở kỹ thuật, viện trợ quốc tế và tài nguyên, dù các yếu tố ấy cũng có thể hỗ trợ phát triển.",
+      "type": "phân loại",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q063",
+      "sectionId": "hcm-c3-p49",
+      "question": "Bên cạnh vật chất và chính trị – tinh thần, những yếu tố nào được nêu như động lực phát triển?",
+      "choices": [
+        "Quyền làm chủ và trật tự đặc quyền",
+        "Khoa học – kỹ thuật và yếu tố quốc tế",
+        "Quan hệ quốc tế và lợi ích nhóm quản lý",
+        "Khoa học – kỹ thuật và đặc lợi chức vụ"
+      ],
+      "answer": 1,
+      "explanation": "Khoa học – kỹ thuật và yếu tố quốc tế được nêu bên cạnh vật chất, chính trị – tinh thần. Các phương án nhiễu ghép một yếu tố liên quan với đặc lợi hoặc lợi ích nhóm, là những yếu tố không thể thay cho động lực phát triển.",
+      "type": "tổng hợp",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q064",
+      "sectionId": "hcm-c3-p51",
+      "question": "Nhóm biểu hiện nào là trở lực đối với xây dựng chủ nghĩa xã hội?",
+      "choices": [
+        "Lợi ích chính đáng, trách nhiệm, kỷ luật lao động",
+        "Tự chủ sản xuất, sáng kiến, đoàn kết cộng đồng",
+        "Chủ nghĩa cá nhân và vô tổ chức, vô kỷ luật",
+        "Quyền làm chủ, ý thức công dân, tinh thần hợp tác"
+      ],
+      "answer": 2,
+      "explanation": "Trở lực được cảnh báo là chủ nghĩa cá nhân lợi mình hại người cùng vô tổ chức, vô kỷ luật. Không đánh đồng việc chống chủ nghĩa cá nhân với phủ nhận lợi ích chính đáng, sáng kiến hay quyền làm chủ.",
+      "type": "trở lực",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q065",
+      "sectionId": "hcm-c3-p51",
+      "question": "Một cơ chế khuyến khích sáng kiến nhưng dung túng lợi mình hại người cần được điều chỉnh theo hướng nào?",
+      "choices": [
+        "Dừng khuyến khích sáng kiến để giữ nề nếp hành chính",
+        "Đặt lợi ích cá nhân tách khỏi trách nhiệm với cộng đồng",
+        "Chuyển việc đánh giá lao động sang ưu tiên quan hệ riêng",
+        "Phát huy động lực đồng thời khắc phục chủ nghĩa cá nhân"
+      ],
+      "answer": 3,
+      "explanation": "Cần kết hợp phát huy động lực với chống trở lực; sáng kiến khác chủ nghĩa cá nhân lợi mình hại người. Dừng sáng kiến hoặc ưu tiên lợi ích riêng, quan hệ riêng đều không giải quyết đúng vấn đề.",
+      "type": "phân biệt",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q066",
+      "sectionId": "hcm-c3-p52",
+      "question": "Tính sâu sắc của cách mạng xã hội chủ nghĩa thể hiện ở phạm vi biến đổi nào?",
+      "choices": [
+        "Danh xưng chính quyền, giữ trình độ kinh tế nông nghiệp",
+        "Cơ cấu bộ máy hành chính, giữ các quan hệ xã hội cũ",
+        "Quan hệ sản xuất, nếp sống, tư tưởng và trình độ phát triển",
+        "Phương thức tuyên truyền, giữ nguyên thói quen và thành kiến"
+      ],
+      "answer": 2,
+      "explanation": "Sự biến đổi bao quát quan hệ sản xuất, nếp sống, tư tưởng, văn hóa và chuyển đổi nền kinh tế lạc hậu. Các phương án khác thu hẹp thành thay đổi bộ máy, danh xưng hoặc tuyên truyền.",
+      "type": "phạm vi",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q067",
+      "sectionId": "hcm-c3-p54",
+      "question": "Thời kỳ quá độ lên chủ nghĩa xã hội có tính chất nào?",
+      "choices": [
+        "Khôi phục xã hội cũ, chủ yếu duy trì nền nếp sẵn có",
+        "Chuyển giao hành chính, tuần tự theo lịch cố định",
+        "Cải biến sâu sắc, lâu dài, phức tạp, gian khổ",
+        "Điều chỉnh kỹ thuật, ngắn hạn và ít biến đổi xã hội"
+      ],
+      "answer": 2,
+      "explanation": "Đây là thời kỳ cải biến sâu sắc, lâu dài, phức tạp, khó khăn, gian khổ. Không thể giản lược thành điều chỉnh kỹ thuật, chuyển giao hành chính hoặc khôi phục xã hội cũ.",
+      "type": "tính chất",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q068",
+      "sectionId": "hcm-c3-p55",
+      "question": "Đặc điểm lớn nhất của quá độ lên chủ nghĩa xã hội ở Việt Nam được xác định là gì?",
+      "choices": [
+        "Từ nông nghiệp hiện đại, sau khi hoàn tất tư bản công nghiệp",
+        "Từ kinh tế thuộc địa phát triển cao, qua chính quyền tư sản",
+        "Từ nông nghiệp lạc hậu, không qua giai đoạn phát triển TBCN",
+        "Từ công nghiệp phát triển, sau giai đoạn tư bản độc quyền"
+      ],
+      "answer": 2,
+      "explanation": "Điểm xuất phát là nước nông nghiệp lạc hậu, tiến lên CNXH không qua giai đoạn phát triển tư bản chủ nghĩa. Các phương án khác đổi điểm xuất phát hoặc thêm một giai đoạn phát triển không phù hợp.",
+      "type": "đặc điểm",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q069",
+      "sectionId": "hcm-c3-p56",
+      "question": "Cặp nhiệm vụ nào khái quát công việc trong thời kỳ quá độ?",
+      "choices": [
+        "Xây thiết chế chính trị; giữ quan hệ sản xuất cũ",
+        "Cải tạo xong xã hội cũ; sau đó xây nền tảng mới",
+        "Xây nền tảng kinh tế; hoãn tiền đề chính trị",
+        "Xây nền tảng, tiền đề mới; cải tạo xã hội cũ"
+      ],
+      "answer": 3,
+      "explanation": "Cần kết hợp xây nền tảng vật chất kỹ thuật, các tiền đề mới với cải tạo xã hội cũ. Không tách thành hai công việc phải xong trước – sau, không bỏ các tiền đề chính trị và không giữ nguyên quan hệ sản xuất cũ.",
+      "type": "nhiệm vụ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q070",
+      "sectionId": "hcm-c3-p56",
+      "question": "Trong quan hệ giữa cải tạo xã hội cũ và xây dựng xã hội mới, nội dung nào giữ trọng tâm lâu dài?",
+      "choices": [
+        "Cải tạo các thiết chế cũ",
+        "Sắp xếp bộ máy quản lý",
+        "Điều chỉnh phân phối thu nhập",
+        "Xây dựng, tạo lập xã hội mới"
+      ],
+      "answer": 3,
+      "explanation": "Xây dựng xã hội mới giữ vị trí cốt yếu, chủ chốt, lâu dài. Cải tạo, sắp xếp bộ máy và điều chỉnh phân phối là nhiệm vụ liên quan hoặc cụ thể, không thay thế trọng tâm bao quát này.",
+      "type": "trọng tâm",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q071",
+      "sectionId": "hcm-c3-p56",
+      "question": "Các tiền đề cần xây dựng trong thời kỳ quá độ bao gồm những lĩnh vực nào?",
+      "choices": [
+        "Chính trị, hành chính, thương mại, tín dụng",
+        "Kinh tế, chính trị, văn hóa, tư tưởng",
+        "Văn hóa, thể thao, nghệ thuật, du lịch",
+        "Kinh tế, quân sự, ngoại giao, nghi lễ"
+      ],
+      "answer": 1,
+      "explanation": "Bên cạnh nền tảng vật chất – kỹ thuật là các tiền đề kinh tế, chính trị, văn hóa, tư tưởng. Những nhóm còn lại là một số hoạt động cụ thể, không bao quát hệ thống tiền đề được hỏi.",
+      "type": "tổng hợp",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q072",
+      "sectionId": "hcm-c3-p59",
+      "question": "Yêu cầu “chớ đem cái chủ quan thay cho thực tế” đòi hỏi cách tiến hành nào?",
+      "choices": [
+        "Lấy chỉ tiêu tuyên truyền thay cho kết quả đời sống dân",
+        "Thiết thực, từng bước vững chắc theo điều kiện thực tế",
+        "Đẩy nhanh tiến độ theo mong muốn của người điều hành",
+        "Lấy mô hình có sẵn thay cho đánh giá điều kiện trong nước"
+      ],
+      "answer": 1,
+      "explanation": "Xây dựng CNXH phải xuất phát thực tế, tiến hành thiết thực, từng bước vững chắc. Mong muốn chủ quan, mô hình có sẵn hoặc chỉ tiêu tuyên truyền không thay thế việc đánh giá điều kiện và kết quả thực tiễn.",
+      "type": "phương pháp",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q073",
+      "sectionId": "hcm-c3-p59",
+      "question": "Nội dung nào thuộc xây dựng về chính trị trong thời kỳ quá độ?",
+      "choices": [
+        "Giữ vai trò lãnh đạo của Đảng, củng cố mặt trận dân tộc",
+        "Thực hiện phân phối theo lao động, khuyến khích kinh tế tư nhân",
+        "Phát triển học thức văn hóa, chính trị, kỹ thuật cho con người",
+        "Phát triển lực lượng sản xuất, đổi mới cơ chế quản lý"
+      ],
+      "answer": 0,
+      "explanation": "Lãnh đạo của Đảng và mặt trận dân tộc thuộc nội dung chính trị. Hai lựa chọn tiếp theo thuộc kinh tế; lựa chọn về học thức con người thuộc văn hóa – xã hội.",
+      "type": "chính trị",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q074",
+      "sectionId": "hcm-c3-p59",
+      "question": "Ba bình diện xây dựng kinh tế trong thời kỳ quá độ được nêu là gì?",
+      "choices": [
+        "Quan hệ sản xuất, thiết chế văn hóa, cơ cấu mặt trận",
+        "Lực lượng sản xuất, quan hệ ngoại giao, cơ chế bầu cử",
+        "Lực lượng sản xuất, quan hệ sản xuất, cơ chế quản lý",
+        "Cơ chế quản lý, chuẩn mực đạo đức, hệ thống nghi lễ"
+      ],
+      "answer": 2,
+      "explanation": "Ba bình diện là lực lượng sản xuất, quan hệ sản xuất và cơ chế quản lý kinh tế. Các phương án khác giữ một hoặc hai yếu tố đúng rồi ghép lĩnh vực chính trị, văn hóa hoặc nghi lễ.",
+      "type": "kinh tế",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q075",
+      "sectionId": "hcm-c3-p59",
+      "question": "Hai người có mức đóng góp lao động khác nhau nhưng được chia thu nhập như nhau sẽ đặt ra vấn đề gì?",
+      "choices": [
+        "Chưa chuyển sang phân phối theo nhu cầu",
+        "Chưa sử dụng mức góp vốn làm căn cứ",
+        "Chưa tăng mức bình quân của thu nhập",
+        "Sai nguyên tắc phân phối theo lao động"
+      ],
+      "answer": 3,
+      "explanation": "Mức đóng góp khác nhau mà chia bằng nhau không phản ánh phân phối theo lao động. Cần phân biệt với phân phối theo nhu cầu, theo vốn góp hoặc tăng mức bình quân, là những tiêu chí khác.",
+      "type": "phân phối",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q076",
+      "sectionId": "hcm-c3-p59",
+      "question": "Chủ trương đối với kinh tế tư nhân trong thời kỳ quá độ lên CNXH được xác định như thế nào?",
+      "choices": [
+        "Đồng nhất kinh tế tư nhân với kinh tế quốc dân",
+        "Lấy kinh tế tư nhân thay nền kinh tế quốc dân",
+        "Cải tạo xong tư nhân rồi mới phát triển kinh tế",
+        "Khuyến khích phát triển bộ phận kinh tế tư nhân"
+      ],
+      "answer": 3,
+      "explanation": "Nội dung nêu ưu tiên phát triển kinh tế quốc dân đồng thời khuyến khích kinh tế tư nhân. Không đồng nhất hai phạm vi, đặt điều kiện phải cải tạo xong mới phát triển hoặc thay nền kinh tế quốc dân bằng một bộ phận.",
+      "type": "kinh tế",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q077",
+      "sectionId": "hcm-c3-p59",
+      "question": "Yêu cầu đối với con người mới trong thời kỳ quá độ nhấn mạnh nhóm học thức nào?",
+      "choices": [
+        "Chính trị, quân sự, ngoại giao",
+        "Kỹ thuật, ngân hàng, tín dụng",
+        "Văn hóa, chính trị, kỹ thuật",
+        "Văn hóa, thương mại, nghi lễ"
+      ],
+      "answer": 2,
+      "explanation": "Nhóm được nêu là học thức văn hóa, chính trị, kỹ thuật. Các phương án khác giữ một lĩnh vực đúng rồi thay hai lĩnh vực còn lại bằng chuyên môn hoặc hoạt động khác.",
+      "type": "văn hóa xã hội",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q078",
+      "sectionId": "hcm-c3-p60",
+      "question": "Công nghiệp hóa, hiện đại hóa được gắn với đường hướng phát triển kinh tế nào trong quá trình đi lên CNXH?",
+      "choices": [
+        "Duy trì cơ chế tự cấp của từng địa phương",
+        "Lấy xuất khẩu thay cơ sở sản xuất trong nước",
+        "Đặt kinh tế thị trường ngoài mục tiêu xã hội",
+        "Phát triển kinh tế thị trường định hướng XHCN"
+      ],
+      "answer": 3,
+      "explanation": "Đường hướng được nêu là phát triển kinh tế thị trường định hướng XHCN. Tự cấp địa phương, mô hình thuộc địa hoặc tách kinh tế khỏi mục tiêu xã hội không phản ánh định hướng này.",
+      "type": "tổng hợp",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q079",
+      "sectionId": "hcm-c3-p61",
+      "question": "Cặp nào cùng thuộc các nguyên tắc xây dựng CNXH trong thời kỳ quá độ?",
+      "choices": [
+        "Giữ độc lập dân tộc; xây dựng đi cùng chống trở lực",
+        "Xây đi đôi với chống; đặt hợp tác trên quyền tự quyết",
+        "Giữ vững độc lập dân tộc; thay nền tảng Mác – Lênin",
+        "Học kinh nghiệm nước bạn; vận dụng nguyên mẫu mô hình"
+      ],
+      "answer": 0,
+      "explanation": "Hai nguyên tắc đúng là giữ vững độc lập dân tộc và xây đi đôi với chống. Các phương án kia ghép một ý đúng với việc đổi nền tảng, sao chép mô hình hoặc đặt hợp tác cao hơn quyền tự quyết.",
+      "type": "nguyên tắc",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q080",
+      "sectionId": "hcm-c3-p61",
+      "question": "Hệ thống các nguyên tắc xây dựng CNXH trong thời kỳ quá độ được Hồ Chí Minh xác định gồm bao nhiêu nguyên tắc?",
+      "choices": [
+        "Hai nguyên tắc",
+        "Bốn nguyên tắc",
+        "Năm nguyên tắc",
+        "Ba nguyên tắc"
+      ],
+      "answer": 1,
+      "explanation": "Có bốn nguyên tắc: nền tảng Mác – Lênin, giữ độc lập dân tộc, đoàn kết và học hỏi nước bạn, xây đi đôi với chống. Không nhầm với hai nguyên tắc phương pháp luận hay ba điều kiện gắn độc lập dân tộc với CNXH.",
+      "type": "số lượng",
+      "difficulty": "cơ bản"
+    },
+    {
+      "id": "hcm-c3-q081",
+      "sectionId": "hcm-c3-p08",
+      "question": "Cặp nội dung nào làm rõ hai cấp độ độc lập của quốc gia và tự do của người dân?",
+      "choices": [
+        "Quyền tự quyết của đất nước; quyền quyết định của nước bảo trợ",
+        "Quyền tự do của người dân; đặc quyền của quốc gia thống trị",
+        "Quyền tự quyết của đất nước; đời sống tự do, hạnh phúc của dân",
+        "Đời sống của người dân; sự tách rời giữa nhân dân và Tổ quốc"
+      ],
+      "answer": 2,
+      "explanation": "Độc lập quốc gia phải đi cùng tự do, hạnh phúc của nhân dân. Các cặp khác đưa vào bảo trợ, đặc quyền thống trị hoặc tách dân khỏi Tổ quốc, làm sai hai cấp độ gắn bó này.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q082",
+      "sectionId": "hcm-c3-p09",
+      "question": "Trường hợp nào KHÔNG đáp ứng yêu cầu độc lập hoàn toàn, triệt để?",
+      "choices": [
+        "Quốc gia tự tổ chức quân đội và thiết lập quan hệ ngoại giao",
+        "Quốc gia tự quyết chính sách và chủ động tham gia trao đổi quốc tế",
+        "Quốc gia tự quyết tài chính và hợp tác quốc tế trên cơ sở tự nguyện",
+        "Quốc gia tự quản nội bộ nhưng ngoại giao do nước khác chi phối"
+      ],
+      "answer": 3,
+      "explanation": "Chưa tự quyết ngoại giao là chưa độc lập triệt để. Hợp tác, trao đổi quốc tế tự nguyện không đồng nghĩa lệ thuộc, khi quốc gia vẫn giữ quyền tự quyết của mình.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q083",
+      "sectionId": "hcm-c3-p22",
+      "question": "Cách xác định lực lượng nào KHÔNG phù hợp với yêu cầu đại đoàn kết trong giải phóng dân tộc?",
+      "choices": [
+        "Đồng nhất lực lượng toàn dân với liên minh công – nông",
+        "Thu hút các giai cấp yêu nước cùng chống lại cường quyền",
+        "Lấy liên minh công – nông làm nền tảng tập hợp dân tộc",
+        "Coi các giai cấp khác là đồng minh của công nhân, nông dân"
+      ],
+      "answer": 0,
+      "explanation": "Đồng nhất toàn dân với công – nông thu hẹp phạm vi tập hợp. Liên minh công – nông là nền tảng, còn lực lượng giải phóng dân tộc bao gồm các bộ phận yêu nước của dân tộc.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q084",
+      "sectionId": "hcm-c3-p24",
+      "question": "Thắng lợi trước cách mạng chính quốc có đồng nghĩa cách mạng thuộc địa tách khỏi cách mạng thế giới không?",
+      "choices": [
+        "Có; thắng lợi trước làm mất cơ sở phối hợp giữa hai bên",
+        "Không; chủ động thắng lợi vẫn gắn với đoàn kết quốc tế",
+        "Có; tự lực cánh sinh đòi hỏi giảm quan hệ quốc tế",
+        "Không; vì hai cuộc cách mạng phải hoàn thành cùng lúc"
+      ],
+      "answer": 1,
+      "explanation": "Khả năng thắng trước thể hiện chủ động, không phủ nhận quan hệ mật thiết với cách mạng thế giới. Phương án cuối phủ nhận tách rời nhưng gắn thêm yêu cầu cùng lúc nên cũng không đúng.",
+      "type": "phân biệt",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q085",
+      "sectionId": "hcm-c3-p25",
+      "question": "Ý nghĩa chiến lược của yêu cầu “cắt cả hai vòi” của chủ nghĩa đế quốc là gì?",
+      "choices": [
+        "Chờ thắng lợi chính quốc rồi giải phóng thuộc địa",
+        "Phối hợp đấu tranh chống đế quốc ở chính quốc và ở thuộc địa",
+        "Thay cách mạng chính quốc bằng vận động ngoại giao",
+        "Chuyển phong trào thuộc địa sang nhiệm vụ thương mại"
+      ],
+      "answer": 1,
+      "explanation": "Hai bộ phận bóc lột gắn nhau đòi hỏi liên kết đấu tranh ở chính quốc và thuộc địa. Không suy ra sự chờ đợi tuần tự, đổi nhiệm vụ sang thương mại hoặc thay cách mạng bằng ngoại giao.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q086",
+      "sectionId": "hcm-c3-p28",
+      "question": "Cách hiểu nào KHÔNG đúng về bạo lực cách mạng?",
+      "choices": [
+        "Đồng nhất bạo lực cách mạng với đấu tranh vũ trang",
+        "Chọn hình thức phù hợp căn cứ vào tình hình cụ thể",
+        "Kết hợp đấu tranh chính trị với đấu tranh vũ trang",
+        "Dùng sức mạnh quần chúng để giành và giữ chính quyền"
+      ],
+      "answer": 0,
+      "explanation": "Đồng nhất với đấu tranh vũ trang là bỏ mất hình thức đấu tranh chính trị. Bạo lực cách mạng của quần chúng kết hợp hai hình thức tùy tình hình để giành và bảo vệ chính quyền.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q087",
+      "sectionId": "hcm-c3-p31",
+      "question": "Lập luận “có lực lượng vũ trang mạnh thì không cần xây dựng phong trào chính trị quần chúng” sai ở đâu?",
+      "choices": [
+        "Tách đấu tranh vũ trang khỏi cơ sở chính trị quần chúng",
+        "Đánh đồng đoàn thể quần chúng với cơ quan lãnh đạo Đảng",
+        "Đòi đồng thời hoàn thành cách mạng thuộc địa và chính quốc",
+        "Đặt đấu tranh chính trị cao hơn mục tiêu giành chính quyền"
+      ],
+      "answer": 0,
+      "explanation": "Sai ở việc cắt quan hệ giữa lực lượng vũ trang với cơ sở quần chúng và đấu tranh chính trị. Ba phương án khác là những vấn đề khác, không chỉ đúng lỗi của lập luận.",
+      "type": "phân biệt",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q088",
+      "sectionId": "hcm-c3-p32",
+      "question": "Nhận định nào KHÔNG phản ánh quan niệm về xã hội xã hội chủ nghĩa?",
+      "choices": [
+        "Nhân dân lao động có vai trò làm chủ xã hội",
+        "Quyền lợi cá nhân gắn chặt với quyền lợi tập thể",
+        "Lợi ích cá nhân bị xóa để hòa tan vào lợi ích tập thể",
+        "Con người hướng tới đời sống ấm no, tự do, hạnh phúc"
+      ],
+      "answer": 2,
+      "explanation": "Quan niệm nhấn mạnh sự thống nhất, gắn bó giữa quyền lợi cá nhân và tập thể, không phải xóa lợi ích cá nhân. Ba ý còn lại phù hợp với mô tả xã hội xã hội chủ nghĩa.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q089",
+      "sectionId": "hcm-c3-p34",
+      "question": "Cặp đặc trưng – lĩnh vực nào được ghép đúng?",
+      "choices": [
+        "Công bằng xã hội – lĩnh vực tổ chức quân sự",
+        "Dân chủ của chế độ – lĩnh vực kỹ thuật sản xuất",
+        "Công hữu tư liệu sản xuất – lĩnh vực kinh tế",
+        "Công hữu tư liệu sản xuất – lĩnh vực văn hóa"
+      ],
+      "answer": 2,
+      "explanation": "Công hữu tư liệu sản xuất thuộc đặc trưng kinh tế. Dân chủ thuộc chính trị; công bằng thuộc văn hóa, đạo đức và quan hệ xã hội, không phải những lĩnh vực ghép trong các phương án nhiễu.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q090",
+      "sectionId": "hcm-c3-p41",
+      "question": "Chính sách tăng sản lượng nhưng xem nhẹ giáo dục, chăm sóc sức khỏe còn thiếu yêu cầu nào của mục tiêu CNXH?",
+      "choices": [
+        "Coi đầu tư thiết bị là mục tiêu cao nhất của xã hội",
+        "Gắn phát triển vật chất với phát triển con người",
+        "Lấy thu nhập thay nhu cầu văn hóa và sức khỏe",
+        "Tập trung tăng trưởng trước khi phát triển giáo dục"
+      ],
+      "answer": 1,
+      "explanation": "Mục tiêu CNXH bao gồm đời sống vật chất, tinh thần và phát triển con người. Tăng sản lượng không bù cho thiếu sót về giáo dục, sức khỏe; ba quan hệ khác không giải quyết yêu cầu này.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q091",
+      "sectionId": "hcm-c3-p43",
+      "question": "Cặp nào phân biệt đúng mục tiêu và động lực của xây dựng CNXH?",
+      "choices": [
+        "Mục tiêu: kết quả cần đạt; động lực: nhân tố thúc đẩy phát triển",
+        "Mục tiêu là khó khăn cần xử lý; động lực là chỉ tiêu thu nhập",
+        "Mục tiêu là phương tiện huy động; động lực là kết quả hướng tới",
+        "Mục tiêu là nguồn lực quốc tế; động lực là kế hoạch phân phối"
+      ],
+      "answer": 0,
+      "explanation": "Mục tiêu chỉ điều muốn đạt; động lực chỉ nhân tố thúc đẩy quá trình đạt mục tiêu. Các phương án khác hoán đổi hai vai trò hoặc thu hẹp chúng thành khó khăn, thu nhập, viện trợ và phân phối.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q092",
+      "sectionId": "hcm-c3-p48",
+      "question": "Trao cơ hội tham gia quản lý sản xuất cho người lao động trực tiếp phát huy động lực nào?",
+      "choices": [
+        "Quyền làm chủ về chính trị, tinh thần",
+        "Nguồn vốn từ các đối tác nước ngoài",
+        "Công nghệ do nhập khẩu thiết bị mới",
+        "Nguồn tài nguyên trong cơ sở sản xuất"
+      ],
+      "answer": 0,
+      "explanation": "Cơ hội tham gia quản lý phát huy quyền làm chủ, thuộc động lực chính trị – tinh thần. Không tự đồng nghĩa tăng tài nguyên, vốn quốc tế hoặc công nghệ nhập khẩu.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q093",
+      "sectionId": "hcm-c3-p51",
+      "question": "Phát huy động lực và chống trở lực cần được xử lý theo cách nào?",
+      "choices": [
+        "Hoàn tất chống trở lực rồi mới huy động nguồn lực",
+        "Tăng nguồn lực vật chất để thay việc chống quan liêu",
+        "Kết hợp phát huy nguồn lực với ngăn yếu tố kìm hãm",
+        "Tách xây dựng nguồn lực khỏi việc giữ kỷ luật tổ chức"
+      ],
+      "answer": 2,
+      "explanation": "Phát huy nguồn lực cần đi cùng ngăn các yếu tố kìm hãm, triệt tiêu động lực. Không thay chống trở lực bằng tăng vật chất, không trì hoãn phát triển đến khi hết trở lực và không tách phát triển khỏi kỷ luật.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q094",
+      "sectionId": "hcm-c3-p54",
+      "question": "Vì sao không thể áp đặt một lịch hoàn thành ngắn hạn cho thời kỳ quá độ?",
+      "choices": [
+        "Nội dung quá độ không liên hệ với điều kiện kinh tế",
+        "Các nhiệm vụ được hoàn thành nhờ tuyên bố mục tiêu",
+        "Cải biến xã hội sâu sắc, quá trình lâu dài và phức tạp",
+        "Tiến trình này là công việc sửa đổi thủ tục hành chính"
+      ],
+      "answer": 2,
+      "explanation": "Tính lâu dài, phức tạp của cải biến xã hội đòi hỏi bước đi phù hợp. Coi là thủ tục, tách khỏi kinh tế hoặc cho rằng tuyên bố mục tiêu là hoàn thành đều giản lược quá trình.",
+      "type": "vận dụng",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q095",
+      "sectionId": "hcm-c3-p55",
+      "question": "Điểm xuất phát nông nghiệp lạc hậu đặt ra nhiệm vụ xây dựng nào trong quá độ lên CNXH?",
+      "choices": [
+        "Tách phát triển công nghiệp khỏi quá trình cải tạo xã hội",
+        "Duy trì sản xuất cũ để tránh thay đổi quan hệ kinh tế",
+        "Xây nền tảng vật chất – kỹ thuật, tạo các tiền đề mới",
+        "Hoàn tất phát triển tư bản rồi mới xác định mục tiêu xã hội"
+      ],
+      "answer": 2,
+      "explanation": "Điểm xuất phát thấp gắn với nhiệm vụ xây nền tảng vật chất – kỹ thuật và các tiền đề kinh tế, chính trị, văn hóa, tư tưởng. Không đồng nghĩa giữ sản xuất cũ, đổi đường hướng hoặc tách công nghiệp khỏi cải tạo xã hội.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q096",
+      "sectionId": "hcm-c3-p56",
+      "question": "Cách xử lý nào KHÔNG đúng quan hệ giữa cải tạo và xây dựng trong thời kỳ quá độ?",
+      "choices": [
+        "Kết hợp cải tạo xã hội cũ với xây dựng xã hội mới",
+        "Xây các tiền đề kinh tế, chính trị, văn hóa, tư tưởng",
+        "Lấy xây dựng làm nội dung cốt yếu và trọng tâm lâu dài",
+        "Lấy cải tạo thay cho việc xây dựng nền tảng xã hội mới"
+      ],
+      "answer": 3,
+      "explanation": "Cải tạo không thay thế xây dựng; xây dựng giữ trọng tâm, lâu dài. Ba phương án khác thể hiện kết hợp hai nhiệm vụ và xác định đúng vị trí, nội dung của xây dựng.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q097",
+      "sectionId": "hcm-c3-p59",
+      "question": "Cặp nhiệm vụ – lĩnh vực nào bị ghép SAI trong nội dung thời kỳ quá độ?",
+      "choices": [
+        "Phân phối theo lao động – thuộc lĩnh vực văn hóa",
+        "Củng cố mặt trận dân tộc – lĩnh vực chính trị",
+        "Xây dựng con người có học thức – lĩnh vực văn hóa xã hội",
+        "Phát triển lực lượng sản xuất – lĩnh vực kinh tế"
+      ],
+      "answer": 0,
+      "explanation": "Phân phối theo lao động thuộc nội dung kinh tế. Các cặp lực lượng sản xuất – kinh tế, mặt trận – chính trị, học thức con người – văn hóa xã hội đều ghép đúng.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q098",
+      "sectionId": "hcm-c3-p61",
+      "question": "Học kinh nghiệm xây dựng CNXH của nước bạn phải được kết hợp với yêu cầu nào?",
+      "choices": [
+        "Dùng mô hình nước bạn thay việc phân tích thực tiễn",
+        "Giữ độc lập dân tộc, xuất phát từ thực tế Việt Nam",
+        "Lấy thành tích của nước bạn làm chỉ tiêu cố định cho dân",
+        "Đồng nhất bước đi trong nước với tiến độ của nước bạn"
+      ],
+      "answer": 1,
+      "explanation": "Đoàn kết và học hỏi không phủ nhận độc lập, tự chủ và yêu cầu phù hợp thực tế Việt Nam. Sao chép bước đi, bỏ phân tích hoặc cố định chỉ tiêu theo nước khác đều không phải vận dụng sáng tạo.",
+      "type": "phân biệt",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q099",
+      "sectionId": "hcm-c3-p62",
+      "question": "Vì sao giải phóng dân tộc là nhiệm vụ trước mắt, cấp bách trong cách mạng dân tộc dân chủ?",
+      "choices": [
+        "Xuất phát việc kinh tế đã đạt trình độ công nghiệp hiện đại",
+        "Xuất phát yêu cầu tách nhiệm vụ dân tộc khỏi cách mạng thế giới",
+        "Xuất phát thực tế và mâu thuẫn xã hội thuộc địa nửa phong kiến",
+        "Xuất phát nhu cầu hoàn thành trước cải tạo công thương nghiệp"
+      ],
+      "answer": 2,
+      "explanation": "Ưu tiên giải phóng dân tộc được rút ra từ thực tế và mâu thuẫn khách quan của xã hội Việt Nam thuộc địa nửa phong kiến. Các căn cứ khác đổi bối cảnh, đảo nhiệm vụ hoặc tách khỏi quan hệ quốc tế.",
+      "type": "nguyên nhân",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q100",
+      "sectionId": "hcm-c3-p63",
+      "question": "Mối quan hệ hai chiều giữa độc lập dân tộc và CNXH được khái quát đúng như thế nào?",
+      "choices": [
+        "Độc lập là cơ sở, tiền đề cho CNXH; CNXH bảo đảm độc lập dân tộc vững chắc",
+        "CNXH tạo tiền đề cho thuộc địa; độc lập thay mục tiêu xã hội mới",
+        "Độc lập là kết quả cuối CNXH; CNXH chờ hoàn tất dân chủ tư sản",
+        "Độc lập là nhiệm vụ đối ngoại; CNXH là nhiệm vụ tách khỏi dân tộc"
+      ],
+      "answer": 0,
+      "explanation": "Hai chiều là độc lập dân tộc làm cơ sở, tiền đề tiến lên CNXH và CNXH bảo đảm độc lập vững chắc. Các phương án khác đảo trình tự, thay mục tiêu hoặc tách hai mặt của con đường cách mạng.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q101",
+      "sectionId": "hcm-c3-p64",
+      "question": "Nền tảng đại đoàn kết trong hệ điều kiện gắn độc lập dân tộc với CNXH khác cách diễn đạt “công nông là gốc” ở điểm nào?",
+      "choices": [
+        "Chuyển vai trò công nhân sang vai trò giới chủ",
+        "Đổi chủ thể nhân dân thành bộ máy chuyên môn của Nhà nước",
+        "Nêu rõ thêm trí thức trong khối liên minh nền tảng",
+        "Thay liên minh giai cấp bằng hợp tác giữa các quốc gia"
+      ],
+      "answer": 2,
+      "explanation": "Hệ điều kiện ở đây nêu liên minh công nhân, nông dân và trí thức; cách diễn đạt lực lượng giải phóng dân tộc nhấn mạnh công – nông là gốc. Khác biệt không phải chuyển sang giới chủ, quốc gia hay bộ máy chuyên môn.",
+      "type": "phân biệt",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q102",
+      "sectionId": "hcm-c3-p65",
+      "question": "Nhận định con đường đi lên CNXH phù hợp thực tiễn Việt Nam và xu thế lịch sử được gắn với Đại hội nào?",
+      "choices": [
+        "Đại hội IX năm 2001",
+        "Đại hội IV năm 1976",
+        "Đại hội VII năm 1991",
+        "Đại hội XII năm 2016"
+      ],
+      "answer": 3,
+      "explanation": "Nhận định được gắn với Đại hội XII năm 2016. Cần phân biệt với phát biểu của Đại hội IV về hai ngọn cờ và Cương lĩnh được Đại hội VII thông qua.",
+      "type": "quy thuộc",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q103",
+      "sectionId": "hcm-c3-p67",
+      "question": "Cách làm nào KHÔNG phù hợp hai nguyên tắc phương pháp luận xây dựng CNXH?",
+      "choices": [
+        "Tính đến nhu cầu, khả năng của nhân dân khi xác định bước đi",
+        "Chọn mô hình nước bạn rồi yêu cầu thực tế trong nước theo mô hình",
+        "Quán triệt nguyên lý cơ bản và học kinh nghiệm của các nước bạn",
+        "Chọn biện pháp dựa vào điều kiện và đặc điểm dân tộc Việt Nam"
+      ],
+      "answer": 1,
+      "explanation": "Hai nguyên tắc yêu cầu giữ nền tảng lý luận, tham khảo nước bạn và xuất phát thực tế, đặc điểm dân tộc, nhu cầu, khả năng của dân. Ép thực tế theo mô hình sao chép làm sai quan hệ lý luận – thực tiễn.",
+      "type": "phủ định",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q104",
+      "sectionId": "hcm-c3-p69",
+      "question": "Quan liêu, tham nhũng, nhũng nhiễu nhân dân đe dọa trực tiếp mối liên hệ nào cần giữ khi xây dựng CNXH?",
+      "choices": [
+        "Quan hệ gắn bó giữa Đảng với nhân dân, lòng tin của dân đối với Đảng",
+        "Quan hệ phân chia địa giới giữa các đơn vị hành chính",
+        "Quan hệ giữa công nghệ sản xuất và cơ cấu xuất khẩu",
+        "Quan hệ giữa các loại tiền tệ trong trao đổi hàng hóa"
+      ],
+      "answer": 0,
+      "explanation": "Các biểu hiện suy thoái làm dân bất bình, lo lắng, tổn hại lòng tin và quan hệ Đảng – dân; đối chiếu thêm yêu cầu Đảng không quan liêu, xa dân ở trang 59. Ba phương án khác không phản ánh tác hại chính trị trực tiếp ấy.",
+      "type": "quan hệ",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q105",
+      "sectionId": "hcm-c3-p62",
+      "question": "Độc lập dân tộc giữ vai trò nào đối với việc tiến lên chủ nghĩa xã hội?",
+      "choices": [
+        "Kết quả sau khi hoàn thành chủ nghĩa xã hội",
+        "Giải pháp thay thế mục tiêu chủ nghĩa xã hội",
+        "Nhiệm vụ tách khỏi tiến trình xây dựng xã hội mới",
+        "Cơ sở và tiền đề của tiến trình đi lên chủ nghĩa xã hội"
+      ],
+      "answer": 3,
+      "explanation": "Độc lập dân tộc là cơ sở, tiền đề để tiến lên CNXH. Đảo thành kết quả đến sau, coi là mục tiêu thay thế hoặc tách rời tiến trình đều làm sai quan hệ này.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q106",
+      "sectionId": "hcm-c3-p62",
+      "question": "Hai giai đoạn của con đường cách mạng Việt Nam được sắp xếp theo trình tự nào?",
+      "choices": [
+        "Cách mạng XHCN → cách mạng dân tộc dân chủ nhân dân",
+        "Cách mạng tư sản → tái lập chế độ quân chủ lập hiến",
+        "Cách mạng dân tộc dân chủ nhân dân → cách mạng XHCN",
+        "Cải lương thuộc địa → duy trì nền kinh tế bảo hộ"
+      ],
+      "answer": 2,
+      "explanation": "Trình tự là cách mạng dân tộc dân chủ nhân dân rồi cách mạng XHCN. Phương án thứ hai đảo chiều; hai phương án khác thay nội dung giai đoạn bằng con đường không được lựa chọn.",
+      "type": "trình tự",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q107",
+      "sectionId": "hcm-c3-p62",
+      "question": "Trong cách mạng dân tộc dân chủ, nhiệm vụ dân chủ được thực hiện trong quan hệ nào với giải phóng dân tộc?",
+      "choices": [
+        "Hoàn thành trước, làm điều kiện để bắt đầu giải phóng dân tộc",
+        "Thực hiện từng bước, phục tùng nhiệm vụ giải phóng dân tộc",
+        "Tách thành một quá trình độc lập với giải phóng dân tộc",
+        "Thay thế dần nhiệm vụ giải phóng dân tộc trong chiến lược"
+      ],
+      "answer": 1,
+      "explanation": "Giải phóng dân tộc là nhiệm vụ hàng đầu; nhiệm vụ dân chủ thực hiện từng bước và phục tùng nhiệm vụ ấy. Không đặt dân chủ thành điều kiện phải hoàn thành trước, mục tiêu thay thế hoặc tiến trình tách rời.",
+      "type": "trọng tâm",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q108",
+      "sectionId": "hcm-c3-p63",
+      "question": "Chủ nghĩa xã hội giữ vai trò nào đối với nền độc lập dân tộc?",
+      "choices": [
+        "Mô hình tách phát triển xã hội khỏi quyền dân tộc",
+        "Giai đoạn làm phát sinh sự lệ thuộc về chính trị",
+        "Nhiệm vụ khiến mục tiêu độc lập dân tộc kết thúc",
+        "Điều kiện bảo đảm nền độc lập dân tộc thực sự và vững chắc"
+      ],
+      "answer": 3,
+      "explanation": "CNXH là điều kiện để bảo đảm độc lập vững chắc, gắn độc lập với tự do, ấm no, hạnh phúc. Các phương án khác gán lệ thuộc, kết thúc mục tiêu độc lập hoặc tách quyền dân tộc khỏi phát triển xã hội.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q109",
+      "sectionId": "hcm-c3-p63",
+      "question": "Khẳng định độc lập là tiền đề của CNXH nhưng không cần CNXH để củng cố độc lập còn thiếu quan hệ nào?",
+      "choices": [
+        "Thứ tự nhiệm vụ: giành độc lập trước khi xây CNXH",
+        "Chiều tác động của CNXH: bảo đảm độc lập dân tộc bền vững",
+        "Mục tiêu trước mắt: giải phóng dân tộc khỏi thuộc địa",
+        "Vai trò của độc lập: làm tiền đề để tiến lên CNXH"
+      ],
+      "answer": 1,
+      "explanation": "Lập luận mới nêu chiều độc lập làm tiền đề cho CNXH; còn thiếu chiều CNXH bảo đảm độc lập bền vững. Các phương án khác đều nhắc lại vai trò, thứ tự hoặc mục tiêu giành độc lập nên không bổ sung mắt xích còn thiếu.",
+      "type": "phân biệt",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q110",
+      "sectionId": "hcm-c3-p63",
+      "question": "Nguyên tắc hưởng theo lao động đi cùng yêu cầu nào về người già và trẻ mồ côi?",
+      "choices": [
+        "Bảo đảm phúc lợi xã hội cho người già, trẻ mồ côi",
+        "Chuyển trách nhiệm xã hội sang cơ chế bảo hộ",
+        "Xếp các nhóm này vào diện không được hưởng",
+        "Lấy địa vị gia đình làm căn cứ hưởng phúc lợi"
+      ],
+      "answer": 0,
+      "explanation": "CNXH gắn phân phối theo lao động với bảo đảm phúc lợi cho người già, trẻ mồ côi. Không áp dụng máy móc tiêu chí lao động để loại họ, cũng không phân phúc lợi theo địa vị hoặc cơ chế bảo hộ.",
+      "type": "phân phối phúc lợi",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q111",
+      "sectionId": "hcm-c3-p64",
+      "question": "Điều kiện cơ bản để độc lập dân tộc gắn liền với chủ nghĩa xã hội là gì?",
+      "choices": [
+        "Lấy tăng trưởng sản lượng thay cho xây dựng chính trị",
+        "Dùng quan hệ quốc tế thay cho việc tổ chức lực lượng",
+        "Tăng cường vai trò lãnh đạo và sức chiến đấu của Đảng",
+        "Chuyển vai trò lãnh đạo từ Đảng sang các nghiệp đoàn"
+      ],
+      "answer": 2,
+      "explanation": "Điều kiện cơ bản được nêu là xác lập, tăng cường vai trò lãnh đạo và sức chiến đấu của Đảng. Nghiệp đoàn, quan hệ quốc tế hay tăng trưởng không thay thế điều kiện lãnh đạo này.",
+      "type": "điều kiện",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q112",
+      "sectionId": "hcm-c3-p64",
+      "question": "Khối liên minh nào làm nền tảng đại đoàn kết trong các điều kiện gắn độc lập dân tộc với CNXH?",
+      "choices": [
+        "Nông dân, trí thức, tầng lớp quan lại cũ",
+        "Công nhân, trí thức, tổ chức nghiệp đoàn quốc tế",
+        "Giai cấp công nhân, nông dân, đội ngũ trí thức",
+        "Công nhân, nông dân, giới chủ công thương"
+      ],
+      "answer": 2,
+      "explanation": "Ở hệ điều kiện này, nền tảng là liên minh công nhân, nông dân, trí thức. Cần phân biệt với cách diễn đạt công – nông là gốc trong lực lượng giải phóng dân tộc; không thay bằng các tổ hợp bảo hộ, quan lại hay nước lớn.",
+      "type": "nền tảng",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q113",
+      "sectionId": "hcm-c3-p64",
+      "question": "Nhóm nào tập hợp đúng ba điều kiện gắn độc lập dân tộc với CNXH?",
+      "choices": [
+        "Đảng lãnh đạo; liên minh giới chủ – quan lại; liên hệ cách mạng thế giới",
+        "Đảng lãnh đạo; liên minh công – nông – trí thức; liên hệ cách mạng thế giới",
+        "Nghiệp đoàn lãnh đạo; liên minh công – nông – trí thức; liên hệ cách mạng thế giới",
+        "Đảng lãnh đạo; liên minh công – nông – trí thức; giảm liên hệ cách mạng thế giới"
+      ],
+      "answer": 1,
+      "explanation": "Ba điều kiện gồm lãnh đạo của Đảng, nền tảng công – nông – trí thức và quan hệ chặt chẽ với cách mạng thế giới. Mỗi phương án nhiễu thay một thành tố, nên không đáp ứng đủ hệ điều kiện.",
+      "type": "tổng hợp",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q114",
+      "sectionId": "hcm-c3-p65",
+      "question": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ được Đại hội nào thông qua trong chuỗi vận dụng tư tưởng độc lập dân tộc gắn CNXH?",
+      "choices": [
+        "Đại hội IX của Đảng",
+        "Đại hội IV của Đảng",
+        "Đại hội VII của Đảng",
+        "Đại hội XII của Đảng"
+      ],
+      "answer": 2,
+      "explanation": "Cương lĩnh được nhắc tới được Đại hội VII thông qua. Đại hội IV và XII xuất hiện với những phát biểu khác; không hoán đổi các trích dẫn, văn kiện giữa các kỳ đại hội.",
+      "type": "văn kiện",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q115",
+      "sectionId": "hcm-c3-p66",
+      "question": "Cách hiểu “dân là chủ, dân làm chủ” xác định địa vị nào của nhân dân?",
+      "choices": [
+        "Lực lượng thực hiện thay cơ quan lãnh đạo",
+        "Nhân dân là chủ thể quyền lực, có địa vị cao nhất trong chế độ",
+        "Bộ phận tham khảo trong quản lý nhà nước",
+        "Đối tượng nhận quyết định từ nhóm đặc quyền"
+      ],
+      "answer": 1,
+      "explanation": "Dân chủ xác định quyền lực thuộc về nhân dân, nhân dân là chủ và làm chủ. Các cách hiểu còn lại hạ vai trò ấy thành đối tượng bị quyết định, lực lượng làm thay hoặc tham khảo.",
+      "type": "dân chủ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q116",
+      "sectionId": "hcm-c3-p66",
+      "question": "Quyền làm chủ của nhân dân được đặt trong quan hệ nào với nghĩa vụ công dân?",
+      "choices": [
+        "Thống nhất quyền làm chủ với bổn phận và chuẩn mực đạo đức công dân",
+        "Tách quyền làm chủ khỏi trách nhiệm trong cộng đồng",
+        "Hoàn thành nghĩa vụ để chuyển quyền làm chủ cho cán bộ",
+        "Dựa vào địa vị xã hội để miễn trừ bổn phận công dân"
+      ],
+      "answer": 0,
+      "explanation": "Quyền làm chủ đi cùng nghĩa vụ làm tròn bổn phận và giữ đạo đức công dân. Không chuyển quyền cho cán bộ, tách trách nhiệm hoặc miễn nghĩa vụ theo địa vị.",
+      "type": "quan hệ",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q117",
+      "sectionId": "hcm-c3-p67",
+      "question": "Khi lựa chọn bước đi xây dựng CNXH, quan hệ nào giữa lý luận và thực tiễn là phù hợp?",
+      "choices": [
+        "Giữ nguyên mẫu nước bạn, điều chỉnh nhu cầu dân cho phù hợp",
+        "Giữ nguyên lý nền tảng, chọn biện pháp từ thực tế Việt Nam",
+        "Tách nguyên lý nền tảng để linh hoạt thay đổi mục tiêu",
+        "Lấy mong muốn chủ quan làm cơ sở xác định các bước đi"
+      ],
+      "answer": 1,
+      "explanation": "Hai nguyên tắc phương pháp luận kết hợp nguyên lý Mác – Lênin và tham khảo nước bạn với điều kiện, đặc điểm, nhu cầu, khả năng của dân Việt Nam. Sao chép mô hình, chủ quan hoặc bỏ nền tảng đều không phù hợp.",
+      "type": "phương pháp",
+      "difficulty": "vận dụng"
+    },
+    {
+      "id": "hcm-c3-q118",
+      "sectionId": "hcm-c3-p67",
+      "question": "“Đem tài dân, sức dân, của dân làm lợi cho dân” kết hợp những phương diện nào?",
+      "choices": [
+        "Nguồn lực từ nhân dân và lợi ích cho nhóm quản lý",
+        "Nguồn lực từ giới chủ và quyền quyết định theo tài sản",
+        "Nguồn lực từ viện trợ và mục đích thay thế nội lực",
+        "Huy động nguồn lực trong nhân dân nhằm đem lại lợi ích cho nhân dân"
+      ],
+      "answer": 3,
+      "explanation": "Phát huy nguồn lực của dân phải nhằm lợi ích của dân, trong sự nghiệp toàn dân do Đảng lãnh đạo. Không chuyển lợi ích sang nhóm quản lý hoặc thay nội lực bằng viện trợ, quyền tài sản của giới chủ.",
+      "type": "nguồn lực",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q119",
+      "sectionId": "hcm-c3-p68",
+      "question": "Củng cố, kiện toàn hệ thống chính trị nhằm trực tiếp phát huy điều gì?",
+      "choices": [
+        "Đặc quyền quản lý và lợi ích của nhóm chức vụ",
+        "Thực hiện dân chủ XHCN, phát huy đầy đủ quyền làm chủ của nhân dân",
+        "Sự tách rời giữa tổ chức chính trị và đời sống dân",
+        "Việc thay thế hoạt động nhân dân bằng mệnh lệnh"
+      ],
+      "answer": 1,
+      "explanation": "Mục đích là thực hiện dân chủ XHCN, phát huy đầy đủ quyền làm chủ của nhân dân. Đặc quyền, tách khỏi đời sống dân hoặc thay nhân dân bằng mệnh lệnh đi ngược mục đích ấy.",
+      "type": "mục đích",
+      "difficulty": "phân biệt"
+    },
+    {
+      "id": "hcm-c3-q120",
+      "sectionId": "hcm-c3-p69",
+      "question": "Đấu tranh chống suy thoái và “tự diễn biến”, “tự chuyển hóa” gắn với yêu cầu nào?",
+      "choices": [
+        "Xây dựng, chỉnh đốn Đảng, ngăn suy thoái, quan liêu, tham nhũng",
+        "Tăng quyền ưu tiên theo chức vụ; duy trì cơ chế xin – cho",
+        "Đề cao thành tích hình thức; giảm trách nhiệm với dân",
+        "Thu hẹp giám sát nhân dân; mở rộng đặc lợi trong quản lý"
+      ],
+      "answer": 0,
+      "explanation": "Yêu cầu là xây dựng, chỉnh đốn Đảng, ngăn suy thoái và các tệ quan liêu, tham nhũng, lãng phí, nhũng nhiễu. Các phương án khác củng cố đặc quyền, giảm giám sát hoặc chạy theo hình thức.",
+      "type": "vận dụng",
+      "difficulty": "phân biệt"
     }
   ],
   "examForms": [
@@ -1952,6 +3752,158 @@
         "hcm-c2-q002",
         "hcm-c2-q074",
         "hcm-c1-q016"
+      ]
+    },
+    {
+      "id": "hcm-chapter3-1",
+      "title": "Chương 3 · Đề 1",
+      "focus": "Độc lập dân tộc, giải phóng dân tộc, xây dựng CNXH và thời kỳ quá độ.",
+      "durationSeconds": 900,
+      "questionIds": [
+        "hcm-c3-q089",
+        "hcm-c3-q041",
+        "hcm-c3-q093",
+        "hcm-c3-q085",
+        "hcm-c3-q013",
+        "hcm-c3-q005",
+        "hcm-c3-q113",
+        "hcm-c3-q065",
+        "hcm-c3-q081",
+        "hcm-c3-q057",
+        "hcm-c3-q101",
+        "hcm-c3-q077",
+        "hcm-c3-q061",
+        "hcm-c3-q017",
+        "hcm-c3-q021",
+        "hcm-c3-q037",
+        "hcm-c3-q105",
+        "hcm-c3-q049",
+        "hcm-c3-q009",
+        "hcm-c3-q053",
+        "hcm-c3-q001",
+        "hcm-c3-q109",
+        "hcm-c3-q073",
+        "hcm-c3-q029",
+        "hcm-c3-q045",
+        "hcm-c3-q069",
+        "hcm-c3-q025",
+        "hcm-c3-q097",
+        "hcm-c3-q117",
+        "hcm-c3-q033"
+      ]
+    },
+    {
+      "id": "hcm-chapter3-2",
+      "title": "Chương 3 · Đề 2",
+      "focus": "Độc lập dân tộc, giải phóng dân tộc, xây dựng CNXH và thời kỳ quá độ.",
+      "durationSeconds": 900,
+      "questionIds": [
+        "hcm-c3-q098",
+        "hcm-c3-q014",
+        "hcm-c3-q110",
+        "hcm-c3-q054",
+        "hcm-c3-q114",
+        "hcm-c3-q102",
+        "hcm-c3-q062",
+        "hcm-c3-q018",
+        "hcm-c3-q078",
+        "hcm-c3-q058",
+        "hcm-c3-q030",
+        "hcm-c3-q050",
+        "hcm-c3-q118",
+        "hcm-c3-q034",
+        "hcm-c3-q090",
+        "hcm-c3-q046",
+        "hcm-c3-q086",
+        "hcm-c3-q042",
+        "hcm-c3-q106",
+        "hcm-c3-q070",
+        "hcm-c3-q006",
+        "hcm-c3-q066",
+        "hcm-c3-q026",
+        "hcm-c3-q002",
+        "hcm-c3-q082",
+        "hcm-c3-q038",
+        "hcm-c3-q010",
+        "hcm-c3-q094",
+        "hcm-c3-q022",
+        "hcm-c3-q074"
+      ]
+    },
+    {
+      "id": "hcm-chapter3-3",
+      "title": "Chương 3 · Đề 3",
+      "focus": "Độc lập dân tộc, giải phóng dân tộc, xây dựng CNXH và thời kỳ quá độ.",
+      "durationSeconds": 900,
+      "questionIds": [
+        "hcm-c3-q035",
+        "hcm-c3-q083",
+        "hcm-c3-q015",
+        "hcm-c3-q039",
+        "hcm-c3-q115",
+        "hcm-c3-q003",
+        "hcm-c3-q067",
+        "hcm-c3-q079",
+        "hcm-c3-q091",
+        "hcm-c3-q111",
+        "hcm-c3-q063",
+        "hcm-c3-q043",
+        "hcm-c3-q103",
+        "hcm-c3-q107",
+        "hcm-c3-q023",
+        "hcm-c3-q007",
+        "hcm-c3-q071",
+        "hcm-c3-q019",
+        "hcm-c3-q047",
+        "hcm-c3-q119",
+        "hcm-c3-q011",
+        "hcm-c3-q059",
+        "hcm-c3-q075",
+        "hcm-c3-q095",
+        "hcm-c3-q087",
+        "hcm-c3-q027",
+        "hcm-c3-q031",
+        "hcm-c3-q099",
+        "hcm-c3-q051",
+        "hcm-c3-q055"
+      ]
+    },
+    {
+      "id": "hcm-chapter3-4",
+      "title": "Chương 3 · Đề 4",
+      "focus": "Độc lập dân tộc, giải phóng dân tộc, xây dựng CNXH và thời kỳ quá độ.",
+      "durationSeconds": 900,
+      "questionIds": [
+        "hcm-c3-q036",
+        "hcm-c3-q056",
+        "hcm-c3-q092",
+        "hcm-c3-q028",
+        "hcm-c3-q060",
+        "hcm-c3-q108",
+        "hcm-c3-q008",
+        "hcm-c3-q084",
+        "hcm-c3-q080",
+        "hcm-c3-q024",
+        "hcm-c3-q112",
+        "hcm-c3-q116",
+        "hcm-c3-q040",
+        "hcm-c3-q100",
+        "hcm-c3-q120",
+        "hcm-c3-q068",
+        "hcm-c3-q044",
+        "hcm-c3-q048",
+        "hcm-c3-q076",
+        "hcm-c3-q096",
+        "hcm-c3-q004",
+        "hcm-c3-q012",
+        "hcm-c3-q072",
+        "hcm-c3-q052",
+        "hcm-c3-q064",
+        "hcm-c3-q020",
+        "hcm-c3-q088",
+        "hcm-c3-q032",
+        "hcm-c3-q104",
+        "hcm-c3-q016"
       ]
     }
   ]

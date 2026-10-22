@@ -6,11 +6,12 @@ Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội k
 
 Thanh chọn môn ở đầu trang chuyển giữa CNXHKH (`/`) và Tư tưởng Hồ Chí Minh
 (`/?course=hcm`). Tiến trình, câu lưu và kết quả đề được lưu riêng cho mỗi môn.
-Môn HCM hiện có **120 câu** (30 câu chương 1, 90 câu chương 2), bốn đề tổng hợp
-30 câu/15 phút và đủ văn bản của 62 trang nguồn trong phần đọc học liệu.
+Môn HCM hiện có **240 câu** (30 câu chương 1, 90 câu chương 2, 120 câu chương 3).
+Giữ bốn đề tổng hợp chương 1–2, thêm bốn đề chương 3, mỗi đề 30 câu/15 phút.
+Phần đọc có đủ 131 trang nguồn (8 + 54 + 69 trang); chương 4 chưa đưa vào học.
 Văn bản do người học trích xuất được nhận trực tiếp, không cần phân tích lại slide.
 Xem `content/hcm/README.md` về cách bổ sung nguồn và câu hỏi, sau đó chạy
-`python compile_hcm_bank.py`, `python build_hcm_data.py` và `python audit_hcm_data.py`.
+`python import_hcm_chapter3.py`, `python compile_hcm_bank.py`, `python build_hcm_data.py` và `python audit_hcm_data.py`.
 Các chế độ luyện tập, đọc nguồn, luyện lại câu sai
 và đề 30 câu/15 phút dùng chung giao diện hiện tại khi có dữ liệu thực.
 
