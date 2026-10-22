@@ -77,3 +77,33 @@ Audit kiểm tra nguồn nguyên vẹn, mỗi nguồn được gán đúng một
 chọn câu dài nhất đạt 26,09%, ngắn nhất 28,26% khi chia đều trường hợp bằng độ
 dài. Đây không phải kiểm định độ khó học thuật. Không áp các con số này cho
 toàn bộ câu gốc vốn giữ lựa chọn của tài liệu.
+# Bổ sung đề năm trước và đối chiếu PDF
+
+`past-exam-1.txt` là bản nguồn giữ nguyên. `extend_hcm_past_exam.py` nhập 30 vị trí,
+đối chiếu trùng bằng danh sách quyết định cụ thể và giữ thứ tự A–D; không dùng
+độ giống văn bản để tự chọn đáp án. 22 vị trí đã có cùng nội dung trong ngân hàng,
+8 nội dung mới, nên Toàn bộ có 147 mục. Câu 17 và 20 của đề trùng nhau nhưng vẫn
+giữ đủ vị trí khi lọc riêng đề. Trong đề có 29 câu chấm và 1 câu cần đối chiếu.
+
+Những thay đổi được ghi ngay trong giao diện và giữ bản chép gốc:
+
+- Câu 3, 4, 7, 24 có ghi chú phục dựng/tự tạo trong nguồn; không khẳng định là
+  nguyên bản đề thi chính thức. Câu 10D được bổ sung từ ảnh thiếu.
+- Câu 14: sửa ranh giới giai đoạn B theo sơ đồ chương 2 trang 28; tên Hồ Chí Minh
+  dùng năm 1942 thuộc giai đoạn 1941–1969. Bản lựa chọn lỗi ngày vẫn đọc được.
+- Câu 19: làm rõ hỏi ba nhóm khái quát để không nhầm việc kể lặp yêu nước
+  bên trong truyền thống dân tộc thành một nhóm lý luận mới.
+- Câu 1: phương án khái quát chồng lấn, giữ không chấm; có slide 3 trang 8 để học
+  nội dung đúng mà không tự tạo khóa đáp án chính thức.
+
+`slide-review.txt` ghi kết quả rà riêng của đủ 139 câu cũ. Các vị trí mới kế thừa
+quyết định nếu cùng nội dung hoặc có quyết định riêng trong `extend_hcm_past_exam.py`.
+`audit_hcm_slide_links.py` kiểm tra ID, trang, SHA-256 bốn PDF, kích thước ảnh và
+sinh bảng `slide-review-report.md` đủ 169 bản. Phân loại direct/context/none được
+hiển thị sau đáp án; không có căn cứ thì không tạo ảnh minh họa giả làm nguồn.
+
+Chỉ số trang luôn là thứ tự trang PDF, bắt đầu từ 1. Một số PDF đã có chữ đè và
+lỗi phông trong chính bản gốc; ảnh giữ đúng hình gốc, văn bản đã trích vẫn có để
+đọc cùng. Ảnh nguồn chỉ mở sau câu trả lời hoặc khi chủ động vào chế độ đọc.
+
+---

@@ -127,6 +127,10 @@ def build():
                             'pending':sum(q['kind']=='pending' for q in questions),
                             'essays':sum(q['kind']=='essay' for q in questions),'generatedDistractorItems':23},
               'chapters':[],'examForms':[],'studySections':[],'docLines':[],'slidePages':[]}
+    from extend_hcm_past_exam import extend
+    from hcm_slide_sources import attach_bank, reviews
+    extend(result, reviews())
+    attach_bank(result)
     (ROOT/'dist/hcm-bank-data.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result['statistics']))
     return result

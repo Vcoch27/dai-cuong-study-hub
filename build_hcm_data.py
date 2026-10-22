@@ -48,6 +48,8 @@ def build():
         'studySections': list(sections.values()), 'docLines': [], 'slidePages': [],
     }
     target = ROOT / 'dist' / 'hcm-data.json'
+    from hcm_slide_sources import attach_course
+    attach_course(output)
     target.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'HCM: {len(chapters)} chapters, {len(sections)} text sections, {len(questions)} questions, {len(forms)} exams')
     return output

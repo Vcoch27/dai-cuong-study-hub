@@ -19,6 +19,39 @@ và đề 30 câu/15 phút dùng chung giao diện hiện tại khi có dữ li�
 
 ### Ngân hàng HCM từ sáu tập
 
+Đã thêm **Đề năm trước 1**, giữ đủ 30 vị trí câu theo tệp được gửi. Mục Toàn bộ
+gộp các nội dung trùng, còn 147 mục duy nhất; các tập cũ giữ nguyên câu và tiến trình.
+Câu 17 và 20 của đề cùng kiểm tra một nội dung nhưng vẫn xuất hiện đủ hai vị trí.
+Kết quả và dấu lưu dùng chung theo nội dung, còn lựa chọn của từng lượt luyện giữ
+đúng thứ tự A–D của bản đề. Một câu trong đề chưa chấm vì phương án chồng lấn.
+
+### Đối chiếu ảnh PDF gốc HCM
+
+Bốn PDF người học gửi nằm trong `sources/hcm/`. Đủ 175 trang được dựng trực tiếp
+thành WebP trong `dist/hcm-slides/`; không vẽ lại slide từ văn bản. Cả ngân hàng
+và ôn theo slide hiện ảnh sau khi trả lời, có phóng to, chuyển trang và liên kết
+ngay dưới giải thích. Luyện lại ẩn ảnh và đáp án; phần đọc cho xem ảnh chủ động.
+
+240 câu ôn theo slide giữ đúng trang văn bản đã biên soạn, tương ứng 131 trang
+PDF chương 1–3. Chương 4 có ảnh để đối chiếu ngân hàng, chưa thêm câu ôn chương 4.
+Toàn bộ 169 bản câu ngân hàng (139 cũ + 30 vị trí mới) đã được rà và ghi quyết định
+riêng: 93 có căn cứ trực tiếp, 53 chỉ có trang liên quan nhưng thiếu chi tiết, 23
+không có căn cứ trong bốn PDF. Giao diện ghi rõ giới hạn, không gán trang gần từ
+khóa thành bằng chứng. Xem `content/hcm-bank/slide-review-report.md`.
+
+Quy trình bổ sung/kiểm tra:
+
+```powershell
+python render_hcm_slides.py
+python build_hcm_data.py
+python build_hcm_bank.py
+python audit_hcm_slide_links.py
+python audit_hcm_bank.py
+node --experimental-vm-modules tests/progress-smoke.mjs
+```
+
+### Đợt nhập sáu tập ban đầu
+
 Trang `/?course=hcm&track=bank` chạy song song với phần ôn theo slide, có liên kết
 chuyển qua lại. Từ 261 vị trí nguồn đã gộp còn 139 mục duy nhất: 133 trắc nghiệm,
 bốn câu cần đối chiếu, hai tự luận. Đã thêm nhiễu cho 23 mục chỉ có câu trả lời.

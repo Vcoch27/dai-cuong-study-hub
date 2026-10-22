@@ -1,0 +1,140 @@
+# id without bank- | relation: direct/context/none | chapter:page references or - | reviewed reason
+october-1917|direct|2:5 2:7|Nêu Cách mạng Tháng Mười năm 1917 và ý nghĩa mở đường giải phóng.
+declaration-commitment|direct|3:5|Có nguyên văn đủ tinh thần, lực lượng, tính mạng và của cải.
+father-phobang-year|none|-|Bốn PDF không nêu năm thi đỗ Phó bảng của Nguyễn Sinh Sắc; xem nguồn tiểu sử đính kèm.
+first-home-visit|none|-|Không có mốc lần đầu về thăm quê năm 1957 trong bốn PDF.
+maternal-village|none|-|Không có địa chỉ quê ngoại chi tiết trong bốn PDF; không gắn ảnh quê hương làm bằng chứng địa danh.
+marxist-nature|direct|2:21|Sơ đồ nối hệ tư tưởng Mác – Lênin với tính khoa học, cách mạng.
+subjective-factors|direct|2:23 2:27|Hai trang lần lượt trình bày phẩm chất và tài năng hoạt động, tổng kết thực tiễn.
+sacred-rights|direct|3:2|Khẳng định độc lập, tự do là quyền thiêng liêng bất khả xâm phạm và quyền bình đẳng dân tộc.
+departure-baggage|direct|2:29|Giai đoạn trước xuất dương: yêu nước, chí hướng cứu nước; không gán nhận thức Mác – Lênin có từ trước.
+proletarian-path|direct|3:16|Nêu trực tiếp con đường cách mạng vô sản để cứu nước, giải phóng dân tộc.
+duc-thanh-teacher|direct|2:29|Gạch đầu dòng ghi dạy học ở Dục Thanh, Phan Thiết.
+creative-marxism|direct|1:2|Khái niệm ghi vận dụng sáng tạo và phát triển chủ nghĩa Mác – Lênin trong điều kiện nước ta.
+nguyen-ai-quoc-name|context|2:31|Có Nguyễn Ái Quốc và Yêu sách năm 1919; không viết rõ đây là lần đầu dùng tên này.
+colonial-union-period|context|2:32 2:28|Có giai đoạn hoạt động tại Pháp 1921–1923 và khung thời kỳ; không nêu tên Hội Liên hiệp thuộc địa.
+became-communist|direct|2:31|Ghi tháng 12/1920 tán thành Quốc tế III, tham gia thành lập Đảng Cộng sản Pháp và chuyển thành người cộng sản.
+traditional-values|direct|2:8 2:9 2:11|Các trang bổ sung lần lượt yêu nước, đoàn kết, nhân ái và đạo lý truyền thống.
+youth-league-place|context|2:32|Có chặng hoạt động tại Trung Quốc 1924–1927; không ghi nơi thành lập Hội Việt Nam Cách mạng Thanh niên.
+basic-thought-period|direct|2:28 2:32|Tiêu đề và sơ đồ ghi giai đoạn hình thành nội dung cơ bản từ cuối 1920 đến đầu 1930.
+period-1911-1920|direct|2:30|Tiêu đề nêu hình thành tư tưởng cứu nước theo con đường cách mạng vô sản.
+patriotism-first|context|2:8|Nhấn mạnh chủ nghĩa yêu nước truyền thống, nhưng không phát biểu nguyên văn thứ bậc hàng đầu trong hệ giá trị.
+lenin-reading-country|context|2:31|Có luận cương đăng báo L’Humanité năm 1920; trang không ghi rõ địa điểm đọc là Pháp.
+will-start-year|none|-|Không có mốc bắt đầu viết Di chúc năm 1965; ảnh Di chúc không đủ chứng minh năm.
+departure-year|direct|2:28 2:30|Sơ đồ và tiêu đề gắn xuất dương với giai đoạn từ năm 1911.
+party-foundation|context|2:53 4:15|Trang 2:53 nêu tư tưởng HCM là nền tảng, kim chỉ nam; 4:15 nêu Mác – Lênin, nhưng không có trọn công thức trong một phát biểu.
+colonial-before-metropole|direct|3:24|Tiêu đề nêu có khả năng thắng trước cách mạng vô sản chính quốc.
+versailles-date|context|2:31|Ghi năm 1919, không ghi ngày 18/6; cần nguồn ngoài slide để xác định ngày tháng.
+hue-family-visits|none|-|Không có số lần gia đình vào Huế hoặc đủ các mốc để suy ra trong bốn PDF.
+colonial-nature-period|direct|2:32 2:34|Trang 32 xác định thời kỳ, trang 34 nêu nội dung nhận thức bản chất chủ nghĩa thực dân của thời kỳ ấy.
+return-landmark|context|2:35|Có ngày về nước 28/1/1941, không có đầy đủ số cột mốc và địa chỉ Trường Hà, Hà Quảng.
+imperialist-context|direct|2:5 2:6|Nêu tư bản bước sang độc quyền, đế quốc chủ nghĩa và bối cảnh quốc tế.
+not-hcm-work|context|2:32|Có hai tác phẩm của HCM nhưng không xác nhận tác giả của toàn bộ bốn lựa chọn; không dùng trang này làm khóa chấm tác giả.
+lenin-theses-work|direct|2:31 3:16|Nêu tên luận cương và vai trò giải đáp con đường cứu nước.
+three-communist-organizations|direct|4:8|Sơ đồ nêu đúng ba tổ chức cộng sản năm 1929. Phân biệt việc hợp nhất ban đầu với việc Liên đoàn gia nhập sau.
+departure-purpose|direct|2:29|Nêu ra nước ngoài xem nước Pháp và các nước khác để trở về giúp đồng bào.
+bourgeois-limit|direct|3:12|Trích nhận xét cách mạng Mỹ, Pháp là cách mạng không đến nơi, còn áp bức công nông và thuộc địa.
+theoretical-sources|direct|2:8 2:13 2:20|Ba nhóm: truyền thống dân tộc, tinh hoa nhân loại, chủ nghĩa Mác – Lênin; trang 13 có cách trình bày bao hàm cần phân biệt nhóm khái quát.
+liberation-conditions|direct|3:17 3:24 3:27|Các trang lần lượt làm rõ lãnh đạo Đảng, tự lực và quan hệ quốc tế, không coi một trang riêng chứa đủ ba điều kiện.
+eulogy-reader|direct|2:46|Tiêu đề ảnh ghi Bí thư thứ nhất Lê Duẩn đọc điếu văn.
+national-task-first|direct|3:62|Nêu giải phóng dân tộc là nhiệm vụ hàng đầu, nhiệm vụ dân chủ thực hiện từng bước.
+happiness-quote-ambiguous|direct|3:8|Có nguyên văn độc lập phải gắn tự do, hạnh phúc; vẫn không giải quyết được các đáp án chồng lấn của câu hỏi gốc.
+definition-fill|context|1:2|Có toàn diện, sâu sắc và cách mạng Việt Nam; phiên bản định nghĩa trên trang không trùng toàn văn Đại hội XI và cụm giá trị truyền thống.
+marx-self-emancipation|context|3:24|Có các luận điểm tự giải phóng của HCM nhưng không ghi tác giả câu về giai cấp công nhân; cần đối chiếu nguồn ngoài để quy thuộc cho Mác.
+father-death-place|none|-|Không có nơi qua đời của Nguyễn Sinh Sắc trong bốn PDF.
+party-before-revolution|direct|3:17|Có trích Đường Kách mệnh: trước hết phải có Đảng cách mệnh.
+nothing-precious-work|context|3:7|Trang đặt khẩu hiệu cạnh tư liệu 19/12/1946; không lấy bố cục này để gán khẩu hiệu cho Lời kêu gọi toàn quốc kháng chiến. Đối chiếu văn kiện năm 1966 qua nguồn ngoài.
+personal-qualities|direct|2:23|Sơ đồ có đủ bốn phẩm chất cá nhân.
+definition-congress-xi|context|1:2|Có định nghĩa môn học nhưng không ghi Đại hội XI năm 2011; cần văn kiện ngoài slide để xác định đại hội.
+petition-eight-points|context|2:31 3:4|Có sự kiện Yêu sách, không liệt kê hoặc đếm đủ tám điểm.
+method-party-science|direct|1:4|Danh sách phương pháp luận có thống nhất tính đảng và tính khoa học.
+indictment-year|direct|2:32|Ghi Bản án chế độ thực dân Pháp (1925).
+marx-dialectic|direct|2:13|Trích ưu điểm của chủ nghĩa Mác là phương pháp làm việc biện chứng.
+duong-year|direct|2:32|Ghi Đường cách mệnh (1927).
+youth-league-year|context|2:32|Có chặng Trung Quốc 1924–1927, không có năm thành lập Hội 1925.
+return-date|direct|2:35|Có ngày trở về Tổ quốc 28/1/1941.
+plenum-eight|context|2:35|Có việc chuyển hướng chiến lược năm 1941, không ghi số thứ tự Hội nghị Trung ương 8.
+socialist-party-year|context|2:21|Có lời kể gia nhập Đảng Xã hội Pháp nhưng không ghi năm 1919.
+three-peoples|context|2:13|Có nhận xét về chủ nghĩa Tôn Dật Tiên nhưng không liệt kê ba nội dung Tam dân.
+party-foundation-congress|none|-|Không có mốc Đại hội VII/1991 xác lập vị trí tư tưởng HCM trong bốn PDF. Trang 3:65 nói Cương lĩnh, không chứng minh sự kiện này.
+subject-of-study|direct|1:3|Trình bày đối tượng môn học cả hệ quan điểm và quá trình hiện thực hóa; đáp án ngân hàng là một phần khái quát.
+indictment-place|context|2:32|Trang có tác phẩm và năm, không xác định nơi xuất bản lần đầu.
+basis-ambiguous|direct|2:2 2:13 2:23|Đối chiếu các nhóm thực tiễn, lý luận, chủ quan; câu gốc thiếu tiêu chí nên không tự chấm một lựa chọn.
+patriotic-trend-count|direct|2:2|Có hai khuynh hướng phong kiến và dân chủ tư sản.
+religion-influence|context|2:13 2:14|Có Nho giáo, Phật giáo, Jêsu; sự vắng tên Hồi giáo không đủ chứng minh phủ định ảnh hưởng, không coi là căn cứ trực tiếp.
+french-communist-party-year|direct|2:31|Ghi tham gia thành lập Đảng Cộng sản Pháp tháng 12/1920.
+five-periods|direct|2:28|Sơ đồ chia thành năm thời kỳ.
+soviet-1923-1924|direct|2:32|Danh sách chặng hoạt động ghi 1923–1924 tại Liên Xô.
+patriotic-two-trends|direct|2:2|Phân biệt phong trào Cần Vương và xu hướng dân chủ tư sản.
+colonial-union-year|context|2:32|Ghi chặng Pháp 1921–1923 nhưng không ghi năm sáng lập Hội Liên hiệp thuộc địa.
+duong-place|context|2:32|Có chặng Trung Quốc 1924–1927 và tác phẩm 1927; không nói trực tiếp nơi xuất bản.
+armed-uprising-form|context|3:31|Nêu bạo lực của quần chúng và toàn dân vùng dậy; không ghi nguyên văn thuật ngữ khởi nghĩa vũ trang toàn dân.
+nation-beneficiaries|direct|3:22 3:23|Lực lượng, chủ thể và quyền lợi trong cuộc dân tộc cách mạng là toàn dân tộc.
+colonial-contradiction|direct|2:4|Sơ đồ mâu thuẫn dân tộc giữa dân tộc Việt Nam với thực dân Pháp xâm lược.
+territorial-independence|direct|3:10|Nêu độc lập gắn với thống nhất, toàn vẹn lãnh thổ.
+self-emancipation|direct|3:24|Trích công cuộc giải phóng thuộc địa bằng nỗ lực tự giải phóng.
+proletarian-leader|direct|3:17 3:21|Lãnh đạo bởi Đảng Cộng sản, gắn bản chất giai cấp công nhân.
+worker-peasant-driving-force|direct|3:22|Ghi vai trò động lực của công nhân, nông dân và công nông là gốc.
+revolutionary-violence|direct|3:28|Tiêu đề xác định con đường bạo lực cách mạng.
+first-program-objectives|context|2:33 3:19|Có Cương lĩnh và ảnh Sách lược vắn tắt; không thấy đủ nguyên văn hai mục tiêu trong phần chữ rõ. Không suy từ tên tài liệu sang căn cứ trọn vẹn.
+violence-forces|direct|3:28 3:31|Kết hợp sức mạnh chính trị quần chúng với lực lượng vũ trang trong bạo lực cách mạng.
+independence-meaning|direct|3:8|Trích độc lập phải đem tự do, hạnh phúc đến nhân dân.
+declaration-writing-place|context|2:36|Có tuyên bố độc lập năm 1945 nhưng không ghi nơi soạn ở Hà Nội.
+violence-methods|direct|3:28 3:31|Nêu kết hợp đấu tranh chính trị và vũ trang tùy tình hình cụ thể.
+revolutions-compared|direct|3:12 3:13|Lần lượt so sánh cách mạng Mỹ, Pháp và cách mạng Nga.
+class-standpoint|context|3:16 3:21|Con đường vô sản và bản chất giai cấp; không có nguyên văn lập trường khi giải quyết vấn đề dân tộc.
+political-independence|direct|3:9|Độc lập thực sự, triệt để trên các lĩnh vực quốc gia thể hiện quyền tự quyết.
+declaration-year|direct|3:5|Trang ghi Tuyên ngôn 2/9/1945.
+declaration-human-rights|direct|3:2 3:3 3:5|Liên hệ quyền con người, quyền dân tộc với Tuyên ngôn Việt Nam 1945. Nhận xét giá trị văn chương là cách diễn đạt của câu gốc.
+thailand-arrival|direct|2:32|Chặng Thái Lan bắt đầu năm 1928.
+tam-tam-year|none|-|Không có tổ chức Tâm Tâm Xã và mốc thành lập trong bốn PDF.
+ly-thuy-name|context|2:32|Có chặng hoạt động Trung Quốc từ 1924, không ghi tên Lý Thụy hoặc tháng 11.
+japan-france-1940|none|-|Trang 3:5 không có câu về mùa thu năm 1940; phải xem toàn văn Tuyên ngôn ngoài slide.
+declaration-colonial-crimes|context|3:5|Đúng tác phẩm nhưng trang không có đoạn dài về tội ác thực dân; cần toàn văn để xác nhận trích dẫn.
+french-motto-school|context|2:29|Có yêu cầu tìm hiểu Tự do, Bình đẳng, Bác ái, không ghi trường ở Vinh và năm 1905.
+three-formative-bases|direct|2:2 2:13 2:23|Các tiêu đề xác định thực tiễn, lý luận và nhân tố chủ quan; cần tổng hợp nhiều trang thay vì đếm một sơ đồ không có.
+many-translations-ambiguous|none|-|Không có tiêu chí hoặc thống kê bản dịch để phân biệt các tác phẩm trong bốn PDF.
+childhood-name|none|-|Không có tên thời thơ ấu Nguyễn Sinh Cung trong phần chữ bốn PDF.
+eastern-culture-exception|direct|2:13 2:19|Đối chiếu phương Đông với phương Tây để nhận ra sự gán nhầm thời kỳ Phục Hưng sang phương Đông.
+schools-attended|none|-|Trang 2:29 ghi nơi dạy Dục Thanh, không có đủ hai trường từng học Đông Ba và Quốc học Huế.
+chosen-path|direct|3:62 3:63|Hai trang xác lập quan hệ độc lập dân tộc gắn CNXH.
+official-term-year|none|-|Không có mốc chính thức sử dụng thuật ngữ năm 1991 trong bốn PDF.
+socialism-builders|direct|3:34|Đặc trưng chủ thể: công trình tập thể của nhân dân, Đảng lãnh đạo.
+socialist-person|context|3:41 3:59|Nêu đào tạo con người, xây con người mới; không có nguyên văn câu muốn xây CNXH cần con người XHCN.
+wrong-marxist-learning|direct|2:22|Phê phán thuộc sách mà không sống có tình nghĩa, đối chiếu học lý luận với thực hành.
+socialism-general-goal|direct|3:35|Nêu đời sống ăn, mặc, học tập, sức khỏe, vật chất và tinh thần ngày càng tiến bộ.
+democratic-centralism|direct|4:15|Danh sách nguyên tắc có tập trung dân chủ.
+cadres-good-poor|context|4:16|Có yêu cầu đối với cán bộ, không có nguyên văn chỗ trống tốt hay kém.
+eulogy-document|direct|2:46|Trang trích đúng câu và nêu văn kiện điếu văn Lê Duẩn đọc.
+unesco-description|none|-|Trang 2:52 nói bức tường ở Paris, không có Nghị quyết UNESCO 1987; không dùng làm bằng chứng nghị quyết.
+confucius-merit|direct|2:13|Có nguyên văn ưu điểm Khổng Tử là tu dưỡng đạo đức cá nhân.
+national-question-substance|direct|3:11 3:16|Trọng tâm giải phóng dân tộc và lựa chọn con đường cứu nước.
+unity-mother-point|none|-|Không có câu đoàn kết là điểm mẹ trong bốn PDF; chủ đề đại đoàn kết đầy đủ thuộc chương khác.
+long-resistance|context|2:37|Có trường kỳ kháng chiến, không có nguyên văn phần kết khẩu hiệu nhất định thắng lợi.
+thought-scope|direct|1:2|Khái niệm bao quát từ cách mạng dân tộc dân chủ nhân dân đến cách mạng XHCN.
+nothing-precious-year|context|3:7|Có khẩu hiệu nhưng không xác nhận năm 1966; không gán năm 1946 từ ảnh bên cạnh.
+our-strength-quote|direct|3:24|Có nguyên văn toàn quốc đồng bào đem sức ta mà tự giải phóng cho ta.
+individualism-warning|context|3:51|Nêu chủ nghĩa cá nhân là trở lực, không có trọn đoạn hôm qua vĩ đại, hôm nay và ngày mai trong câu hỏi.
+resistance-call-date|direct|3:7|Tư liệu Lời kêu gọi toàn quốc kháng chiến có ngày 19/12/1946; không lẫn với khẩu hiệu khác đặt bên cạnh.
+genuine-nationalism|context|2:8 3:22|Có yêu nước và đoàn kết dân tộc; không có trọn luận điểm về chủ nghĩa dân tộc chân chính là động lực lớn.
+empty-theory|context|1:4|Có thống nhất lý luận và thực tiễn nhưng không có nguyên văn cụm lý luận suông.
+imperialist-two-leeches|direct|3:25|Có hình tượng đỉa hai vòi bám chính quốc và thuộc địa.
+human-motivation|direct|3:41 3:44|Trang 41 ghi con người là mục tiêu cao nhất, động lực quyết định nhất; trang 44 minh họa động lực con người.
+peoples-resources|direct|3:59 3:67|Có đem tài dân, sức dân, của dân làm lợi cho dân, Đảng lãnh đạo.
+party-political-line|context|4:13 4:39|Có vai trò đề ra đường lối và xây Đảng về chính trị, không có cách định mức cốt tử của câu gốc.
+will-unity|direct|4:40|Trích Di chúc có giữ đoàn kết như con ngươi của mắt mình.
+study-golden-book|none|-|Không có sự kiện ghi sổ vàng Trường Nguyễn Ái Quốc Trung ương trong bốn PDF.
+arrogance-cup|context|4:38|Có khuyết điểm kiêu ngạo, nhưng không có đoạn so sánh chén nhỏ, đĩa cạn.
+front-form|context|3:59|Có củng cố mặt trận dân tộc thống nhất, không có trực tiếp định nghĩa hình thức tổ chức của khối đại đoàn kết.
+international-slogan|none|-|Không có nguyên văn khẩu hiệu tập hợp lực lượng này trong bốn PDF.
+four-colours-poem|none|-|Không có bài thơ bốn biển một nhà, các màu da trong bốn PDF.
+party-and-front|context|3:59|Có vai trò Đảng và mặt trận, không có trọn quan hệ vừa thành viên vừa lãnh đạo mặt trận.
+self-reliance-aid|direct|3:24|Phân biệt dựa vào sức mình với coi trọng giúp đỡ nhưng không ỷ lại.
+duong-lectures|context|2:32 3:17|Có tên tác phẩm và năm, không thuyết minh nguồn gốc các bài giảng ở Quảng Châu.
+independent-thinking|direct|2:23|Sơ đồ nêu tư duy độc lập, sáng tạo, nhạy bén; câu hỏi vận dụng vai trò của phẩm chất ấy.
+father-degree|none|-|Không có học vị của Nguyễn Sinh Sắc trong bốn PDF.
+party-leadership-condition|direct|3:17|Tiêu đề và trích dẫn xác định vai trò Đảng trong thắng lợi giải phóng dân tộc.
+first-complete-definition-ambiguous|none|-|Không có văn kiện chứng minh đồng thời các tiêu chí lần đầu, hoàn chỉnh và ghi Điều lệ; giữ câu cần đối chiếu.
+essay-subjective|direct|2:23 2:27|Hai nhóm nhân tố chủ quan làm căn cứ phân tích; việc chọn phẩm chất quan trọng cần lập luận, không chấm A/B/C/D.
+essay-proletarian-path|direct|3:11 3:12 3:13 3:16|Chuỗi trang về thất bại đường cũ, hạn chế tư sản, kinh nghiệm Tháng Mười và kết luận con đường vô sản.
+declaration-commitment-work|direct|3:5|Trang ghi rõ Tuyên ngôn Việt Nam 2/9/1945 và đúng đoạn cam kết bảo vệ độc lập.
