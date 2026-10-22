@@ -2,6 +2,16 @@
 
 Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội khoa học** cho kỳ thi giữa kỳ dạng trắc nghiệm.
 
+## Chuyển môn và khung Tư tưởng Hồ Chí Minh
+
+Thanh chọn môn ở đầu trang chuyển giữa CNXHKH (`/`) và Tư tưởng Hồ Chí Minh
+(`/?course=hcm`). Tiến trình, câu lưu và kết quả đề được lưu riêng cho mỗi môn.
+Khung HCM hiện chuẩn bị chương 1–2 và hiển thị trạng thái chờ nội dung.
+Văn bản do người học trích xuất được nhận trực tiếp, không cần phân tích lại slide.
+Xem `content/hcm/README.md` về cách bổ sung nguồn và câu hỏi, sau đó chạy
+`python build_hcm_data.py`. Các chế độ luyện tập, đọc nguồn, luyện lại câu sai
+và đề 30 câu/15 phút dùng chung giao diện hiện tại khi có dữ liệu thực.
+
 ## Nội dung
 
 - 92 câu từ [tài liệu ghi chú Google Docs](https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit), ưu tiên học trước.

@@ -1,0 +1,8 @@
+{
+  "course": {"id": "hcm", "name": "Tư tưởng Hồ Chí Minh"},
+  "chapters": [
+    {"id": 1, "title": "Khái niệm, đối tượng, phương pháp nghiên cứu và ý nghĩa học tập", "topics": ["Khái niệm tư tưởng Hồ Chí Minh", "Đối tượng nghiên cứu", "Phương pháp nghiên cứu", "Ý nghĩa học tập"]},
+    {"id": 2, "title": "Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh", "topics": ["Cơ sở hình thành", "Quá trình hình thành và phát triển", "Giá trị tư tưởng Hồ Chí Minh"]}
+  ],
+  "sections": []
+}

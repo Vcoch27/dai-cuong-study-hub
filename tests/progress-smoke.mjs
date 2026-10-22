@@ -9,11 +9,11 @@ const app=await fs.readFile(new URL('../dist/app.js',import.meta.url),'utf8');
 const oldKey='dai-cuong-cnxh-v1';
 const byId=Object.fromEntries(raw.questions.map(q=>[q.id,q]));
 
-async function boot(initial={}, {mobile=false}={}){
+async function boot(initial={}, {mobile=false,course='cnxh',data=raw}={}){
  const memory=new Map(Object.entries(initial));
  let html='',buttons=[],panels={};
  const events={};
- const window={scrollX:0,scrollY:0,scrollTo({left=0,top=0}){this.scrollX=left;this.scrollY=Math.max(0,top);}};
+ const window={location:{search:course==='hcm'?'?course=hcm':''},scrollX:0,scrollY:0,scrollTo({left=0,top=0}){this.scrollX=left;this.scrollY=Math.max(0,top);}};
  const inert={scrollIntoView(){},focus(){},showModal(){}};
  const root={get innerHTML(){return html;},set innerHTML(value){
   html=value;buttons=[];
@@ -45,7 +45,7 @@ async function boot(initial={}, {mobile=false}={}){
  };
  const context=vm.createContext({document,window,
   localStorage:{getItem:key=>memory.get(key)??null,setItem:(key,value)=>memory.set(key,value)},
-  fetch:async()=>({ok:true,json:async()=>structuredClone(raw)}),setInterval(){},
+  fetch:async url=>{assert.equal(url,course==='hcm'?'/hcm-data.json':'/data.json');return {ok:true,json:async()=>structuredClone(data)};},setInterval(){},
  });
  const module=new vm.SourceTextModule(app+'\nexport {state,render,current,visibleQuestions,storageKey,previousExamScores};',{context});
  await module.link(()=>{throw Error('Unexpected import');});await module.evaluate();
@@ -180,3 +180,40 @@ assert(!slidePractice.html.includes('data-slide-open'),'Retry hides source image
 slidePractice.click('[data-mode]','reader');
 assert.equal(slidePractice.document.querySelectorAll('[data-slide-open]').length,125,'Reader includes every original slide');
 console.log('PASS: progress, exams, scrolling, retries, image visibility, source mapping, viewer navigation/zoom and all 125 reader slides');
+
+const hcm=JSON.parse(await fs.readFile(new URL('../dist/hcm-data.json',import.meta.url),'utf8'));
+const existingKey=`dai-cuong-cnxh-${raw.questionRevision}`;
+const existingWork=JSON.stringify({answers:{'doc-001':0},bookmarks:['doc-001']});
+const hcmPage=await boot({[oldKey]:legacyJSON,[existingKey]:existingWork},{course:'hcm',data:hcm});
+assert.equal(hcmPage.api.storageKey,'dai-cuong-hcm-v1');
+assert.equal(hcmPage.memory.get(existingKey),existingWork,'Opening HCM preserves current CNXH progress');
+assert.equal(hcmPage.memory.get(oldKey),legacyJSON,'HCM cannot migrate legacy CNXH state');
+assert.equal(Object.keys(hcmPage.api.state.answers).length,0);
+assert(!hcmPage.html.includes('NaN')&&!hcmPage.html.includes('0/0'));
+assert(hcmPage.html.includes('Khung ôn tập đã sẵn sàng'));
+assert(hcmPage.html.includes('href="/"')&&hcmPage.html.includes('href="/?course=hcm" aria-current="page"'));
+hcmPage.click('[data-chapter]','2');
+assert(hcmPage.html.includes('Phạm vi chương 2'));
+hcmPage.click('[data-mode]','reader');
+assert(hcmPage.html.includes('Học liệu sẽ được bổ sung theo từng chương'));
+hcmPage.click('[data-mode]','exam');
+assert(hcmPage.html.includes('Đề luyện tập sẽ được mở sau khi có câu hỏi'));
+assert(!hcmPage.html.includes('data-exam-start'));
+
+// Synthetic fixture, never published: the same interface must accept text-only
+// questions and source sections when the user supplies the actual material.
+const future=structuredClone(hcm);
+future.studySections=[{id:'fixture-section',chapter:1,title:'Mục kiểm thử',text:'Nội dung gốc <fixture> & đối chiếu.'}];
+future.questions=[{id:'hcm-fixture',chapter:1,question:'Câu hỏi kiểm thử?',choices:['A','B','C','D'],answer:2,explanation:'Giải thích kiểm thử.',source:{kind:'text',sectionId:'fixture-section',label:'Chương 1 · Mục kiểm thử',evidence:future.studySections[0].text}}];
+const futurePage=await boot({[existingKey]:existingWork},{course:'hcm',data:future});
+assert(!futurePage.html.includes('Nội dung gốc &lt;fixture&gt;'));
+futurePage.click('[data-answer]','2');
+assert(futurePage.html.includes('Nội dung gốc &lt;fixture&gt; &amp; đối chiếu.'));
+assert(!futurePage.html.includes('undefined'));
+futurePage.click('[data-practice-retry]','question');
+assert.equal(futurePage.api.state.answers['hcm-fixture'],2);
+assert(!futurePage.html.includes('Nội dung gốc &lt;fixture&gt;'));
+futurePage.click('[data-mode]','reader');
+assert(futurePage.html.includes('Nội dung gốc &lt;fixture&gt; &amp; đối chiếu.'));
+assert.equal(futurePage.memory.get(existingKey),existingWork);
+console.log('PASS: HCM empty states, chapters, course routes, isolated progress and future text-only questions/reader/retries');
