@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Hướng dẫn đóng góp dữ liệu
+    url: https://github.com/Vcoch27/dai-cuong-vku-study-hub/blob/master/CONTRIBUTING.md
+    about: Cách gửi dữ liệu thô, chuẩn bị câu hỏi và tích hợp bằng Pull Request.

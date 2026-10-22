@@ -1,0 +1,48 @@
+name: Đóng góp tài liệu hoặc câu hỏi
+description: Gửi slide, bản trích xuất, đề năm trước hoặc câu hỏi ôn tập VKU.
+title: "[Dữ liệu] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kéo tệp vào ô nội dung hoặc dẫn liên kết đọc được. Người duy trì sẽ rà nguồn và tích hợp; dữ liệu chưa tự động xuất hiện trên website.
+  - type: input
+    id: course
+    attributes:
+      label: Môn học và chương
+      placeholder: "Ví dụ: Tư tưởng Hồ Chí Minh — chương 3"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Loại đóng góp
+      options:
+        - Slide hoặc tài liệu gốc
+        - Nội dung đã trích xuất
+        - Đề hoặc ngân hàng câu hỏi gốc
+        - Câu hỏi tự biên soạn
+        - Đáp án và giải thích bổ sung
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Tệp nguồn hoặc liên kết
+      description: Đính kèm tệp hoặc liên kết đọc được; ghi tên tập, học kỳ, phiên bản nếu biết.
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Nội dung đề nghị bổ sung
+      description: Phạm vi, số câu, lựa chọn, phần phục dựng hoặc chữ mờ. Có thể dùng mẫu trong contributions/question-template.md.
+    validations:
+      required: true
+  - type: textarea
+    id: answers
+    attributes:
+      label: Đáp án, giải thích và trang đối chiếu
+      description: Ghi nguồn đáp án hoặc chưa xác nhận. Trang PDF tính từ 1, gồm bìa.
+    validations:
+      required: true

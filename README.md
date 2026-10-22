@@ -1,112 +1,110 @@
-# Đại cương study hub
+# Đại cương VKU — Study Hub
 
-Kho ôn tập môn đại cương, bắt đầu với **Chủ nghĩa xã hội khoa học** cho kỳ thi giữa kỳ dạng trắc nghiệm.
+Website ôn tập các môn đại cương dành cho sinh viên **Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng**. Học bằng câu hỏi trắc nghiệm, xem giải thích và đối chiếu ngay với tài liệu gốc.
 
-## Chuyển môn và khung Tư tưởng Hồ Chí Minh
+**[Vào website](https://dai-cuong-study-hub.vercel.app/)** · **[Ngân hàng Tư tưởng Hồ Chí Minh](https://dai-cuong-study-hub.vercel.app/?course=hcm&track=bank)** · **[Đóng góp dữ liệu](CONTRIBUTING.md)**
 
-Thanh chọn môn ở đầu trang chuyển giữa CNXHKH (`/`) và Tư tưởng Hồ Chí Minh
-(`/?course=hcm`). Tiến trình, câu lưu và kết quả đề được lưu riêng cho mỗi môn.
-Môn HCM hiện có **240 câu** (30 câu chương 1, 90 câu chương 2, 120 câu chương 3).
-Giữ bốn đề tổng hợp chương 1–2, thêm bốn đề chương 3, mỗi đề 30 câu/15 phút.
-Phần đọc có đủ 131 trang nguồn (8 + 54 + 69 trang); chương 4 chưa đưa vào học.
-Văn bản do người học trích xuất được nhận trực tiếp, không cần phân tích lại slide.
-Xem `content/hcm/README.md` về cách bổ sung nguồn và câu hỏi, sau đó chạy
-`python import_hcm_chapter3.py`, `python compile_hcm_bank.py`, `python build_hcm_data.py` và `python audit_hcm_data.py`.
-Các chế độ luyện tập, đọc nguồn, luyện lại câu sai
-và đề 30 câu/15 phút dùng chung giao diện hiện tại khi có dữ liệu thực.
+## Giao diện
 
-## Nội dung
+Chọn chương/tập ở bên trái, làm câu hỏi ở giữa và xem đúng trang slide bên phải sau khi trả lời.
 
-### Ngân hàng HCM từ sáu tập
+![Ngân hàng câu hỏi và ảnh slide gốc trong phần đối chiếu](docs/images/hcm-question-bank.png)
 
-Đã thêm **Đề năm trước 1**, giữ đủ 30 vị trí câu theo tệp được gửi. Mục Toàn bộ
-gộp các nội dung trùng, còn 147 mục duy nhất; các tập cũ giữ nguyên câu và tiến trình.
-Câu 17 và 20 của đề cùng kiểm tra một nội dung nhưng vẫn xuất hiện đủ hai vị trí.
-Kết quả và dấu lưu dùng chung theo nội dung, còn lựa chọn của từng lượt luyện giữ
-đúng thứ tự A–D của bản đề. Một câu trong đề chưa chấm vì phương án chồng lấn.
+<details>
+<summary>Xem ảnh tính năng phóng to slide gốc</summary>
 
-### Đối chiếu ảnh PDF gốc HCM
+Mở từ ảnh bên phải hoặc nút chương/trang dưới giải thích. Có thể phóng to, chuyển trang và mở ảnh gốc.
 
-Bốn PDF người học gửi nằm trong `sources/hcm/`. Đủ 175 trang được dựng trực tiếp
-thành WebP trong `dist/hcm-slides/`; không vẽ lại slide từ văn bản. Cả ngân hàng
-và ôn theo slide hiện ảnh sau khi trả lời, có phóng to, chuyển trang và liên kết
-ngay dưới giải thích. Luyện lại ẩn ảnh và đáp án; phần đọc cho xem ảnh chủ động.
+![Khung phóng to slide gốc, có nút chuyển trang](docs/images/original-slide-viewer.png)
 
-240 câu ôn theo slide giữ đúng trang văn bản đã biên soạn, tương ứng 131 trang
-PDF chương 1–3. Chương 4 có ảnh để đối chiếu ngân hàng, chưa thêm câu ôn chương 4.
-Toàn bộ 169 bản câu ngân hàng (139 cũ + 30 vị trí mới) đã được rà và ghi quyết định
-riêng: 93 có căn cứ trực tiếp, 53 chỉ có trang liên quan nhưng thiếu chi tiết, 23
-không có căn cứ trong bốn PDF. Giao diện ghi rõ giới hạn, không gán trang gần từ
-khóa thành bằng chứng. Xem `content/hcm-bank/slide-review-report.md`.
+</details>
 
-Quy trình bổ sung/kiểm tra:
+## Website có gì?
 
-```powershell
-python render_hcm_slides.py
-python build_hcm_data.py
-python build_hcm_bank.py
-python audit_hcm_slide_links.py
-python audit_hcm_bank.py
-node --experimental-vm-modules tests/progress-smoke.mjs
-```
+| Phần ôn tập | Nội dung hiện có | Cách học |
+| --- | --- | --- |
+| **Chủ nghĩa xã hội khoa học** | 249 câu: 123 từ ghi chú, 126 từ slide; 8 đề giữa kỳ; 125 trang slide gốc | Học ghi chú trước, sau đó ôn ý chính từ slide chương 1–4 |
+| **Tư tưởng Hồ Chí Minh · Ôn theo slide** | 240 câu: chương 1 có 30, chương 2 có 90, chương 3 có 120; 8 đề; 131 trang học liệu | Chọn từng chương, luyện câu hỏi và đối chiếu văn bản, ảnh PDF gốc |
+| **Tư tưởng Hồ Chí Minh · Ngân hàng riêng** | Sáu tập và **Đề năm trước 1** giữ đủ 30 vị trí câu; mục Toàn bộ có 147 nội dung sau gộp trùng | Ôn theo tập/nhóm hoặc toàn bộ; xem bản câu gốc và các vị trí xuất hiện |
 
-### Đợt nhập sáu tập ban đầu
+Mỗi đề giữa kỳ có **30 câu trong 15 phút**, tự nộp khi hết giờ. HCM có bốn đề chương 1–2 và bốn đề riêng chương 3.
 
-Trang `/?course=hcm&track=bank` chạy song song với phần ôn theo slide, có liên kết
-chuyển qua lại. Từ 261 vị trí nguồn đã gộp còn 139 mục duy nhất: 133 trắc nghiệm,
-bốn câu cần đối chiếu, hai tự luận. Đã thêm nhiễu cho 23 mục chỉ có câu trả lời.
-Có chế độ toàn bộ không lặp, sáu tập, các phần/nhóm của tập 1–2, tìm kiếm,
-lưu câu và làm lại. Câu xuất hiện ở nhiều tập dùng chung tiến trình; tiến trình
-ngân hàng tách riêng với phần theo slide và CNXHKH. Xem `content/hcm-bank/README.md`.
+### Các tính năng chính
 
-### CNXHKH
+- Hiện đáp án, giải thích và nguồn sau khi chọn trong chế độ luyện tập.
+- Đọc học liệu, xem ảnh slide gốc, phóng to và chuyển trang.
+- Tìm theo từ khóa, lọc theo chương/tập/nhóm và lưu câu cần ôn.
+- Làm lại từng câu, nhóm đang chọn hoặc các câu sai; khi làm lại, đáp án và nguồn được ẩn lại.
+- Giữ tiến độ **đã làm** riêng với câu trả lời của lượt luyện; sửa đúng câu sai cập nhật kết quả gần nhất.
+- Làm đề có đồng hồ, xem đáp án sau khi nộp, lưu điểm gần nhất và điểm cao nhất.
+- Chuyển môn trên thanh đầu trang. CNXHKH, HCM theo slide và ngân hàng HCM lưu tiến trình riêng.
 
-- 92 câu từ [tài liệu ghi chú Google Docs](https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit), ưu tiên học trước.
-- 67 câu từ bốn bộ slide chương 1–4, ôn sau phần ghi chú.
-- 90 câu mới hỏi theo nhiều hướng từ cùng một ý: hỏi ngược, phân biệt mốc/khái niệm, ngoại lệ và chọn đáp án đúng nhất. Tổng ngân hàng hiện có **249 câu**.
-- Toàn bộ 249 câu đã được biên tập lại phương án và giải thích: nhiễu cùng chủ đề, kiểm tra nhầm điều kiện/vai trò/phạm vi, giảm gợi ý từ từ ngữ tuyệt đối và độ dài. Nội dung hiện dùng nằm trong `reviewed_questions.py`; các đoạn câu hỏi ban đầu trong trình dựng chỉ giữ ID và ánh xạ nguồn. Mỗi lần dựng phải có đủ 249 bản biên tập.
-- Trong chế độ luyện tập, các câu cùng đoạn ghi chú hoặc cùng trang slide được xếp cạnh nhau để luyện một ý theo nhiều góc nhìn.
-- Tám đề giữa kỳ cố định: ba đề chuyên biệt và năm đề tổng hợp từ cả ghi chú lẫn slide, đủ bốn chương. Mỗi đề 30 câu trong 15 phút; 240 câu không lặp giữa các đề. Bài tự nộp khi hết giờ; đáp án và nguồn chỉ hiện sau khi nộp. Có thể làm lại và xem điểm gần nhất, điểm cao nhất.
-- Mỗi câu có bốn lựa chọn, đáp án hiện ngay khi chọn và đoạn nguồn đối chiếu bên cạnh.
-- Chế độ đọc giữ đầy đủ văn bản trích xuất từ tài liệu ghi chú và 125 trang slide.
-- Với câu lấy từ slide, cột đối chiếu hiện ảnh đúng trang PowerPoint gốc sau khi trả lời. Có thể phóng to, xem trang trước/sau và mở ảnh gốc; phần văn bản nằm trong mục thu gọn. Khi làm lại hoặc chưa nộp đề, ảnh nguồn được ẩn. Chế độ đọc có ảnh đủ 125 trang.
-- Tìm kiếm, lọc chương, xem câu sai, lưu câu và ghi nhớ tiến độ bằng localStorage.
-- Có thể làm lại từng câu, luyện lại câu sai hoặc làm lại nhóm đang lọc. Tiến độ “đã làm” được giữ riêng với câu trả lời của lượt luyện; kết quả gần nhất cập nhật danh sách câu sai. Khi luyện lại, đáp án, giải thích và đoạn nguồn đều được ẩn. Nhóm câu sai giữ nguyên trong lượt ôn để đọc được phản hồi sau khi sửa đúng; chọn lại bộ lọc “Làm sai” để lấy danh sách mới nhất.
-- Chọn đáp án giữ nguyên vị trí cuộn; chuyển câu bằng nút, danh sách số hoặc phím mũi tên đưa đầu khung câu hỏi vào màn hình. Các cột giữ vị trí riêng; trong đề thi, thanh đồng hồ bám theo vùng làm bài.
-- Lượt luyện với câu hỏi đã biên tập được lưu riêng. Câu đánh dấu được chuyển sang bản mới; dữ liệu bản cũ giữ nguyên trên thiết bị. Điểm cao nhất của đề cũ có nhãn “Trước biên tập”, không gộp với điểm bản mới.
+## Sử dụng như thế nào?
+
+1. **[Mở website](https://dai-cuong-study-hub.vercel.app/)** và chọn môn ở đầu trang. Không cần đăng ký tài khoản.
+2. **Chọn nguồn học.** CNXHKH bắt đầu từ Ghi chú; HCM chọn Ôn theo slide hoặc Ngân hàng câu hỏi.
+3. **Chọn phạm vi.** Chọn chương, tập/nhóm hoặc Đề năm trước 1 ở cột trái; dùng ô tìm kiếm nếu cần.
+4. **Chọn đáp án.** Đọc giải thích bên dưới, xem ảnh và số trang trong cột Đối chiếu học liệu. Bấm ảnh hoặc nút chương/trang để phóng to.
+5. **Ôn lại.** Dùng Lưu câu, Làm sai, Luyện lại câu sai, Làm lại câu này hoặc Làm lại nhóm này. Tiến độ đã làm vẫn được giữ khi bắt đầu lượt mới.
+6. **Tự kiểm tra.** Trong phần ôn theo bài học, chọn Đề 30 câu · 15 phút, làm bài và nộp để xem điểm cùng nguồn đối chiếu.
+
+| Phím tắt | Thao tác |
+| --- | --- |
+| `1`, `2`, `3`, `4` | Chọn A, B, C, D khi làm câu hỏi hoặc đề |
+| `←`, `→` | Chuyển câu; khi mở khung slide thì chuyển trang slide |
+
+Tiến trình lưu bằng **localStorage trên trình duyệt đang dùng**, chưa có đồng bộ tài khoản giữa các thiết bị. Xóa dữ liệu website hoặc dùng trình duyệt khác sẽ không mang theo tiến trình cũ.
+
+### Hiểu các nhãn đối chiếu
+
+Ảnh HCM được xuất trực tiếp từ bốn PDF gốc, tổng **175 trang**. Phần ôn theo slide dừng ở chương 3; ảnh chương 4 dùng để đối chiếu các câu đã có trong ngân hàng.
+
+- **Căn cứ trong slide gốc:** có nội dung hỗ trợ trả lời; ghi rõ chương và trang PDF, đếm từ 1.
+- **Slide liên quan:** cùng chủ đề nhưng thiếu chi tiết cần chấm; cần xem nguồn bổ sung.
+- **Không có căn cứ trực tiếp trong bốn PDF:** chi tiết không có trong bộ slide đã nhận.
+- **Cần đối chiếu / Tự luận:** không tự chấm A–D khi chưa xác định được một đáp án duy nhất hoặc câu yêu cầu phân tích.
+
+Ngân hàng HCM có 141 mục trắc nghiệm chấm điểm, 4 mục cần đối chiếu và 2 mục tự luận ở chế độ Toàn bộ. Đề năm trước 1 giữ đủ 30 vị trí; câu 1 chưa chấm do phương án chồng lấn. Các câu phục dựng và hiệu đính có ghi chú để kiểm tra.
+
+## Đóng góp dữ liệu
+
+Bạn có thể gửi slide, văn bản đã trích xuất, câu hỏi, đề năm trước, lời giải hoặc báo câu sai/trỏ nhầm trang.
+
+- **Không cần biết code:** [gửi dữ liệu qua Issue](https://github.com/Vcoch27/dai-cuong-vku-study-hub/issues/new?template=data-contribution.yml) hoặc [báo lỗi câu hỏi](https://github.com/Vcoch27/dai-cuong-vku-study-hub/issues/new?template=question-correction.yml).
+- **Có thể dùng Git:** fork repo, tạo nhánh và gửi Pull Request. Có thể gửi dữ liệu thô trước, không bắt buộc tự tích hợp vào ứng dụng.
+- **Bắt đầu tại đây:** [Hướng dẫn đóng góp](CONTRIBUTING.md) và [mẫu dữ liệu câu hỏi](contributions/question-template.md).
+
+Tài liệu qua Issue/PR được rà nguồn, đáp án, câu trùng và trang đối chiếu trước khi đưa lên website. Hiện chưa có màn hình tự nhập dữ liệu trên web.
 
 ## Chạy tại máy
 
-Sử dụng server tĩnh tại thư mục `dist`:
+Chỉ cần Python để chạy bản web có sẵn trong `dist/`:
 
-```powershell
+```sh
+git clone https://github.com/Vcoch27/dai-cuong-vku-study-hub.git
+cd dai-cuong-vku-study-hub
 python -m http.server 4173 -d dist
 ```
 
-Mở `http://localhost:4173`. Để tạo lại dữ liệu sau khi chỉnh câu hỏi, chạy `python build_data.py`.
+Mở **http://localhost:4173**. Đây là ứng dụng HTML/CSS/JavaScript tĩnh; không cần cài Node để sử dụng bản đã dựng.
 
-Ảnh trong `dist/slides/` được xuất trực tiếp từ PowerPoint gốc rồi mã hóa WebP, không dựng lại bố cục. Nếu thay bộ slide, chạy trên Windows có PowerPoint và Python Pillow:
+## Cấu trúc repo
 
-```powershell
-powershell -NoProfile -File render_slides.ps1
-python pack_slide_images.py
-python build_data.py
-```
+| Đường dẫn | Vai trò |
+| --- | --- |
+| `dist/` | Website và dữ liệu đầu ra, triển khai lên Vercel |
+| `content/hcm/` | Văn bản bài học, câu HCM theo slide, đề và manifest trang PDF |
+| `content/hcm-bank/` | Nguồn ngân hàng, quyết định biên tập và bảng đối chiếu từng câu |
+| `sources/hcm/` | Bốn PDF HCM gốc |
+| `slidegk/` | PowerPoint CNXHKH gốc |
+| `reviewed_questions.py` | Nội dung CNXHKH đã biên tập |
+| `contributions/` | Mẫu chuẩn bị dữ liệu đóng góp |
+| `tests/` | Kiểm tra luồng học, tiến trình, đề và ảnh đối chiếu |
 
-Trình dựng kiểm tra dấu vân tay của bộ slide, số trang và từng ảnh để tránh gắn nhầm ảnh sau khi đổi tài liệu. Thư mục ảnh PNG trung gian `.slide-renders/` không đưa lên Git.
+Các lệnh dựng và kiểm tra theo phần thay đổi nằm trong [CONTRIBUTING.md](CONTRIBUTING.md). Công cụ biên tập: Python, Node.js; Pillow/PyMuPDF khi dựng ảnh PDF. Xuất lại PowerPoint cần Windows có Microsoft PowerPoint.
 
-Kiểm tra sau khi sửa ngân hàng hoặc cách lưu tiến độ:
+Tài liệu chi tiết: [HCM theo slide](content/hcm/README.md) · [Ngân hàng HCM](content/hcm-bank/README.md) · [Bảng đối chiếu slide](content/hcm-bank/slide-review-report.md) · [Quy tắc biên soạn](writing-block.md).
 
-```powershell
-python build_data.py
-python audit_questions.py
-node --experimental-vm-modules tests/progress-smoke.mjs
-```
+## Phạm vi nội dung
 
-`audit_questions.py` kiểm tra nguồn, ID, bốn lựa chọn, cấu trúc tám đề, từ dễ lộ ở phương án nhiễu và chênh lệch độ dài. Sau biên tập, chiến thuật chọn phương án dài nhất đạt 24,16%, ngắn nhất đạt 25,17% trên ngân hàng (chọn đều khi bằng độ dài), so với 25% kỳ vọng khi đoán ngẫu nhiên. Đây là kiểm tra gợi ý hình thức, không phải phép đo độ khó học thuật của từng câu. Tính đúng duy nhất và chất lượng nhiễu vẫn cần biên tập theo nguồn.
-
-## Nguồn và phạm vi
-
-Tài liệu gốc nằm trong `sources/` và `slidegk/`. Trường `source` của mỗi câu trong `dist/data.json` giữ nhãn nguồn, dòng hoặc trang slide và đoạn văn trích xuất. Bộ câu hỏi phản ánh nội dung tài liệu lớp học; các phát biểu mang tính học thuật trong tài liệu không phải ý kiến độc lập của ứng dụng.
-
-Lưu ý: văn bản trích xuất có thể thiếu phần chữ trong ảnh hoặc sơ đồ. Ảnh trang slide gốc được hiển thị trong phần đối chiếu và chế độ đọc để xem đầy đủ bố cục, hình ảnh.
+Nội dung được biên soạn theo tài liệu lớp học và nguồn được cung cấp, không phải khóa đáp án chính thức của mọi lớp/giảng viên. Phần chữ mờ, câu phục dựng, đáp án còn tranh luận hoặc thông tin ngoài slide có ghi chú riêng. Khi báo lỗi, hãy kèm câu hỏi, lựa chọn và trang nguồn để cùng kiểm tra.

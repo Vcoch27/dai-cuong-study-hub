@@ -1,0 +1,31 @@
+name: Sửa câu hỏi hoặc trang nguồn
+description: Báo đáp án sai, phương án chồng lấn, câu trùng hoặc slide trỏ nhầm.
+title: "[Sửa câu hỏi] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Môn, nguồn và vị trí câu hỏi
+      placeholder: "Ví dụ: HCM → Ngân hàng → Đề năm trước 1 → Câu 14"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Câu hỏi và các lựa chọn hiện tại
+      description: Dán nội dung hoặc ảnh để nhận diện; số thứ tự có thể đổi khi lọc.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Vấn đề và cách sửa đề xuất
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Căn cứ và trang nguồn
+      description: Đính kèm ảnh/tệp/liên kết, chương và trang PDF từ 1. Nếu chưa có nguồn, ghi phần cần xác minh.
+    validations:
+      required: true
