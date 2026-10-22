@@ -13,7 +13,7 @@ async function boot(initial={}, {mobile=false,course='cnxh',data=raw}={}){
  const memory=new Map(Object.entries(initial));
  let html='',buttons=[],panels={};
  const events={};
- const window={location:{search:course==='hcm'?'?course=hcm':''},scrollX:0,scrollY:0,scrollTo({left=0,top=0}){this.scrollX=left;this.scrollY=Math.max(0,top);}};
+ const window={location:{search:course==='bank'?'?course=hcm&track=bank':course==='hcm'?'?course=hcm':''},scrollX:0,scrollY:0,scrollTo({left=0,top=0}){this.scrollX=left;this.scrollY=Math.max(0,top);}};
  const inert={scrollIntoView(){},focus(){},showModal(){}};
  const root={get innerHTML(){return html;},set innerHTML(value){
   html=value;buttons=[];
@@ -45,7 +45,7 @@ async function boot(initial={}, {mobile=false,course='cnxh',data=raw}={}){
  };
  const context=vm.createContext({document,window,
   localStorage:{getItem:key=>memory.get(key)??null,setItem:(key,value)=>memory.set(key,value)},
-  fetch:async url=>{assert.equal(url,course==='hcm'?'/hcm-data.json':'/data.json');return {ok:true,json:async()=>structuredClone(data)};},setInterval(){},
+  fetch:async url=>{assert.equal(url,course==='bank'?'/hcm-bank-data.json':course==='hcm'?'/hcm-data.json':'/data.json');return {ok:true,json:async()=>structuredClone(data)};},setInterval(){},
  });
  const module=new vm.SourceTextModule(app+'\nexport {state,render,current,visibleQuestions,storageKey,previousExamScores};',{context});
  await module.link(()=>{throw Error('Unexpected import');});await module.evaluate();
@@ -255,3 +255,54 @@ assert(liveHcm.html.includes('30/30 câu đúng'));
 assert(liveHcm.html.includes('evidence-card focused'),'Submitted HCM exam reveals its text source');
 assert.equal(liveHcm.memory.get(existingKey),existingWork,'Practice and exams do not alter CNXH progress');
 console.log('PASS: actual HCM bank, chapter filtering, source reveal, wrong-answer retry, all 62 source pages and 30-question grading');
+
+const bank=JSON.parse(await fs.readFile(new URL('../dist/hcm-bank-data.json',import.meta.url),'utf8'));
+const slideProgress=JSON.stringify({answers:{[hcm.questions[0].id]:hcm.questions[0].answer},bookmarks:[hcm.questions[0].id]});
+const bankPage=await boot({[existingKey]:existingWork,'dai-cuong-hcm-v1':slideProgress},{course:'bank',data:bank});
+assert.equal(bankPage.api.storageKey,'dai-cuong-hcm-bank-v1');
+assert.equal(bankPage.api.visibleQuestions().length,139);
+assert(!bankPage.html.includes('Chương 0'));
+assert(bankPage.html.includes('139 mục không lặp'));
+assert(!bankPage.html.includes('data-mode="exam"'));
+const firstBank=bankPage.api.current();
+assert(!bankPage.html.includes('bank-source-occurrence'));
+bankPage.click('[data-answer]',String(firstBank.answer));
+assert(bankPage.html.includes('bank-source-occurrence'));
+assert(bankPage.html.includes('Đáp án đúng có trong nguồn'));
+bankPage.click('[data-bank-set]','tap-3');
+assert.equal(bankPage.api.current().id,firstBank.id);
+assert(bankPage.html.includes('answer-box'),'Shared question progress is visible in another set');
+bankPage.click('[data-practice-retry]','question');
+assert(!bankPage.html.includes('bank-source-occurrence'));
+assert.equal(bankPage.api.state.answers[firstBank.id],firstBank.answer);
+bankPage.click('[data-answer]',String((firstBank.answer+1)%4));
+bankPage.click('[data-review]','wrong');
+bankPage.click('[data-practice-retry]','wrong');
+bankPage.click('[data-answer]',String(firstBank.answer));
+assert.equal(bankPage.api.current().id,firstBank.id);
+bankPage.click('[data-bank-set]','tap-2-g2');
+assert(bankPage.api.visibleQuestions().every(q=>q.groupIds.includes('tap-2-g2')));
+assert.equal(bankPage.api.current().id,'bank-departure-year','Each group follows original source numbering, including question 00');
+bankPage.click('[data-bank-set]','all');
+bankPage.click('[data-bank-kind]','pending');
+assert.equal(bankPage.api.visibleQuestions().length,4);
+assert(!bankPage.html.includes('data-answer'));
+const countBefore=Object.keys(bankPage.api.state.answers).length;
+bankPage.key('1');
+assert.equal(Object.keys(bankPage.api.state.answers).length,countBefore,'Unresolved question cannot be graded by keyboard');
+bankPage.click('[data-bank-reveal]');
+assert(bankPage.html.includes('Chưa có đủ căn cứ'));
+bankPage.click('[data-bank-kind]','essay');
+assert.equal(bankPage.api.visibleQuestions().length,2);
+bankPage.click('[data-bank-reveal]');
+assert(bankPage.html.includes('Gợi ý:'));
+assert.equal(Object.keys(bankPage.api.state.answers).length,countBefore,'Essay reveal is not a correct quiz answer');
+bankPage.click('[data-bank-kind]','all');
+bankPage.click('[data-mode]','reader');
+assert.equal([...bankPage.html.matchAll(/class="reader-item"/g)].length,139);
+assert.equal([...bankPage.html.matchAll(/class="bank-source-title"/g)].length,261,'Every original source occurrence is readable after deduplication');
+assert.equal(bankPage.memory.get('dai-cuong-hcm-v1'),slideProgress);
+assert.equal(bankPage.memory.get(existingKey),existingWork);
+const reloadedBank=await boot(Object.fromEntries(bankPage.memory),{course:'bank',data:bank});
+assert.equal(reloadedBank.api.state.answers[firstBank.id],firstBank.answer);
+console.log('PASS: bank deduplication, six sets/subgroups, shared retries, read-only pending/essay items, 261 source occurrences and three isolated progress stores');

@@ -16,6 +16,17 @@ và đề 30 câu/15 phút dùng chung giao diện hiện tại khi có dữ li�
 
 ## Nội dung
 
+### Ngân hàng HCM từ sáu tập
+
+Trang `/?course=hcm&track=bank` chạy song song với phần ôn theo slide, có liên kết
+chuyển qua lại. Từ 261 vị trí nguồn đã gộp còn 139 mục duy nhất: 133 trắc nghiệm,
+bốn câu cần đối chiếu, hai tự luận. Đã thêm nhiễu cho 23 mục chỉ có câu trả lời.
+Có chế độ toàn bộ không lặp, sáu tập, các phần/nhóm của tập 1–2, tìm kiếm,
+lưu câu và làm lại. Câu xuất hiện ở nhiều tập dùng chung tiến trình; tiến trình
+ngân hàng tách riêng với phần theo slide và CNXHKH. Xem `content/hcm-bank/README.md`.
+
+### CNXHKH
+
 - 92 câu từ [tài liệu ghi chú Google Docs](https://docs.google.com/document/d/1iKcT1_tLk5xTTdsBzRmLEv-KpymeBbIbQSkn5-98F-A/edit), ưu tiên học trước.
 - 67 câu từ bốn bộ slide chương 1–4, ôn sau phần ghi chú.
 - 90 câu mới hỏi theo nhiều hướng từ cùng một ý: hỏi ngược, phân biệt mốc/khái niệm, ngoại lệ và chọn đáp án đúng nhất. Tổng ngân hàng hiện có **249 câu**.

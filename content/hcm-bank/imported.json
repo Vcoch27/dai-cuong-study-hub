@@ -1,0 +1,4876 @@
+{
+  "sets": [
+    {
+      "id": "tap-1",
+      "title": "Tập 1",
+      "description": "Tài liệu Ôn Tập Giữa Kỳ – Tư Tưởng Hồ Chí Minh – HCM101"
+    },
+    {
+      "id": "tap-2",
+      "title": "Tập 2",
+      "description": "Tư tưởng Hồ Chí Minh – Câu hỏi ôn tập cho môn Tư tưởng chính trị"
+    },
+    {
+      "id": "tap-3",
+      "title": "Tập 3",
+      "description": "Ôn Tập Giữa Kỳ Tư Tưởng Hồ Chí Minh – GK TT HCM VKU"
+    },
+    {
+      "id": "tap-4",
+      "title": "Tập 4",
+      "description": "Đề thi giữa kỳ HP Tư tưởng Hồ Chí Minh – 50 câu trắc nghiệm"
+    },
+    {
+      "id": "tap-5",
+      "title": "Tập 5",
+      "description": "Đề Thi Giữa Kỳ Môn Tư Tưởng Hồ Chí Minh – Studocu AI"
+    },
+    {
+      "id": "tap-6",
+      "title": "Tập 6",
+      "description": "Đề thi giữa kỳ Suất 2 – Tư tưởng Hồ Chí Minh HK1-23-24"
+    }
+  ],
+  "records": [
+    {
+      "id": "t1-short-01",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 1,
+      "kind": "short",
+      "question": "Theo Hồ Chí Minh, sự kiện nào \"mở ra con đường giải phóng cho các dân tộc và cả loài người, mở đầu một thời đại mới trong lịch sử\"?",
+      "choices": [],
+      "providedAnswer": "Cách mạng Tháng Mười Nga năm 1917.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-02",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 2,
+      "kind": "short",
+      "question": "Điền cụm từ còn thiếu: \"Toàn thể dân tộc Việt Nam quyết đem ... để giữ vững quyền tự do, độc lập ấy.\"",
+      "choices": [],
+      "providedAnswer": "Tất cả tinh thần và lực lượng, tính mạng và của cải.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-03",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 3,
+      "kind": "short",
+      "question": "Ông Nguyễn Sinh Sắc vào kinh đô thi Hội và đậu Phó bảng vào năm nào?",
+      "choices": [],
+      "providedAnswer": "1901.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-04",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 4,
+      "kind": "short",
+      "question": "Sau khi về Tổ quốc, với vai trò Chủ tịch nước, Hồ Chí Minh về quê Nghệ An lần đầu tiên vào năm nào?",
+      "choices": [],
+      "providedAnswer": "1957.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-05",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 5,
+      "kind": "short",
+      "question": "Quê ngoại của Chủ tịch Hồ Chí Minh ở đâu?",
+      "choices": [],
+      "providedAnswer": "Làng Chùa (Hoàng Trù), xã Kim Liên, huyện Nam Đàn, Nghệ An.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-06",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 6,
+      "kind": "short",
+      "question": "Yếu tố nào quyết định bản chất của tư tưởng Hồ Chí Minh?",
+      "choices": [],
+      "providedAnswer": "Chủ nghĩa Mác – Lênin.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-07",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 7,
+      "kind": "short",
+      "question": "Các nhân tố chủ quan hình thành tư tưởng Hồ Chí Minh là gì?",
+      "choices": [],
+      "providedAnswer": "Phẩm chất cá nhân Hồ Chí Minh; tài năng hoạt động, tổng kết thực tiễn và phát triển lý luận.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-08",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 8,
+      "kind": "short",
+      "question": "Theo Hồ Chí Minh, quyền thiêng liêng nhất, bất khả xâm phạm nhất của mọi dân tộc là quyền gì?",
+      "choices": [],
+      "providedAnswer": "Quyền độc lập, tự do, bình đẳng.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-09",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 9,
+      "kind": "short",
+      "question": "Trước khi ra đi tìm đường cứu nước, hành trang của Nguyễn Tất Thành đã có những gì?",
+      "choices": [],
+      "providedAnswer": "Chủ nghĩa yêu nước và truyền thống dân tộc Việt Nam.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-10",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 10,
+      "kind": "short",
+      "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành thắng lợi phải đi theo con đường nào?",
+      "choices": [],
+      "providedAnswer": "Cách mạng vô sản.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-11",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 11,
+      "kind": "short",
+      "question": "Hồ Chí Minh đã từng dạy học ở ngôi trường nào?",
+      "choices": [],
+      "providedAnswer": "Trường Dục Thanh ở Phan Thiết.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-12",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 12,
+      "kind": "short",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành trên cơ sở nào?",
+      "choices": [],
+      "providedAnswer": "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-13",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 13,
+      "kind": "short",
+      "question": "Nguyễn Tất Thành lấy tên Nguyễn Ái Quốc ở sự kiện nào?",
+      "choices": [],
+      "providedAnswer": "Tại Hội nghị Vécxây (Pháp), năm 1919.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-14",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 14,
+      "kind": "short",
+      "question": "Hồ Chí Minh tham gia sáng lập Hội Liên hiệp thuộc địa trong giai đoạn hình thành tư tưởng nào?",
+      "choices": [],
+      "providedAnswer": "Giai đoạn từ cuối năm 1920 đến đầu năm 1930.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-15",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 15,
+      "kind": "short",
+      "question": "Từ người yêu nước, Hồ Chí Minh trở thành người cộng sản khi nào?",
+      "choices": [],
+      "providedAnswer": "Khi dự Đại hội Tua, tán thành Quốc tế Cộng sản, năm 1920.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-16",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 16,
+      "kind": "short",
+      "question": "Những giá trị truyền thống tốt đẹp nào của dân tộc Việt Nam được Hồ Chí Minh tiếp thu?",
+      "choices": [],
+      "providedAnswer": "Chủ nghĩa yêu nước; tinh thần đoàn kết, cố kết cộng đồng; tư tưởng nhân ái, bao dung, độ lượng.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-17",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 17,
+      "kind": "short",
+      "question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam Cách mạng Thanh niên ở đâu?",
+      "choices": [],
+      "providedAnswer": "Trung Quốc.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-18",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 18,
+      "kind": "short",
+      "question": "Giai đoạn hình thành những nội dung cơ bản của tư tưởng về cách mạng Việt Nam là khi nào?",
+      "choices": [],
+      "providedAnswer": "Từ cuối năm 1920 đến đầu năm 1930.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-19",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 19,
+      "kind": "short",
+      "question": "Thời kỳ từ 1911 đến 1920 trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh có đặc điểm gì?",
+      "choices": [],
+      "providedAnswer": "Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-20",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 20,
+      "kind": "short",
+      "question": "Trong các giá trị truyền thống tốt đẹp của dân tộc Việt Nam, yếu tố nào giữ vai trò hàng đầu?",
+      "choices": [],
+      "providedAnswer": "Chủ nghĩa yêu nước.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-21",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 21,
+      "kind": "short",
+      "question": "Nguyễn Ái Quốc đã nói \"Luận cương của Lênin ... đây là con đường giải phóng cho chúng ta\" khi đang ở đâu?",
+      "choices": [],
+      "providedAnswer": "Pháp.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-short-22",
+      "setId": "tap-1",
+      "subgroup": "short",
+      "document": 1,
+      "part": "short",
+      "number": 22,
+      "kind": "short",
+      "question": "Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử vào năm nào?",
+      "choices": [],
+      "providedAnswer": "1965.",
+      "page": null,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-01",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Chọn phương án trả lời đúng nhất: Chọn một:",
+      "choices": [
+        "Chủ nghĩa Mác – Lênin là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta",
+        "Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta",
+        "Cùng với chủ nghĩa Mác – Lênin và tư tưởng của Đảng, tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động của Đảng ta",
+        "Cùng với chủ nghĩa Mác – Lênin, tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động của Đảng ta"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-02",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Chọn câu trả lời đúng với tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Cách mạng giải phóng dân tộc giành thắng lợi đồng thời với thắng lợi cách mạng vô sản ở chính quốc",
+        "Thắng lợi của cách mạng vô sản tồn tại song song với thắng lợi cách mạng tư sẵn",
+        "Thắng lợi của cách mạng vô sản ở thuộc địa phải phụ thuộc vào thắng lợi của cách mạng vô sản ở chính quốc",
+        "Cách mạng giải phóng dân tộc ở thuộc địa có khả năng giành thắng lợi trước cách mạng vô sản ở chính quốc"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-03",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc gửi bản \"Yêu sách của nhân dân An Nam\" tới Hội nghị Vécxây vào ngày tháng năm nào?",
+      "choices": [
+        "18/6/1920",
+        "18/6/1917",
+        "18/6/1919",
+        "18/6/1918"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-04",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Trước năm 1911, gia đình Bác có bao nhiêu lần vào Huế?",
+      "choices": [
+        "2",
+        "3",
+        "l",
+        "4"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-05",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Trong các giai đoạn hình thành và phát triển tư tưởng Hồ Chí Minh, giai đoạn nào thể hiện được Hồ Chí Minh đã xác định đúng bản chât, thủ đoạn, tội ác của chủ nghĩa thực dân và tình cảnh nhân dân các nước thuộc địa",
+      "choices": [
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 - 28/1/1941",
+        "Trước ngày 5/6/1911",
+        "Từ 31/12/1920 - 3/2/1930"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-06",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Địa danh nơi Bác đặt chân về tổ quốc vào năm 1941:",
+      "choices": [
+        "Cột mốc 108, xã Trường Hà, huyện Hà Quảng, Tỉnh Pác Bó",
+        "Cột mốc 180, xã Trường Hà, huyện Hà Quảng, Tỉnh Pác Bó",
+        "Cột mốc 180, xã Trường Hà, huyện Hà Quảng, Tỉnh Cao Bằng",
+        "Cột mốc 108, xã Trường Hà, huyện Hà Quảng, Tỉnh Cao Bằng"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-07",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành trong bối cảnh nào?",
+      "choices": [
+        "Chủ nghĩa xã hội đang trong giai đoạn phát triển",
+        "Chủ nghĩa tư bản đang trong giai đoạn hình thành",
+        "Chủ nghĩa tư bản từ giai đoạn tự do cạnh tranh sang giai đoạn đế quốc chủ nghĩa",
+        "Chủ nghĩa tư bản đang trong giai đoạn tự do cạnh tranh"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-08",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây không phải là của Hồ Chí Minh?",
+      "choices": [
+        "Tuyên ngôn của Đảng Cộng sản",
+        "Vừa đi đường, vừa kể chuyện",
+        "Bản án chế độ thực dân Pháp",
+        "Giấc ngủ mười năm"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-09",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Tác phẩm mang lại bước ngoặt nhận thức cho Hồ Chí Minh về con đường giải phóng dân tộc thuộc địa là:",
+      "choices": [
+        "Cương lĩnh dân tộc của Đảng Cộng sản",
+        "Tuyên ngôn của Đảng Cộng sản",
+        "Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa",
+        "Đường cách mệnh"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-10",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Đảng Cộng sản Việt Nam ra đời là sự thống nhất của các tô chức Đảng:",
+      "choices": [
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng và Đông Dương Cộng Sản Liên Đoàn",
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng; Đông Dương Cộng Sản Liên Đoàn và Hội Việt Nam cách mạng thanh niên",
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng và Hội Việt Nam cách mạng thanh niên",
+        "Công hội Đỏ, Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-11",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Năm 1911 Hồ Chí Minh rời bến cảng nhà Rồng ra nước ngoài với ý định:",
+      "choices": [
+        "Học tập con đường cách mạng vô sản, tìm hiểu nền văn minh các nước trên thế giới",
+        "Học tập con đường cách mạng vô sản và tham gia vào phong trào cách mạng của các nước trên thê giới",
+        "Tìm hiểu nền văn minh nước Pháp",
+        "Muốn có một cuộc sống tốt đẹp ở các nước khác nhau trên thế giới"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-12",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Vì sao, trong quá trình tìm đường cứu nước. Hồ Chỉ Minh đã không lựa chọn con đường cách mạng tư sản?",
+      "choices": [
+        "Vì cách mạng Việt Nam không có giai cấp tư sản lãnh đạo",
+        "Vì cách mạng tư sản không phù hợp với Việt Nam",
+        "Vì cách mạng tư sản chỉ phù hợp với các nước phương Tây",
+        "Vì cách mạng tư sản là \"cách mạng không đến nơi, cách mạng không triệt đẻ\""
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-13",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Cơ sở lý luận hình thành Tư tưởng Hồ Chí Minh gồm:",
+      "choices": [
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Chủ nghĩa yêu nước dân tộc Việt Nam; Tinh hoa văn hóa phương Đông và phương Tây; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Tinh hoa văn hóa nhân loại; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Chủ nghĩa yêu nước dân tộc Việt Nam; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Tinh hoa văn hóa phương Đông và phương Tây; Chủ nghĩa yêu nước"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-14",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Chọn câu trả lời đúng nhất; theo Hồ Chí Minh, cách mạng giải phóng dân tộc ở thuộc địa thắng lợi khi có các điều kiện:",
+      "choices": [
+        "Vai trò lãnh đạo của Đảng và sự nỗ lực của chính các dân tộc thuộc địa",
+        "Các dân tộc thuộc địa phải đứng lên tự giải phóng chính mình đồng thời cần giúp đỡ của giai câp vô sản và nhân dân thê giới",
+        "Các dân tộc thuộc địa phải đứng lên tự giải phóng chính mình không cần giúp đỡ của giai cấp vô sản và nhân dân thế giới; Cần thiết phải có sự lãnh đạo của Đảng Cộng sản",
+        "Sự nỗ lực của chính các dân tộc thuộc địa; Sự giúp đỡ của giai cấp vô sản và nhân dân thê giới; Sự lãnh đạo của Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-15",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "Ai là người đọc Điếu văn trong lễ truy điệu của Bác vào ngày 9/9/1969",
+      "choices": [
+        "Phạm Văn Đồng",
+        "Lê Duẩn",
+        "Trường Chinh",
+        "Võ nguyên Giáp"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-16",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, giữa giải phóng dân tộc và giải phóng giai cấp thì nhiệm vụ đặt lên hàng đầu là gì?",
+      "choices": [
+        "Giải phóng dân tộc",
+        "Giải phóng con người",
+        "Giải phóng giai cấp",
+        "Đồng thời giải phóng dân tộc và giải phóng giai cấp"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-17",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "Câu nói: \"Nếu nước được độc lập rồi mà dân không được hưởng quyền tự do, hạnh phúc thì nên độc lập ây chăng có ý nghĩa gì\" của Hồ Chí Minh nhăm chỉ:",
+      "choices": [
+        "Hạnh phúc của nhân dân phải là mục tiêu cao cả của sự nghiệp cách mạng",
+        "Tư tưởng về độc lập dân tộc gắn liền với chủ nghĩa xã hội",
+        "Tư tưởng về độc lập dân tộc",
+        "Vai trò của quyền tự do, hạnh phúc"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-18",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Điền từ còn thiếu vào chỗ trống sau đây: \"Tư tưởng Hồ Chí Minh là một hệ thống quan điểm....(1).... về những vấn đề cơ bản của kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các...(3 tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại, là tài sản tinh thần vô cùng to lớn và quý giá của Đảng và dân tộc ta, mãi mãi soi đường cho sự nghiệp cách mạng của nhân dân ta giành thắng lợi\"",
+      "choices": [
+        "l toàn diện và sâu sắc, 2. cách mạng Việt Nam, 3. giá trị truyền thống",
+        "I.lý luận, 2. cách mạng Việt Nam, 3. giá trị truyền thống",
+        "Ltoàn diện và sâu sắc, 2. Hồ Chí Minh, 3. giá trị truyền thống",
+        "1lý luận, 2. Hồ Chí Minh, 3. giá trị truyền thống"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t1-mcq-21",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Các nhân tố chủ quan hình thành Tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận; Gia đình và quê hương xứ nghệ",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Tinh hoa văn hóa của thời đại",
+        "Phẩm chất cá nhân Hồ Chí Minh; Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận",
+        "Phẩm chất cá nhân Hồ Chí Minh, giá trị truyền thông dân tộc, tinh hoa văn hóa nhân loại"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": [
+        "[CẦN ĐỐI CHIẾU] Phương án C tham khảo từ câu tương đương, tài liệu 2; kiểm tra thứ tự ở PDF gốc."
+      ]
+    },
+    {
+      "id": "t1-mcq-22",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Các luận điểm sau đây đều thể hiện tư tưởng dựa vào sức mình là chính. Luận điểm nào không phải của Hồ Chí Minh?",
+      "choices": [
+        "Đem sức ta mà tự giải phóng cho ta",
+        "Sự nghiệp giải phóng của giai cấp công nhân phải do bản thân giai cấp công nhân tự làm lây",
+        "Muốn người ta giúp cho, thì trước hết mình phải tự giúp lấy mình đã",
+        "Công cuộc giải phóng các dân tộc thuộc địa chỉ có thể thực hiện được bằng sự nỗ lực của bản thân các dân tộc đó"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": [
+        "[CẦN ĐỐI CHIẾU] Phương án B tham khảo từ câu tương đương, tài liệu 3; kiểm tra thứ tự ở PDF gốc."
+      ]
+    },
+    {
+      "id": "t1-mcq-24",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Cụ Nguyễn Sinh Sắc qua đời ở đâu:",
+      "choices": [
+        "Đồng Tháp",
+        "An Giang",
+        "Nghệ An",
+        "Long Xuyên"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": [
+        "[CẦN ĐỐI CHIẾU] Phương án A tham khảo từ câu tương đương, tài liệu 3; kiểm tra thứ tự ở PDF gốc."
+      ]
+    },
+    {
+      "id": "t1-mcq-25",
+      "setId": "tap-1",
+      "subgroup": "mcq",
+      "document": 1,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Trong tác phẩm \"Đường Kách mệnh\", Hồ Chí Minh cho rằng cách mạng trước hết phải có gi?",
+      "choices": [
+        "Đường lỗi cách mạng",
+        "Đảng cách mệnh",
+        "Căn cứ địa",
+        "Lực lượng cách mạng"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-01",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Đoạn văn sau trích từ bài viết nào của Hồ Chí Minh: \"Toàn thể dân tộc Việt Nam quyết đem tât cả tinh thân và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy\"",
+      "choices": [
+        "Tuyên ngôn độc lập (1945)",
+        "Di chúc",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Thư gửi đồng bào Nam bộ"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-02",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Quê ngoại của Chủ tịch Hồ Chí Minh?",
+      "choices": [
+        "Làng Đình, Xã Nghĩa Đàn, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Chùa, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Trai, xã Kim Liên, huyện Nghĩa Đàn, tỉnh Nghệ An"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-03",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh hình thành trên cơ sở:",
+      "choices": [
+        "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin",
+        "Tiếp thu một bộ phận của chủ nghĩa Mác – Lênin",
+        "Tiếp thu toàn bộ chủ nghĩa Mác – Lênin",
+        "Vận dụng hoàn toàn chủ nghĩa Mác – Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-04",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Ông Nguyễn Sinh Sắc vào kinh thi Hội và ông đậu Phó bảng vào thời gian nào:",
+      "choices": [
+        "1906",
+        "1901",
+        "1895",
+        "1900"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-05",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Câu nói sau trích từ tác phẩm nào của Hồ Chí Minh: \"Không có gì quý hơn độc lập tự do\"",
+      "choices": [
+        "Lời kêu gọi đồng bào và chiến sĩ cả nước",
+        "Di chúc",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Tuyên ngôn độc lập (1945)"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-06",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Ai đọc điếu văn trong tang lễ của Bác:",
+      "choices": [
+        "Lê Duẳn",
+        "Võ Văn Kiệt",
+        "Võ Nguyên Giáp",
+        "Phạm Văn Đồng"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-07",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Những phẩm chất Hồ Chí Minh để hình thành nên tư tưởng của Người là:",
+      "choices": [
+        "Tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bất khuất; yêu thương con người và sống có tình có nghĩa",
+        "Sống có hoài bão, lý tưởng, lòng yêu nước; tinh thần kiên cường bất khuất; tinh thần đoàn kết và yêu thương con người",
+        "Lòng yêu nước, tinh thần kiên cường bất khuất; tinh thần đoàn kết và yêu thương con người",
+        "Sống có hoài bão, lý tưởng; tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bắt khuắt và trái tim nhân ái"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-08",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Các nhân tố chủ quan hình thành Tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; tinh hoa văn hóa của thời đại",
+        "Phẩm chát cá nhân Hồ Chí Minh, giá trị truyền thống dân tộc, tinh hoa văn hóa nhân loại",
+        "Phẩm chất cá nhân Hồ Chí Minh; Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận",
+        "Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận; gia đình và quê hương xứ nghệ"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-09",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "\"Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam, kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các giá trị truyền thống tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại; là tài sản tinh thần vô cùng to lớn và quý giá của Đảng và dân tộc ta, mãi mãi soi đường cho sự nghiệp cách mạng của nhân dân ta giành thắng lợi\". Khái niệm Tư tưởng Hồ Chí Minh được nêu trong văn kiện đại hội đại biểu toàn quốc của Đảng lần thứ máy:",
+      "choices": [
+        "Đại hội đại biểu toàn quốc lần thứ XII của Đảng Cộng sản Việt Nam (2016)",
+        "Đại hội đại biểu toàn quốc lần thứ XI của Đảng Cộng sản Việt Nam (2011)",
+        "Đại hội đại biểu toàn quốc lần thứ X của Đảng Cộng sản Việt Nam (2006)",
+        "Đại hội đại biểu toàn quốc lần thứ XIII của Đảng Cộng sản Việt Nam (2021)"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-10",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Những giá trị truyền thống tốt đẹp của dân tộc Việt Nam được Hồ Chí Minh tiếp thu để hình thành tư tưởng của mình là:",
+      "choices": [
+        "Chủ nghĩa yêu nước Việt Nam; Tư tưởng nhân ái, bao dung độ lượng",
+        "Tinh thần đoàn kết, cố kết cộng đồng; Chủ nghĩa yêu nước Việt Nam; Tư tưởng nhân ái, bao dung độ lượng",
+        "Tư tưởng nhân ái, bao dung độ lượng, truyền thống nhân nghĩa",
+        "Tinh thần đoàn kết, cố kết cộng đồng; Chủ nghĩa yêu nước Việt Nam"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-11",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Sau khi đặt chân về Tổ quốc, với vai trò là chủ tịch nước Hồ Chí Minh vê quê Nghệ An lân đâu tiên vào thời gian nào:",
+      "choices": [
+        "1956",
+        "1957",
+        "1955",
+        "1954"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-12",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Trước khi ra đi tìm đường cứu nước, hành trang của Nguyễn Tất Thành đã có:",
+      "choices": [
+        "Tư tưởng cách mạng dân chủ tư sản",
+        "Chủ nghĩa yêu nước và truyền thống của dân tộc Việt Nam",
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng về cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-13",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã tham gia sáng lập Hội Liên hiệp thuộc địa vào giai đoạn nào trong quá trình hình thành tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Từ 29/1/1941 – 2/9/1969",
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 – 28/1/1941",
+        "Từ 31/12/1920 - 3/2/1930"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-14",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Trong các yếu tố sau, yếu tố nào quyết định bản chất tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Tư tưởng văn hoá phương Tây",
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng văn hoá phương Đông",
+        "Văn hoá truyền thống dân tộc"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-15",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh: \"[...] mở ra con đường giải phóng cho các dân tộc và cả loài người, mở đầu một thời đại mới trong lịch sử\". Hãy điên vào chô trông đề hoàn thiện câu trên:",
+      "choices": [
+        "Cách mạng Tân Hợi",
+        "Cách mạng tư sản Pháp",
+        "Cách mạng Tháng Tám 1945",
+        "Cách mạng Tháng Mười Nga 1917"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-16",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã từng dạy học ở ngôi trường nào?",
+      "choices": [
+        "Trường tiểu học Đông Ba ở Huế",
+        "Trường Quốc học Huế",
+        "Trường Dục Thanh ở Phan Thiết",
+        "Trường tiểu học Pháp – Việt ở Vinh"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-17",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "Giai đoạn hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam được tính từ:",
+      "choices": [
+        "Từ 31/12/1920 - 3/2/1930",
+        "Trước ngày 5/6/1911",
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 – 28/1/1941"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-18",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam cách mạng thanh niên ở đâu:",
+      "choices": [
+        "Trung Quốc",
+        "Hà Nội",
+        "Pháp",
+        "Cao Bằng"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-19",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trống: Toàn thể dân tộc Việt Nam quyết đem... để giữ vững quyền tự do, độc lập ấy\"",
+      "choices": [
+        "Toàn bộ sức lực",
+        "Tất cả tinh thần và lực lượng",
+        "Tất cả tinh thần và lực lượng, tính mạng và của cải",
+        "Tinh hoa và văn hóa"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-20",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 20,
+      "kind": "mcq",
+      "question": "Thời kỳ từ ngày 6/6/1911- 30/12/1920 trong quá trình hình thành và phát triên tư tưởng Hồ Chí Minh có tên là:",
+      "choices": [
+        "Hình thành tư tưởng yêu nước, tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng cứu nước, giải phóng các dân tộc thuộc địa theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng yêu nước, giải phóng giai cấp và dân tộc theo con đường cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-21",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành được thắng lợi phải đi theo con đường nào?",
+      "choices": [
+        "Cách mạng xã hội chủ nghĩa",
+        "Cách mạng tư sản và cách mạng vô sản",
+        "Cách mạng tư sản",
+        "Cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-22",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành lấy tên là Nguyễn Ái Quốc vào thời gian nào?",
+      "choices": [
+        "Khi Bác lên tàu từ bến Nhà Rồng năm 1911",
+        "Tại Hội nghị Vécxây (Pháp) ngày 18/6/1919",
+        "Khi Bác sang Liên Xô làm việc ở Ban Phương Đông của Quốc tế Cộng sản tháng 6/1923",
+        "Khi Bác tham gia sáng lập Đảng Cộng sản Pháp tại Đại hội Tua tháng"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-23",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 23,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, quyền thiêng liêng nhất, bất khả xâm phạm nhất của mọi dân tộc là:",
+      "choices": [
+        "Quyền độc lập, tự do, bình đẳng",
+        "Quyền phát triển",
+        "Quyền được khẳng định mình trên trường quốc tế",
+        "Quyền được trở thành thành viên Liên hiệp quốc"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-24",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây không phải là của Hồ Chí Minh?",
+      "choices": [
+        "Con đường dẫn tôi tới chủ nghĩa Lênin",
+        "Di chúc",
+        "Sửa đổi lối làm việc",
+        "Tuyên ngôn của Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g1-25",
+      "setId": "tap-2",
+      "subgroup": "g1",
+      "document": 2,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc nói câu nói sau khi đang ở đâu: \"Luận cương của V.1. Lênin làm cho tôi rất cảm động, phán khởi, sáng tỏ, tin tưởng biết bao. Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng đông đảo: hỡi đồng bào bị đọa đày đau khổ! Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta\"",
+      "choices": [
+        "Trung Quốc",
+        "Anh",
+        "Pháp",
+        "Liên Xô"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-00",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 0,
+      "kind": "short",
+      "question": "Hồ Chí Minh ra đi tìm đường cứu nước vào năm nào?",
+      "choices": [],
+      "providedAnswer": "1911",
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-01",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Năm 1919, Nguyễn Ái Quốc đã thay mặt Hội những người Việt xui yêu nước tại pháp gửi tới Hội nghị Vécxây bản yêu sách gôm mây",
+      "choices": [
+        "7 điểm",
+        "10 điểm",
+        "9 điểm",
+        "8 điểm"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-02",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Phương án nào sau đây thuộc phương pháp luận nghiên cứu tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Tách rời các yếu tố ra khỏi hệ thống",
+        "Thống nhất tính đảng và tính khoa học",
+        "Hiện đại hóa tư tưởng Hồ Chí Minh",
+        "Chỉ căn cứ vào những bài viết của Hồ Chí Minh"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-03",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Tác phẩm Bản án chế độ thực dân Pháp của Hồ Chí Minh được xuất bản lần đầu tiên vào năm nào?",
+      "choices": [
+        "1925",
+        "1927",
+        "1923",
+        "1921"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-04",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh khẳng định, ưu điểm lớn nhất của chủ nghĩa Marx - Lenin là gì?",
+      "choices": [
+        "Phương pháp làm việc biện chứng",
+        "Phương pháp làm việc siêu hình",
+        "Phép biện chứng duy tâm",
+        "Cả A và B"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-05",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Tác phẩm Đường kách mệnh của Hồ Chí Minh được xuất bản năm nào?",
+      "choices": [
+        "1927",
+        "1925",
+        "1920",
+        "1930"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-10",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh thành lập Hội Việt Nam cách mạng thanh niên vào năm nào?",
+      "choices": [
+        "1925",
+        "1927",
+        "1923",
+        "1920"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-11",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc trở về Tỏ quốc sau 30 năm hoạt động ở nước ngoài vào ngày tháng năm nào?",
+      "choices": [
+        "25-01-1941",
+        "25-01-1942",
+        "25-01-1943",
+        "28-01-1941"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-13",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Năm 1941, Nguyễn Ái Quốc chủ trì Hội nghị Trung ương lần thứ mấy?",
+      "choices": [
+        "Lần thứ 7",
+        "Lần thứ 8",
+        "Lần thứ 5",
+        "Lần thứ 6"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-16",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh gia nhập Đảng Xã hội Pháp vào năm nào?",
+      "choices": [
+        "1921 (",
+        "1919",
+        "1918",
+        "1920"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-17",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "Nội dung nào của chủ nghĩa Tam dân ảnh hưởng nhiều nhất đến sự hình thành tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Về phương pháp cách mạng",
+        "Dân tộc độc lập, dân quyền tự do, dân sinh hạnh phúc",
+        "Ra sức tìm kiếm bạn đồng minh cả trong và ngoài nưc",
+        "Tập hợp các tư[chức cách mạng"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-18",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Đại hội Đại biểu toàn quốc lần thứ máy đánh dấu cột mốc quan trọng trong nhận thức của Đảng về tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Lịn thứ VI (12/1986)",
+        "L]n thứ IX (4/2001)",
+        "Lần thứ VII (6/1991)",
+        "L]n thứ VIII (6/1996)"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-19",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Sự kiện nào đánh dấu Hồ Chí Minh từ một thanh niên yêu nước trở thành người chiến sĩ cộng sản đầu tiên của dân tộc?",
+      "choices": [
+        "Tham gia sáng lập Đảng Cộng sản Pháp",
+        "Thành lập Hội liên hiệp thuộc địa",
+        "Gia nhập Đảng xã hội Pháp",
+        "Chủ trì Hội nghị hợp nhất các tổ[chức cộng sản ở Đông Dương"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-21",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Đối tượng nghiên cứu của môn học tư tưởng Hồ Chí Minh là:",
+      "choices": [
+        "Những quy luật chung nhất về tư duy",
+        "Hệ thống các quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam",
+        "Những quy luật chung nhất về xã hội",
+        "Những quy luật chung nhất về tự nhiên"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-22",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Tác phẩm Bản án chế độ thực dân Pháp của Hồ Chí Minh được xuất bản lần đầu tiên ở đâu?",
+      "choices": [
+        "Liên Xô",
+        "Việt Nam",
+        "Pháp",
+        "Trung Quốc"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-24",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành từ cơ sở nào?",
+      "choices": [
+        "Phong trào cộng sản và công nhân thé giỚi",
+        "Phong trào đấu tranh vì dân sinh, dân chủ, cơm áo, hòa bình",
+        "Phong trào giải phóng dân tộc thuộc địa",
+        "Giá trị truyền thống dân tộc Việt Nam"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-26",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 26,
+      "kind": "mcq",
+      "question": "Các phong trào yêu nước đấu tranh chống thực dân Pháp của nhân dân Việt Nam cuối thế kỷ XIX đầu thế kỷ XX diễn ra theo máy khuynh hướng?",
+      "choices": [
+        "Một khuynh hưỚng (",
+        "Hai khuynh hướng",
+        "Ba khuynh hưỚng",
+        "Bốn khuynh hưng"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-28",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 28,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh không chịu ảnh hưởng của tư tưởng nào?",
+      "choices": [
+        "Phật giáo",
+        "Chủ nghĩa Tam Dân của Tôn Trung Sơn",
+        "Nho giáo (",
+        "Hồi giáo"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-29",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 29,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh tham gia sáng lập Đảng Cộng sản Pháp vào năm nào?",
+      "choices": [
+        "1921",
+        "1922",
+        "1920",
+        "1919"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-34",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 34,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành và phát triển qua máy thời kỳ?",
+      "choices": [
+        "6 thời kỳ",
+        "5 thời kỳ",
+        "3 thời kỳ",
+        "4 thời kỳ"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-40",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 40,
+      "kind": "mcq",
+      "question": "Trong giai đoạn từ năm 1923 - 1924, Nguyễn Ái Quốc đã hoạt động ở đâu?",
+      "choices": [
+        "Trung Quốc",
+        "Liên Xô",
+        "Thái Lan",
+        "Pháp"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-42",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 42,
+      "kind": "mcq",
+      "question": "Các phong trào yêu nước đấu tranh chống thực dân Pháp của nhân dân Việt Nam cuối thế kỷ XIX đầu những năm 20 của thế kỷ XX diễn ra theo khuynh hướng nào?",
+      "choices": [
+        "Khuynh hưỚng Dân chủ tư sản",
+        "Khuynh hướng Phong kiến và Dân chủ tư sản",
+        "Khuynh hưỚng Vô sản",
+        "Khuynh hưỚng Phong kiến"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-43",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 43,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh tham gia sáng lập Hội Liên hiệp thuộc địa vào năm nào?",
+      "choices": [
+        "1922",
+        "1921",
+        "1920",
+        "1923"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g2-45",
+      "setId": "tap-2",
+      "subgroup": "g2",
+      "document": 2,
+      "part": "mcq",
+      "number": 45,
+      "kind": "mcq",
+      "question": "Tác phẩm Đường kách mệnh của Hồ Chí Minh được xuất bản lần đầu tiên ở đâu?",
+      "choices": [
+        "Pháp",
+        "Liên Xô",
+        "Việt Nam",
+        "Trung Quốc"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-01",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Hình thái bạo lực cách mạng ở Việt Nam được Hồ Chí Minh khẳng định là:",
+      "choices": [
+        "Khởi nghĩa của bộ đội địa phương",
+        "Khởi nghĩa của dân quân du kích",
+        "Khởi nghĩa vũ trang toàn dân",
+        "Khởi nghĩa của bộ đội chủ lực"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-03",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Mục tiêu cấp thiết của cách mạng giải phóng dân tộc là giành quyền lợi cho?",
+      "choices": [
+        "Những người bị áp bức",
+        "Giai cắp công nhân",
+        "Toàn dân tộc",
+        "Giai cắp nông dân"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-04",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh khẳng định, mâu thuẫn chủ yếu trong xã hội Việt Nam dưới ách cai trị của thực dân Pháp là gì?",
+      "choices": [
+        "Giữa giai cấp vô sản vỚi tư sản",
+        "Công nhân, nông dân với đế quốc thực dân",
+        "Giữa nông dân với địa chủ",
+        "Giữa toàn thể dân tộc Việt Nam với chủ nghĩa thực dân Pháp và tay sai phản động"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-05",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh khẳng định, muốn cứu nước và giải phóng dân tộc không có con đường nào khác là con đường...?",
+      "choices": [
+        "Cách mạng tư sản",
+        "Cách mạng vô sản",
+        "Giai cắp cách mạng",
+        "Dân tộc cách mạng"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-06",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Độc lập về mặt lãnh thỏ, theo Hồ Chí Minh được thể hiện?",
+      "choices": [
+        "Sự thống nhất, toàn vẹn lãnh thổ",
+        "Mỗi dân tộc là một thực thẻ độc lập của quốc gia",
+        "Sự hòa hợp dân tộc trong một cộng đồng thống nhất",
+        "Sự phân bố đan xen, không dân tộc nào có lãnh thị riêng"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-07",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh khẳng định, công cuộc giải phóng nhân dân thuộc địa chỉ có thể thực hiện được bằng?",
+      "choices": [
+        "Nhờ sự giúp đỡ của Đảng Cộng sản Pháp",
+        "Nhờ sự giúp đỡ của các nưỚc XHCN",
+        "Sự nỗ lực tự giải phóng",
+        "Sự ủng hộ của giai cấp công nhân trên toàn thé giỚi"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-08",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, lực lượng lãnh đạo cách mạng vô sản là?",
+      "choices": [
+        "Công nhân và nông dân",
+        "Nông dân",
+        "Trí thức",
+        "Giai cấp công nhân là đội tiên phong là Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-09",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Động lực của cách mạng giải phóng dân tộc theo Hồ Chí Minh là?",
+      "choices": [
+        "Trí thức",
+        "Công nhân và nông dân",
+        "Tiểu tư sản",
+        "Nông dân"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-10",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Cách mạng giải phóng dân tộc phải được tiến hành bằng phương pháp nào?",
+      "choices": [
+        "Bạo lực cách mạng",
+        "Bạo loạn",
+        "Hòa bình",
+        "Ám sát cá nhân"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-11",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh xác định mục tiêu của cách mạng Việt Nam là: Đánh đổ đế quốc chủ nghĩa Pháp và bọn phong kiến/ Làm cho nước Nam được hoàn toàn độc lập. Mục tiêu trên được đề cập trong tác phẩm, văn kiện nào?",
+      "choices": [
+        "Tuyên ngôn độc lập",
+        "Đường kách mệnh",
+        "Cương lĩnh chính trị đầu tiên của Đảng",
+        "Bản án chế độ thực dân Pháp"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-12",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Lực lượng đẻ tiến hành bạo lực cách mạng là?",
+      "choices": [
+        "Lực lượng chính trị của toàn dân",
+        "Lực lượng vũ trang nhân dân",
+        "Cả lực lượng chính trị toàn dân và lực lượng vũ trang nhân dân",
+        "Dùng lực lượng dân quân du kích"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-19",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, độc lập dân tộc chỉ có ý nghĩa khi nào?",
+      "choices": [
+        "Giai cắp công nhân được ám no, hạnh phúc",
+        "Liên minh công – nông được ấm no, hạnh phúc",
+        "Liên minh công – nông - trí thức được ám no hạnh phúc",
+        "Nhân dân được ấm no, hạnh phúc"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-20",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 20,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh viết Tuyên ngôn độc lập của nước Việt Nam dân chủ cộng hoà ở đâu?",
+      "choices": [
+        "Hà Nội",
+        "Tân Trào - Tuyên Quang",
+        "Pắc Bó - Cao Bằng",
+        "Vạn Phúc - Hà Đông"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-21",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Phương thức tiến hành bạo lực cách mạng được Hồ Chí Minh xác định?",
+      "choices": [
+        "Đấu tranh vũ trang",
+        "Vừa đấu tranh quân sự, vừa đấu tranh chính trị",
+        "Lực lượng dân quân du kích",
+        "Đấu tranh chính trị"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-23",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 23,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh lựa chọn con đường giải phóng dân tộc dựa trên cơ sở tổng kết kinh nghiệm cách mạng của các nước?",
+      "choices": [
+        "Đức, Pháp, Nga",
+        "Anh, Nga, Đức",
+        "Hà Lan, Anh, Nga",
+        "Mỹ, Pháp, Nga"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-24",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Giải quyết mối quan hệ giữa vấn đề dân tộc và vấn đề giai cấp trong phạm vi quốc gia Hồ Chí Minh đặt vấn đề?",
+      "choices": [
+        "Giải phóng giai cấp công nhân lên trên hết",
+        "Giải phóng giai cấp công nhân lên trên hết",
+        "Giải phóng dân tộc lên trên hét",
+        "Giải phóng các giai cấp bóc lột lên trên hết"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-25",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Khi giải quyết vấn đề dân tộc, Hồ Chí Minh đứng trên lập trường nào?",
+      "choices": [
+        "Dân tộc",
+        "Quan điểm của cá nhân",
+        "Liên minh công – nông",
+        "Giai cấp"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-28",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 28,
+      "kind": "mcq",
+      "question": "Độc lập trên lĩnh vực chính trị, theo Hồ Chí Minh được thể hiện?",
+      "choices": [
+        "Xóa bỏ chế độ tư hữu",
+        "Gắn với quyền tự quyết dân tộc",
+        "Giành chính quyền về tay giai cấp công nhân",
+        "Giải phóng con người"
+      ],
+      "providedAnswer": null,
+      "page": 14,
+      "notes": []
+    },
+    {
+      "id": "t2-g3-29",
+      "setId": "tap-2",
+      "subgroup": "g3",
+      "document": 2,
+      "part": "mcq",
+      "number": 29,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh viết Tuyên ngôn độc lập vào năm nào?",
+      "choices": [
+        "1945",
+        "1946",
+        "1930",
+        "1944"
+      ],
+      "providedAnswer": null,
+      "page": 14,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-01",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, sự kiện nào \"mở ra con đường giải phóng cho các dân tộc và cả loài người, mở đầu một thời đại mới trong lịch sử\"?",
+      "choices": [
+        "Cách mạng Tháng Mười Nga 1917",
+        "Cách mạng Tháng Tám 1945",
+        "Cách mạng Tân Hợi",
+        "Cách mạng tư sản Pháp"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-02",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trống: Toàn thể dân tộc VN quyết đem... Để giữ vững quyền tự do, độc lập ây\"",
+      "choices": [
+        "Tinh hoa văn hoá",
+        "Tất cả tinh thần và lực lượng",
+        "Tất cả tinh thần và lực lượng, tính mạng và của cải",
+        "Toàn bộ sức lực"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-03",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Ông Nguyễn Sinh Sắc vào kinh đô thi Hội và ông đậu Phó bảng vào thời gian nào:",
+      "choices": [
+        "1900",
+        "1906",
+        "1901",
+        "1895"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-04",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Ai đọc điếu văn trong tang lễ của Bác:",
+      "choices": [
+        "Lê Duẩn",
+        "Võ Văn Kiệt",
+        "Võ Nguyên Giáp",
+        "Phạm Văn Đồng"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-05",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Sau khi đặt chân về Tổ quốc, với vai trò là chủ tịch nước Hồ Chí Minh về quê Nghệ An lần đầu tiên vào thời gian nào:",
+      "choices": [
+        "1956",
+        "1957",
+        "1955",
+        "1954"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-06",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Quê ngoại của Chủ tịch Hồ Chí Minh?",
+      "choices": [
+        "Làng Đình, Xã Nghĩa Đàn, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Chùa, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Trai, xã Kim Liên, huyện Nghĩa Đàn, tỉnh Nghệ An"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-07",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Trong các yếu tố sau, yếu tố nào quyết định bản chất tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Tư tưởng văn hoá phương Tây",
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng văn hoá phương Đông",
+        "Văn hoá truyền thống dân tộc"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-08",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Các nhân tố chủ quan hình thành Tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; tinh hoa văn hóa của thời đại",
+        "Phẩm chất cá nhân Hồ Chí Minh, giá trị truyền thống dân tộc, tinh hoa văn hóa nhân loại",
+        "Phẩm chất cá nhân Hồ Chí Minh; Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận",
+        "Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận; gia đình và quê hương xứ nghệ"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-09",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, quyền thiêng liêng nhất, bất khả xâm phạm nhất của mọi dân tộc là:",
+      "choices": [
+        "Quyền độc lập, tự do, bình đẳng",
+        "Quyền phát triển",
+        "Quyền được khăng định mình trên trường quốc tế",
+        "Quyền được trở thành thành viên Liên hiệp quốc"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-10",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Trước khi ra đi tìm đường cứu nước, hành trang của Nguyễn Tất Thành đã có:",
+      "choices": [
+        "Tư tưởng cách mạng dân chủ tư sản",
+        "Chủ nghĩa yêu nước và truyền thống của dân tộc Việt Nam",
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng về cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-11",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành được thắng lợi phải đi theo con đường nào?",
+      "choices": [
+        "Cách mạng xã hội chủ nghĩa",
+        "Cách mạng tư sản và cách mạng vô sản",
+        "Cách mạng tư sản",
+        "Cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-12",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã từng dạy học ở ngôi trường nào?",
+      "choices": [
+        "Trường tiểu học Đông Ba ở Huế",
+        "Trường Quốc học Huế",
+        "Trường Dục Thanh ở Phan Thiết",
+        "Trường tiểu học Pháp - Việt ở Vinh"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-13",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh hình thành trên cơ sở:",
+      "choices": [
+        "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin",
+        "Tiếp thu một bộ phận của chủ nghĩa Mác – Lênin",
+        "Tiếp thu toàn bộ chủ nghĩa Mác – Lênin",
+        "Vận dụng hoàn toàn chủ nghĩa Mác – Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-14",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Câu nói sau trích từ tác phẩm nào của Hồ Chí Minh: \"Không có gì quý hơn độc lập tự đo\"",
+      "choices": [
+        "Lời kêu gọi đồng bào và chiến sĩ cả nước",
+        "Di chúc",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Tuyên ngôn độc lập (1945)"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-15",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành lấy tên là Nguyễn Ái Quốc vào thời gian:",
+      "choices": [
+        "Khi Bác lên tàu từ bến Nhà Rồng năm 1911",
+        "Tại Hội nghị Vécxây (Pháp) ngày 18/6/1919",
+        "Khi Bác sang Liên Xô làm việc ở Ban Phương Đông của Quốc tế Cộng sản tháng 6/1923",
+        "Khi Bác tham gia sáng lập Đảng Cộng sản Pháp tại Đại hội Tua tháng 12/1920"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-16",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã tham gia sáng lập Hội Liên hiệp thuộc địa vào giai đoạn nào trong quá trình hình thành tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Từ 29/1/1941] – 2/9/1969",
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 – 28/1/1941",
+        "Từ 31/12/1920 - 3/2/1930"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-17",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "Những giá trị truyền thống tốt đẹp của dân tộc Việt Nam được Hồ Chí Minh tiếp thu để hình thành tư tưởng của mình là:",
+      "choices": [
+        "Chủ nghĩa yêu nước Việt Nam; Tư tưởng nhân ái, bao dung độ lượng",
+        "Tinh thần đoàn kết, cố kết cộng đồng; Chủ nghĩa yêu nước Việt Nam; Tư tưởng nhân ái, bao dung độ lượng",
+        "Tư tưởng nhân ái, bao dung độ lượng, truyền thống nhân nghĩa",
+        "Tinh thần đoàn kết, có kết cộng đồng; Chủ nghĩa yêu nước Việt Nam"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-18",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam cách mạng thanh niên ở đâu:",
+      "choices": [
+        "Trung Quốc",
+        "Hà Nội",
+        "Pháp",
+        "Cao Bằng"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-19",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Giai đoạn hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam được tính từ:",
+      "choices": [
+        "Từ 31/12/1920 - 3/2/1930",
+        "Trước ngày 5/6/1911",
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 - 28/1/1941"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-20",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 20,
+      "kind": "mcq",
+      "question": "Thời kỳ từ ngày 6/6/1911- 30/12/1920 trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh có tên là:",
+      "choices": [
+        "Hình thành tư tưởng yêu nước, tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng cứu nước, giải phóng các dân tộc thuộc địa theo con đường cách mạng Vô sản",
+        "Hình thành tư tưởng yêu nước, giải phóng giai cấp và dân tộc theo con đường cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-21",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Đoạn văn sau trích từ bài viết nào của Hồ Chí Minh: \"Toàn thể dân tộc Việt Nam quyết đem tât cả tỉnh thân và lực lượng, tính mạng và của cải đề giữ vững quyền tự do, độc lập ây\"",
+      "choices": [
+        "Tuyên ngôn độc lập (1945)",
+        "Di chúc",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Thư gởi đồng bào Nam bộ"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-22",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Những phẩm chất Hồ Chí Minh đẻ hình thành nên tư tưởng của Người là:",
+      "choices": [
+        "Tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bất khuất; yêu thương con người và sông có tình có nghĩa",
+        "Sống có hoài bão, lý tưởng, lòng yêu nước; tinh thần kiên cường bất khuất; tinh thần đoàn kêt và yêu thương con người",
+        "Lòng yêu nước, tinh thần kiên cường bất khuất; tinh thần đoàn kết và yêu thương con người",
+        "Sống có hoài bão, lý tưởng; tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bất khuât và trái tìm nhân ái"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-23",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 23,
+      "kind": "mcq",
+      "question": "\"Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vân đê cơ bản của cách mạng Việt Nam, kết quả của sự vận dụng và phát triên sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các giá trị truyền thống tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại; là tài sản tinh thần vô cùng to lớn và quý giá của Đảng và dân tộc ta, mãi mãi soi đường cho sự nghiệp cách mạng của nhân dân ta giành thắng lợi\". Khái niệm Tư tưởng Hồ Chí Minh được nêu trong văn kiện đại hội đại biểu toàn quốc của Đảng lần thứ mấy:",
+      "choices": [
+        "Đại hội đại biểu toàn quốc lần thứ XII của Đảng Cộng sản Việt Nam (2016)",
+        "Đại hội đại biểu toàn quốc lần thứ XI của Đảng Cộng sản Việt Nam (2011)",
+        "Đại hội đại biểu toàn quốc lần thứ X của Đảng Cộng sản Việt Nam (2006)",
+        "Đại hội đại biểu toàn quốc lần thứ XIII của Đảng Cộng sản Việt Nam (2021)"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-24",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây không phải là của Hồ Chí Minh?",
+      "choices": [
+        "Con đường dẫn tôi tới chủ nghĩa Lênin",
+        "Di chúc",
+        "Sửa đổi lối làm việc",
+        "Tuyên ngôn của Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-25",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc nói câu nói sau khi đang ở đâu: \"Luận cương của V.I. Lênin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng biết bao. Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng đông đảo: hỡi đồng bào bị đọa đày đau khổ! Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta\"",
+      "choices": [
+        "Trung Quốc",
+        "Anh",
+        "Pháp",
+        "Liên Xô"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-26",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 26,
+      "kind": "mcq",
+      "question": "Chọn phương án trả lời đúng nhất: Chọn một:",
+      "choices": [
+        "Chủ nghĩa Mác – Lênin là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta",
+        "Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta",
+        "Cùng với chủ nghĩa Mác – Lênin và tư tưởng của Đảng, tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động của Đảng ta",
+        "Cùng với chủ nghĩa Mác – Lênin, tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động của Đảng ta"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-27",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 27,
+      "kind": "mcq",
+      "question": "Chọn câu trả lời đúng với tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Cách mạng giải phóng dân tộc giành thắng lợi đồng thời với thắng lợi cách mạng vô sản ở chính quốc",
+        "Thắng lợi của cách mạng vô sản tồn tại song song với thắng lợi cách mạng tư sẵn",
+        "Thắng lợi của cách mạng vô sản ở thuộc địa phải phụ thuộc vào thắng lợi của cách mạng vô sản ở chính quốc",
+        "Cách mạng giải phóng dân tộc ở thuộc địa có khả năng giành thắng lợi trước cách mạng vô sản ở chính quốc"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-28",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 28,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc gửi bản \"Yêu sách của nhân dân An Nam\" tới Hội nghị Vécxây vào ngày tháng năm nào?",
+      "choices": [
+        "18/6/1920",
+        "18/6/1917",
+        "18/6/1919",
+        "18/6/1918"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-29",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 29,
+      "kind": "mcq",
+      "question": "Trước năm 1911, gia đình Bác có bao nhiêu lần vào Huế?",
+      "choices": [
+        "2",
+        "3",
+        "l",
+        "4"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-30",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 30,
+      "kind": "mcq",
+      "question": "Trong các giai đoạn hình thành và phát triển tư tưởng Hồ Chí Minh, giai đoạn nào thể hiện được Hồ Chí Minh đã xác định đúng bản chât, thủ đoạn, tội ác của chủ nghĩa thực dân và tình cảnh nhân dân các nước thuộc địa",
+      "choices": [
+        "Từ 6/6/1911- 30/12/1920",
+        "Từ 4/2/1930 - 28/1/1941",
+        "Trước ngày 5/6/1911",
+        "Từ 31/12/1920 - 3/2/1930"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-31",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 31,
+      "kind": "mcq",
+      "question": "Địa danh nơi Bác đặt chân về tổ quốc vào năm 1941:",
+      "choices": [
+        "Cột mốc 108, xã Trường Hà, huyện Hà Quảng, Tỉnh Pác Bó",
+        "Cột mốc 180, xã Trường Hà, huyện Hà Quảng, Tỉnh Pác Bó",
+        "Cột mốc 180, xã Trường Hà, huyện Hà Quảng, Tỉnh Cao Bằng",
+        "Cột mốc 108, xã Trường Hà, huyện Hà Quảng, Tỉnh Cao Bằng"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-32",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 32,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh được hình thành trong bối cảnh nào?",
+      "choices": [
+        "Chủ nghĩa xã hội đang trong giai đoạn phát triển",
+        "Chủ nghĩa tư bản đang trong giai đoạn hình thành",
+        "Chủ nghĩa tư bản từ giai đoạn tự do cạnh tranh sang giai đoạn đế quốc chủ nghĩa",
+        "Chủ nghĩa tư bản đang trong giai đoạn tự do cạnh tranh"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-33",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 33,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây không phải là của Hồ Chí Minh?",
+      "choices": [
+        "Tuyên ngôn của Đảng Cộng sản",
+        "Vừa đi đường, vừa kể chuyện",
+        "Bản án chế độ thực dân Pháp",
+        "Giấc ngủ mười năm"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-34",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 34,
+      "kind": "mcq",
+      "question": "Tác phẩm mang lại bước ngoặt nhận thức cho Hồ Chí Minh về con đường giải phóng dân tộc thuộc địa là:",
+      "choices": [
+        "Cương lĩnh dân tộc của Đảng Cộng sản",
+        "Tuyên ngôn của Đảng Cộng sản",
+        "Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa",
+        "Đường cách mệnh"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-35",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 35,
+      "kind": "mcq",
+      "question": "Đảng Cộng sản Việt Nam ra đời là sự thống nhất của các tô chức Đảng:",
+      "choices": [
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng và Đông Dương Cộng Sản Liên Đoàn",
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng; Đông Dương Cộng Sản Liên Đoàn và Hội Việt Nam cách mạng thanh niên",
+        "Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng và Hội Việt Nam cách mạng thanh niên",
+        "Công hội Đỏ, Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-36",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 36,
+      "kind": "mcq",
+      "question": "Năm 1911 Hồ Chí Minh rời bến cảng nhà Rồng ra nước ngoài với ý định:",
+      "choices": [
+        "Học tập con đường cách mạng vô sản, tìm hiểu nền văn minh các nước trên thế giới",
+        "Học tập con đường cách mạng vô sản và tham gia vào phong trào cách mạng của các nước trên thê giới",
+        "Tìm hiểu nền văn minh nước Pháp",
+        "Muốn có một cuộc sống tốt đẹp ở các nước khác nhau trên thế giới"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-37",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 37,
+      "kind": "mcq",
+      "question": "Vì sao, trong quá trình tìm đường cứu nước. Hồ Chỉ Minh đã không lựa chọn con đường cách mạng tư sản?",
+      "choices": [
+        "Vì cách mạng Việt Nam không có giai cấp tư sản lãnh đạo",
+        "Vì cách mạng tư sản không phù hợp với Việt Nam",
+        "Vì cách mạng tư sản chỉ phù hợp với các nước phương Tây",
+        "Vì cách mạng tư sản là \"cách mạng không đến nơi, cách mạng không triệt đẻ\""
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-38",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 38,
+      "kind": "mcq",
+      "question": "Cơ sở lý luận hình thành Tư tưởng Hồ Chí Minh gồm:",
+      "choices": [
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Chủ nghĩa yêu nước dân tộc Việt Nam; Tinh hoa văn hóa phương Đông và phương Tây; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Tinh hoa văn hóa nhân loại; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Chủ nghĩa yêu nước dân tộc Việt Nam; Chủ nghĩa Mác – Lênin",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; Tinh hoa văn hóa phương Đông và phương Tây; Chủ nghĩa yêu nước"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-39",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 39,
+      "kind": "mcq",
+      "question": "Chọn câu trả lời đúng nhất; theo Hồ Chí Minh, cách mạng giải phóng dân tộc ở thuộc địa thắng lợi khi có các điều kiện:",
+      "choices": [
+        "Vai trò lãnh đạo của Đảng và sự nỗ lực của chính các dân tộc thuộc địa",
+        "Các dân tộc thuộc địa phải đứng lên tự giải phóng chính mình đồng thời cần giúp đỡ của giai câp vô sản và nhân dân thê giới",
+        "Các dân tộc thuộc địa phải đứng lên tự giải phóng chính mình không cần giúp đỡ của giai cấp vô sản và nhân dân thế giới; Cần thiết phải có sự lãnh đạo của Đảng Cộng sản",
+        "Sự nỗ lực của chính các dân tộc thuộc địa; Sự giúp đỡ của giai cấp vô sản và nhân dân thê giới; Sự lãnh đạo của Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-40",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 40,
+      "kind": "mcq",
+      "question": "Ai là người đọc Điếu văn trong lễ truy điệu của Bác vào ngày 9/9/1969",
+      "choices": [
+        "Phạm Văn Đồng",
+        "Lê Duẩn",
+        "Trường Chinh",
+        "Võ nguyên Giáp"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-41",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 41,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, giữa giải phóng dân tộc và giải phóng giai cấp thì nhiệm vụ đặt lên hàng đầu là gì?",
+      "choices": [
+        "Giải phóng dân tộc",
+        "Giải phóng con người",
+        "Giải phóng giai cấp",
+        "Đồng thời giải phóng dân tộc và giải phóng giai cấp"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-42",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 42,
+      "kind": "mcq",
+      "question": "Câu nói: \"Nếu nước được độc lập rồi mà dân không được hưởng quyền tự do, hạnh phúc thì nên độc lập ây chăng có ý nghĩa gì\" của Hồ Chí Minh nhăm chỉ:",
+      "choices": [
+        "Hạnh phúc của nhân dân phải là mục tiêu cao cả của sự nghiệp cách mạng",
+        "Tư tưởng về độc lập dân tộc gắn liền với chủ nghĩa xã hội",
+        "Tư tưởng về độc lập dân tộc",
+        "Vai trò của quyền tự do, hạnh phúc"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-43",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 43,
+      "kind": "mcq",
+      "question": "Điền từ còn thiếu vào chỗ trống sau đây: \"Tư tưởng Hồ Chí Minh là một hệ thống quan điểm....(1).... về những vấn đề cơ bản của kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các...(3 tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại, là tài sản tinh thần vô cùng to lớn và quý giá của Đảng và dân tộc ta, mãi mãi soi đường cho sự nghiệp cách mạng của nhân dân ta giành thắng lợi\"",
+      "choices": [
+        "l toàn diện và sâu sắc, 2. cách mạng Việt Nam, 3. giá trị truyền thống",
+        "I.lý luận, 2. cách mạng Việt Nam, 3. giá trị truyền thống",
+        "Ltoàn diện và sâu sắc, 2. Hồ Chí Minh, 3. giá trị truyền thống",
+        "1lý luận, 2. Hồ Chí Minh, 3. giá trị truyền thống"
+      ],
+      "providedAnswer": null,
+      "page": 10,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-44",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 44,
+      "kind": "mcq",
+      "question": "Các nhân tố chủ quan hình thành Tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận; gia đình và quê hương xứ Nghệ",
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; tinh hoa văn hóa của thời đại",
+        "Phẩm chất cá nhân Hồ Chí Minh; tài năng hoạt động, tổng kết thực tiễn phát triển lý luận",
+        "Phẩm chất cá nhân Hồ Chí Minh; giá trị truyền thống dân tộc, tinh hoa văn hóa nhân loại"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-45",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 45,
+      "kind": "mcq",
+      "question": "Các luận điểm sau đây đều thể hiện tư tưởng dựa vào sức mình là chính. Luận điểm nào không phải của Hỗ Chí Minh?",
+      "choices": [
+        "Đem sức ta mà tự giải phóng cho ta",
+        "Sự nghiệp giải phóng của giai cấp công nhân phải do bản thân giai cấp công nhân tự làm lây",
+        "Muốn người ta giúp cho, thì trước hết mình phải tự giúp lấy mình đã",
+        "Công cuộc giải phóng các dân tộc thuộc địa chỉ có thể thực hiện được bằng sự nỗ lực của bản thân các dân tộc đó"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-46",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 46,
+      "kind": "mcq",
+      "question": "Cụ Nguyễn Sinh Sắc qua đời ở đâu:",
+      "choices": [
+        "Đồng Tháp",
+        "An Giang",
+        "Nghệ An",
+        "Long Xuyên"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-47",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 47,
+      "kind": "mcq",
+      "question": "Trong tác phẩm \"Đường Kách mệnh\", Hồ Chí Minh cho rằng cách mạng trước hết phải có gi?",
+      "choices": [
+        "Đường lối cách mạng",
+        "Đảng cách mệnh",
+        "Căn cứ địa",
+        "Lực lượng cách mạng"
+      ],
+      "providedAnswer": null,
+      "page": 11,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-48",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 48,
+      "kind": "mcq",
+      "question": "Tác phẩm thể hiện đỉnh cao của văn chương chính luận Việt Nam, là một văn kiện lịch sử thể hiện rất rõ về quyền con người và quyền dân tộc của Hồ Chí Minh là:",
+      "choices": [
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Tuyên ngôn độc lập",
+        "Di chúc",
+        "Đường cách mệnh"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-49",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 49,
+      "kind": "mcq",
+      "question": "Hành trình 30 năm ở nước ngoài, Chủ tịch nước Hồ Chí Minh đến Thái Lan vào thời gian nào:",
+      "choices": [
+        "1925",
+        "1928",
+        "1926",
+        "1927"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-50",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 50,
+      "kind": "mcq",
+      "question": "Tổ chức cách mạng Tâm Tâm Xã ra đời vào thời gian nào?",
+      "choices": [
+        "1925",
+        "1923",
+        "1920",
+        "1927"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-51",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 51,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành lấy tên Lý Thuy, vào thời gian nào?",
+      "choices": [
+        "Khi Bác sang Liên Xô làm việc ở Ban Phương Đông của Quốc tế Cộng sản tháng 6/1923",
+        "Khi Bác đến Thái Lan",
+        "Khi đến Quảng Châu, Trung Quốc vào ngày II tháng II năm 1924",
+        "Tại Hội nghị Vécxây (Pháp) ngày 18/6/1919"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-52",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 52,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trồng: \"Sự thật là từ mùa thu năm 1940, nước ta đã thành thuộc địa của. chứ không phải thuộc địa của...... nữa\"",
+      "choices": [
+        "Pháp - Nhật",
+        "Pháp - Mỹ",
+        "Mỹ - Pháp",
+        "Nhật - Pháp"
+      ],
+      "providedAnswer": null,
+      "page": 12,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-53",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 53,
+      "kind": "mcq",
+      "question": "Đại hội nào của Đảng lần đầu tiên khẳng định: \"Đảng lấy chủ nghĩa Mác – Lênin và tư tưởng Hồ Chí Minh làm nên tảng tư tưởng, kim chỉ nam cho hành động\":",
+      "choices": [
+        "Đại hội VII (1991)",
+        "Đại hội VI (1986)",
+        "Đại hội XI (2011)",
+        "Đại hội II (1951)"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-54",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 54,
+      "kind": "mcq",
+      "question": "Đoạn văn sau trích từ bài viết nào của Hồ Chí Minh: \"Về chính trị, chúng tuyệt đối không cho nhân dân ta một chút tự do dân chủ nào. Chúng thi hành những luật pháp đã man. Chúng lập ba chế độ khác nhau ở Trung, Nam, Bắc đẻ ngăn cân việc thống nhất nước nhà của ta, để ngăn cản dân tộc ta đoàn kết. Chúng lập ra nhà tù nhiều hơn trường học. Chúng thẳng tay chém giết những người yêu nước thương nòi của ta. Chúng tâm các cuộc khởi nghĩa của ta trong những bể máu. Chúng ràng buộc dư luận, thi hành chính sách ngu dân. Chúng dùng thuốc phiện, rượu cồn để làm cho nòi giống ta suy nhược.\",",
+      "choices": [
+        "Di chúc",
+        "Thư gởi đồng bào Nam bộ",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Tuyên ngôn độc lập (1945)"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-55",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 55,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã quan tâm tới khẩu hiệu nỗi tiếng của Đại Cách mạng Pháp năm 1789: Tự do - Bình đăng - bác ái từ khi nào:",
+      "choices": [
+        "Từ khi còn học ở Trường Tiểu học Pháp - bản xứ ở thành phố Vinh (1905)",
+        "Từ khi Hồ Chí Minh học tại Trường Tiểu học Pháp-Việt Đông Ba (1908)",
+        "Từ khi Hồ Chí Minh ra đi tìm đường cứu nước 1911",
+        "Từ khi Hồ Chí Minh học tại lớp đệ nhị trung học tại Trường Quốc học khóa 1908-1909"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-56",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 56,
+      "kind": "mcq",
+      "question": "Có bao nhiêu cơ sở hình thành tư tưởng Hồ Chí Minh:",
+      "choices": [
+        "2",
+        "3 (thực tiễn, lý luận, nhân tố chủ quan)",
+        "1",
+        "4"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t3-mcq-57",
+      "setId": "tap-3",
+      "subgroup": "mcq",
+      "document": 3,
+      "part": "mcq",
+      "number": 57,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây của Hồ Chí Minh được dịch ra nhiều thứ tiếng?",
+      "choices": [
+        "Lời kêu gọi toàn dân kháng chiến",
+        "Di chúc",
+        "Nhật ký trong tù",
+        "Tuyên ngôn độc lập"
+      ],
+      "providedAnswer": null,
+      "page": 13,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-01",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Truyền thống quý báu nhất của dân tộc Việt Nam được Hồ Chí Minh kế thừa và phát triển là gì?",
+      "choices": [
+        "Lòng nhân ái",
+        "Cần cù lao động",
+        "Chủ nghĩa yêu nước",
+        "Tinh thần hiếu học"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-02",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh thành lập Hội Việt Nam cách mạng thanh niên vào năm nào?",
+      "choices": [
+        "Năm 1927",
+        "Năm 1920",
+        "Năm 1925",
+        "Năm 1930"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-03",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Thời niên thiếu Chủ tịch Hồ Chí Minh có tên là gì?",
+      "choices": [
+        "Nguyễn Văn Ba",
+        "Nguyễn Ái Quốc",
+        "Nguyễn Sinh Cung",
+        "Nguyễn Tất Thành"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-04",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Tìm 1 điểm nhằm lẫn trong đoạn dưới đây: Một trong những nguồn gốc của tư tưởng Hồ Chí Minh là tiếp thu văn hóa phương Đông. Cụ thể là:",
+      "choices": [
+        "Kế thừa lòng nhân ái, đức hy sinh của thời kỳ Phục Hưng",
+        "Tư tưởng vị tha của Phật giáo",
+        "Những mặt tích cực của Nho giáo",
+        "Tư tưởng Tam dân của Tôn Trung Sơn"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-05",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành đã từng học qua những ngôi trường nào?",
+      "choices": [
+        "Quốc học Huế – Pháp-Việt Đông Ba – Dục Thanh",
+        "Đông Ba – Dục Thanh",
+        "Pháp-Việt Đông Ba – Quốc học Huế",
+        "Pháp-Việt, Quốc học Huế"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-06",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Tên gọi Nguyễn Ái Quốc chính thức xuất hiện trong sự kiện nào?",
+      "choices": [
+        "Dự Đại hội IV Quốc tế Cộng sản, 1922",
+        "Hoạt động tại Hương Cảng – Trung Quốc, 1931",
+        "Gửi Yêu sách 8 điểm của nhân dân An Nam tới Hội nghị Vécxây, 1919",
+        "Rời bến cảng Nhà Rồng, năm 1911"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-07",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Chọn đáp án đúng nhất quan điểm của Đảng Cộng sản Việt Nam về kiên trì con đường Hồ Chí Minh đã chọn:",
+      "choices": [
+        "Giải phóng dân tộc, thống nhất đất nước",
+        "Độc lập dân tộc, gắn liền với chủ nghĩa xã hội",
+        "Bảo vệ Tổ quốc, giữ vững nền độc lập dân tộc",
+        "Tiến hành xây dựng chủ nghĩa xã hội trên phạm vi cả nước"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-08",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Thuật ngữ Tư tưởng Hồ Chí Minh được Đảng ta chính thức sử dụng bắt đầu từ bao giờ?",
+      "choices": [
+        "1945",
+        "1991",
+        "1965",
+        "1989"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-09",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng nhất về tư tưởng Hồ Chí Minh:",
+      "choices": [
+        "Tư tưởng Hồ Chí Minh là chủ nghĩa Mác – Lênin ở Việt Nam",
+        "Tư tưởng Hồ Chí Minh là kết quả của sự vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện thực tế của nước ta",
+        "Tư tưởng Hồ Chí Minh là kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta",
+        "Tư tưởng Hồ Chí Minh là kết quả của sự phát triển sáng tạo chủ nghĩa Mác – Lênin vào điều kiện thực tế của nước ta"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-10",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh lực lượng xây dựng chủ nghĩa xã hội là:",
+      "choices": [
+        "trí thức",
+        "nông dân",
+        "nhân dân",
+        "công nhân"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-11",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử vào thời gian nào?",
+      "choices": [
+        "1968",
+        "1966",
+        "1969",
+        "1965"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-12",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh để xây dựng chủ nghĩa xã hội cần:",
+      "choices": [
+        "Con người có tài, có đức",
+        "Con người dám nghĩ dám làm, dám chịu trách nhiệm",
+        "Con người xã hội chủ nghĩa",
+        "Con người có vốn, trình độ"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-13",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh thì học chủ nghĩa Mác – Lênin như thế nào là đúng đắn nhất?. Hãy tìm đáp án sai trong những cách học dưới đây",
+      "choices": [
+        "Học lý luận cốt để áp dụng vào thực tế",
+        "Học tập cái tinh thần xử trí mọi việc, đối với mọi người và đối với bản thân mình",
+        "Học lập trường, quan điểm và phương pháp của chủ nghĩa Mác – Lênin để giải quyết những vấn đề thực tế của nước ta",
+        "Học thuộc lòng sách vở Mác – Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-14",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh mục tiêu tổng quát của xây dựng chủ nghĩa xã hội là:",
+      "choices": [
+        "Sản xuất phát triển với khoa học kỹ thuật tiên tiến",
+        "Giải phóng con người khỏi áp bức bất công",
+        "Kinh tế phát triển cao",
+        "Nâng cao đời sống nhân dân"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-15",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh nguyên tắc tổ chức, sinh hoạt cơ bản của đảng là:",
+      "choices": [
+        "Tập trung dân chủ",
+        "Đảng gắn bó mật thiết với nhân dân",
+        "Tập thể lãnh đạo cá nhân phụ trách",
+        "Tự phê bình, phê bình"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-16",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Điền từ thích hợp vào: Theo Hồ Chí Minh: \"Công việc thành công hay thất bại đều do cán bộ....\"",
+      "choices": [
+        "Mạnh hay yếu",
+        "Tốt hay kém",
+        "Tốt hay xấu",
+        "Có đức hay có tài"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-17",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: \"Đảng láy chủ nghĩa Mác – Lênin và tư tưởng Hò Chí Minh làm nên tảng tư tưởng và kim chỉ nam cho mọi hành động cách mạng\". Câu nói trên được Đảng ta khẳng định lần đầu tiên tại Đại hội đại biểu toàn quốc lần thứ máy?",
+      "choices": [
+        "Đại hội lần thứ VI",
+        "_ Đại hội lần thứ VII",
+        "Đại hội lần thứ VIII",
+        "Đại hội lần thứ V"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-18",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Tư tưởng Hồ Chí Minh hình thành và phát triển qua máy thời kỳ?",
+      "choices": [
+        "3",
+        "5",
+        "4",
+        "6"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-19",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: \"Dân tộc ta, nhân dân ta, non sông đắt nước ta đã sinh ra Hồ Chủ tịch, người anh hùng dân tộc vĩ đại, và chính Người đã làm rạng rỡ dân tộc ta, nhân dân ta và non sông đắt nước ta\". Câu nói trên ở trong văn kiện nào?",
+      "choices": [
+        "Lời kêu gọi của Ban Chấp hành Trung ương Đảng Lao động Việt Nam ngày 3/9/1969",
+        "Diễn văn của Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam đọc tại lễ kỷ niệm 100 năm ngày sinh của Hồ Chí Minh",
+        "Diễn văn của Ban Chấp hành Trung ương Đảng Lao động Việt Nam đọc tại lễ kỷ niệm 80 năm ngày sinh của Hồ Chí Minh",
+        "Điếu văn của Ban Chấp hành Trung ương Đảng Lao động Việt Nam đọc tại lễ truy điệu Chủ tịch Hồ Chí Minh ngày 9/9/1969"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-20",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 20,
+      "kind": "mcq",
+      "question": "Hãy lựa chọn câu trả lời đúng nhất:",
+      "choices": [
+        "Hồ Chí Minh là anh hùng giải phóng dân tộc và là nhà văn hóa lớn",
+        "Hồ Chí Minh là anh hùng giải phóng của dân tộc Việt Nam và là danh nhân văn hóa kiệt xuất của thế giới",
+        "Hồ Chí Minh là anh hùng giải phóng dân tộc và là nhà văn hóa kiệt xuất của Việt Nam",
+        "Hồ Chí Minh là anh hùng giải phóng dân tộc Việt Nam và là nhà văn hóa lỗi lạc"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-21",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Theo Hồ Chí Minh, ưu điểm lớn nhất của học thuyết Khổng Tử là gì?",
+      "choices": [
+        "Đề cao văn hoá, lễ giáo",
+        "Sự tu dưỡng đạo đức cá nhân",
+        "Tinh thần hiếu học",
+        "Quản lý xã hội bằng đạo đức"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-22",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Thực chất vấn đề dân tộc trong tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Cả 3 phương án",
+        "Thành lập Nhà nước dân tộc độc lập",
+        "Giành quyền lợi cho giai cấp",
+        "Đấu tranh giải phóng dân tộc"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-23",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 23,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa Mác là gì?",
+      "choices": [
+        "Bản chất cách mạng",
+        "Bản chất khoa học",
+        "Phương pháp làm việc biện chứng",
+        "Chủ nghĩa nhân đạo cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-24",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh: Đoàn kết là:",
+      "choices": [
+        "Điểm gốc",
+        "Điểm sáng",
+        "Điểm mẹ",
+        "Điểm lớn"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-25",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng với tư tưởng Hồ Chí Minh:",
+      "choices": [
+        "Từ năm 1911 – 1920: Thời kỳ hình thành tư tưởng yêu nước, chí hướng cứu nước",
+        "Từ năm 1921 – 1930: Thời kỳ hình thành cơ bản tư tưởng về con đường cách mạng Việt Nam",
+        "Từ năm 1890 đến năm 1911: Thời kỳ nghiên cứu, khảo sát thực tế, đến với chủ nghĩa Mác – Lênin",
+        "Cả ba đáp án trên đều đúng"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-26",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 26,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh: \"Trường kỳ kháng chiến",
+      "choices": [
+        "Bắc - Nam sum họp xuân nào vui hơn",
+        "Nhất định thắng lợi",
+        "Đánh thắng giặc Mĩ",
+        "Chống Pháp thắng lợi"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-27",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 27,
+      "kind": "mcq",
+      "question": "Theo Bác, cách mạng giải phóng dân tộc phải thực hiện bằng con đường nào?",
+      "choices": [
+        "Cả 3 phương án trên",
+        "Cải cách từng phần",
+        "Đấu tranh chính trị",
+        "Bạo lực"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-28",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 28,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Tư tưởng Hồ Chí Minh là hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam. Những ván đề đó thuộc phạm vi nào?",
+      "choices": [
+        "Trong cách mạng dân tộc dân chủ nhân dân",
+        "Trong thế kỷ XX",
+        "Cả trong cách mạng dân tộc dân chủ nhân dân và cách mạng xã hội chủ nghĩa",
+        "Trong cách mạng xã hội chủ nghĩa"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-29",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 29,
+      "kind": "mcq",
+      "question": "Tháng 7 năm 1920, Hồ Chí Minh đọc tác phẩm nào của V.I. Lênin?",
+      "choices": [
+        "Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa",
+        "Bản thảo kinh tế – triết học",
+        "Tuyên ngôn Đảng Cộng sản",
+        "Nhà nước và cách mạng"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-30",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 30,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh nói câu: \"Không có gì quý hơn độc lập, tự đo\" vào thời gian nào?",
+      "choices": [
+        "1946",
+        "1966",
+        "1945",
+        "1954"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-31",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 31,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng với tư tưởng Hồ Chí Minh:",
+      "choices": [
+        "Cách mạng giải phóng dân tộc ở thuộc địa có khả năng giành được thắng lợi trước cách mạng vô sản ở chính quốc",
+        "Cách mạng giải phóng dân tộc giành được thắng lợi đồng thời với thắng lợi của cách mạng vô sản ở chính quốc",
+        "Thắng lợi của cách mạng vô sản ở thuộc địa phải phụ thuộc vào thắng lợi của cách mạng vô sản ở chính quốc",
+        "Cả ba đáp án trên đều đúng"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-32",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 32,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trống trong câu viết sau đây của Hồ Chí Minh: \"Toàn quốc đồng bào hãy đứng dậy.... mà tự giải phóng cho ta\"",
+      "choices": [
+        "dựa vào sự giúp đỡ quốc tế",
+        "sự lãnh đạo của Đảng",
+        "đem sức ta",
+        "dựa vào sự đoàn kết toàn dân"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-33",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 33,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trống trong câu viết sau đây của Hồ Chí Minh: \"Toàn thẻ dân tộc Việt Nam quyết đem...... để giữ vững quyền tự do, độc lập áy\"",
+      "choices": [
+        "Tất cả tinh thần và lực lượng, tính mạng và của cải",
+        "Lòng dũng cảm và sự hy sinh",
+        "Toàn bộ sức lực",
+        "Tình yêu nước và tinh thần đoàn kết"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-34",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 34,
+      "kind": "mcq",
+      "question": "Điền cụm từ thích hợp vào. dấu \"... trong đoạn trích dưới đây: \"Một dân tộc, một đảng và mỗi con người, ngày hôm qua là vĩ đại, có sức hấp dẫn lớn, không nhất định hôm nay và ngày mai vẫn được mọi người yêu mến và ca ngợi, nếu lòng dạ không trong sáng nữa, nếu sa vào...\"",
+      "choices": [
+        "Chủ nghĩa cá nhân",
+        "Chủ nghĩa quân phiệt",
+        "Tham ô, những nhiễu",
+        "Hám danh, hám lợi"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-35",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 35,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Tác phẩm Bản án chế độ thực dân Pháp của Hồ Chí Minh được xuất bản lần đầu tiên ở đâu?",
+      "choices": [
+        "Thái Lan",
+        "Mỹ",
+        "Trung Quốc",
+        "Pháp"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-36",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 36,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh ra \"Lời kêu gọi toàn quóc kháng chiến\" chống thực dân Pháp vào thời gian nào?",
+      "choices": [
+        "19-12-1948",
+        "19-12-1946",
+        "19-12-1947",
+        "19-12-1945"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-37",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 37,
+      "kind": "mcq",
+      "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh khẳng định chủ nghĩa dân tộc là một động lực. lớn ở các nước đang đấu tranh giành độc lập. Đó là chủ nghĩa dân tộc nào?",
+      "choices": [
+        "Chủ nghĩa sô vanh, nước lớn",
+        "Chủ nghĩa dân tộc chân chính",
+        "Chủ nghĩa nhân đạo cộng sản",
+        "Chủ nghĩa dân tộc vị kỷ"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-38",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 38,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh khẳng định: \"Thực tiễn không có lý luận định hướng thì thành thực tiễn mù quáng, dễ mắc bệnh chủ quan, duy ý chí; lý luận mà không liên hệ với thực tiễn là...\". Điền cụm từ còn thiếu?",
+      "choices": [
+        "Lý luận mù quáng",
+        "Lý luận suông",
+        "Lý thuyết suông",
+        "Thiếu thực tế"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-39",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 39,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh từng ví \"chủ nghĩa đề quốc\" giống như con đĩa 2 vòi: một vòi bám vào chính quốc, một vòi bám vào đâu?",
+      "choices": [
+        "Xã hội phong kiến",
+        "Chính quốc",
+        "Thuộc địa",
+        "Giai cắp công nhân"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-40",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 40,
+      "kind": "mcq",
+      "question": "Động lực quan trọng nhất của chủ nghĩa xã hội là",
+      "choices": [
+        "Tài nguyên",
+        "Tiền vốn",
+        "Con người",
+        "Khoa học công nghệ"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-41",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 41,
+      "kind": "mcq",
+      "question": "Giải pháp quyết định nhất xây dựng Chủ nghĩa xã hội theo tư tưởng Hồ Chí Minh là:",
+      "choices": [
+        "Công nghiệp hóa, hiện đại hóa",
+        "Tập trung bao cấp",
+        "Dựa vào cộng đồng quốc té",
+        "Đem tài dân, sức dân, của dân làm lợi cho dân dưới sự lãnh đạo của Đảng"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-42",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 42,
+      "kind": "mcq",
+      "question": "Trong xây dựng Đảng về chính trị, vắn đề nào là \"cốt tử\"?",
+      "choices": [
+        "Nâng cao bản lĩnh chính trị của đảng viên",
+        "Xây dựng đường lối chính trị đúng đắn",
+        "Cũng cố lập trường chính trị",
+        "Xây dựng và thực hiện nghị quyết của Đảng"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-43",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 43,
+      "kind": "mcq",
+      "question": "Đảng ta là một đảng cầm quyền, các đồng chí từ chi bộ đến Trung ương, phải giữ gìn sự đoàn kết nhất trí trong Đảng như giữ gìn con ngươi của mắt mình. Câu trên trích từ tác phẩm nào của Hồ Chí Minh?",
+      "choices": [
+        "Bài nói chuyện với cán bộ cao cấp quân đội nhân dân Việt Nam",
+        "Bài nói chuyện tại Trường Nguyễn Ái Quốc Trung ương năm 1957",
+        "Di chúc",
+        "Diễn văn chính trị tại Đại hội III của Đảng"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-44",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 44,
+      "kind": "mcq",
+      "question": "\"Học để làm việc, làm người, làm cán bộ\" câu nói đó của Hồ Chí Minh ở trong sự kiện nào?",
+      "choices": [
+        "Thư gửi thầy, cô giáo nhân ngày khai giảng đầu tiên nước Việt Nam Dân chủ Cộng hòa",
+        "Tổng kết 5 năm phong trào \"Bình dân học vụ\"",
+        "Lời ghi ở trang đầu quyển sổ vàng của Trường Nguyễn Ái Quốc Trung ương",
+        "Phát động phong trào xóa nạn mù chữ sau Cách mạng Tháng Tám"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-45",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 45,
+      "kind": "mcq",
+      "question": "\"Sông to, biển rộng thì bao nhiêu nước cũng chứa được, vì độ lượng nó sâu. Cái chén nhỏ, cái đĩa cạn, thì một chút nước đã tràn đầy, vì độ lượng nó hẹp nhỏ. Người mà tự kêu, tự mãn, cũng như cái chén, cái đĩa cạn\". Câu trên của Bác Hồ ngụ ý gì?",
+      "choices": [
+        "Phê phán lối sống hẹp hòi, ích kỉ",
+        "Giáo dục cán bộ, đảng viên và quần chúng lòng khoan dung, độ lượng với những người có sai lầm, khuyết điểm",
+        "Cả 3 ý trên",
+        "Phê bình một số cán bộ, đảng viên kêu căn, tự mãn"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-46",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 46,
+      "kind": "mcq",
+      "question": "Hình thức tổ chức của khối đại đoàn kết dân tộc là gì?",
+      "choices": [
+        "Là nhà nước của dân, do dân và vì dân",
+        "Là Mặt trận dân tộc thống nhất",
+        "Là các tổ chức hội, đoàn của quần chúng",
+        "Là Đảng Cộng sản"
+      ],
+      "providedAnswer": null,
+      "page": 8,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-47",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 47,
+      "kind": "mcq",
+      "question": "Trong những khẩu hiệu tập hợp lực lượng dưới đây, khẩu hiệu nào do Hồ Chí Minh nêu lên?",
+      "choices": [
+        "Lao động tất cả các nước đoàn kết lại",
+        "_ Vô sản các nước và các dân tộc bị áp bức trên thế giới đoàn kết lại",
+        "Vô sản tất cả các nước liên hiệp lại",
+        "Nhân dân yêu chuộng hòa bình và công lý trên thế giới đoàn kết lại"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-48",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 48,
+      "kind": "mcq",
+      "question": "Điền vào chỗ trống hoàn chỉnh câu thơ của Hồ Chí Minh. Rằng đây bồn biển một nhà...đều là anh em",
+      "choices": [
+        "Bốn phương vô sản",
+        "Vàng đen trắng đỏ",
+        "Lao động thế giới",
+        "Tình thương nhân loại"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-49",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 49,
+      "kind": "mcq",
+      "question": "Chọn câu trả lời đúng theo Tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Mặt trận",
+        "Đảng Cộng sản Việt Nam là một thành viên của Mặt trận dân tộc thống nhất",
+        "Đảng Cộng sản Việt Nam vừa là thành viên, vừa là lực lượng lãnh đạo Mặt trận dân tộc thống nhất",
+        "Đảng Cộng sản Việt Nam là một bộ phận của Mặt trận dân tộc thống nhất"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t4-mcq-50",
+      "setId": "tap-4",
+      "subgroup": "mcq",
+      "document": 4,
+      "part": "mcq",
+      "number": 50,
+      "kind": "mcq",
+      "question": "Chọn phương án đúng nhất? Để tranh thủ sự sự giúp đở của các nước xã hội chủ nghĩa, trong đấu tranh cách mạng cần coi trọng nhân tố:",
+      "choices": [
+        "Có đường lối độc lập, tự chủ đúng đắn",
+        "Dựa vào nguồn lực ngoại sinh là chính",
+        "Tự lực cánh sinh, dựa vào sức mình là chính",
+        "Trường kỳ kháng chiến nhất định thành công"
+      ],
+      "providedAnswer": null,
+      "page": 9,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-01",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Trong bản Tuyên ngôn Độc lập đọc ngày 2/9/1945, Hồ Chí Minh đã khẳng định ý chí bảo vệ nền độc lập của dân tộc. Điền cụm từ còn thiếu: \"Toàn thể dân tộc Việt Nam quyết đem... để giữ vững quyền tự do, độc lập ấy.\"",
+      "choices": [
+        "Tất cả tinh thần và lực lượng",
+        "Toàn bộ sức lực",
+        "Tất cả tinh thần và lực lượng, tính mạng và của cải",
+        "Tinh hoa và văn hóa"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-02",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Theo tiểu sử của Chủ tịch Hồ Chí Minh, quê ngoại của Người được xác định tại địa danh nào sau đây?",
+      "choices": [
+        "Làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Trai, xã Kim Liên, huyện Nghĩa Đàn, tỉnh Nghệ An",
+        "Làng Chùa (Hoàng Trù), xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Đình, xã Nghĩa Đàn, huyện Nam Đàn, tỉnh Nghệ An"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-03",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh, giai đoạn hình thành những nội dung cơ bản về tư tưởng cách mạng Việt Nam được xác định trong khoảng thời gian nào?",
+      "choices": [
+        "Từ năm 1920 đến năm 1930",
+        "Từ năm 1911 đến năm 1920",
+        "Trước năm 1911",
+        "Từ năm 1930 đến năm 1941"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-04",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Trong các yếu tố hình thành nên tư tưởng Hồ Chí Minh, yếu tố nào đóng vai trò là cơ sở lý luận quan trọng nhất, quyết định bản chất khoa học và cách mạng của tư tưởng Người?",
+      "choices": [
+        "Tư tưởng văn hóa phương Tây",
+        "Văn hóa truyền thống dân tộc",
+        "Tư tưởng văn hóa phương Đông",
+        "Chủ nghĩa Mác – Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-05",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Văn kiện lý luận chính trị đầu tiên của Đảng, tập hợp các bài giảng của Nguyễn Ái Quốc tại Quảng Châu nhằm đào tạo cán bộ và đặt cơ sở cho đường lối cách mạng Việt Nam là tác phẩm nào?",
+      "choices": [
+        "Sửa đổi lối làm việc",
+        "Bản án chế độ thực dân Pháp",
+        "Tuyên ngôn Độc lập",
+        "Đường cách mệnh"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-06",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành lấy tên là Nguyễn Ái Quốc vào thời điểm lịch sử nào sau đây?",
+      "choices": [
+        "Khi sang Liên Xô làm việc tại Ban Phương Đông năm 1923",
+        "Khi tham gia sáng lập Đảng Cộng sản Pháp năm 1920",
+        "Khi rời bến cảng Nhà Rồng năm 1911",
+        "Khi gửi Bản yêu sách của nhân dân An Nam đến Hội nghị Vécxây (Pháp) năm 1919"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-07",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Theo tư tưởng Hồ Chí Minh, muốn giành được thắng lợi triệt để trong cuộc đấu tranh giành độc lập, cách mạng giải phóng dân tộc ở các nước thuộc địa phải đi theo con đường nào?",
+      "choices": [
+        "Cách mạng xã hội chủ nghĩa",
+        "Cách mạng tư sản",
+        "Cách mạng vô sản",
+        "Cải cách ôn hòa"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-08",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Nhân tố chủ quan nào sau đây đóng vai trò quyết định trong việc Hồ Chí Minh tiếp thu và chuyển hóa các giá trị văn hóa nhân loại thành tư tưởng cách mạng của riêng mình?",
+      "choices": [
+        "Hoàn cảnh lịch sử thế giới biến động",
+        "Khả năng tư duy độc lập, sáng tạo và sự khổ công học tập của cá nhân",
+        "Truyền thống yêu nước của gia đình",
+        "Sự hỗ trợ của các tổ chức quốc tế"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-09",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Tác phẩm nào của Hồ Chí Minh chứa đựng câu nói nổi tiếng: \"Không có gì quý hơn độc lập, tự do\"?",
+      "choices": [
+        "Tuyên ngôn Độc lập (1945)",
+        "Di chúc (1969)",
+        "Lời kêu gọi đồng bào và chiến sĩ cả nước (1966)",
+        "Lời kêu gọi toàn quốc kháng chiến (1946)"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-10",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Vào năm 1901, thân phụ của Hồ Chí Minh là ông Nguyễn Sinh Sắc đã đạt được học vị nào trong kỳ thi Hội?",
+      "choices": [
+        "Tiến sĩ",
+        "Phó bảng",
+        "Tú tài",
+        "Cử nhân"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-11",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đặt chân về Tổ quốc tại cột mốc 108 vào năm 1941 tại địa danh nào?",
+      "choices": [
+        "Xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng",
+        "Thành phố Lạng Sơn, tỉnh Lạng Sơn",
+        "Huyện Mèo Vạc, tỉnh Hà Giang",
+        "Xã Tân Trào, huyện Sơn Dương, tỉnh Tuyên Quang"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-12",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Trong hệ thống giá trị truyền thống dân tộc Việt Nam mà Hồ Chí Minh tiếp thu, yếu tố nào giữ vai trò chủ đạo và là động lực mạnh mẽ nhất?",
+      "choices": [
+        "Chủ nghĩa yêu nước",
+        "Lòng nhân ái",
+        "Tinh thần hiếu học",
+        "Tính cộng đồng"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-13",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Theo quan điểm Hồ Chí Minh, điều kiện tiên quyết để cuộc cách mạng giải phóng dân tộc ở thuộc địa giành thắng lợi là gì?",
+      "choices": [
+        "Sự thỏa hiệp với kẻ thù",
+        "Chỉ dựa vào sức mạnh quân sự",
+        "Sự lãnh đạo của Đảng Cộng sản",
+        "Sự giúp đỡ hoàn toàn từ bên ngoài"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-14",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Khái niệm tư tưởng Hồ Chí Minh lần đầu tiên được Đảng Cộng sản Việt Nam nêu lên một cách hoàn chỉnh và chính thức ghi vào Điều lệ Đảng tại Đại hội đại biểu toàn quốc lần thứ mấy?",
+      "choices": [
+        "Đại hội VII (1991)",
+        "Đại hội XI (2011)",
+        "Đại hội IX (2001)",
+        "Đại hội VI (1986)"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-15",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử từ năm nào?",
+      "choices": [
+        "1969",
+        "1968",
+        "1965",
+        "1960"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-16",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 16,
+      "kind": "essay",
+      "question": "Phân tích những nhân tố chủ quan (thuộc về cá nhân Hồ Chí Minh) đã góp phần quyết định vào việc hình thành hệ thống tư tưởng của Người. Theo em, phẩm chất nào là quan trọng nhất? Vì sao?",
+      "choices": [],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t5-mcq-17",
+      "setId": "tap-5",
+      "subgroup": "mcq",
+      "document": 5,
+      "part": "mcq",
+      "number": 17,
+      "kind": "essay",
+      "question": "Tại sao Hồ Chí Minh khẳng định rằng cách mạng giải phóng dân tộc ở Việt Nam muốn thắng lợi phải đi theo con đường cách mạng vô sản? Phân tích ý nghĩa của sự lựa chọn này đối với lịch sử dân tộc",
+      "choices": [],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-01",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 1,
+      "kind": "mcq",
+      "question": "Những phẩm chất của Hồ Chí Minh góp phần hình thành tư tưởng của Người là gì?",
+      "choices": [
+        "Sống có hoài bão, lý tưởng; tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bất khuất và trái tim nhân ái",
+        "Tư duy độc lập, sáng tạo nhạy bén; tinh thần kiên cường bất khuất; yêu thương con người và sống có tình có nghĩa",
+        "Lòng yêu nước, tinh thần kiên cường bất khuất; tinh thần đoàn kết và yêu thương con người",
+        "Sống có hoài bão, lý tưởng, lòng yêu nước; tinh thần kiên cường bất khuất; tinh thần đoàn kết và yêu thương con người"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-02",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 2,
+      "kind": "mcq",
+      "question": "Câu nói sau trích từ tác phẩm nào của Hồ Chí Minh: \"Không có gì quý hơn độc lập tự do\"",
+      "choices": [
+        "Lời kêu gọi đồng bào và chiến sĩ cả nước",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Di chúc",
+        "Tuyên ngôn độc lập (1945)"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-03",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 3,
+      "kind": "mcq",
+      "question": "Nguyễn Tất Thành lấy tên là Nguyễn Ái Quốc vào thời gian nào?",
+      "choices": [
+        "Khi Bác lên tàu từ bến Nhà Rồng năm 1911",
+        "Khi Bác sang Liên Xô làm việc ở Ban Phương Đông của Quốc tế Cộng sản tháng 6/1923",
+        "Khi Bác tham gia sáng lập Đảng Cộng sản Pháp tại Đại hội Tua thang 12/1920",
+        "Tại Hội nghị Vécxây (Pháp) ngày 18/6/1919"
+      ],
+      "providedAnswer": null,
+      "page": 1,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-04",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 4,
+      "kind": "mcq",
+      "question": "Những giá trị truyền thống tốt đẹp của dân tộc Việt Nam được Hồ Chí Minh tiếp thu để hình thành tư tưởng của mình là:",
+      "choices": [
+        "Tinh thần đoàn kết, cố kết cộng đồng; chủ nghĩa yêu nước Việt Nam",
+        "Chủ nghĩa yêu nước Việt Nam; tư tưởng nhân ái, bao dung độ lượng",
+        "Tư tưởng nhân ái, bao dung độ lượng, truyền thống nhân nghĩa",
+        "Tinh thần đoàn kết, cố kết cộng đồng; chủ nghĩa yêu nước Việt Nam; tư tưởng nhân ái, bao dung độ lượng"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-05",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 5,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc đã thành lập Hội Việt Nam cách mạng thanh niên ở dau:",
+      "choices": [
+        "Pháp",
+        "Cao Bằng",
+        "Trung Quốc",
+        "Hà Nội"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-06",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 6,
+      "kind": "mcq",
+      "question": "Đoạn văn sau trích từ bài viết nào của Hồ Chí Minh: \"Toàn thể dân tộc Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy\"?",
+      "choices": [
+        "Tuyên ngôn độc lập (1945)",
+        "Lời kêu gọi toàn quốc kháng chiến",
+        "Thư gởi đồng bảo Nam bộ",
+        "Di chúc"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-07",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 7,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã tham gia sáng lập Hội Liên hiệp thuộc địa vào giai đoạn nao trong quá trình hình thành tư tưởng Hồ Chí Minh",
+      "choices": [
+        "Từ 29/1/1941 – 2/9/1969",
+        "Từ 6/6/1911 – 30/12/1920",
+        "Từ 4/2/1930 – 28/1/1941",
+        "Từ 31/12/1920 – 3/2/1930"
+      ],
+      "providedAnswer": null,
+      "page": 2,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-08",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 8,
+      "kind": "mcq",
+      "question": "Chọn cụm từ đúng điền vào chỗ trống: \"Toàn thể dân tộc Việt Nam quyết đem... để giữ vững quyền tự do, độc lập ấy\"",
+      "choices": [
+        "Tất cả tinh thần và lực lượng",
+        "Tất cả tinh thần và lực lượng, tính mạng và của cải",
+        "Tinh hoa và văn hóa",
+        "Toàn bộ sức lực"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-09",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 9,
+      "kind": "mcq",
+      "question": "Trong các yếu tố sau, yếu tố nào quyết định bản chất tư tưởng Hồ Chí Minh?",
+      "choices": [
+        "Tư tưởng văn hoá phương Đông",
+        "Văn hoá truyền thống dân tộc",
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng văn hoá phương Tây"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-10",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 10,
+      "kind": "mcq",
+      "question": "Hồ Chí Minh đã từng dạy hoc ở ngôi trường nào?",
+      "choices": [
+        "Trường tiểu học Đông Ba ở Huế",
+        "Trường Dục Thanh ở Phan Thiết",
+        "Trường tiểu học Pháp - Việt ở Vinh",
+        "Trường Quốc học Huế"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-11",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 11,
+      "kind": "mcq",
+      "question": "Sau khi đặt chân về Tổ quốc, với vai trò là chủ tịch nước Hồ Chí Minh về quê Nghệ An lần đầu tiên vào thời gian nao:",
+      "choices": [
+        "1957",
+        "1956",
+        "1955",
+        "1954"
+      ],
+      "providedAnswer": null,
+      "page": 3,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-12",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 12,
+      "kind": "mcq",
+      "question": "Trước khi ra đi tìm đường cứu nước, hành trang của Nguyễn Tất Thành đã có:",
+      "choices": [
+        "Chủ nghĩa Mác – Lênin",
+        "Tư tưởng về cách mạng vô sản",
+        "Tư tưởng cách mạng dân chủ tư sản",
+        "Chủ nghĩa yêu nước và truyền thống của dân tộc Việt Nam"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-13",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 13,
+      "kind": "mcq",
+      "question": "Ông Nguyễn Sinh Sắc vào kinh thi Hội và ông đậu Phó bảng vào thời gian nào:",
+      "choices": [
+        "1901",
+        "1906",
+        "1900",
+        "1895"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-14",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 14,
+      "kind": "mcq",
+      "question": "Quê ngoại của Chủ tịch Hồ Chí Minh?",
+      "choices": [
+        "Làng Trai, xã Kim Liên, huyện Nghĩa Đàn, tỉnh Nghệ An",
+        "Làng Sen, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Chùa, xã Kim Liên, huyện Nam Đàn, tỉnh Nghệ An",
+        "Làng Đình, xã Nghĩa Đàn, huyện Nam Đàn, tỉnh Nghệ An"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-15",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 15,
+      "kind": "mcq",
+      "question": "‘Mark 0.00 out of 1.00 Ai đọc diéu van trong tang lễ của Bác:",
+      "choices": [
+        "Phạm Văn Đồng",
+        "V6 Văn Kiệt",
+        "c Lê Duẩn",
+        "d. Võ Nguyên Giáp"
+      ],
+      "providedAnswer": null,
+      "page": 4,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-16",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 16,
+      "kind": "mcq",
+      "question": "Thời kỳ từ 6/6/1911 đến 30/12/1920 trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh có tên là gì?",
+      "choices": [
+        "Hình thành tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng yêu nước, giải phóng giai cấp và dân tộc theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng yêu nước, tư tưởng cứu nước, giải phóng dân tộc Việt Nam theo con đường cách mạng vô sản",
+        "Hình thành tư tưởng cứu nước, giải phóng các dân tộc thuộc địa theo con đường cách mạng vô sản"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-17",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 17,
+      "kind": "mcq",
+      "question": "\"Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vân đê cơ bản của cách mạng Việt Nam, kết quả của sự vận dụng và phát triên sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của nước ta, kế thừa và phát triển các giá trị truyền thống tốt đẹp của dân tộc, tiếp thu tinh hoa văn hóa nhân loại; là tài sản tinh thần vô cùng to lớn và quý giá của Đảng và dân tộc ta, mãi mãi soi đường cho sự nghiệp cách mạng của nhân dân ta giành thắng lợi\". Khái niệm Tư tưởng Hồ Chí Minh được nêu trong văn kiện đại hội đại biểu toàn quốc của Đảng lần thứ mấy:",
+      "choices": [
+        "Đại hội đại biểu toàn quốc lần thứ X của Đảng Cộng sản Việt Nam (2006)",
+        "Đại hội đại biểu toàn quốc lần thứ XII của Đảng Cộng sản Việt Nam (2016)",
+        "Đại hội đại biểu toàn quốc lần thứ Xill của Đảng Cộng sản Việt Nam (2021)",
+        "Đại hội đại biểu toàn quốc lần thứ XI của Đảng Cộng sản Việt Nam (2011)"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-18",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 18,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành được thắng lợi phải di theo con đường na",
+      "choices": [
+        "Cách mạng xã hội chủ nghĩa",
+        "Cách mạng vô sản",
+        "Cách mạng tư sản và cách mạng vô sản",
+        "Cách mạng tư sản"
+      ],
+      "providedAnswer": null,
+      "page": 5,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-19",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 19,
+      "kind": "mcq",
+      "question": "Tác phẩm nào sau đây không phải là của Hồ Chí Minh?",
+      "choices": [
+        "Di chúc",
+        "Sửa đổi lối làm việc",
+        "Tuyên ngôn của Đảng Cộng sản",
+        "Con đường dẫn tôi tới chủ nghĩa Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-20",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 20,
+      "kind": "mcq",
+      "question": "Nguyễn Ái Quốc nói câu nói sau khi đang ở đâu: \"Luận cương của V.I. Lênin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng biết bao. Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng đông đảo: hỡi đồng bào bị đọa đày đau khổ! Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng chúng ta\"",
+      "choices": [
+        "Trung Quốc",
+        "Liên Xô",
+        "Pháp",
+        "Anh"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-21",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 21,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, sự kiện nào \"mở ra con đường giải phóng cho các dân tộc và cả loài người, mở đầu một thời đại mới trong lịch sử\"?",
+      "choices": [
+        "Cách mạng Tháng Mười Nga 1917",
+        "Cách mạng tư sản Pháp",
+        "Cách mạng Tân Hợi",
+        "Cách mạng Tháng Tám 1945"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-22",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 22,
+      "kind": "mcq",
+      "question": "Giai đoạn hình thành những nội dung cơ bản tư tưởng về cách mạng Việt Nam được tinh từ:",
+      "choices": [
+        "Trước ngày 5/6/1911",
+        "Từ 31/12/1920 – 3/2/1930",
+        "Từ 4/2/1930 – 28/1/1941",
+        "Từ 6/6/1911 – 30/12/1920"
+      ],
+      "providedAnswer": null,
+      "page": 6,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-23",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 23,
+      "kind": "mcq",
+      "question": "Các nhân tố chủ quan hình thành tư tưởng Hồ Chí Minh là:",
+      "choices": [
+        "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam; tinh hoa văn hóa của thời đại",
+        "Phẩm chất cá nhân Hồ Chí Minh; giá trị truyền thống dân tộc, tinh hoa văn hóa nhân loại",
+        "Tài năng hoạt động, tổng kết thực tiễn phát triển lý luận; gia đình và quê hương xứ Nghệ",
+        "Phẩm chất cá nhân Hồ Chí Minh; tài năng hoạt động, tổng kết thực tiễn phát triển lý luận"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-24",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 24,
+      "kind": "mcq",
+      "question": "Theo Hồ Chí Minh, quyền thiêng liêng nhất, bất kha xâm phạm nhất của mọi dân tộc là:",
+      "choices": [
+        "Quyền độc lập, tự do, bình đẳng",
+        "Quyền được khẳng định mình trên trường quốc tế",
+        "Quyền được trở thành thành viên Liên hiệp quốc",
+        "Quyền phát triển"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    },
+    {
+      "id": "t6-mcq-25",
+      "setId": "tap-6",
+      "subgroup": "mcq",
+      "document": 6,
+      "part": "mcq",
+      "number": 25,
+      "kind": "mcq",
+      "question": "Tư tưởng Hồ Chí Minh hình thành trên cơ sở:",
+      "choices": [
+        "Tiếp thu một bộ phận của chủ nghĩa Mác – Lênin",
+        "Vận dụng hoàn toàn chủ nghĩa Mác – Lênin",
+        "Tiếp thu toàn bộ chủ nghĩa Mác – Lênin",
+        "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – Lênin"
+      ],
+      "providedAnswer": null,
+      "page": 7,
+      "notes": []
+    }
+  ]
+}

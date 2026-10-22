@@ -1,18 +1,20 @@
 const $ = (s, root = document) => root.querySelector(s);
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const isHcm = (window.location?.search || '').replace(/^\?/, '').split('&').includes('course=hcm');
+const isBank = isHcm && (window.location?.search || '').replace(/^\?/, '').split('&').includes('track=bank');
 const letters = ['A','B','C','D'];
-const raw = await fetch(isHcm ? '/hcm-data.json' : '/data.json').then(r => { if(!r.ok) throw Error('Không tải được học liệu'); return r.json(); });
+const raw = await fetch(isBank ? '/hcm-bank-data.json' : isHcm ? '/hcm-data.json' : '/data.json').then(r => { if(!r.ok) throw Error('Không tải được học liệu'); return r.json(); });
 const courseName = isHcm ? raw.course.name : 'Chủ nghĩa xã hội khoa học';
 const chapterNames = isHcm ? Object.fromEntries(raw.chapters.map(item=>[item.id,item.title])) : {1:'Nhập môn chủ nghĩa xã hội khoa học',2:'Sứ mệnh lịch sử của giai cấp công nhân',3:'Chủ nghĩa xã hội và thời kỳ quá độ',4:'Dân chủ và nhà nước xã hội chủ nghĩa'};
 document.title = `Đại cương | ${courseName}`;
 const all = raw.questions;
+const practiceTotal = isBank ? all.filter(q=>Number.isInteger(q.answer)).length : all.length;
 const byId = Object.fromEntries(all.map(q => [q.id, q]));
 const examForms = raw.examForms || [];
 const slideKey=(file,page)=>`${file}::${page}`;
 const slidesByKey=Object.fromEntries(raw.slidePages.map(page=>[slideKey(page.file,page.slide),page]));
 let slideViewer=null,slideZoom=1;
-const storageKey = `dai-cuong-${isHcm?'hcm':'cnxh'}-${raw.questionRevision || 'v1'}`;
+const storageKey = `dai-cuong-${isBank?'hcm-bank':isHcm?'hcm':'cnxh'}-${raw.questionRevision || 'v1'}`;
 let stored = {}, previous = {};
 try { stored = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch {}
 try { if(!isHcm)previous = JSON.parse(localStorage.getItem('dai-cuong-cnxh-v1')) || {}; } catch {}
@@ -22,14 +24,20 @@ const previousExamScores = Object.fromEntries(examForms.map(form=>{
  return [form.id,scores.length?Math.max(...scores):null];
 }));
 const hasPreviousWork=Object.keys(previous.answers||{}).length>0||Object.keys(previous.examAttempts||{}).length>0||Object.keys(previous.examHistory||{}).length>0;
-const state = {source:isHcm?'text':stored.source || previous.source || 'doc',chapter:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'?'exam':'quiz',search:stored.search||'',index:stored.index || 0,answers:stored.answers || {},practiceAnswers:{...(stored.practiceAnswers ?? stored.answers ?? {})},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:['all','wrong','saved'].includes(stored.review)?stored.review:'all',reviewIds:Array.isArray(stored.reviewIds)?stored.reviewIds.filter(id=>byId[id]):null,examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed};
-function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,search:state.search,answers:state.answers,practiceAnswers:state.practiceAnswers,bookmarks:state.bookmarks,review:state.review,reviewIds:state.reviewIds,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice}));}
+const state = {source:isBank?'bank':isHcm?'text':stored.source || previous.source || 'doc',chapter:isBank?0:stored.chapter ?? previous.chapter ?? 0,mode:stored.mode==='exam'&&!isBank?'exam':'quiz',search:stored.search||'',index:stored.index || 0,answers:stored.answers || {},practiceAnswers:{...(stored.practiceAnswers ?? stored.answers ?? {})},bookmarks:(stored.bookmarks ?? previous.bookmarks ?? []).filter(id=>byId[id]),review:['all','wrong','saved'].includes(stored.review)?stored.review:'all',reviewIds:Array.isArray(stored.reviewIds)?stored.reviewIds.filter(id=>byId[id]):null,examId:stored.examId || null,examAttempts:stored.examAttempts || {},examHistory:stored.examHistory || {},confirmSubmit:false,reviewNotice:hasPreviousWork&&!stored.reviewNoticeDismissed,bankScope:stored.bankScope||'all',bankKind:['all','mcq','pending','essay'].includes(stored.bankKind)?stored.bankKind:'all',bankRevealed:Array.isArray(stored.bankRevealed)?stored.bankRevealed.filter(id=>byId[id]):[]};
+function save(){localStorage.setItem(storageKey,JSON.stringify({source:state.source,chapter:state.chapter,index:state.index,search:state.search,answers:state.answers,practiceAnswers:state.practiceAnswers,bookmarks:state.bookmarks,review:state.review,reviewIds:state.reviewIds,mode:state.mode,examId:state.examId,examAttempts:state.examAttempts,examHistory:state.examHistory,reviewNoticeDismissed:!state.reviewNotice,bankScope:state.bankScope,bankKind:state.bankKind,bankRevealed:state.bankRevealed}));}
 function sourceQuestions(){return all.filter(q => q.source.kind === state.source);}
-function isWrong(q){return state.answers[q.id]!==undefined&&state.answers[q.id]!==q.answer;}
-function visibleQuestions(){return sourceQuestions().filter(q => (!state.chapter || q.chapter===state.chapter) && (!state.search || (q.question+' '+q.choices.join(' ')).toLocaleLowerCase('vi').includes(state.search.toLocaleLowerCase('vi'))) && (state.review==='all' || state.review==='wrong' && (state.reviewIds?state.reviewIds.includes(q.id):isWrong(q)) || state.review==='saved' && state.bookmarks.includes(q.id)));}
+function isWrong(q){return Number.isInteger(q.answer)&&state.answers[q.id]!==undefined&&state.answers[q.id]!==q.answer;}
+function inBankScope(q){return state.bankScope==='all'||q.setIds?.includes(state.bankScope)||q.groupIds?.includes(state.bankScope);}
+function bankOccurrenceInScope(record){return state.bankScope==='all'||record.setId===state.bankScope||`${record.setId}-${record.subgroup}`===state.bankScope;}
+function bankOrder(q){return Math.min(...q.occurrences.filter(bankOccurrenceInScope).map(record=>raw.sourceOrder[record.id]));}
+function visibleQuestions(){
+ const questions=sourceQuestions().filter(q => (!isBank||inBankScope(q)&&(state.bankKind==='all'||q.kind===state.bankKind)) && (!state.chapter || q.chapter===state.chapter) && (!state.search || (q.question+' '+q.choices.join(' ')).toLocaleLowerCase('vi').includes(state.search.toLocaleLowerCase('vi'))) && (state.review==='all' || state.review==='wrong' && (state.reviewIds?state.reviewIds.includes(q.id):isWrong(q)) || state.review==='saved' && state.bookmarks.includes(q.id)));
+ return isBank?questions.sort((a,b)=>bankOrder(a)-bankOrder(b)):questions;
+}
 function current(){const qs=visibleQuestions();state.index=Math.max(0,Math.min(state.index,qs.length-1));return qs[state.index];}
 function totals(kind){const qs=all.filter(q=>q.source.kind===kind);return {all:qs.length,answered:qs.filter(q=>state.answers[q.id]!==undefined).length};}
-function overall(){return Object.keys(state.answers).length;}
+function overall(){return all.filter(q=>Number.isInteger(q.answer)&&state.answers[q.id]!==undefined).length;}
 function evidenceText(q){return q.source.evidence.replace(/^VỞ\s*│\s*|^SLIDE\s*│\s*/,'').trim();}
 function activeForm(){return examForms.find(form=>form.id===state.examId);}
 function activeAttempt(){return state.examAttempts[state.examId];}
@@ -63,7 +71,7 @@ function restoreScroll(view,position,resetEvidence){
  }
  if(resetEvidence&&$('.evidence'))$('.evidence').scrollTop=0;
 }
-function answerPractice(choice){const q=current();if(!q||state.practiceAnswers[q.id]!==undefined)return;state.practiceAnswers[q.id]=choice;state.answers[q.id]=choice;render({resetEvidence:true});}
+function answerPractice(choice){const q=current();if(!q||!Number.isInteger(q.answer)||state.practiceAnswers[q.id]!==undefined)return;state.practiceAnswers[q.id]=choice;state.answers[q.id]=choice;render({resetEvidence:true});}
 function retryPractice(ids,{wrongOnly=false}={}){
  if(!ids.length)return;
  // Completion/latest result stays intact; only feedback for this practice pass
@@ -71,6 +79,7 @@ function retryPractice(ids,{wrongOnly=false}={}){
  // before its feedback can be read.
  if(state.review==='wrong'&&!state.reviewIds)state.reviewIds=visibleQuestions().map(q=>q.id);
  for(const id of ids)delete state.practiceAnswers[id];
+ if(isBank)state.bankRevealed=state.bankRevealed.filter(id=>!ids.includes(id));
  if(wrongOnly){state.review='wrong';state.reviewIds=ids.slice();state.index=0;}
  render({position:'question',resetEvidence:true});
 }
@@ -80,22 +89,24 @@ function answerExam(choice){const q=examCurrent(),attempt=activeAttempt();if(!q|
 function render({position='preserve',resetEvidence=false}={}){
  const view=captureScroll();
  const q=current(),qs=visibleQuestions(),dt=totals('doc'),st=totals('slide'),done=overall();
- const sourceName=isHcm?state.chapter?`Chương ${state.chapter}`:'Ôn tập chương 1–2':state.source==='doc'?'Ghi chú':'Slide';
+ const sourceName=isBank?'Ngân hàng câu hỏi':isHcm?state.chapter?`Chương ${state.chapter}`:'Ôn tập chương 1–2':state.source==='doc'?'Ghi chú':'Slide';
  const form=activeForm(),attempt=activeAttempt(),eq=state.mode==='exam'?examCurrent():null;
  if(state.mode==='exam'&&form&&attempt&&!attempt.submittedAt&&timeLeft(form,attempt)===0){attempt.submittedAt=Date.now();attempt.reason='time';}
  $('#app').innerHTML=`<div class="app">
-  <header class="topbar"><div class="brand-group"><span class="brand"><span class="brand-mark">Đ</span>Đại cương</span><span class="course-name">/ ${escapeHtml(courseName)}</span></div><nav class="course-nav" aria-label="Chọn môn học"><a href="/" ${!isHcm?'aria-current="page"':''}>CNXH khoa học</a><a href="/?course=hcm" ${isHcm?'aria-current="page"':''}>Tư tưởng Hồ Chí Minh</a></nav><div class="header-right"><span>${all.length?`${done}/${all.length} đã làm`:'Chờ nội dung'}</span>${all.length?`<span class="top-progress"><span style="width:${done/all.length*100}%"></span></span>`:''}</div></header>
+  <header class="topbar"><div class="brand-group"><span class="brand"><span class="brand-mark">Đ</span>Đại cương</span><span class="course-name">/ ${escapeHtml(courseName)}</span></div><nav class="course-nav" aria-label="Chọn môn học"><a href="/" ${!isHcm?'aria-current="page"':''}>CNXH khoa học</a><a href="/?course=hcm" ${isHcm?'aria-current="page"':''}>Tư tưởng Hồ Chí Minh</a></nav><div class="header-right"><span>${practiceTotal?`${done}/${practiceTotal} ${isBank?'trắc nghiệm đã làm':'đã làm'}`:'Chờ nội dung'}</span>${practiceTotal?`<span class="top-progress"><span style="width:${done/practiceTotal*100}%"></span></span>`:''}</div></header>
   <aside class="sidebar"><div class="side-head">Lộ trình học</div><div class="source-row">
-   ${isHcm?`<button class="source-card ${state.mode!=='exam'?'active':''}" data-source="text"><span><strong>Nội dung bài học</strong><small>Chương 1 và chương 2</small></span><span class="count">${all.length?`${done}/${all.length}`:'Đang chờ'}</span></button>`:`<button class="source-card ${state.mode!=='exam'&&state.source==='doc'?'active':''}" data-source="doc"><span><strong>01 · Ghi chú</strong><small>Học trước, theo từng ý</small></span><span class="count">${dt.answered}/${dt.all}</span></button>
+   ${isBank?`<a class="source-card active" href="/?course=hcm&track=bank"><span><strong>Ngân hàng câu hỏi</strong><small>Sáu tập · Đã gộp câu lặp</small></span><span class="count">${all.length}</span></a>`:isHcm?`<button class="source-card ${state.mode!=='exam'?'active':''}" data-source="text"><span><strong>Nội dung bài học</strong><small>Chương 1 và chương 2</small></span><span class="count">${all.length?`${done}/${all.length}`:'Đang chờ'}</span></button>`:`<button class="source-card ${state.mode!=='exam'&&state.source==='doc'?'active':''}" data-source="doc"><span><strong>01 · Ghi chú</strong><small>Học trước, theo từng ý</small></span><span class="count">${dt.answered}/${dt.all}</span></button>
    <button class="source-card ${state.mode!=='exam'&&state.source==='slide'?'active':''}" data-source="slide"><span><strong>02 · Slide bài giảng</strong><small>Ôn toàn bộ ý chính</small></span><span class="count">${st.answered}/${st.all}</span></button>`}</div>
-   <div class="side-divider"></div><div class="side-head">Chương</div><div class="chapter-list">
+   ${isBank?renderBankSets():`<div class="side-divider"></div><div class="side-head">Chương</div><div class="chapter-list">
    <button class="chapter-btn ${state.chapter===0?'active':''}" data-chapter="0"><span>Tất cả chương</span><span>${sourceQuestions().length}</span></button>
-   ${Object.entries(chapterNames).map(([k,v])=>`<button class="chapter-btn ${state.chapter===Number(k)?'active':''}" data-chapter="${k}"><span>${k}. ${escapeHtml(v)}</span><span>${sourceQuestions().filter(x=>x.chapter===Number(k)).length}</span></button>`).join('')}</div>
+   ${Object.entries(chapterNames).map(([k,v])=>`<button class="chapter-btn ${state.chapter===Number(k)?'active':''}" data-chapter="${k}"><span>${k}. ${escapeHtml(v)}</span><span>${sourceQuestions().filter(x=>x.chapter===Number(k)).length}</span></button>`).join('')}</div>`}
    <div class="side-divider"></div><div class="side-head">Tìm câu hỏi</div><input class="search" type="search" placeholder="${isHcm&&!all.length?'Sẽ mở khi có câu hỏi':'Nhập từ khóa...'}" value="${escapeHtml(state.search)}" aria-label="Tìm câu hỏi" ${isHcm&&!all.length?'disabled':''}>
-   <p class="side-note">${isHcm?'Nội dung được bổ sung theo từng chương. Tiến trình, câu đã lưu và kết quả làm bài được giữ riêng cho môn này.':'Làm hết phần ghi chú trước khi chuyển sang slide. Tám đề giữa kỳ có đồng hồ 15 phút và chấm sau khi nộp.'}</p>
+   <p class="side-note">${isBank?'Câu xuất hiện ở nhiều tập dùng chung một tiến trình. Câu cần đối chiếu và tự luận không tính vào số trắc nghiệm đã làm.':isHcm?'Nội dung được bổ sung theo từng chương. Tiến trình, câu đã lưu và kết quả làm bài được giữ riêng cho môn này.':'Làm hết phần ghi chú trước khi chuyển sang slide. Tám đề giữa kỳ có đồng hồ 15 phút và chấm sau khi nộp.'}</p>
   </aside>
-  <main class="main"><div class="eyebrow">${isHcm?'Tư tưởng Hồ Chí Minh · Đợt 1':'Ôn thi giữa kỳ · Trắc nghiệm'}</div><h1 class="page-title">${state.mode==='exam'?'Đề giữa kỳ':sourceName}</h1><p class="intro">${isHcm?'Học theo từng ý, luyện câu hỏi và đối chiếu nội dung gốc ngay bên cạnh.':state.mode==='exam'?'Tám đề 30 câu, 15 phút mỗi đề. Đáp án và nguồn chỉ hiện sau khi nộp bài.':state.source==='doc'?'Ưu tiên toàn bộ nội dung tài liệu ghi chú. Mỗi đáp án đều có đoạn nguồn đối chiếu.':'Các ý chính từ bốn bộ slide, gồm cả những nội dung đã gặp trong ghi chú để luyện thêm một lượt.'}</p>
-   <div class="toolbar"><button class="tab ${state.mode==='quiz'?'active':''}" data-mode="quiz">Làm câu hỏi</button><button class="tab ${state.mode==='reader'?'active':''}" data-mode="reader">Đọc học liệu</button><button class="tab ${state.mode==='exam'?'active':''}" data-mode="exam">Đề 30 câu · 15 phút</button>${state.mode==='quiz'&&all.length?'<span class="toolbar-spacer"></span><button class="outline-button" data-review="all">Tất cả</button><button class="outline-button" data-review="wrong">Làm sai</button><button class="outline-button" data-review="saved">Đã lưu</button>':''}</div>
+  <main class="main"><div class="eyebrow">${isBank?'Tư tưởng Hồ Chí Minh · Ngân hàng riêng':isHcm?'Tư tưởng Hồ Chí Minh · Đợt 1':'Ôn thi giữa kỳ · Trắc nghiệm'}</div><h1 class="page-title">${state.mode==='exam'?'Đề giữa kỳ':sourceName}</h1><p class="intro">${isBank?'Luyện toàn bộ không lặp câu hoặc chọn đúng tập, nhóm trong tài liệu của bạn.':isHcm?'Học theo từng ý, luyện câu hỏi và đối chiếu nội dung gốc ngay bên cạnh.':state.mode==='exam'?'Tám đề 30 câu, 15 phút mỗi đề. Đáp án và nguồn chỉ hiện sau khi nộp bài.':state.source==='doc'?'Ưu tiên toàn bộ nội dung tài liệu ghi chú. Mỗi đáp án đều có đoạn nguồn đối chiếu.':'Các ý chính từ bốn bộ slide, gồm cả những nội dung đã gặp trong ghi chú để luyện thêm một lượt.'}</p>
+   ${isHcm?`<nav class="study-track-nav" aria-label="Chọn nguồn ôn tập"><a href="/?course=hcm" ${!isBank?'aria-current="page"':''}>Ôn theo slide</a><a href="/?course=hcm&track=bank" ${isBank?'aria-current="page"':''}>Ngân hàng câu hỏi</a></nav>`:''}
+   <div class="toolbar"><button class="tab ${state.mode==='quiz'?'active':''}" data-mode="quiz">Làm câu hỏi</button><button class="tab ${state.mode==='reader'?'active':''}" data-mode="reader">${isBank?'Đọc câu gốc':'Đọc học liệu'}</button>${isBank?'':`<button class="tab ${state.mode==='exam'?'active':''}" data-mode="exam">Đề 30 câu · 15 phút</button>`}${state.mode==='quiz'&&all.length?'<span class="toolbar-spacer"></span><button class="outline-button" data-review="all">Tất cả</button><button class="outline-button" data-review="wrong">Làm sai</button><button class="outline-button" data-review="saved">Đã lưu</button>':''}</div>
+   ${isBank?renderBankSummary():''}
    ${state.reviewNotice?'<div class="review-notice" role="status"><div><strong>Bộ câu hỏi đã được biên tập lại</strong><p>Bạn bắt đầu lượt luyện mới với các phương án đã sửa. Câu đã lưu và điểm đề trước biên tập vẫn được giữ riêng trên thiết bị này.</p></div><button class="outline-button" data-review-notice-close>Đã hiểu</button></div>':''}
    ${state.mode==='quiz'?renderQuiz(q,qs):state.mode==='reader'?renderReader():renderExam()}
   </main>
@@ -107,25 +118,54 @@ function render({position='preserve',resetEvidence=false}={}){
  if(slideViewer){const dialog=$('#slide-viewer');dialog.showModal();dialog.oncancel=event=>{event.preventDefault();closeSlideViewer();};dialog.onclick=event=>{if(event.target===dialog)closeSlideViewer();};}
  save();
 }
+function bankScopeName(){
+ if(state.bankScope==='all')return 'Toàn bộ · Không lặp câu';
+ for(const set of raw.sets){if(set.id===state.bankScope)return `${set.title} · ${set.description}`;const group=set.groups.find(item=>item.id===state.bankScope);if(group)return `${set.title} · ${group.title}`;}
+ return 'Toàn bộ · Không lặp câu';
+}
+function selectBankScope(scope){
+ state.bankScope=scope;state.bankKind='all';state.index=0;state.review='all';state.reviewIds=null;state.search='';
+ render({position:state.mode==='quiz'?'question':'top',resetEvidence:true});
+}
+function renderBankSets(){
+ return `<div class="side-divider"></div><div class="side-head">Theo tập</div><div class="bank-set-list"><button class="chapter-btn ${state.bankScope==='all'?'active':''}" data-bank-set="all"><span>Toàn bộ · Không lặp</span><span>${all.length}</span></button>${raw.sets.map(set=>`<div class="bank-set"><button class="chapter-btn ${state.bankScope===set.id?'active':''}" data-bank-set="${set.id}"><span><strong>${escapeHtml(set.title)}</strong><small>${escapeHtml(set.description)}</small></span><span>${set.uniqueCount}</span></button>${set.groups.map(group=>`<button class="chapter-btn bank-subgroup ${state.bankScope===group.id?'active':''}" data-bank-set="${group.id}"><span>${escapeHtml(group.title)}</span><span>${all.filter(q=>q.groupIds.includes(group.id)).length}</span></button>`).join('')}</div>`).join('')}</div><label class="bank-set-mobile">Chọn tập<select class="bank-set-select" aria-label="Chọn tập câu hỏi"><option value="all" ${state.bankScope==='all'?'selected':''}>Toàn bộ · Không lặp (${all.length})</option>${raw.sets.map(set=>`<option value="${set.id}" ${state.bankScope===set.id?'selected':''}>${escapeHtml(set.title)} (${set.uniqueCount})</option>${set.groups.map(group=>`<option value="${group.id}" ${state.bankScope===group.id?'selected':''}>${escapeHtml(set.title+' · '+group.title)}</option>`).join('')}`).join('')}</select></label>`;
+}
+function renderBankSummary(){
+ const items=all.filter(inBankScope);
+ const stats={sourceOccurrences:items.reduce((count,q)=>count+q.occurrences.filter(bankOccurrenceInScope).length,0),uniqueItems:items.length,gradable:items.filter(q=>q.kind==='mcq').length,pending:items.filter(q=>q.kind==='pending').length,essays:items.filter(q=>q.kind==='essay').length};
+ return `<section class="bank-summary"><strong>${escapeHtml(bankScopeName())}</strong><p>${stats.sourceOccurrences} mục gốc → ${stats.uniqueItems} mục không lặp · ${stats.gradable} trắc nghiệm · ${stats.pending} cần đối chiếu · ${stats.essays} tự luận</p><div class="bank-kind-filter" aria-label="Loại câu hỏi">${[['all','Mọi loại'],['mcq','Trắc nghiệm'],['pending','Cần đối chiếu'],['essay','Tự luận']].map(([key,title])=>`<button class="outline-button ${state.bankKind===key?'selected':''}" data-bank-kind="${key}" aria-pressed="${state.bankKind===key}">${title}</button>`).join('')}</div></section>`;
+}
+function bankOccurrenceLabel(record){return `Tập ${record.document}${record.document===1?record.part==='short'?' · Phần 1':' · Phần 2':record.document===2?` · Nhóm ${record.subgroup.slice(1)}`:''} · Câu ${String(record.number).padStart(2,'0')}${record.page?` · Trang ${record.page}`:''}`;}
+function bankOriginalText(record){return [record.question,...record.choices.map((choice,index)=>`${letters[index]}. ${choice}`),record.providedAnswer?`Đáp án có sẵn trong nguồn: ${record.providedAnswer}`:'',...(record.notes||[])].filter(Boolean).join('\n');}
+function renderBankEvidence(q){
+ const shown=state.practiceAnswers[q.id]!==undefined||state.bankRevealed.includes(q.id);
+ return `<span class="evidence-label">${q.occurrences.length} vị trí trong ${q.setIds.length} tập</span>${shown?`<p class="source-caption">${q.keyOrigin==='provided'?'Đáp án đúng có trong nguồn; ba phương án nhiễu được bổ sung.':q.kind==='mcq'?'Nguồn không kèm khóa chấm. Đáp án và giải thích do biên tập bổ sung.':q.kind==='essay'?'Câu tự luận · Gợi ý tham khảo, không chấm A/B/C/D.':'Chưa có đủ căn cứ để chấm một đáp án duy nhất.'}</p>${q.editorialNote?`<p class="bank-editorial-note">${escapeHtml(q.editorialNote)}</p>`:''}${q.occurrences.map((record,index)=>`<details class="bank-source-occurrence" ${index===0?'open':''}><summary>${escapeHtml(bankOccurrenceLabel(record))}</summary><div class="evidence-card ${index===0?'focused':''}">${escapeHtml(bankOriginalText(record))}</div></details>`).join('')}${q.source.references.length?`<div class="bank-references"><h3>Tham khảo đối chiếu</h3>${q.source.references.map(ref=>ref.url?`<a class="source-link" href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(ref.title)} ↗</a>`:`<details class="source-transcript"><summary>${escapeHtml(ref.title)}</summary><div class="evidence-card">${escapeHtml(ref.text)}</div></details>`).join('')}</div>`:''}`:'<div class="evidence-placeholder">Chọn đáp án để xem câu gốc, giải thích và các vị trí xuất hiện. Với tự luận hoặc câu cần đối chiếu, bấm mở hướng dẫn.</div>'}`;
+}
+function renderBankReadOnly(q,qs){
+ const essay=q.kind==='essay',shown=state.bankRevealed.includes(q.id);
+ return `<article class="question-card"><div class="question-meta"><div class="meta-left"><span class="badge">Mục ${state.index+1} / ${qs.length}</span><span class="badge neutral">${essay?'Tự luận':'Cần đối chiếu'}</span></div><button class="outline-button" data-bookmark="${q.id}">${state.bookmarks.includes(q.id)?'★ Đã lưu':'☆ Lưu câu'}</button></div><h2 class="question-title">${escapeHtml(q.question)}</h2><p class="bank-editorial-note">${essay?'Câu mở, không có một đáp án A/B/C/D để chấm tự động.':escapeHtml(q.editorialNote)}</p>${q.choices.length?`<ol class="bank-original-options" type="A">${q.choices.map(choice=>`<li>${escapeHtml(choice)}</li>`).join('')}</ol>`:''}<button class="outline-button" data-bank-reveal="${q.id}">${shown?'Ẩn hướng dẫn':essay?'Xem gợi ý trả lời':'Mở hướng dẫn đối chiếu'}</button>${shown?`<div class="answer-box">${escapeHtml(q.explanation)}</div>`:''}<div class="question-footer"><button class="nav-button" data-nav="-1" ${state.index===0?'disabled':''}>← Câu trước</button><span class="progress-copy">Không tính vào tiến độ trắc nghiệm</span><button class="nav-button primary" data-nav="1" ${state.index===qs.length-1?'disabled':''}>Câu tiếp theo →</button></div></article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.length} mục</span></div><div class="number-grid">${qs.map((item,index)=>`<button data-index="${index}" class="${state.index===index?'current':''} ${state.answers[item.id]===undefined?'':state.answers[item.id]===item.answer?'done':'failed'}" aria-label="Câu ${index+1}">${index+1}</button>`).join('')}</div></section>`;
+}
 function renderCoursePreparation(mode){
  const selected=raw.chapters.find(chapter=>chapter.id===state.chapter);
  const heading=mode==='reader'?'Học liệu sẽ được bổ sung theo từng chương':mode==='exam'?'Đề luyện tập sẽ được mở sau khi có câu hỏi':'Khung ôn tập đã sẵn sàng';
  const description=mode==='reader'?'Nội dung bạn gửi sẽ được chia thành từng mục để đọc và đối chiếu khi làm bài.':mode==='exam'?'Mỗi đề gồm 30 câu trong 15 phút. Kết quả, giải thích và nguồn đối chiếu sẽ hiện sau khi nộp.':'Đang chờ nội dung bạn trích xuất. Bộ câu hỏi sẽ được biên soạn lần lượt cho chương 1 và chương 2.';
  return `<section class="course-preparation"><div class="preparation-heading"><span class="preparation-status"><span></span>Chờ nội dung</span><h2>${heading}</h2><p>${description}</p></div><div class="preparation-chapters" aria-label="Các chương dự kiến">${raw.chapters.map(chapter=>`<button class="preparation-chapter ${state.chapter===chapter.id?'active':''}" data-chapter="${chapter.id}" aria-pressed="${state.chapter===chapter.id}"><span class="chapter-kicker">Chương ${String(chapter.id).padStart(2,'0')}</span><strong>${escapeHtml(chapter.title)}</strong><span class="chapter-topic-count">${chapter.topics.length} nhóm nội dung · Chưa có câu hỏi</span><span class="chapter-open">${state.chapter===chapter.id?'Đang xem':'Xem phạm vi chương →'}</span></button>`).join('')}</div><div class="preparation-outline"><h3>${selected?`Phạm vi chương ${selected.id}`:'Nội dung sẽ ôn tập'}</h3>${(selected?[selected]:raw.chapters).map(chapter=>`<div class="outline-chapter"><h4>Chương ${chapter.id}</h4><ul>${chapter.topics.map(topic=>`<li>${escapeHtml(topic)}</li>`).join('')}</ul></div>`).join('')}</div><p class="preparation-footnote">Sau khi có câu hỏi: xem đáp án và giải thích, lưu câu, luyện lại câu sai và theo dõi tiến trình như môn CNXH khoa học.</p></section>`;
 }
-function sourceLabel(q){return q.source.kind==='text'?'Bài học':q.source.kind==='doc'?'Ghi chú':'Slide';}
+function sourceLabel(q){return q.source.kind==='bank'?q.generatedDistractors?'Nhiễu bổ sung':'Câu gốc':q.source.kind==='text'?'Bài học':q.source.kind==='doc'?'Ghi chú':'Slide';}
 function renderQuiz(q,qs){
  if(isHcm&&!all.length)return renderCoursePreparation('quiz');
  if(!q)return '<div class="empty">Không có câu hỏi phù hợp. Hãy đổi từ khóa hoặc bộ lọc.</div>';
+ if(isBank&&q.kind!=='mcq')return renderBankReadOnly(q,qs);
  const selected=state.practiceAnswers[q.id],answered=selected!==undefined,wrongCount=qs.filter(isWrong).length;
  return `<article class="question-card"><div class="practice-tools"><span>${state.review==='wrong'?`Ôn câu sai · ${qs.filter(item=>state.answers[item.id]===item.answer).length}/${qs.length} đã sửa đúng`:'Lượt luyện tập'}</span><div><button class="outline-button" data-practice-retry="wrong" ${wrongCount?'':'disabled'}>Luyện lại câu sai (${wrongCount})</button><button class="outline-button" data-practice-retry="visible">Làm lại nhóm này</button></div></div>
- <div class="question-meta"><div class="meta-left"><span class="badge">Câu ${state.index+1} / ${qs.length}</span><span class="badge neutral">Chương ${q.chapter}</span><span class="badge neutral">${sourceLabel(q)}</span></div><button class="outline-button ${state.bookmarks.includes(q.id)?'saved':''}" data-bookmark="${q.id}" aria-label="${state.bookmarks.includes(q.id)?'Bỏ lưu':'Lưu'} câu hỏi">${state.bookmarks.includes(q.id)?'★ Đã lưu':'☆ Lưu câu'}</button></div>
+ <div class="question-meta"><div class="meta-left"><span class="badge">Câu ${state.index+1} / ${qs.length}</span><span class="badge neutral">${isBank?`${q.setIds.length} tập có câu này`:`Chương ${q.chapter}`}</span><span class="badge neutral">${sourceLabel(q)}</span></div><button class="outline-button ${state.bookmarks.includes(q.id)?'saved':''}" data-bookmark="${q.id}" aria-label="${state.bookmarks.includes(q.id)?'Bỏ lưu':'Lưu'} câu hỏi">${state.bookmarks.includes(q.id)?'★ Đã lưu':'☆ Lưu câu'}</button></div>
   <h2 class="question-title">${escapeHtml(q.question)}</h2><div class="options">${q.choices.map((choice,i)=>`<button class="option ${answered?(i===q.answer?'correct':i===selected?'wrong':'dim'):''}" data-answer="${i}" ${answered?'disabled':''}><span class="option-letter">${letters[i]}</span><span>${escapeHtml(choice)}</span></button>`).join('')}</div>
   ${answered?`<div class="answer-box ${selected===q.answer?'':'error'}"><div class="answer-heading"><strong>${selected===q.answer?'Chính xác':'Chưa đúng'} · Đáp án ${letters[q.answer]}</strong><button class="outline-button" data-practice-retry="question">Làm lại câu này</button></div>${escapeHtml(q.explanation)}</div>`:''}
   <div class="question-footer"><button class="nav-button" data-nav="-1" ${state.index===0?'disabled':''}>← Câu trước</button><div class="progress-copy">${answered?'Đã trả lời · Có thể làm lại':state.answers[q.id]!==undefined?'Đang làm lại · Tiến độ đã làm vẫn được giữ':'Chọn một đáp án để mở phần đối chiếu'}<br>Dùng phím ← → để chuyển câu</div><button class="nav-button primary" data-nav="1" ${state.index===qs.length-1?'disabled':''}>Câu tiếp theo →</button></div>
- </article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.filter(x=>state.answers[x.id]!==undefined).length} / ${qs.length} đã làm · Lượt này ${qs.filter(x=>state.practiceAnswers[x.id]!==undefined).length}/${qs.length}</span></div><div class="number-grid">${qs.map((item,i)=>`<button data-index="${i}" class="${i===state.index?'current':''} ${state.answers[item.id]===undefined?'':state.answers[item.id]===item.answer?'done':'failed'}" aria-label="Câu ${i+1}">${i+1}</button>`).join('')}</div></section>`;
+ </article><section class="grid-section"><div class="grid-heading"><span>Danh sách câu hỏi</span><span>${qs.filter(x=>state.answers[x.id]!==undefined).length} / ${isBank?qs.filter(x=>Number.isInteger(x.answer)).length:qs.length} ${isBank?"trắc nghiệm đã làm":"đã làm"} · Lượt này ${qs.filter(x=>state.practiceAnswers[x.id]!==undefined).length}/${isBank?qs.filter(x=>Number.isInteger(x.answer)).length:qs.length}</span></div><div class="number-grid">${qs.map((item,i)=>`<button data-index="${i}" class="${i===state.index?'current':''} ${state.answers[item.id]===undefined?'':state.answers[item.id]===item.answer?'done':'failed'}" aria-label="Câu ${i+1}">${i+1}</button>`).join('')}</div></section>`;
 }
 function renderEvidence(q,examReview=false){
+ if(isBank)return renderBankEvidence(q);
  const answered=examReview||state.practiceAnswers[q.id]!==undefined;
  const page=q.source.kind==='slide'?slidesByKey[slideKey(q.source.file,q.source.page)]:null;
  return `<span class="evidence-label">${escapeHtml(q.source.label)}</span>${answered?page?`${renderSlidePreview(page)}<details class="source-transcript"><summary>Xem văn bản trích xuất</summary><div class="evidence-card" id="evidence-content">${escapeHtml(evidenceText(q))}</div></details>`:`<div class="evidence-card focused" tabindex="-1" id="evidence-content">${escapeHtml(evidenceText(q))}</div>`:'<div class="evidence-placeholder">Chọn đáp án để mở đoạn kiến thức tương ứng. Đáp án và nguồn sẽ hiện cùng lúc.</div>'}
@@ -141,6 +181,7 @@ function renderSlideViewer(){
 function closeSlideViewer(){const opener=slideViewer;slideViewer=null;render();[...document.querySelectorAll('[data-slide-open]')].find(button=>button.dataset.slideOpen===opener)?.focus?.({preventScroll:true});}
 function changeSlide(step){const page=slidesByKey[slideViewer];if(!page)return;const pages=raw.slidePages.filter(item=>item.file===page.file),next=pages[pages.indexOf(page)+step];if(next){slideViewer=slideKey(next.file,next.slide);slideZoom=1;render();}}
 function renderReader(){
+ if(isBank)return `<div class="reader-list">${all.filter(inBankScope).filter(q=>state.bankKind==='all'||q.kind===state.bankKind).map(q=>`<details class="reader-item"><summary><small>${q.occurrences.length} vị trí nguồn · ${q.kind==='essay'?'Tự luận':q.kind==='pending'?'Cần đối chiếu':'Trắc nghiệm'}</small>${escapeHtml(q.question)}</summary>${q.occurrences.map(record=>`<h3 class="bank-source-title">${escapeHtml(bankOccurrenceLabel(record))}</h3><p>${escapeHtml(bankOriginalText(record))}</p>`).join('')}</details>`).join('')}</div>`;
  if(isHcm){
   const items=(raw.studySections||[]).filter(section=>!state.chapter||section.chapter===state.chapter);
   if(!items.length)return renderCoursePreparation('reader');
@@ -175,6 +216,10 @@ function renderExam(){
  ${submitted?'':state.confirmSubmit?`<div class="submit-confirm"><strong>Nộp bài ngay?</strong><span>${30-answeredCount} câu chưa chọn sẽ tính là sai. Sau khi nộp, bạn có thể xem lại hoặc làm đề mới.</span><div><button class="outline-button" data-exam-cancel>Tiếp tục làm</button><button class="nav-button primary" data-exam-confirm>Xác nhận nộp</button></div></div>`:`<div class="submit-row"><button class="nav-button primary" data-exam-submit>Nộp bài và xem kết quả</button></div>`}`;
 }
 function bind(){
+ document.querySelectorAll('[data-bank-set]').forEach(el=>el.onclick=()=>selectBankScope(el.dataset.bankSet));
+ const bankSet=$('.bank-set-select');if(bankSet)bankSet.onchange=event=>selectBankScope(event.target.value);
+ document.querySelectorAll('[data-bank-kind]').forEach(el=>el.onclick=()=>{state.bankKind=el.dataset.bankKind;state.review='all';state.reviewIds=null;state.index=0;render({position:'question',resetEvidence:true});});
+ document.querySelectorAll('[data-bank-reveal]').forEach(el=>el.onclick=()=>{const id=el.dataset.bankReveal;state.bankRevealed=state.bankRevealed.includes(id)?state.bankRevealed.filter(item=>item!==id):[...state.bankRevealed,id];render({resetEvidence:true});});
  document.querySelectorAll('[data-slide-open]').forEach(el=>el.onclick=()=>{slideViewer=el.dataset.slideOpen;slideZoom=1;render();});
  document.querySelectorAll('[data-slide-close]').forEach(el=>el.onclick=closeSlideViewer);
  document.querySelectorAll('[data-slide-step]').forEach(el=>el.onclick=()=>changeSlide(Number(el.dataset.slideStep)));
